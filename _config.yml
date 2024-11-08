@@ -1,12 +1,10 @@
-title: PBs Blog!
+title: pbnjk has a blog
 email: pedrobuitragons@gmail.com
 description: >-
   Thoughts on computers and whatever else comes to mind
 baseurl: ""
 domain: "PBnJK.github.io"
 url: "https://PBnJK.github.io"
-
-github_username: PBnJK
 
 # Build settings
 remote_theme: jekyll/minima
@@ -16,6 +14,10 @@ plugins:
 
 minima:
   skin: dark
+
+  social_links:
+    - { platform: github, user_url: "https://github.com/PBnJK" }
+    - { platform: bluesky, user_url: "https://pbnjk.bsky.social" }
 
 exclude:
   - .sass-cache/
