@@ -1,0 +1,13 @@
+---
+---
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+pre {
+  tab-size: 4;
+}
+
+.subtitle {
+  color: $brand-color;
+}
