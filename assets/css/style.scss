@@ -8,6 +8,18 @@ pre {
   tab-size: 4;
 }
 
+.post-title {
+  display: inline;
+}
+
+.post-tag {
+  display: block;
+}
+
 .subtitle {
+  display: inline;
+  margin-left: 8px;
+
+  font-style: italic;
   color: $brand-color;
 }

@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<h2>Posts</h2>
+<div>
+  <ul>
+    {% assign page_category = page.categories | join: "||" %}
+    {% for post in site.posts %}
+      {% if post.categories contains page_category %}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <b>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+			</b> &mdash; {{ post.date | date: date_format }}
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
