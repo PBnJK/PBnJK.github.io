@@ -30,7 +30,7 @@ minima:
 collections:
   tags:
     output: true
-    permalink: /:collection/:categories:output_ext
+    permalink: /:collection/:tags:output_ext
 
 header_pages:
   - about.md

@@ -20,9 +20,9 @@ layout: base
 				{{ mdate | date: date_format }}
         		</time>
 			{%- endif -%}
-			{%- if page.categories -%}
+			{%- if page.tags -%}
 				<p class="post-tag">
-				{% for tag in page.categories %}
+				{% for tag in page.tags %}
 					<a href="/tags/{{tag}}">#{{ tag }}</a>
 				{%- endfor -%}
 				</p>

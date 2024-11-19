@@ -1,6 +1,6 @@
 ---
 title: "Talk"
-categories: talk
+tags: talk
 layout: tag
 ---
 This tag reunites articles where I express my opinion on something. Possibly some

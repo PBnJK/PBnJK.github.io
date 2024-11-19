@@ -7,9 +7,9 @@ layout: page
 <h2>Posts</h2>
 <div>
   <ul>
-    {% assign page_category = page.categories | join: "||" %}
+    {% assign page_tag = page.tags | join: "||" %}
     {% for post in site.posts %}
-      {% if post.categories contains page_category %}
+      {% if post.tags contains page_tag %}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <b>

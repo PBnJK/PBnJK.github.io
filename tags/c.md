@@ -1,6 +1,6 @@
 ---
 title: "C"
-categories: c
+tags: c
 layout: tag
 ---
 This tag reunites articles that use the C programming language

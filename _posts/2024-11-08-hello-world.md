@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 date: 2024-11-08 12:05:00
-category: talk
+tags: talk
 ---
 Hello! This is my first post on my blog.
 

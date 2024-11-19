@@ -4,7 +4,7 @@ title: "RandomArt"
 description: "Implementation of a small algorithm for creating randomly-generated art"
 subtitle: "it's about to get artsy y'all"
 date: 2024-11-11 22:55:00
-categories: [fact, c, art]
+tags: [fact, c, art]
 ---
 
 > FOREWORD
