@@ -8,7 +8,7 @@ layout: base
 			<p class="subtitle">{{ page.subtitle | escape }}</p>
 		{%- endif -%}
 
-		<p class="post-meta">			
+		<p class="post-meta">
 			{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 			<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         		{{ page.date | date: date_format }}
@@ -33,7 +33,15 @@ layout: base
             	<span class="p-author h-card" itemprop="name">{{ author }}</span></span>
             	{%- if forloop.last == false %}, {% endif -%}
         	{% endfor %}
-			{%- endif -%}</p>
+			{%- endif -%}
+		</p>
+
+		{% capture words %}
+			{{ page.content | number_of_words | minus: 180 }}
+		{% endcapture %}
+		{% unless words contains "-" %}
+			<p class="subtitle">{{ words | plus: 180 | divided_by: 180 | append: " minutes to read" | escape }}</p>
+		{% endunless %}
 		<hr>
 	</header>
 

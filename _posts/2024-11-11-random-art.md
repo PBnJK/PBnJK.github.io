@@ -4,7 +4,7 @@ title: "RandomArt"
 description: "Implementation of a small algorithm for creating randomly-generated art"
 subtitle: "it's about to get artsy y'all"
 date: 2024-11-11 22:55:00
-tags: [fact, c, art]
+tags: [fun, c, art]
 ---
 
 > FOREWORD
@@ -364,12 +364,32 @@ just functions which return functions or numbers!
 
 ### Footnotes
 
-[^1]: The paper was brought to my attention by tsoding, whose [Twitch](https://www.twitch.tv/tsoding), [YouTube](https://www.youtube.com/tsoding) and [GitHub](https://github.com/tsoding) are a seemingly endless well of great ideas and hands-on programming lessons. Give him a follow/subscribe/whatever on those! He also has a [BlueSky](tsoding.bsky.social)!!
-[^2]: ...as well as tsoding. His original implementation of the algorithm  is [here](https://github.com/tsoding/randomart/). Don't worry; no code was copied, borrowed, etc. I just liked the idea :-)
-[^3]: Is it recursive if I call another function which then calls us back? I'll leave that as an exercise to the reader.
-[^4]: If you ever do, I recommend [Crafting Interpreters](https://craftinginterpreters.com/). Robert Nystrom is a phenomenal writer, and it'll teach you all you need to know about writing a very competent little language. I made [this](https://github.com/pbnjk/loxie) one after reading it! #notsponsored
-[^5]: Note that I'm talking specifically about interpreted languages here, with VMs and stuff. Though, frankly, in compiled languages, running the code is even easier! You just have the computer do it for you ;-D
-[^6]: Though I think you'd get *much* more mileage out of an unskilled, yet original, *Paint* doodle than more garbage from the Plagiarism Machine&#0153;. Most of my "temporary art" ends up becoming just "art" in the end. I can't imagine doing that with the machine that, I must stress, _has a non-zero chance of spitting out someone else's work, verbatim_, is a good idea. But I'm not your dad.
+[^1]: The paper was brought to my attention by tsoding, whose [Twitch](https://www.twitch.tv/tsoding),
+	[YouTube](https://www.youtube.com/tsoding) and [GitHub](https://github.com/tsoding)
+	are a seemingly endless well of great ideas and hands-on programming lessons.
+	Give him a follow/subscribe/whatever on those! He also has a [BlueSky](tsoding.bsky.social)!!
+
+[^2]: ...as well as tsoding. His original implementation of the algorithm  is
+	[here](https://github.com/tsoding/randomart/). Don't worry; no code was copied,
+	borrowed, etc. I just liked the idea :-)
+
+[^3]: Is it recursive if I call another function which then calls us back? I'll
+	leave that as an exercise to the reader.
+
+[^4]: If you ever do, I recommend [Crafting Interpreters](https://craftinginterpreters.com/).
+	Robert Nystrom is a phenomenal writer, and it'll teach you all you need to know
+	about writing a very competent little language. I made [this](https://github.com/pbnjk/loxie)
+	one after reading it! #notsponsored
+
+[^5]: Note that I'm talking specifically about interpreted languages here, with
+	VMs and stuff. Though, frankly, in compiled languages, running the code is even
+	easier! You just have the computer do it for you ;-D
+
+[^6]: Though I think you'd get *much* more mileage out of an unskilled, yet
+	original, *Paint* doodle than more garbage from the Plagiarism Machine&trade;.
+	Most of my "temporary art" ends up becoming just "art" in the end. I can't
+	imagine doing that with the machine that, I must stress, _has a non-zero chance
+	of spitting out someone else's work, verbatim_, is a good idea. But I'm not your dad.
 
 <!-- Links --->
 [ra-paper]: http://users.ece.cmu.edu/~adrian/projects/validation/validation.pdf

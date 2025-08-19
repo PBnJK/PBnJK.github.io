@@ -28,4 +28,4 @@ pieces, and there will be some more "factual" articles. Don't worry, the former 
 teen's opinion on politics---just whatever I currently feel about something I like.
 
 Opinion posts will be under the "talk" tag, and the non-opinion ones will be under
-"fact". Names subject to change, probably...
+"fun".

@@ -34,6 +34,7 @@ collections:
 
 header_pages:
   - about.md
+  - tags.md
 
 exclude:
   - .sass-cache/
