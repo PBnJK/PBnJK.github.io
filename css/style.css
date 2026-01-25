@@ -1,7 +1,7 @@
 /* Main style for the front page */
 
 :root {
-  --bg-primary: #f0e8e8;
+  --bg-primary: white;
   --bg-highlight: white;
 
   --bg-secondary-red: #f82020;
@@ -9,18 +9,51 @@
   --bg-secondary-blue: #1010e0;
 }
 
+@font-face {
+  font-family: "Goudy Bookletter 1911";
+  src: url("../assets/fonts/GoudyBookletter1911-Regular.ttf");
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
 html {
-  background-color: var(--bg-primary);
+  background-image: url("../assets/bg_cave_paintings.png");
+  background-size: 384px;
 
   font-family: sans-serif;
+}
+
+h1 {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-size: 40pt;
+
+  margin-bottom: 16px;
+  transform: rotate(-0.5deg);
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  min-height: 100vh;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 
-  width: 100%;
+  background-color: var(--bg-primary);
+
+  width: 1080px;
+  height: 100vh;
 }
 
 mark {
@@ -36,23 +69,16 @@ mark {
 }
 
 .infobox {
-  border: 2px black solid;
-  border-radius: 4px;
+  border-image: url("../assets/svgs/postcard_border.svg") 8 / 64px round;
   padding: 4px 8px;
 
   background-color: var(--bg-highlight);
+
+  transform: rotate(-0.5deg);
+  box-shadow: 24px 16px black;
 }
 
-.infobox legend {
-  padding: 0 8px;
-
-  background-color: var(--bg-highlight);
-
-  border: 2px black solid;
-  border-radius: 10px;
-}
-
-#personal-info-infobox {
+#postcard-infobox {
   display: flex;
   flex-direction: row;
 
@@ -60,24 +86,22 @@ mark {
   padding-right: 64px;
 }
 
-#personal-info-selfie {
+#postcard-selfie {
   display: flex;
   flex-direction: column;
 
-  border: 2px black solid;
   border-radius: 4px;
 
   max-width: 225px;
 }
 
-#personal-info-selfie img {
+#postcard-selfie img {
   max-width: 225px;
   max-height: 300px;
 }
 
-#personal-info-selfie figcaption {
+#postcard-selfie figcaption {
   background-color: var(--bg-secondary-yellow);
-  border-top: 2px black solid;
 
   font: italic 12pt serif;
   text-align: center;
@@ -85,5 +109,5 @@ mark {
   padding: 8px;
 }
 
-#personal-info-data {
+#postcard-data {
 }

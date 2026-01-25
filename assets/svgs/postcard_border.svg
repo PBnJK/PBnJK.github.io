@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+  <!-- Top -->
+  <polygon points="8,0 9,1 11,1 10,0" fill="#f82020" />
+  <polygon points="12,0 13,1 15,1 14,0" fill="#1010e0" />
+
+  <!-- Top-right -->
+  <polygon points="16,0 17,1 19,1 18,0" fill="#f82020" />
+  <polygon points="20,0 21,1 23,1 22,0" fill="#1010e0" />
+  <polygon points="23,1 23,3 24,4 24,2 " fill="#f82020" />
+  <polygon points="23,5 23,7 24,8 24,6" fill="#1010e0" />
+
+  <!-- Right -->
+  <polygon points="23,9 23,11 24,12 24,10" fill="#f82020" />
+  <polygon points="23,13 23,15 24,16 24,14" fill="#1010e0" />
+
+  <!-- Bottom-right -->
+  <polygon points="23,17 23,19 24,20 24,18" fill="#f82020" />
+  <polygon points="23,21 23,23 24,24 24,22" fill="#1010e0" />
+  <polygon points="21,23 22,24 24,24 23,23" fill="#f82020" />
+  <polygon points="17,23 18,24 20,24 19,23" fill="#1010e0" />
+
+  <!-- Bottom -->
+  <polygon points="13,23 14,24 16,24 15,23" fill="#f82020" />
+  <polygon points="9,23 10,24 12,24 11,23" fill="#1010e0" />
+
+  <!-- Bottom-left -->
+  <polygon points="5,23 6,24 8,24 7,23" fill="#f82020" />
+  <polygon points="1,23 2,24 4,24 3,23" fill="#1010e0" />
+  <polygon points="0,20 0,22 1,23 1,21" fill="#f82020" />
+  <polygon points="0,16 0,18 1,19 1,17" fill="#1010e0" />
+
+  <!-- Left -->
+  <polygon points="0,12 0,14 1,15 1,13" fill="#f82020" />
+  <polygon points="0,8 0,10 1,11 1,9" fill="#1010e0" />
+
+  <!-- Top-Left -->
+  <polygon points="0,4 0,6 1,7 1,5" fill="#f82020" />
+  <polygon points="0,0 0,2 1,3 1,1" fill="#1010e0" />
+  <polygon points="0,0 1,1 3,1 2,0" fill="#f82020" />
+  <polygon points="4,0 5,1 7,1 6,0" fill="#1010e0" />
+</svg>
+
+
+
