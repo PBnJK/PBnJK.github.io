@@ -1,0 +1,89 @@
+/* Main style for the front page */
+
+:root {
+  --bg-primary: #f0e8e8;
+  --bg-highlight: white;
+
+  --bg-secondary-red: #f82020;
+  --bg-secondary-yellow: #f8f040;
+  --bg-secondary-blue: #1010e0;
+}
+
+html {
+  background-color: var(--bg-primary);
+
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+}
+
+mark {
+  background-color: var(--bg-secondary-yellow);
+}
+
+.mark-red {
+  background-color: var(--bg-secondary-red);
+}
+
+.mark-blue {
+  background-color: var(--bg-secondary-blue);
+}
+
+.infobox {
+  border: 2px black solid;
+  border-radius: 4px;
+  padding: 4px 8px;
+
+  background-color: var(--bg-highlight);
+}
+
+.infobox legend {
+  padding: 0 8px;
+
+  background-color: var(--bg-highlight);
+
+  border: 2px black solid;
+  border-radius: 10px;
+}
+
+#personal-info-infobox {
+  display: flex;
+  flex-direction: row;
+
+  width: 760px;
+  padding-right: 64px;
+}
+
+#personal-info-selfie {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px black solid;
+  border-radius: 4px;
+
+  max-width: 225px;
+}
+
+#personal-info-selfie img {
+  max-width: 225px;
+  max-height: 300px;
+}
+
+#personal-info-selfie figcaption {
+  background-color: var(--bg-secondary-yellow);
+  border-top: 2px black solid;
+
+  font: italic 12pt serif;
+  text-align: center;
+
+  padding: 8px;
+}
+
+#personal-info-data {
+}
