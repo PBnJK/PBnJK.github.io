@@ -28,6 +28,13 @@ html {
   font-family: sans-serif;
 }
 
+hr {
+  border: none;
+  border-top: 4px solid black;
+
+  width: 100%;
+}
+
 h1 {
   font-family: "Goudy Bookletter 1911", serif;
   font-size: 40pt;
@@ -76,6 +83,10 @@ mark {
 
   transform: rotate(-0.5deg);
   box-shadow: 24px 16px black;
+}
+
+#postcard-container {
+  height: 512px;
 }
 
 #postcard-infobox {
