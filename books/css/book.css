@@ -1,6 +1,11 @@
-TypstPreviewUpdate ml,
+::root {
+  --bg-color: white;
+}
+
+html,
 body {
   margin: 0;
+  min-height: 100%;
 
   font-family: "Goudy Bookletter 1911";
   font-size: 16pt;
@@ -13,10 +18,29 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 2em;
+  margin-block: 0.67em;
 }
 
 img {
   image-rendering: pixelated;
+}
+
+hr {
+  border: none;
+  color: black;
+  overflow: visible;
+  text-align: center;
+
+  height: 8px;
+  width: 64px;
+
+  margin: 48px auto;
+}
+
+hr::after {
+  background: white;
+  content: "*\00a0\00a0\00a0*\00a0\00a0\00a0*";
 }
 
 body {
@@ -38,11 +62,42 @@ body {
     url("../assets/column/column_marble1.webp");
 }
 
+.trig-column {
+  background-repeat: repeat;
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(0 0 0 / 0.5) 0%,
+      rgb(255 255 255 / 0) 40%,
+      rgb(255 255 255 / 0) 60%,
+      rgb(0 0 0 / 0.5) 100%
+    ),
+    url("../assets/column/column_trig.webp");
+}
+
+.solid-bg {
+  background-color: var(--bg-color);
+}
+
+.stripe-bg {
+  background-repeat: repeat;
+  background-image:
+    linear-gradient(
+      to right,
+      rgb(0 0 0 / 0.5) 0%,
+      rgb(255 255 255 / 0) 40%,
+      rgb(255 255 255 / 0) 60%,
+      rgb(0 0 0 / 0.5) 100%
+    ),
+    url("../assets/column/bg_stripe.webp");
+}
+
 article {
   background-color: white;
   color: black;
 
   width: 600px;
+  height: 100%;
   padding: 0 64px;
 }
 
