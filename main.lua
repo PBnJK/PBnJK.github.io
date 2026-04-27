@@ -2,7 +2,7 @@
 -- Compiles the website
 --
 -- This script searches through the 'content/' directory for .lua & .html files,
--- executing the .lua template files and outputting HTML to the 'site/' directory
+-- executing the .lua template files and outputting HTML to the 'docs/' directory
 --
 -- This script should be run before commiting the website to Github. There's a
 -- pre-commit hook in place that does that, though obviosly it's not commited to
@@ -129,7 +129,7 @@ end
 
 local function main()
 	local input_dir = arg[1] or "./content"
-	local output_dir = arg[2] or "./site"
+	local output_dir = arg[2] or "./docs"
 
 	cleanup_output(output_dir)
 	local err = build(input_dir, output_dir)
