@@ -9,16 +9,12 @@ return t.Document({
 		t.link({ href = "css/style.css", rel = "stylesheet" }),
 	}),
 	t.body({
-		t.div({
-			id = "wrapper",
+		t.div["#wrapper"]({
 			t.main({
 				t.h1("Hello & Welcome!"),
-				t.div({
-					id = "postcard-container",
-					t.div.infobox({
-						id = "postcard-infobox",
-						t.figure({
-							id = "postcard-selfie",
+				t.div["#postcard-container"]({
+					t.div.infobox["#postcard-infobox"]({
+						t.figure["#postcard-selfie"]({
 							t.img({
 								src = "assets/placeholder_selfie.jpg",
 								alt = "Monochrome, stylised portrait of a young man with glasses and scraggly hair. He has a big smile on his face, and appears to be wearing a dress shirt",
@@ -27,8 +23,7 @@ return t.Document({
 							}),
 							t.figcaption("(there will be a picture of me here in the future!)"),
 						}),
-						t.div({
-							id = "postcard-data",
+						t.div["#postcard-data"]({
 							t.h2({
 								t.mark("About me"),
 							}),

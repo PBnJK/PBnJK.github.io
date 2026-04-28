@@ -142,15 +142,14 @@ end
 function template.__index(html, key)
 	key = key:gsub("_", "-")
 
-	local classes = {}
-	local next = next
-
-	local thunk = {}
-	thunk = setmetatable(thunk, {
-		__call = function(_, args)
-			if next(classes) ~= nil then
-				if type(args) == "table" then
-					local class_list = table.concat(classes, " ")
+	local thunk = setmetatable({
+		classes = {},
+		id = "",
+	}, {
+		__call = function(thunk, args)
+			if type(args) == "table" then
+				if next(thunk.classes) ~= nil then
+					local class_list = table.concat(thunk.classes, " ")
 					if args.class then
 						args.class = args.class .. " " .. class_list
 					else
@@ -158,21 +157,28 @@ function template.__index(html, key)
 					end
 				end
 
-				classes = {}
+				if thunk.id ~= "" then
+					args.id = thunk.id
+				end
 			end
 
 			return html.Element(key, args)
 		end,
-		__index = function(_, class)
-			class = class:gsub("_", "-")
-			table.insert(classes, class)
+		__index = function(thunk, attr)
+			if attr:sub(1, 1) == "#" then
+				-- ID
+				attr = attr:sub(2)
+				thunk.id = attr
+			else
+				-- Class
+				table.insert(thunk.classes, attr)
+			end
 
-			html[class] = thunk
 			return thunk
 		end,
 	})
 
-	html[key] = thunk -- memoise for future use; __index will not be called then
+	-- html[key] = thunk -- memoise for future use; __index will not be called then
 	return thunk
 end
 
