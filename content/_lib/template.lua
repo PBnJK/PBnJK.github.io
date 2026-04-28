@@ -40,6 +40,14 @@ function Html:__tostring()
 	return self.text
 end
 
+function Html.__call(args)
+	print(args)
+end
+
+function Html.__index(html, key)
+	print(html, key)
+end
+
 -- Void elements (elements without closing tags)
 local void_elements = {
 	area = true,
@@ -57,10 +65,6 @@ local void_elements = {
 	track = true,
 	wbr = true,
 }
-
-local function attr_cmp(a, b)
-	return a[1] < b[1]
-end
 
 --- Writes HTML to a table
 --- @param t table
@@ -106,7 +110,9 @@ function template.Element(kind, def)
 			table.insert(attr, { key, value })
 		end
 	end
-	table.sort(attr, attr_cmp)
+	table.sort(attr, function(a, b)
+		return a[1] < b[1]
+	end)
 
 	-- Open tag
 	local el = { "<", kind }
@@ -135,9 +141,36 @@ end
 
 function template.__index(html, key)
 	key = key:gsub("_", "-")
-	local function thunk(def)
-		return html.Element(key, def)
-	end
+
+	local classes = {}
+	local next = next
+
+	local thunk = {}
+	thunk = setmetatable(thunk, {
+		__call = function(_, args)
+			if next(classes) ~= nil then
+				if type(args) == "table" then
+					local class_list = table.concat(classes, " ")
+					if args.class then
+						args.class = args.class .. " " .. class_list
+					else
+						args.class = class_list
+					end
+				end
+
+				classes = {}
+			end
+
+			return html.Element(key, args)
+		end,
+		__index = function(_, class)
+			class = class:gsub("_", "-")
+			table.insert(classes, class)
+
+			html[class] = thunk
+			return thunk
+		end,
+	})
 
 	html[key] = thunk -- memoise for future use; __index will not be called then
 	return thunk

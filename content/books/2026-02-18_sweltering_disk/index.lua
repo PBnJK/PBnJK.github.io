@@ -8,12 +8,10 @@ return t.Document({
 		t.title("The Sweltering Disk — Short Story"),
 		t.link({ href = "/css/book.css", rel = "stylesheet" }),
 	}),
-	t.body({
-		class = "stripe-bg",
+	t.body.stripe_bg({
 		t.article({
 			t.h1("the sweltering disk"),
-			t.div({
-				class = "center",
+			t.div.center({
 				t.img({
 					src = "/assets/img_sweltering_disk.webp",
 					alt = "drawing of a man holding up a disk, a light shining out its rear end",
@@ -166,8 +164,7 @@ return t.Document({
 				"To be continued...",
 				t.i("(soon!)"),
 			}),
-			t.p({
-				class = "center",
+			t.p.center({
 				t.i("\u{2639} FIN \u{2639}"),
 			}),
 		}),

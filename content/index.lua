@@ -1,6 +1,6 @@
 local t = require("template")
 
-return t.html({
+return t.Document({
 	lang = "en",
 	t.head({
 		t.meta({ charset = "UTF-8" }),
@@ -15,10 +15,8 @@ return t.html({
 				t.h1("Hello & Welcome!"),
 				t.div({
 					id = "postcard-container",
-					t.div({
+					t.div.infobox({
 						id = "postcard-infobox",
-						class = "infobox",
-
 						t.figure({
 							id = "postcard-selfie",
 							t.img({

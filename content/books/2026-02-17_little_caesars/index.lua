@@ -8,12 +8,10 @@ return t.Document({
 		t.title("pedrob's website"),
 		t.link({ href = "/css/book.css", rel = "stylesheet" }),
 	}),
-	t.body({
-		class = "glitch-column",
+	t.body.glitch_column({
 		t.article({
 			t.h1("little caesars"),
-			t.div({
-				class = "center",
+			t.div.center({
 				t.img({
 					src = "/assets/img_little_caesars.webp",
 					alt = "drawing of a woman in a bathtub",
@@ -199,8 +197,7 @@ return t.Document({
 
 			t.p([[The thought came and went naturally. She drove to work in silence.]]),
 
-			t.p({
-				class = "center",
+			t.p.center({
 				t.i("\u{263A} FIN \u{263A}"),
 			}),
 		}),
