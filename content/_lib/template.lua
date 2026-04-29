@@ -149,7 +149,7 @@ function template.__index(html, key)
 		__call = function(thunk, args)
 			if type(args) == "table" then
 				if next(thunk.classes) ~= nil then
-					local class_list = table.concat(thunk.classes, " ")
+					local class_list = table.concat(thunk.classes, " "):gsub("_", "-")
 					if args.class then
 						args.class = args.class .. " " .. class_list
 					else
