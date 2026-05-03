@@ -16,9 +16,12 @@
 
 html,
 body {
-  margin: 12px 16px;
-  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
+}
+
+body {
+  margin: 16px 32px;
 }
 
 html {
@@ -30,16 +33,16 @@ hr {
   border-top: 4px dotted black;
 
   margin: 16px 0;
-
-  width: 100%;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Goudy Bookletter 1911", serif;
-  font-size: 40pt;
-
   margin: 0;
-  transform: rotate(-0.5deg);
 }
 
 h1::before {
@@ -52,11 +55,31 @@ h2::before {
   color: var(--bg-secondary-red);
 }
 
+h3::before {
+  content: "### ";
+  color: var(--bg-secondary-red);
+}
+
+h4::before {
+  content: "#### ";
+  color: var(--bg-secondary-red);
+}
+
+h5::before {
+  content: "##### ";
+  color: var(--bg-secondary-red);
+}
+
+h6::before {
+  content: "###### ";
+  color: var(--bg-secondary-red);
+}
+
 main {
   background-color: var(--bg-primary);
-
-  width: 1080px;
   height: 100vh;
+
+  width: 800px;
 }
 
 mark {
@@ -71,8 +94,15 @@ mark {
   background-color: var(--bg-secondary-blue);
 }
 
+#wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .infobox {
-  padding: 4px 8px;
+  position: relative;
+  margin-bottom: 32px;
+  padding: 32px 48px;
 
   background-color: var(--bg-highlight);
 
@@ -80,15 +110,41 @@ mark {
   display: flex;
   flex-direction: row;
 
-  width: 760px;
-  padding-right: 64px;
+  gap: 24px;
+
+  box-shadow: 16px 16px black;
 }
 
-.infobox-container {
-  height: 512px;
+.infobox- {
+}
+
+.infobox-screw-tl {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.infobox-screw-tr {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.infobox-screw-bl {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+
+.infobox-screw-br {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
 }
 
 #selfie {
+  margin: 0;
+
   display: flex;
   flex-direction: column;
 

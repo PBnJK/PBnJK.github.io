@@ -26,11 +26,11 @@ local function cleanup_output(path)
 			if attr.mode == "directory" then
 				if entry ~= "assets" and entry ~= "css" and entry ~= "js" then
 					lfs.rmdir(file)
-					print("- deleted folder .... " .. file)
+					print("- deleted folder ...... " .. file)
 				end
 			else
 				os.remove(file)
-				print("- deleted file ...... " .. file)
+				print("- deleted file ........ " .. file)
 			end
 		end
 	end
@@ -48,7 +48,7 @@ local function traverse_folder(input_dir, output_dir, path)
 		input_path = input_dir
 	end
 
-	print("- building folder ... " .. input_path)
+	print("- building folder ..... " .. input_path)
 
 	for entry in lfs.dir(input_path) do
 		if entry ~= "." and entry ~= ".." then
@@ -77,7 +77,7 @@ local function traverse_folder(input_dir, output_dir, path)
 				local ext = entry:match("^.+%.(.+)$")
 
 				if ext == "lua" then
-					print("* - building file ... " .. file)
+					print("  * - building file ... " .. file)
 					local result = tostring(dofile(file))
 
 					local filename = entry:match("^(.+)%..+$") .. ".html"
@@ -95,7 +95,7 @@ local function traverse_folder(input_dir, output_dir, path)
 					f:write(result)
 					f:close()
 				elseif ext == "html" then
-					print("* - copying file ..... " .. file)
+					print("  * - copying file ..... " .. file)
 					local f = io.open(file, "r")
 					assert(f, "Could not open input file '" .. file .. "'")
 
@@ -133,8 +133,12 @@ local function main()
 
 	cleanup_output(output_dir)
 	local err = build(input_dir, output_dir)
-
-	os.exit(err)
+	if err ~= 0 then
+		print("Build failed!")
+		os.exit(err)
+	else
+		print("Built!")
+	end
 end
 
 main()

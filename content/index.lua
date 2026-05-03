@@ -1,5 +1,26 @@
 local t = require("template")
 
+-- Creates an "infobox"
+-- This is a box with a drop-shadow and screws on its four corners
+local function infobox(id, def)
+	local function screw(class)
+		return t.img({
+			src = "/assets/svgs/screw.svg",
+			width = 24,
+			height = 24,
+			class = class,
+		})
+	end
+
+	return t.div.infobox[id]({
+		screw("infobox-screw-tl"),
+		screw("infobox-screw-tr"),
+		screw("infobox-screw-bl"),
+		screw("infobox-screw-br"),
+		def,
+	})
+end
+
 return t.Document({
 	lang = "en",
 	t.head({
@@ -14,7 +35,7 @@ return t.Document({
 				t.h1("Hello & Welcome!"),
 				t.hr(),
 				t.div["#container"]({
-					t.div.infobox["#infobox"]({
+					infobox("#infobox-pii", {
 						t.figure["#selfie"]({
 							t.img({
 								src = "assets/placeholder_selfie.jpg",
@@ -40,19 +61,23 @@ return t.Document({
 							}),
 						}),
 					}),
-				}),
-				t.h2("temp (pls ignore ugly links)"),
-				t.ul({
-					t.li({
-						t.a({
-							href = "books/",
-							"books",
-						}),
-					}),
-					t.li({
-						t.a({
-							href = "blog/",
-							"blog",
+					infobox("#infobox-interests", {
+						t.div({
+							t.h2("My works"),
+							t.ul({
+								t.li({
+									t.a({
+										href = "books/",
+										"books",
+									}),
+								}),
+								t.li({
+									t.a({
+										href = "blog/",
+										"blog",
+									}),
+								}),
+							}),
 						}),
 					}),
 				}),
