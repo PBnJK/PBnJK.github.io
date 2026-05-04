@@ -1,0 +1,210 @@
+/* Main style for the blog pages */
+
+hr {
+  border: none;
+  border-top: 4px dotted black;
+
+  margin: 16px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Goudy Bookletter 1911", serif;
+  margin: 0;
+}
+
+h1::before {
+  content: "# ";
+  color: var(--bg-secondary-red);
+}
+
+h2::before {
+  content: "## ";
+  color: var(--bg-secondary-red);
+}
+
+h3::before {
+  content: "### ";
+  color: var(--bg-secondary-red);
+}
+
+h4::before {
+  content: "#### ";
+  color: var(--bg-secondary-red);
+}
+
+h5::before {
+  content: "##### ";
+  color: var(--bg-secondary-red);
+}
+
+h6::before {
+  content: "###### ";
+  color: var(--bg-secondary-red);
+}
+
+main {
+  background-color: var(--bg-primary);
+  width: 800px;
+
+  margin-bottom: 64px;
+}
+
+p {
+  text-align: justify;
+}
+
+blockquote {
+  text-align: justify;
+
+  border-left: 8px solid lightgrey;
+
+  padding: 0.5em 10px;
+
+  background: var(--bg-secondary);
+  color: var(--font-secondary);
+}
+
+#wrapper {
+  margin-left: 256px;
+}
+
+#article-header {
+  border: 4px solid black;
+
+  padding: 16px 32px;
+  margin-bottom: 32px;
+}
+
+.p-with-aside {
+  position: relative;
+}
+
+.p-with-aside p {
+  margin: 0;
+}
+
+.p-with-aside aside {
+  position: absolute;
+  width: 480px;
+
+  top: 0;
+  left: 832px;
+
+  border-left: 8px solid lightgrey;
+
+  padding: 0.5em 10px;
+
+  background: var(--bg-secondary);
+  color: var(--font-secondary);
+}
+
+.citation {
+  border-left: 8px solid lightgrey;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D";
+}
+
+.citation:before {
+  content: open-quote;
+
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.citation p {
+  display: inline;
+}
+
+.quote-author {
+  text-align: right;
+}
+
+.song {
+  position: relative;
+  width: 932px;
+  left: -66px;
+}
+
+.song-meta {
+  background-color: var(--bg-secondary);
+  padding: 8px 16px;
+
+  margin-top: 32px;
+  margin-bottom: 16px;
+
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.song-title {
+  font-size: 1.6em;
+  font-family: "Goudy Bookletter 1911", serif;
+
+  margin: 0;
+}
+
+.song-en-title {
+  font-size: 1.2em;
+  font-family: "Goudy Bookletter 1911", serif;
+  color: var(--font-secondary);
+
+  margin: 0;
+}
+
+.song-contents p {
+  margin: 0;
+}
+
+.lyric-box {
+  display: grid;
+  grid-template-columns: 1fr 10fr 10fr;
+  grid-gap: 8px;
+
+  padding: 4px 16px;
+
+  background-color: var(--bg-secondary);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.lyric-box:hover {
+  background-color: var(--bg-highlight);
+  cursor: pointer;
+}
+
+.lyric-box:hover .lyric-time {
+  color: var(--font-primary);
+}
+
+.lyric-time {
+  color: var(--font-disabled);
+
+  margin: 0;
+  grid-column: 1;
+}
+
+.lyric-text {
+  margin: 0;
+  grid-column: 2;
+}
+
+.lyric-og {
+  color: var(--font-secondary);
+  text-align: right;
+  text-align-last: right;
+
+  margin: 0;
+  grid-column: 3;
+}
+
+.lyric-note {
+  color: var(--font-secondary);
+  text-align: center;
+}

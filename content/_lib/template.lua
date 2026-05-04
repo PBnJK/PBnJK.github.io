@@ -147,6 +147,12 @@ function template.__index(html, key)
 		id = "",
 	}, {
 		__call = function(thunk, args)
+			if type(args) == "string" then
+				args = { args }
+			elseif type(args) == "nil" then
+				args = {}
+			end
+
 			if type(args) == "table" then
 				if next(thunk.classes) ~= nil then
 					local class_list = table.concat(thunk.classes, " "):gsub("_", "-")

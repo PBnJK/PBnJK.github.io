@@ -1,33 +1,5 @@
 /* Main style for the front page! */
 
-:root {
-  --bg-primary: white;
-  --bg-highlight: white;
-
-  --bg-secondary-red: #f82020;
-  --bg-secondary-yellow: #f8f040;
-  --bg-secondary-blue: #1010e0;
-}
-
-@font-face {
-  font-family: "Goudy Bookletter 1911";
-  src: url("../assets/fonts/GoudyBookletter1911-Regular.ttf");
-}
-
-html,
-body {
-  max-width: 100%;
-  min-height: 100vh;
-}
-
-body {
-  margin: 16px 32px;
-}
-
-html {
-  font-family: sans-serif;
-}
-
 hr {
   border: none;
   border-top: 4px dotted black;
@@ -115,7 +87,9 @@ mark {
   box-shadow: 16px 16px black;
 }
 
-.infobox- {
+#infobox-pii {
+  display: flex;
+  align-items: center;
 }
 
 .infobox-screw-tl {
