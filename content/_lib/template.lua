@@ -25,6 +25,7 @@ end
 
 --- Wrapper for strings
 local Html = {}
+template.HtmlStr = Html
 
 --- Builds an Html type
 --- @param text string

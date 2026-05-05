@@ -69,6 +69,11 @@ blockquote {
   color: var(--font-secondary);
 }
 
+q {
+  font-style: italic;
+  quotes: "\201C" "\201D";
+}
+
 #wrapper {
   margin-left: 256px;
 }
@@ -80,12 +85,39 @@ blockquote {
   margin-bottom: 32px;
 }
 
-.p-with-aside {
-  position: relative;
+#metadata {
+  display: flex;
+  flex-direction: row;
 }
 
-.p-with-aside p {
+#reading-time {
+  display: inline;
+
   margin: 0;
+}
+
+#reading-time::before {
+  content: "•";
+  padding: 0 1ch;
+}
+
+.tags {
+  display: inline-flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1ch;
+
+  margin: 0;
+  padding: 0;
+}
+
+.tags::before {
+  content: "•";
+  padding-left: 1ch;
+}
+
+.p-with-aside {
+  position: relative;
 }
 
 .p-with-aside aside {
@@ -96,8 +128,7 @@ blockquote {
   left: 832px;
 
   border-left: 8px solid lightgrey;
-
-  padding: 0.5em 10px;
+  padding: 0 16px;
 
   background: var(--bg-secondary);
   color: var(--font-secondary);
@@ -114,22 +145,16 @@ blockquote {
 
   font-size: 4em;
   line-height: 0.1em;
-  margin-right: 0.25em;
+  margin-right: 0.1em;
   vertical-align: -0.4em;
 }
 
-.citation p {
-  display: inline;
-}
-
 .quote-author {
+  width: 100%;
   text-align: right;
-}
 
-.song {
-  position: relative;
-  width: 932px;
-  left: -66px;
+  margin: 16px 0 0 0;
+  color: var(--font-disabled);
 }
 
 .song-meta {
@@ -167,11 +192,12 @@ blockquote {
   grid-template-columns: 1fr 10fr 10fr;
   grid-gap: 8px;
 
-  padding: 4px 16px;
+  padding: 4px 16px 4px 8px;
 
   background-color: var(--bg-secondary);
-  border-radius: 8px;
-  margin-bottom: 8px;
+  border: 4px solid var(--bg-secondary);
+
+  margin-bottom: 4px;
 }
 
 .lyric-box:hover {
@@ -188,6 +214,9 @@ blockquote {
 
   margin: 0;
   grid-column: 1;
+
+  padding-right: 8px;
+  border-right: 4px solid var(--font-disabled);
 }
 
 .lyric-text {

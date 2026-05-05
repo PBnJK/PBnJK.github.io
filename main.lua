@@ -13,6 +13,8 @@ require("os")
 
 local lfs = require("lfs")
 
+_G.tagmap = {}
+
 -- Cleans the output directory
 local function cleanup_output(path)
 	print("Cleaning up...")
@@ -78,7 +80,6 @@ local function traverse_folder(input_dir, output_dir, path)
 
 				if ext == "lua" then
 					print("  * - building file ... " .. file)
-					local result = tostring(dofile(file))
 
 					local filename = entry:match("^(.+)%..+$") .. ".html"
 
@@ -91,6 +92,8 @@ local function traverse_folder(input_dir, output_dir, path)
 
 					local f = io.open(output_file, "w")
 					assert(f, "Could not open output file '" .. output_file .. "'")
+
+					local result = tostring(assert(loadfile(file))(output_file))
 
 					f:write(result)
 					f:close()
