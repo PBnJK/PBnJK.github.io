@@ -3,21 +3,23 @@ require("math")
 
 local t = require("template")
 
+-- Words-per-minute (used for computing average reading time)
 local WPM = 180
 
-local function compute_tags_element(tags)
+-- Builds the element containing the list of blog post tags
+local function build_tags_element(tags)
 	if tags == nil then
 		return nil
 	end
 
+	-- Collate tags
 	local tags_elements = {}
-
 	for _, tag in ipairs(tags) do
 		table.insert(
 			tags_elements,
 			t.li({
 				t.a({
-					href = "/blog/tag/" .. tag .. ".html",
+					href = "/blog/tags/" .. tag .. ".html",
 					"#" .. tag,
 				}),
 			})
@@ -27,8 +29,9 @@ local function compute_tags_element(tags)
 	return t.ul.tags(tags_elements)
 end
 
-local function compute_time_element(timetable)
-	if not timetable then
+-- Builds the element containing the publishing date of the blog post
+local function build_time_element(timetable)
+	if timetable == nil then
 		return t.time({
 			datetime = "0000-00-00",
 			"Unknown publishing date",
@@ -37,7 +40,10 @@ local function compute_time_element(timetable)
 
 	local time = os.time(timetable)
 
+	-- Date for the <time> element 'datetime' attribute
 	local datetime_string = os.date("%Y-%m-%d", time)
+
+	-- Date displayed to the user
 	local usertime_string = os.date("%B %d, %Y", time)
 
 	return t.time({
@@ -46,18 +52,20 @@ local function compute_time_element(timetable)
 	})
 end
 
-local function calculate_text_reading_time(text)
+-- Returns the word count in a given block of text
+local function get_word_count(text)
 	return select(2, text:gsub("%S+", ""))
 end
 
+-- Calculates the average reading time of the blog post
 local function get_reading_time(def)
 	local reading_time = 0
 
 	for _, child in ipairs(def) do
 		if type(child) == "string" then
-			reading_time = reading_time + calculate_text_reading_time(child)
+			reading_time = reading_time + get_word_count(child)
 		elseif type(child) == "table" and getmetatable(child) == t.HtmlStr then
-			reading_time = reading_time + calculate_text_reading_time(child.text)
+			reading_time = reading_time + get_word_count(child.text)
 		elseif type(child) == "table" then
 			reading_time = reading_time + get_reading_time(child)
 		end
@@ -66,12 +74,13 @@ local function get_reading_time(def)
 	return reading_time
 end
 
-local function compute_reading_time_element(def)
-	local reading_time = get_reading_time(def) / WPM
-
+-- Builds the element containing the average reading time of the blog post
+local function build_reading_time_element(def)
 	local function round(n)
 		return math.floor(n + 0.5)
 	end
+
+	local reading_time = get_reading_time(def) / WPM
 
 	local time
 	if reading_time < 1 then
@@ -85,18 +94,72 @@ local function compute_reading_time_element(def)
 	return t.p["#reading-time"](time)
 end
 
-function t.Blog(metadata, def)
-	for key, value in pairs(metadata.tags) do
-		print(key, value)
-		if _G.tagmap[key] ~= nil then
-			table.insert(_G.tagmap[key], value)
-			print(_G.tagmap[key])
-		else
-			_G.tagmap[key] = value
-		end
+function t.ColorSchemeToggle()
+	return t.button["#color-switcher"]({
+		t.span["#color-sun"]("☀️"),
+		t.span["#color-moon"]("🌙"),
+	})
+end
+
+function t.Subtitle(text)
+	return t.p.subtitle({
+		t.i(text),
+	})
+end
+
+function t.Footnote(num)
+	return t.a.footnote({
+		href = "#foot-" .. num,
+		t.b({ t.sup("[" .. num .. "]") }),
+	})
+end
+
+function t.FootnoteSection(...)
+	local items = {}
+	for idx, footnote in ipairs({ ... }) do
+		table.insert(
+			items,
+			t.li["#foot-" .. idx]({
+				"[" .. idx .. "]: ",
+				footnote,
+			})
+		)
 	end
 
-	return t.Document({
+	return t.div({
+		t.hr(),
+		t.h2("Footnotes"),
+		t.ul(items),
+	})
+end
+
+function t.Aside(content, aside_content)
+	return t.div.p_with_aside({
+		t.p({
+			content,
+		}),
+		t.aside({
+			t.p({
+				aside_content,
+			}),
+		}),
+	})
+end
+
+function t.Author(name)
+	return t.p.quote_author({ t.i({ "— ", name }) })
+end
+
+function t.Cite(def, who)
+	return t.blockquote.citation({ def, t.br(), t.Author(who) })
+end
+
+function t.Blog(metadata, def)
+	if metadata.tags == nil then
+		metadata.tags = {}
+	end
+
+	local doc = t.Document({
 		lang = "en",
 		t.head({
 			t.meta({ charset = "UTF-8" }),
@@ -104,6 +167,7 @@ function t.Blog(metadata, def)
 			t.title("pedrob's blog"),
 			t.link({ href = "/css/root.css", rel = "stylesheet" }),
 			t.link({ href = "/css/blog.css", rel = "stylesheet" }),
+			t.script({ src = "/js/blog.js" }),
 		}),
 		t.body({
 			t.div["#wrapper"]({
@@ -113,17 +177,22 @@ function t.Blog(metadata, def)
 							t.h1(metadata.title or "Untitled"),
 							t.hr(),
 							t.div["#metadata"]({
-								compute_time_element(metadata.date),
-								compute_reading_time_element(def),
-								compute_tags_element(metadata.tags),
+								build_time_element(metadata.date),
+								build_reading_time_element(def),
+								build_tags_element(metadata.tags),
 							}),
 						}),
 					}),
+					t.ColorSchemeToggle(),
 					def,
 				}),
 			}),
 		}),
 	})
+
+	doc.metadata = metadata
+
+	return doc
 end
 
 return t

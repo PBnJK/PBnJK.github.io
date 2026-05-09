@@ -4,24 +4,10 @@
 -- Heavily based on:
 --   https://riki.house/lua-html
 
+local util = require("util")
+
 local template = {}
 setmetatable(template, template)
-
--- HTML character replacement
-local escape_subs = {
-	["&"] = "&amp;",
-	["<"] = "&lt;",
-	[">"] = "&gt;",
-	['"'] = "&quot;",
-	["'"] = "&#39;",
-}
-
---- Escapes HTML characters
---- @param str string
---- @return string
-local function escape_html(str)
-	return (str:gsub("([&<>\"'])", escape_subs))
-end
 
 --- Wrapper for strings
 local Html = {}
@@ -83,7 +69,7 @@ end
 local function write_children(el, def)
 	for _, child in ipairs(def) do
 		if type(child) == "string" then
-			table.insert(el, escape_html(child))
+			table.insert(el, util.escape_html(child))
 		elseif type(child) == "table" and getmetatable(child) == Html then
 			table.insert(el, child.text)
 		elseif type(child) == "table" then
@@ -118,7 +104,7 @@ function template.Element(kind, def)
 	-- Open tag
 	local el = { "<", kind }
 	for _, a in ipairs(attr) do
-		write(el, " ", a[1], '="', escape_html(a[2]), '"')
+		write(el, " ", a[1], '="', util.escape_html(a[2]), '"')
 	end
 	table.insert(el, ">")
 

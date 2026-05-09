@@ -1,17 +1,19 @@
 /* Root styles for the website (I think this is bad practice!!!) */
 
 :root {
-  --bg-primary: white;
-  --bg-secondary: #f8f8f8;
-  --bg-highlight: white;
+  color-scheme: light dark;
+
+  --bg-primary: light-dark(white, #181818);
+  --bg-secondary: light-dark(#e8e8e8, #383838);
+  --bg-highlight: light-dark(white, black);
 
   --bg-secondary-red: #f82020;
   --bg-secondary-yellow: #f8f040;
-  --bg-secondary-blue: #1010e0;
+  --bg-secondary-blue: light-dark(#1010e0, #8080f8);
 
-  --font-primary: black;
-  --font-secondary: #484848;
-  --font-disabled: #a8a8a8;
+  --font-primary: light-dark(black, #d0d4d8);
+  --font-secondary: light-dark(#484848, #b8b8b8);
+  --font-disabled: #848484;
 }
 
 @font-face {
@@ -21,6 +23,8 @@
 
 html,
 body {
+  background-color: var(--bg-primary);
+
   max-width: 100%;
   min-height: 100vh;
 }

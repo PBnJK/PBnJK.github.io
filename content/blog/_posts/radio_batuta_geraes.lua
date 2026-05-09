@@ -1,57 +1,4 @@
-local t = require("tmpl_blog")
-
-local function aside(content, aside_content)
-	return t.div.p_with_aside({
-		t.p({
-			content,
-		}),
-		t.aside({
-			t.p({
-				aside_content,
-			}),
-		}),
-	})
-end
-
-local function author(name)
-	return t.p.quote_author({ t.i({ "— ", name }) })
-end
-
-local function cite(def, who)
-	return t.blockquote.citation({ def, t.br(), author(who) })
-end
-
-local function song(title, en_title, def)
-	return t.div({
-		t.hr(),
-		t.div({
-			t.div.song_meta({
-				t.p.song_title(title),
-				t.p.song_en_title({
-					"(",
-					en_title,
-					")",
-				}),
-			}),
-			t.div.song_contents(def),
-		}),
-		t.hr(),
-	})
-end
-
-local function lyric(time, en_lyric, pt_lyric)
-	return t.div.lyric_box({
-		t.p.lyric_time({ t.i(time) }),
-		t.p.lyric_text(en_lyric),
-		t.p.lyric_og(pt_lyric),
-	})
-end
-
-local function note(text)
-	return t.p.lyric_note({
-		t.i(text),
-	})
-end
+local t = require("tmpl_lyrics")
 
 return t.Blog({
 	title = "‘Geraes’: Minas, world, Milton (in English)",
@@ -118,7 +65,7 @@ return t.Blog({
 		other songs as well, and revisiting stories from Milton and his friends, transforming
 		history, political movements, and the richness of popular culture into music.
 	]]),
-	aside(
+	t.Aside(
 		{
 			[[
 		And this Dori Caymmi theme also plays into the cover art for “Geraes”, an illustration
@@ -143,7 +90,7 @@ return t.Blog({
 		transformation of a landscape and its people, with the end of the Bahia-Minas
 		railroad in “Ponta de Areia”.
 	]]),
-	aside(
+	t.Aside(
 		{
 			[[
 		On the other hand, in “Geraes”, we will, starting with the outdated spelling
@@ -163,7 +110,7 @@ return t.Blog({
 		The sound of “Geraes” is that of the land. But what land? Milton explained at the
 		release of the LP:
 	]]),
-	cite(
+	t.Cite(
 		[[
 		When we recorded “Minas”, I already wanted to do “Geraes”. But it had only
   		been a year, it was too early. If before I'd already never identified myself
@@ -198,16 +145,15 @@ return t.Blog({
 		These appearances, so diverse and stellar, reflected the aesthetic disquietude
 		of Milton—the new airs of his music. But also his prestige and central importance.
 	]]),
-	aside(
-		t.blockquote({
+	t.Aside(
+		t.Cite({
 			"You already have the name of a doctor, brother",
 			t.br(),
 			"And you're the one that will command now, it is your mission",
 			t.br(),
 			"Singing together with the crowd",
 			t.br(),
-			author("“Nosso Homem em Três Pontas”, by Dori Caymmi"),
-		}),
+		}, "“Nosso Homem em Três Pontas”, by Dori Caymmi"),
 		[[
         Important or well-educated people were often referred to as “doctors” by the
   		folks from poorer or simpler backgrounds as a way of recognising their
@@ -233,7 +179,7 @@ return t.Blog({
 		magnetism of his overwhelming presence. In the words of his collaborator Ronaldo
 		Bastos:
 	]]),
-	cite({
+	t.Cite({
 		[[
 		Milton arrived ready, took the leap and fronted the most transcendental fusion
 		of continents and musical eras of the world that I've ever witnessed. Nothing
@@ -251,12 +197,12 @@ return t.Blog({
 		destruction.
 	]]),
 	t.p("Like in “Simples”, by Nelson Angelo, the closing song of “Minas”:"),
-	song("Simples", "Simple", {
-		note("(excerpt)"),
+	t.Song("Simples", "Simple", {
+		t.Text("(excerpt)"),
 		t.br(),
-		lyric("06:28", "Look: the gold of the mine turned to poison", "Olha: o ouro da mina virou veneno"),
-		lyric("06:41", "The blood on the earth turned into a toy", "O sangue na terra virou brinquedo"),
-		lyric("06:47", "And that child sitting there...!", "E aquela criança ali sentada...!"),
+		t.Lyric("06:28", "Look: the gold of the mine turned to poison", "Olha: o ouro da mina virou veneno"),
+		t.Lyric("06:41", "The blood on the earth turned into a toy", "O sangue na terra virou brinquedo"),
+		t.Lyric("06:47", "And that child sitting there...!", "E aquela criança ali sentada...!"),
 	}),
 	t.p([[
 		To arrive at “Geraes”, it was first needed to stop by “Minas”, said Milton Nascimento
@@ -268,54 +214,54 @@ return t.Blog({
     	“Fazenda”.
 	]]),
 	t.p("Let us catch that little train drawn so sweetly by Milton on the cover of his record:"),
-	song("Fazenda", "Farm", {
-		lyric("00:00", "Water to drink", "Água de beber"),
-		lyric("00:00", "Spigot on the backyard", "Bica no quintal"),
-		lyric("00:00", "A thirst for living it all", "Uma sede de viver tudo"),
+	t.Song("Fazenda", "Farm", {
+		t.Lyric("00:00", "Water to drink", "Água de beber"),
+		t.Lyric("00:00", "Spigot on the backyard", "Bica no quintal"),
+		t.Lyric("00:00", "A thirst for living it all", "Uma sede de viver tudo"),
 		t.br(),
-		lyric("00:00", "And to forget", "E o esquecer"),
-		lyric("00:00", "Was so normal", "Era tão normal"),
-		lyric("00:00", "That time stopped", "Que o tempo parava"),
+		t.Lyric("00:00", "And to forget", "E o esquecer"),
+		t.Lyric("00:00", "Was so normal", "Era tão normal"),
+		t.Lyric("00:00", "That time stopped", "Que o tempo parava"),
 		t.br(),
-		lyric("00:00", "And the boys", "E a meninada"),
-		lyric("00:00", "Breathed in the wind", "Respirava o vento"),
-		lyric("00:00", "Until night fell", "Até vir a noite"),
-		lyric("00:00", "And the old folks spoke", "E os velhos falavam"),
-		lyric("00:00", "Of the things of this life", "Coisas dessa vida"),
+		t.Lyric("00:00", "And the boys", "E a meninada"),
+		t.Lyric("00:00", "Breathed in the wind", "Respirava o vento"),
+		t.Lyric("00:00", "Until night fell", "Até vir a noite"),
+		t.Lyric("00:00", "And the old folks spoke", "E os velhos falavam"),
+		t.Lyric("00:00", "Of the things of this life", "Coisas dessa vida"),
 		t.br(),
-		lyric("00:00", "I was a child", "Eu era criança"),
-		lyric("00:00", "Today, it's you", "Hoje, é você"),
-		lyric("00:00", "And tomorrow, us", "E no amanhã, nós"),
+		t.Lyric("00:00", "I was a child", "Eu era criança"),
+		t.Lyric("00:00", "Today, it's you", "Hoje, é você"),
+		t.Lyric("00:00", "And tomorrow, us", "E no amanhã, nós"),
 		t.br(),
-		lyric("00:00", "I was a child", "Eu era criança"),
-		lyric("00:00", "Today, it's you", "Hoje, é você"),
-		lyric("00:00", "And tomorrow, us", "E no amanhã, nós"),
+		t.Lyric("00:00", "I was a child", "Eu era criança"),
+		t.Lyric("00:00", "Today, it's you", "Hoje, é você"),
+		t.Lyric("00:00", "And tomorrow, us", "E no amanhã, nós"),
 		t.br(),
-		lyric("00:00", "Water to drink", "Água de beber"),
-		lyric("00:00", "Spigot on the backyard", "Bica no quintal"),
-		lyric("00:00", "A thirst for living it all", "Uma sede de viver tudo"),
+		t.Lyric("00:00", "Water to drink", "Água de beber"),
+		t.Lyric("00:00", "Spigot on the backyard", "Bica no quintal"),
+		t.Lyric("00:00", "A thirst for living it all", "Uma sede de viver tudo"),
 		t.br(),
-		lyric("00:00", "And to forget", "E o esquecer"),
-		lyric("00:00", "Was so normal", "Era tão normal"),
-		lyric("00:00", "That time stopped", "Que o tempo parava"),
+		t.Lyric("00:00", "And to forget", "E o esquecer"),
+		t.Lyric("00:00", "Was so normal", "Era tão normal"),
+		t.Lyric("00:00", "That time stopped", "Que o tempo parava"),
 		t.br(),
-		lyric("00:00", "There were songbirds", "Tinha sabiá"),
-		lyric("00:00", "There were orange trees", "Tinha laranjeira"),
-		lyric("00:00", "There were mangoes", "Tinha manga rosa"),
-		lyric("00:00", "There was the morning", "Tinha o sol da manhã"),
+		t.Lyric("00:00", "There were songbirds", "Tinha sabiá"),
+		t.Lyric("00:00", "There were orange trees", "Tinha laranjeira"),
+		t.Lyric("00:00", "There were mangoes", "Tinha manga rosa"),
+		t.Lyric("00:00", "There was the morning", "Tinha o sol da manhã"),
 		t.br(),
-		lyric("00:00", "And at farewell", "E na despedida"),
-		lyric("00:00", "Aunt and uncle on the porch", "Tios na varanda"),
-		lyric("00:00", "Jeep on the road", "Jipe na estrada"),
-		lyric("00:00", "And my heart stayed there", "E o coração lá"),
+		t.Lyric("00:00", "And at farewell", "E na despedida"),
+		t.Lyric("00:00", "Aunt and uncle on the porch", "Tios na varanda"),
+		t.Lyric("00:00", "Jeep on the road", "Jipe na estrada"),
+		t.Lyric("00:00", "And my heart stayed there", "E o coração lá"),
 		t.br(),
-		lyric("00:00", "Aunt and uncle on the porch", "Tios na varanda"),
-		lyric("00:00", "Jeep on the road", "Jipe na estrada"),
-		lyric("00:00", "And my heart stayed there", "E o coração lá"),
+		t.Lyric("00:00", "Aunt and uncle on the porch", "Tios na varanda"),
+		t.Lyric("00:00", "Jeep on the road", "Jipe na estrada"),
+		t.Lyric("00:00", "And my heart stayed there", "E o coração lá"),
 		t.br(),
-		lyric("00:00", "Aunt and uncle on the porch", "Tios na varanda"),
-		lyric("00:00", "Jeep on the road", "Jipe na estrada"),
-		lyric("00:00", "And my heart stayed there", "E o coração lá"),
+		t.Lyric("00:00", "Aunt and uncle on the porch", "Tios na varanda"),
+		t.Lyric("00:00", "Jeep on the road", "Jipe na estrada"),
+		t.Lyric("00:00", "And my heart stayed there", "E o coração lá"),
 	}),
 	t.p([[
 		And so we enter the world of “Geraes”: with a farm asleep in memories and awakened
@@ -337,7 +283,7 @@ return t.Blog({
 		This engine drives home the distance of the place, but not of the memory, that will
 		now be manifested via the revisited and adapted oral culture of Minas Gerais.
 	]]),
-	aside(
+	t.Aside(
 		{
 			"We are speaking of “Calix Bento”, a ",
 			t.i("Congada "),
@@ -378,7 +324,7 @@ return t.Blog({
 		And like Tavinho Moura said, the adapter of the religious song, in an interview
 		with Dr. Sheyla Diniz:
 	]]),
-	cite(
+	t.Cite(
 		[[
 		Look, it's no use going there and listening to a folkloric theme, a popular
 		song, and thinking you can come here and translate it in a nice way. Because you
@@ -419,7 +365,7 @@ return t.Blog({
 		now read:
 	]]),
 
-	cite(
+	t.Cite(
 		[[
   And there shall come forth a rod out of the stem of Jesse, and a Branch shall
   grow out of his roots: And the spirit of the Lord shall rest upon him [...]
@@ -430,46 +376,46 @@ return t.Blog({
 		"Isaiah 11 (KJV, paraphrased)"
 	),
 
-	song("Calix Bento", "Blessed Chalice, in latin", {
-		lyric("00:00", "O God, save the oratory", "Ó Deus salve o oratório"),
-		lyric("00:00", "O God, save the oratory", "Ó Deus salve o oratório"),
-		lyric("00:00", "Where God made His dwelling, oiá, my God", "Onde Deus fez a morada, oiá, meu Deus"),
-		lyric("00:00", "Where God made His dwelling, oiá", "Onde Deus fez a morada, oiá"),
+	t.Song("Calix Bento", "Blessed Chalice, in latin", {
+		t.Lyric("00:00", "O God, save the oratory", "Ó Deus salve o oratório"),
+		t.Lyric("00:00", "O God, save the oratory", "Ó Deus salve o oratório"),
+		t.Lyric("00:00", "Where God made His dwelling, oiá, my God", "Onde Deus fez a morada, oiá, meu Deus"),
+		t.Lyric("00:00", "Where God made His dwelling, oiá", "Onde Deus fez a morada, oiá"),
 		t.br(),
-		lyric("00:00", "Where resides the Calix Bento", "Onde mora o Calix Bento"),
-		lyric("00:00", "Where resides the Calix Bento", "Onde mora o Calix Bento"),
-		lyric("00:00", "And the consecrated host, oiá, my God", "E a hóstia consagrada, oiá, meu Deus"),
-		lyric("00:00", "And the consecrated host, oiá", "E a hóstia consagrada, oiá"),
+		t.Lyric("00:00", "Where resides the Calix Bento", "Onde mora o Calix Bento"),
+		t.Lyric("00:00", "Where resides the Calix Bento", "Onde mora o Calix Bento"),
+		t.Lyric("00:00", "And the consecrated host, oiá, my God", "E a hóstia consagrada, oiá, meu Deus"),
+		t.Lyric("00:00", "And the consecrated host, oiá", "E a hóstia consagrada, oiá"),
 		t.br(),
-		lyric("00:00", "From Jesse came the rod", "De Jessé nasceu a vara"),
-		lyric("00:00", "From Jesse came the rod", "De Jessé nasceu a vara"),
-		lyric("00:00", "And from the rod grew a branch, oiá, my God", "E da vara nasceu a flor, oiá, meu Deus"),
-		lyric("00:00", "And from the rod grew a branch, oiá", "E da vara nasceu a flor, oiá"),
+		t.Lyric("00:00", "From Jesse came the stem", "De Jessé nasceu a vara"),
+		t.Lyric("00:00", "From Jesse came the stem", "De Jessé nasceu a vara"),
+		t.Lyric("00:00", "And from the stem grew a rod, oiá, my God", "E da vara nasceu a flor, oiá, meu Deus"),
+		t.Lyric("00:00", "And from the stem grew a rod, oiá", "E da vara nasceu a flor, oiá"),
 		t.br(),
-		lyric("00:00", "And from the branch was born Mary", "E da flor nasceu Maria"),
-		lyric("00:00", "And from the branch was born Mary", "E da flor nasceu Maria"),
-		lyric("00:00", "From Mary, our Saviour, oiá, my God", "De Maria, o Salvador, oiá, meu Deus"),
-		lyric("00:00", "From Mary, our Saviour, oiá", "De Maria, o Salvador, oiá"),
+		t.Lyric("00:00", "And from the rod was born Mary", "E da flor nasceu Maria"),
+		t.Lyric("00:00", "And from the rod was born Mary", "E da flor nasceu Maria"),
+		t.Lyric("00:00", "From Mary, our Saviour, oiá, my God", "De Maria, o Salvador, oiá, meu Deus"),
+		t.Lyric("00:00", "From Mary, our Saviour, oiá", "De Maria, o Salvador, oiá"),
 		t.br(),
-		lyric("00:00", "O God, save the oratory", "Ó Deus salve o oratório"),
-		lyric("00:00", "O God, save the oratory", "Ó Deus salve o oratório"),
-		lyric("00:00", "Where God made His dwelling, oiá, my God", "Onde Deus fez a morada, oiá, meu Deus"),
-		lyric("00:00", "Where God made His dwelling, oiá", "Onde Deus fez a morada, oiá"),
+		t.Lyric("00:00", "O God, save the oratory", "Ó Deus salve o oratório"),
+		t.Lyric("00:00", "O God, save the oratory", "Ó Deus salve o oratório"),
+		t.Lyric("00:00", "Where God made His dwelling, oiá, my God", "Onde Deus fez a morada, oiá, meu Deus"),
+		t.Lyric("00:00", "Where God made His dwelling, oiá", "Onde Deus fez a morada, oiá"),
 		t.br(),
-		lyric("00:00", "Where resides the Calix Bento", "Onde mora o Calix Bento"),
-		lyric("00:00", "Where resides the Calix Bento", "Onde mora o Calix Bento"),
-		lyric("00:00", "And the consecrated host, oiá, my God", "E a hóstia consagrada, oiá, meu Deus"),
-		lyric("00:00", "And the consecrated host, oiá", "E a hóstia consagrada, oiá"),
+		t.Lyric("00:00", "Where resides the Calix Bento", "Onde mora o Calix Bento"),
+		t.Lyric("00:00", "Where resides the Calix Bento", "Onde mora o Calix Bento"),
+		t.Lyric("00:00", "And the consecrated host, oiá, my God", "E a hóstia consagrada, oiá, meu Deus"),
+		t.Lyric("00:00", "And the consecrated host, oiá", "E a hóstia consagrada, oiá"),
 		t.br(),
-		lyric("00:00", "From Jesse came the rod", "De Jessé nasceu a vara"),
-		lyric("00:00", "From Jesse came the rod", "De Jessé nasceu a vara"),
-		lyric("00:00", "And from the rod grew a branch, oiá, my God", "E da vara nasceu a flor, oiá, meu Deus"),
-		lyric("00:00", "And from the rod grew a branch, oiá", "E da vara nasceu a flor, oiá"),
+		t.Lyric("00:00", "From Jesse came the stem", "De Jessé nasceu a vara"),
+		t.Lyric("00:00", "From Jesse came the stem", "De Jessé nasceu a vara"),
+		t.Lyric("00:00", "And from the stem grew a rod, oiá, my God", "E da vara nasceu a flor, oiá, meu Deus"),
+		t.Lyric("00:00", "And from the stem grew a rod, oiá", "E da vara nasceu a flor, oiá"),
 		t.br(),
-		lyric("00:00", "And from the branch was born Mary", "E da flor nasceu Maria"),
-		lyric("00:00", "And from the branch was born Mary", "E da flor nasceu Maria"),
-		lyric("00:00", "From Mary, our Saviour, oiá, my God", "De Maria, o Salvador, oiá, meu Deus"),
-		lyric("00:00", "From Mary, our Saviour, oiá", "De Maria, o Salvador, oiá"),
+		t.Lyric("00:00", "And from the rod was born Mary", "E da flor nasceu Maria"),
+		t.Lyric("00:00", "And from the rod was born Mary", "E da flor nasceu Maria"),
+		t.Lyric("00:00", "From Mary, our Saviour, oiá, my God", "De Maria, o Salvador, oiá, meu Deus"),
+		t.Lyric("00:00", "From Mary, our Saviour, oiá", "De Maria, o Salvador, oiá"),
 	}),
 	t.p("It's beautiful."),
 })

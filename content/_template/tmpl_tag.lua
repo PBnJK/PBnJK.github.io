@@ -2,7 +2,20 @@ require("os")
 
 local t = require("template")
 
-function t.Tag(title, def)
+function t.Tag(title, metadata, def)
+	local file_elements = {}
+	for _, data in ipairs(metadata) do
+		table.insert(
+			file_elements,
+			t.li({
+				t.a({
+					href = data.path,
+					data.title,
+				}),
+			})
+		)
+	end
+
 	return t.Document({
 		lang = "en",
 		t.head({
@@ -21,6 +34,7 @@ function t.Tag(title, def)
 						}),
 					}),
 					def,
+					t.ul(file_elements),
 				}),
 			}),
 		}),
