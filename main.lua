@@ -72,7 +72,7 @@ local function traverse_and_build_folder(input_dir, output_dir)
 				local ext = entry:match("^.+%.(.+)$")
 
 				if ext == "lua" then
-					print("* * BUILD ... " .. input_filename)
+					print("* * BUILD ..... " .. input_filename)
 
 					local output_filename = entry:match("^(.+)%..+$") .. ".html"
 					local output_path = output_dir .. "/" .. output_filename

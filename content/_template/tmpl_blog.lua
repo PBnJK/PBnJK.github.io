@@ -94,13 +94,6 @@ local function build_reading_time_element(def)
 	return t.p["#reading-time"](time)
 end
 
-function t.ColorSchemeToggle()
-	return t.button["#color-switcher"]({
-		t.span["#color-sun"]("☀️"),
-		t.span["#color-moon"]("🌙"),
-	})
-end
-
 function t.Subtitle(text)
 	return t.p.subtitle({
 		t.i(text),
@@ -120,7 +113,6 @@ function t.FootnoteSection(...)
 		table.insert(
 			items,
 			t.li["#foot-" .. idx]({
-				"[" .. idx .. "]: ",
 				footnote,
 			})
 		)
@@ -129,7 +121,18 @@ function t.FootnoteSection(...)
 	return t.div({
 		t.hr(),
 		t.h2("Footnotes"),
-		t.ul(items),
+		t.ol(items),
+	})
+end
+
+function t.SpoilerImage(src, width, alt)
+	return t.div.spoiler_img({
+		t.img({
+			src = src,
+			width = width,
+			alt = alt,
+		}),
+		t.p.spoiler_img_info("(hover to reveal)"),
 	})
 end
 
@@ -167,6 +170,7 @@ function t.Blog(metadata, def)
 			t.title("pedrob's blog"),
 			t.link({ href = "/css/root.css", rel = "stylesheet" }),
 			t.link({ href = "/css/blog.css", rel = "stylesheet" }),
+			t.script({ src = "/js/script.js" }),
 			t.script({ src = "/js/blog.js" }),
 		}),
 		t.body({

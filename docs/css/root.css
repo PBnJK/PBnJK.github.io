@@ -8,10 +8,10 @@
   --bg-highlight: light-dark(white, black);
 
   --bg-secondary-red: #f82020;
-  --bg-secondary-yellow: #f8f040;
+  --bg-secondary-yellow: light-dark(#f8f040, #ffca29);
   --bg-secondary-blue: light-dark(#1010e0, #8080f8);
 
-  --font-primary: light-dark(black, #d0d4d8);
+  --font-primary: light-dark(black, #f0f4f8);
   --font-secondary: light-dark(#484848, #b8b8b8);
   --font-disabled: #848484;
 }
@@ -24,6 +24,7 @@
 html,
 body {
   background-color: var(--bg-primary);
+  color: var(--font-primary);
 
   max-width: 100%;
   min-height: 100vh;
@@ -45,4 +46,36 @@ h1 {
 
 h2 {
   font-size: 1.6em;
+}
+
+#color-switcher {
+  margin-bottom: 16px;
+
+  width: 100%;
+
+  font-size: 1.2em;
+  text-align: end;
+
+  background: none;
+  border: none;
+}
+
+#color-switcher:hover {
+  cursor: pointer;
+}
+
+#color-sun::after {
+  content: "light";
+  padding-left: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+
+#color-moon::before {
+  content: "dark";
+  padding-right: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
 }

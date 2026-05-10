@@ -8,7 +8,7 @@ local function infobox(id, def)
 			src = "/assets/svgs/screw.svg",
 			width = 24,
 			height = 24,
-			class = class,
+			class = "infobox-screw " .. class,
 		})
 	end
 
@@ -27,14 +27,16 @@ return t.Document({
 		t.meta({ charset = "UTF-8" }),
 		t.meta({ name = "viewport", content = "width=device-width, initial-scale=1" }),
 		t.title("pedrob's website"),
-		t.link({ href = "/css/root.css", rel = "stylesheet" }),
 		t.link({ href = "/css/style.css", rel = "stylesheet" }),
+		t.link({ href = "/css/root.css", rel = "stylesheet" }),
+		t.script({ src = "/js/script.js" }),
 	}),
 	t.body({
 		t.div["#wrapper"]({
 			t.main({
 				t.h1("Hello & Welcome!"),
 				t.hr(),
+				t.ColorSchemeToggle(),
 				t.div["#container"]({
 					infobox("#infobox-pii", {
 						t.figure["#selfie"]({

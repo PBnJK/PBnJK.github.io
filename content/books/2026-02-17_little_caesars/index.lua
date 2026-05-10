@@ -7,6 +7,7 @@ return t.Document({
 		t.meta({ name = "viewport", content = "width=device-width, initial-scale=1" }),
 		t.title("pedrob's website"),
 		t.link({ href = "/css/book.css", rel = "stylesheet" }),
+		t.link({ href = "/css/root.css", rel = "stylesheet" }),
 	}),
 	t.body.glitch_column({
 		t.article({

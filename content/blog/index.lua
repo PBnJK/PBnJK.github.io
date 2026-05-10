@@ -12,6 +12,8 @@ local input_dir, _, output_dir, _ = ...
 
 -- Compiles blog posts, located under the '_posts' directory
 local function compile_blog_posts()
+	local posts = {}
+
 	local input_posts_dir = input_dir .. "/" .. "_posts"
 	local output_posts_dir = output_dir .. "/" .. "posts"
 
@@ -27,7 +29,7 @@ local function compile_blog_posts()
 			if input_attr.mode == "file" then
 				local ext = entry:match("^.+%.(.+)$")
 				if ext == "lua" then
-					print("* * * POST ... " .. input_filename)
+					print("* * * POST ...... " .. input_filename)
 
 					local output_filename = entry:match("^(.+)%..+$") .. ".html"
 					local output_path = output_posts_dir .. "/" .. output_filename
@@ -39,8 +41,7 @@ local function compile_blog_posts()
 					local executable = assert(loadfile(input_filename))
 
 					local result = executable(input_dir, input_filename, output_posts_dir, output_filename)
-
-					result.metadata.path = output_path
+					result.metadata.path = "/blog/posts/" .. output_filename
 					for _, tag in ipairs(result.metadata.tags) do
 						if metadata_map[tag] == nil then
 							metadata_map[tag] = { result.metadata }
@@ -49,6 +50,8 @@ local function compile_blog_posts()
 						end
 					end
 
+					table.insert(posts, result)
+
 					local result_str = tostring(result)
 					f:write(result_str)
 					f:close()
@@ -56,6 +59,8 @@ local function compile_blog_posts()
 			end
 		end
 	end
+
+	return posts
 end
 
 -- Compiles blog tags, located under the '_tags' directory
@@ -75,7 +80,7 @@ local function compile_blog_tags()
 			if input_attr.mode == "file" then
 				local ext = entry:match("^.+%.(.+)$")
 				if ext == "lua" then
-					print("* * * POST ... " .. input_filename)
+					print("* * * TAG ....... " .. input_filename)
 
 					local output_no_ext = entry:match("^(.+)%..+$")
 					local output_filename = output_no_ext .. ".html"
@@ -95,8 +100,42 @@ local function compile_blog_tags()
 	end
 end
 
-compile_blog_posts()
+local posts = compile_blog_posts()
 compile_blog_tags()
+
+table.sort(posts, function(a, b)
+	local date_a, date_b = a.metadata.date, b.metadata.date
+	if date_b.year < date_a.year then
+		return true
+	elseif date_a.year < date_b.year then
+		return false
+	end
+
+	if date_b.month < date_a.month then
+		return true
+	elseif date_a.month < date_b.month then
+		return false
+	end
+
+	if date_b.day < date_a.day then
+		return true
+	end
+
+	return false
+end)
+
+local posts_element = {}
+for _, value in ipairs(posts) do
+	table.insert(
+		posts_element,
+		t.div({
+			t.a({
+				href = value.metadata.path,
+				value.metadata.title,
+			}),
+		})
+	)
+end
 
 return t.Document({
 	lang = "en",
@@ -106,5 +145,7 @@ return t.Document({
 		t.title("pedrob's blog"),
 		t.link({ href = "/css/style.css", rel = "stylesheet" }),
 	}),
-	t.body({}),
+	t.body({
+		t.div(posts_element),
+	}),
 })

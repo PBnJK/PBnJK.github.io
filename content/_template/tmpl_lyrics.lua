@@ -14,19 +14,19 @@ local function build_characteristic(title, text)
 
 	return t.p.characteristic({
 		t.span({ t.i(title) }),
-		text,
+		tostring(text),
 	})
 end
 
-function t.Song(title, en_title, def)
+function t.Song(metadata, def)
 	return t.div({
 		t.hr(),
 		t.div({
 			t.div.song_meta({
-				t.p.song_title(title),
+				t.p.song_title(metadata.title),
 				t.p.song_en_title({
 					"(",
-					en_title,
+					metadata.en_title or metadata.title,
 					")",
 				}),
 			}),
@@ -51,6 +51,7 @@ end
 
 function t.Note(text)
 	return t.p.lyric_tl_note({
+		t.br(),
 		t.i(text),
 	})
 end
@@ -75,6 +76,7 @@ function t.Album(metadata, def)
 			t.title("pedrob's blog"),
 			t.link({ href = "/css/root.css", rel = "stylesheet" }),
 			t.link({ href = "/css/blog.css", rel = "stylesheet" }),
+			t.script({ src = "/js/script.js" }),
 			t.script({ src = "/js/blog.js" }),
 		}),
 		t.body({

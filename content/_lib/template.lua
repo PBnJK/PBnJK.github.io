@@ -126,6 +126,13 @@ function template.Document(def)
 	return template.Html("<!doctype html>" .. tostring(template.Element("html", def)))
 end
 
+function template.ColorSchemeToggle()
+	return template.button["#color-switcher"]({
+		template.span["#color-sun"]("☀️"),
+		template.span["#color-moon"]("🌙"),
+	})
+end
+
 function template.__index(html, key)
 	key = key:gsub("_", "-")
 
