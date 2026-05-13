@@ -12,12 +12,23 @@ return t.Album({
 		day = 5,
 	},
 }, {
-	t.img({
-		src = "https://m.media-amazon.com/images/I/71mE9ZKaFaL.jpg",
-		width = 400,
-		alt = "Gal Costa album cover, depicting Gal Costa semi-nude with indigenous vests",
+	t.div.img_row({
+		t.img({
+			src = "https://m.media-amazon.com/images/I/71mE9ZKaFaL.jpg",
+			width = 400,
+			alt = 'Gal Costa album cover, depicting Gal Costa semi-nude with indigenous vests and, in all-caps blue text, the album title: "ÍNDIA"',
+		}),
+		t.img({
+			src = "/assets/blog/covers/1973_gal_costa_india_censurada.jpg",
+			width = 400,
+			alt = 'Gal Costa album cover wrap, simple black text over blue blackground: "GAL COSTA ÍNDIA"',
+		}),
 	}),
-	t.Subtitle("This cover, featuring Gal Costa semi-nude in indigenous vests, got the album censored at the time"),
+	t.Subtitle({
+		"Left: original cover, featuring Gal Costa semi-nude in indigenous vests",
+		t.br(),
+		"Right: bag some copies came wrapped in, after the original cover photo was censored by the military dictatorship",
+	}),
 	t.Note({
 		"Thank you to ",
 		t.a({
@@ -55,7 +66,12 @@ return t.Album({
 		the scandalous semi-nude album cover be hidden under an opaque wrapper for
 		distribution.
 	]]),
-	t.Song({ title = "Índia", en_title = "Indigenous Woman" }, {
+	t.Song({
+		title = "Índia",
+		en_title = "Indigenous Woman",
+		adapter = "José Fortuna",
+		writer = { "J. A. Flores", "M. O. Guerrero" },
+	}, {
 		t.Note([[
 			Gal Costa never knew her father, but she had a recording of him singing this
 			old sentimental song. It’s also the first of several tracks in which the bisexual
@@ -89,7 +105,12 @@ return t.Album({
 		t.Lyric("03:13", "All of my Paraguay", "Todo meu Paraguai"),
 		t.Text("(repeats)"),
 	}),
-	t.Song({ title = "Milho Verde (Folclore Português)", en_title = "Green Corn (Portuguese Folklore)" }, {
+	t.Song({
+		title = "Milho Verde (Folclore Português)",
+		en_title = "Green Corn (Portuguese Folklore)",
+		adapter = "Gilberto Gil",
+		writer = "[Portuguese Folklore]",
+	}, {
 		t.Note("A Portuguese folk song insinuating all manner of illicit sexuality."),
 		t.Lyric("00:14", "Green corn, green corn", "Milho verde, milho verde"),
 		t.Lyric("00:16", "Ah, green corn, green corn", "Ah, milho verde, milho verde"),
@@ -124,13 +145,17 @@ return t.Album({
 		t.Lyric("02:08", "Ah, for the snacks are coming soon", "Ah, que a merenda já lá vem"),
 		t.br(),
 		t.Lyric("02:18", "Green corn, green corn", "Milho verde, milho verde"),
-		t.Lyric("02:22", "Green corn...", "Milho verde..."),
-		t.br(),
-		t.Lyric("02:27", "Green corn, green corn", "Milho verde, milho verde"),
-		t.Lyric("02:33", "Ah, green corn, green corn", "Ah, milho verde, milho verde"),
-		t.Lyric("02:37", "Ah, tiny green corn", "Ah, milho verde miudinho"),
+		t.Lyric("02:22", "Green corn, green corn...", "Milho verde, milho verde..."),
+		t.Text("(instrumental)"),
+		t.Lyric("03:48", "Green corn, green corn", "Milho verde, milho verde"),
+		t.Lyric("03:51", "Ah, green corn, green corn", "Ah, milho verde, milho verde"),
+		t.Lyric("03:54", "Ah, tiny green corn", "Ah, milho verde miudinho"),
 	}),
-	t.Song({ title = "Presente Cotidiano", en_title = "Everyday Life" }, {
+	t.Song({
+		title = "Presente Cotidiano",
+		en_title = "Everyday Life",
+		writer = "Luiz Melodia",
+	}, {
 		t.Note("Banned from Brazilian radio for poking fun at the dictatorship’s economic boasts."),
 		t.Lyric("00:08", "Everything's loose on the air platform", "Tá tudo solto na plataforma do ar"),
 		t.Lyric("00:12", "It's all there, It's all there", "Tá tudo aí, tá tudo aí"),
@@ -174,9 +199,13 @@ return t.Album({
 		t.Lyric("02:50", "Who wants?", "Quem vai?"),
 		t.Lyric("02:51", "Who?", "Quem?"),
 	}),
-	t.Song({ title = "Volta", en_title = "Come Back" }, {
+	t.Song({
+		title = "Volta",
+		en_title = "Come Back",
+		writer = "Lupiscinio Rodrigues",
+	}, {
 		t.Lyric("00:03", "How many night I haven't slept", "Quantas noites não durmo"),
-		t.Lyric("00:07", "Rolling on the bed", "A rolar-me na cama"),
+		t.Lyric("00:07", "Tossing and turning in bed", "A rolar-me na cama"),
 		t.Lyric("00:11", "Feeling so many things", "A sentir tantas coisas"),
 		t.Lyric("00:14", "That we can't explain when we're in love", "Que a gente não pode explicar quando ama"),
 		t.br(),
@@ -196,7 +225,7 @@ return t.Album({
 		t.Lyric("01:11", "Because my body got used to it", "Pois meu corpo está acostumado"),
 		t.br(),
 		t.Lyric("01:17", "How many night I haven't slept", "Quantas noites não durmo"),
-		t.Lyric("01:22", "Rolling on the bed", "A rolar-me na cama"),
+		t.Lyric("01:22", "Tossing and turning in bed", "A rolar-me na cama"),
 		t.Lyric("01:27", "Feeling so many things", "A sentir tantas coisas"),
 		t.Lyric("01:30", "That we can't explain when we're in love", "Que a gente não pode explicar quando ama"),
 		t.br(),
@@ -225,7 +254,11 @@ return t.Album({
 		t.Lyric("02:57", "I can't sleep without your arm", "Não consigo dormir sem teu braço"),
 		t.Lyric("03:02", "Because my body got used to it", "Pois meu corpo está acostumado"),
 	}),
-	t.Song({ title = "Relance", en_title = "Glimpse" }, {
+	t.Song({
+		title = "Relance",
+		en_title = "Glimpse",
+		writer = { "Caetano Veloso", "Pedro Novis" },
+	}, {
 		t.Note(
 			"Pay attention to the original lyrics on the right for this one, and you'll notice that there's a pattern to the way that they are constructed, in the manner of concrete poetry."
 		),
@@ -242,8 +275,8 @@ return t.Album({
 		t.Lyric("01:59", "Jump, highlight", "Salte, ressalte"),
 		t.Lyric("02:09", "Hit, hit back", "Bata, rebata"),
 		t.Lyric("02:18", "Wound, refer", "Fira, refira"),
-		t.Lyric("02:27", "Break, {Like dancing=break it down} ", "Quebre, requebre"),
-		t.Lyric("02:37", "Move, {Like dancing (again)=Move it}", "Mexa, remexa"),
+		t.Lyric("02:27", { "Break, ", t.InlineNote("break it down", "Like dancing") }, "Quebre, requebre"),
+		t.Lyric("02:37", { "Move, ", t.InlineNote("move it", "Like dancing (again)") }, "Mexa, remexa"),
 		t.Lyric("02:46", "Draft, twerk", "Bole, rebole"),
 		t.Lyric("02:56", "Return, revolve", "Volva, revolva"),
 		t.Lyric("03:05", "Run, resort", "Corra, recorra"),
@@ -264,7 +297,11 @@ return t.Album({
 		t.Lyric("04:48", "Die, be reborn!", "Morra, renasça!"),
 		t.Lyric("04:55", "Die, be reborn!", "Morra, renasça!"),
 	}),
-	t.Song({ title = "Da Maior Importância", en_title = "Of the Greatest Importance" }, {
+	t.Song({
+		title = "Da Maior Importância",
+		en_title = "Of the Greatest Importance",
+		writer = "Caetano Veloso",
+	}, {
 		t.Lyric("00:19", "It was a small moment, a quirk of yours", "Foi um pequeno momento, um jeito"),
 		t.Lyric("00:24", "Something like that", "Uma coisa assim"),
 		t.Lyric("00:28", "A movement and then you couldn't anymore", "Era um movimento que aí você não pode mais"),
@@ -324,19 +361,19 @@ return t.Album({
 		t.Lyric("02:49", {
 			t.InlineNote(
 				"There's always a man for a woman",
-				'Verse from the song "O Grande Amor,"by Antônio Carlos Jobim & Vinicius de Moraes'
+				'Verse from the song "O Grande Amor," by Antônio Carlos Jobim & Vinicius de Moraes'
 			),
 		}, "Há sempre um homem, para uma mulher"),
 		t.Lyric("02:59", {
 			t.InlineNote(
 				"There are ten women for each man",
-				'Verse from the song "Ninguém Tasca (O Gavião)"by Pedrinho Rodrigues'
+				'Verse from the song "Ninguém Tasca (O Gavião)" by Pedrinho Rodrigues'
 			),
 		}, "Há dez mulheres para cada um"),
 		t.Lyric("03:03", {
 			t.InlineNote(
 				"A woman is always a woman",
-				'Verse from the song "Mulher, Sempre Mulher"by Vinicius de Moraes'
+				'Verse from the song "Mulher, Sempre Mulher" by Vinicius de Moraes'
 			),
 			", etc., so on, so forth",
 		}, "Uma mulher é sempre uma mulher, etc. e tal"),
@@ -382,7 +419,11 @@ return t.Album({
 		t.Lyric("05:01", "But you weren't up for it", "Mas você não teve pique"),
 		t.Lyric("05:05", "It's not me that's going to", "Não sou eu quem vai"),
 	}),
-	t.Song({ title = "Passarinho", en_title = "Little Bird" }, {
+	t.Song({
+		title = "Passarinho",
+		en_title = "Little Bird",
+		writer = "Tuzé de Abreu",
+	}, {
 		t.Lyric("00:40", "Sing like a bird", "Cantar como um passarinho"),
 		t.Lyric("00:46", "In the early morning", "De manhã cedinho"),
 		t.Lyric("00:52", "On a branch in the grove", "Lá na galha do arvoredo"),
@@ -416,7 +457,11 @@ return t.Album({
 		t.Lyric("04:42", "Like a bird", "Como um passarinho"),
 		t.Lyric("04:48", "Like a bird", "Como um passarinho"),
 	}),
-	t.Song({ title = "Pontos de Luz", en_title = "Motes of Light" }, {
+	t.Song({
+		title = "Pontos de Luz",
+		en_title = "Motes of Light",
+		writer = { "Jards Macalé", "Waly Sailormoon" },
+	}, {
 		t.Lyric("00:14", "I feel content", "Me sinto contente"),
 		t.Lyric("00:17", "I feel very content", "Me sinto muito contente"),
 		t.Lyric("00:22", "I feel completely content", "Me sinto completamente contente"),
@@ -444,7 +489,11 @@ return t.Album({
 		t.Lyric("01:55", "I feel happy", "Me sinto feliz"),
 		t.Lyric("02:05", "I feel completely", "Me sinto completamente"),
 	}),
-	t.Song({ title = "Desafinado", en_title = "Out of Tune" }, {
+	t.Song({
+		title = "Desafinado",
+		en_title = "Out of Tune",
+		writer = { "Antonio Carlos Jobim", "Newton Mendonça" },
+	}, {
 		t.Note(
 			"A Bossa Nova standard, kind of the theme song for the whole genre. But in this context, given Costa’s position as a musical, political, and sexual dissident, ending with this defiant declaration to be one of the “out of tune ones” takes on some added dimensions."
 		),
@@ -470,7 +519,7 @@ return t.Album({
 		),
 		t.Lyric(
 			"01:28",
-			{ "I photographed you with my ", t.InlineNote("Rolleiflex", "Old line of cameras") },
+			{ "I photographed you with my ", t.InlineNote("Rolleiflex", "Old line of analog cameras") },
 			"Fotografei você na minha Rolleiflex"
 		),
 		t.Lyric("01:35", {

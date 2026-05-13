@@ -133,6 +133,23 @@ function template.ColorSchemeToggle()
 	})
 end
 
+function template.If(condition, t, f)
+	if condition then
+		return t
+	else
+		return f
+	end
+end
+
+function template.Map(t, f)
+	local r = {}
+	for i, v in ipairs(t) do
+		r[i] = f(v)
+	end
+
+	return r
+end
+
 function template.__index(html, key)
 	key = key:gsub("_", "-")
 

@@ -18,17 +18,37 @@ local function build_characteristic(title, text)
 	})
 end
 
+local function build_small_metadata(title, text)
+	if text then
+		if type(text) == "table" then
+			text = table.concat(text, ", ")
+		end
+
+		return t.p.song_meta_small(title .. ": " .. text)
+	end
+
+	return ""
+end
+
 function t.Song(metadata, def)
 	return t.div({
 		t.hr(),
 		t.div({
 			t.div.song_meta({
-				t.p.song_title(metadata.title),
-				t.p.song_en_title({
+				t.p.song_meta_title(metadata.title),
+				t.p.song_meta_en_title({
 					"(",
 					metadata.en_title or metadata.title,
 					")",
 				}),
+				t.If(metadata.artist, t.p.song_meta_artist(metadata.artist), ""),
+				build_small_metadata("Adapted by", metadata.adapter),
+				build_small_metadata("Written by", metadata.writer),
+				build_small_metadata("Composed by", metadata.composer),
+				build_small_metadata("Arranged by", metadata.arranger),
+				build_small_metadata("Produced by", metadata.producer),
+				build_small_metadata("Programmed by", metadata.programmer),
+				build_small_metadata("Lyrics by", metadata.lyricist),
 			}),
 			t.div.song_contents(def),
 		}),
