@@ -42,7 +42,12 @@ return t.Album({
 		Baptista, brother of Arnaldo and Sérgio, built himself the guitar and bass used
 		in most Mutantes records, as well as their effects pedals, amplifiers, etc.
 	]]),
-	t.Song({ title = "Panis et Circensis", en_title = "Bread and Circuses, in Latin" }, {
+	t.Song({
+		title = "Panis et Circensis",
+		en_title = "Bread and Circuses, in Latin",
+		writer = { "Caetano Veloso", "Gilberto Gil" },
+		arranger = "Rogério Duprat",
+	}, {
 		t.Note('Based in part on the English version released on their "Tecnicolor" album.'),
 		t.Lyric("00:22", "I wanted to sing", "Que eu quis cantar"),
 		t.Lyric("00:25", "My song lighted by the sun", "Minha canção iluminada de sol"),
@@ -90,7 +95,12 @@ return t.Album({
 			"— Passa o pão, por favor, só mais um pedacinho"
 		),
 	}),
-	t.Song({ title = "A Minha Menina", en_title = "My Girl" }, {
+	t.Song({
+		title = "A Minha Menina",
+		en_title = "My Girl",
+		writer = "Jorge Ben Jor",
+		arranger = "Rogério Duprat",
+	}, {
 		t.Lyric("00:00", "— Cough, everybody coughing!", "— Tosse, todo mundo tossindo!"),
 		t.Lyric("00:01", "— Ha ha ha ha!", "— Ha ha ha ha!"),
 		t.br(),
@@ -140,7 +150,11 @@ return t.Album({
 		t.Lyric("04:13", "My girl, my girl", "Minha menina, minha menina"),
 		t.Lyric("04:20", "My girl, my girl", "Minha menina, minha menina"),
 	}),
-	t.Song({ title = "O Relógio", en_title = "The Watch" }, {
+	t.Song({
+		title = "O Relógio",
+		en_title = "The Watch",
+		arranger = "Rogério Duprat",
+	}, {
 		t.Lyric("00:07", "My watch stopped", "Meu relógio parou"),
 		t.Lyric("00:18", "It forever gave up being", "Desistiu pra sempre de ser"),
 		t.Lyric("00:23", "Anti-magnetic", "Antimagnético"),
@@ -170,7 +184,12 @@ return t.Album({
 		t.Lyric("02:52", "It's waterproof", "Ele é à prova d'água"),
 		t.Lyric("02:56", "Twenty two jewels", "Vinte dois rubis"),
 	}),
-	t.Song({ title = "Adeus Maria Fulô", en_title = "Goodbye Maria Fulô" }, {
+	t.Song({
+		title = "Adeus Maria Fulô",
+		en_title = "Goodbye Maria Fulô",
+		writer = { "Humberto Teixeira", "Sivuca" },
+		arranger = "Rogério Duprat",
+	}, {
 		t.Note('Goodbye Maria Fulô—fulô being a corruption of "flor," meaning flower. Goodbye Mary Flower!'),
 
 		t.Lyric("00:56", "Goodbye, I'm going, my dear", "Adeus, vou-me embora, meu bem"),
@@ -210,7 +229,12 @@ return t.Album({
 		t.Lyric("02:23", "For the drought has only just started", "Que a seca mal começou"),
 		t.Lyric("02:29", "For the drought has only just started", "Que a seca mal começou"),
 	}),
-	t.Song({ title = "Baby", en_title = "Baby" }, {
+	t.Song({
+		title = "Baby",
+		en_title = "Baby",
+		writer = "Caetano Veloso",
+		arranger = "Rogério Duprat",
+	}, {
 		t.Note(
 			'"Baby," famous in the voice of Gal Costa, parodies the upper-class, westernized culture that was on the rise at the time of its writing.'
 		),
@@ -263,7 +287,11 @@ return t.Album({
 		t.Lyric("02:47", "Baby, baby, I love you", "Baby, baby, I love you"),
 		t.Lyric("02:56", "Baby, baby...", "Baby, baby..."),
 	}),
-	t.Song({ title = "Senhor F", en_title = "Mr. F" }, {
+	t.Song({
+		title = "Senhor F",
+		en_title = "Mr. F",
+		arranger = "Rogério Duprat",
+	}, {
 		t.Lyric("00:05", "Mr. F", "O Senhor F"),
 		t.Lyric("00:08", "Dreams of being", "Vive a querer"),
 		t.Lyric("00:11", "Mr. X", "Ser Senhor X"),
@@ -309,7 +337,12 @@ return t.Album({
 		),
 		t.Lyric("01:53", "Give your boss a kick", "Dê um chute no patrão"),
 	}),
-	t.Song({ title = "Bat Macumba", en_title = "Bat Macumba" }, {
+	t.Song({
+		title = "Bat Macumba",
+		en_title = "Bat Macumba",
+		writer = { "Caetano Veloso", "Gilberto Gil" },
+		arranger = "Rogério Duprat",
+	}, {
 		t.Note([[
 			Now, "Bat Macumba," Macumba being a blanket term for the wide umbrella of
 			Afro-Brazilian religions (sometimes pejorative, though that's not the case
@@ -349,7 +382,12 @@ return t.Album({
 		t.Lyric("02:22", "Bat Macumba ê ê, Bat Macumba obá"),
 		t.Lyric("03:02", "Bat Macumba ê ê, Bat Macumba obá"),
 	}),
-	t.Song({ title = "Le Premier Bonheur du Jour", en_title = "The First Happiness of the Day" }, {
+	t.Song({
+		title = "Le Premier Bonheur du Jour",
+		en_title = "The First Happiness of the Day",
+		writer = { "Franck Gerald", "Jean Renard" },
+		arranger = "Rogério Duprat",
+	}, {
 		t.Note({
 			"This song is in french, which I do not speak. See footnote",
 			t.Footnote(2),
@@ -375,7 +413,12 @@ return t.Album({
 		t.Lyric("02:17", "The last happiness of the day", " Le denier bonheur du jour"),
 		t.Lyric("02:22", "It's the lamp that switched off", " C'est la lampe qui s'éteint"),
 	}),
-	t.Song({ title = "Trem Fantasma", en_title = "Ghost Train" }, {
+	t.Song({
+		title = "Trem Fantasma",
+		en_title = "Ghost Train",
+		writer = { "Caetano Veloso", "Os Mutantes" },
+		arranger = "Rogério Duprat",
+	}, {
 		t.Lyric(
 			"00:23",
 			{ "Four hundred ", t.InlineNote("cruzeiros", "Old Brazilian currency") },
@@ -445,79 +488,90 @@ return t.Album({
 		t.Lyric("03:02", "He secretly thinks", " Ele pensa em segredo"),
 		t.Lyric("03:05", "He secretly thinks...", " Ele pensa em segredo..."),
 	}),
-	t.Song(
-		{ title = "Tempo no Tempo (Once Was a Time I Thought)", en_title = "Time in Time (Once Was a Time I Thought)" },
-		{
-			t.Note('Cover of "Once Was a Time I Thought" by "The Mamas & The Papas."'),
-			t.Lyric("00:00", "Hallelujah", " Aleluia"),
-			t.Lyric("00:11", "I want to be with my Lord", " Eu quero estar com meu Senhor"),
-			t.br(),
-			t.Lyric(
-				"00:28",
-				"There's always a time in time when the body of man rots",
-				" Há sempre um tempo no tempo em que o corpo do homem apodrece"
-			),
-			t.Lyric(
-				"00:32",
-				"And his tired, sorrowful soul sinks into the ground",
-				" E sua alma cansada, penada, se afunda no chão"
-			),
-			t.br(),
-			t.Lyric(
-				"00:35",
-				"And the wizard of luxury, his hood lowered, crying on a niche, sycophant of trash",
-				" E o bruxo do luxo baixado o capucho chorando num nicho capacho do lixo"
-			),
-			t.Lyric("00:40", "Whims will not be coming back", " Caprichos não mais voltarão"),
-			t.br(),
-			t.Lyric(
-				"00:42",
-				"There once was time when time stopped passing by",
-				" Já houve um tempo em que o tempo parou de passar"
-			),
-			t.Lyric(
-				"00:47",
-				"And a so-called homo sapiens didn't know how to harness it",
-				" E um tal de homo sapiens não soube disso aproveitar"
-			),
-			t.br(),
-			t.Lyric("00:51", "Crying, smiling, talking about shutting up", " Chorando, sorrindo, falando em calar"),
-			t.Lyric(
-				"00:54",
-				"Thinking about thinking once time stops passing by",
-				" Pensando em pensar quando o tempo parar de passar"
-			),
-			t.br(),
-			t.Lyric(
-				"00:58",
-				"There's always a time in time when the body of man rots",
-				" Há sempre um tempo no tempo em que o corpo do homem apodrece"
-			),
-			t.Lyric(
-				"01:01",
-				"And his tired, sorrowful soul sinks into the ground",
-				" E sua alma cansada, penada, se afunda no chão"
-			),
-			t.br(),
-			t.Lyric(
-				"01:05",
-				"And the wizard of luxury, his hood lowered, crying on a niche, sycophant of trash",
-				" E o bruxo do luxo baixado o capucho chorando num nicho capacho do lixo"
-			),
-			t.Lyric("01:10", "Whims will not be coming back", " Caprichos não mais voltarão"),
-			t.br(),
-			t.Lyric(
-				"01:12",
-				"But if between tears you find yourself and you think you're crying",
-				" Mas se entre lágrimas você se achar e pensar que está a chorar"
-			),
-			t.Lyric("01:19", "This was the time in which time is", " Este era o tempo em que o tempo é"),
-		}
-	),
-	t.Song({ title = "Ave Gengis Khan", en_title = "Hail Gengis Khan" }, {
+	t.Song({
+		title = "Tempo no Tempo (Once Was a Time I Thought)",
+		en_title = "Time in Time (Once Was a Time I Thought)",
+		writer = "John Phillips",
+		adapter = "Os Mutantes",
+		arranger = { "Os Mutantes", "Rogério Duprat" },
+	}, {
+		t.Note("Cover of “Once Was a Time I Thought” by “The Mamas & The Papas.”"),
+		t.Lyric("00:00", "Hallelujah", " Aleluia"),
+		t.Lyric("00:11", "I want to be with my Lord", " Eu quero estar com meu Senhor"),
+		t.br(),
+		t.Lyric(
+			"00:28",
+			"There's always a time in time when the body of man rots",
+			" Há sempre um tempo no tempo em que o corpo do homem apodrece"
+		),
+		t.Lyric(
+			"00:32",
+			"And his tired, sorrowful soul sinks into the ground",
+			" E sua alma cansada, penada, se afunda no chão"
+		),
+		t.br(),
+		t.Lyric(
+			"00:35",
+			"And the wizard of luxury, his hood lowered, crying on a niche, sycophant of trash",
+			" E o bruxo do luxo baixado o capucho chorando num nicho capacho do lixo"
+		),
+		t.Lyric("00:40", "Whims will not be coming back", " Caprichos não mais voltarão"),
+		t.br(),
+		t.Lyric(
+			"00:42",
+			"There once was time when time stopped passing by",
+			" Já houve um tempo em que o tempo parou de passar"
+		),
+		t.Lyric(
+			"00:47",
+			"And a so-called homo sapiens didn't know how to harness it",
+			" E um tal de homo sapiens não soube disso aproveitar"
+		),
+		t.br(),
+		t.Lyric("00:51", "Crying, smiling, talking about shutting up", " Chorando, sorrindo, falando em calar"),
+		t.Lyric(
+			"00:54",
+			"Thinking about thinking once time stops passing by",
+			" Pensando em pensar quando o tempo parar de passar"
+		),
+		t.br(),
+		t.Lyric(
+			"00:58",
+			"There's always a time in time when the body of man rots",
+			" Há sempre um tempo no tempo em que o corpo do homem apodrece"
+		),
+		t.Lyric(
+			"01:01",
+			"And his tired, sorrowful soul sinks into the ground",
+			" E sua alma cansada, penada, se afunda no chão"
+		),
+		t.br(),
+		t.Lyric(
+			"01:05",
+			"And the wizard of luxury, his hood lowered, crying on a niche, sycophant of trash",
+			" E o bruxo do luxo baixado o capucho chorando num nicho capacho do lixo"
+		),
+		t.Lyric("01:10", "Whims will not be coming back", " Caprichos não mais voltarão"),
+		t.br(),
+		t.Lyric(
+			"01:12",
+			"But if between tears you find yourself and you think you're crying",
+			" Mas se entre lágrimas você se achar e pensar que está a chorar"
+		),
+		t.Lyric("01:19", "This was the time in which time is", " Este era o tempo em que o tempo é"),
+	}),
+	t.Song({
+		title = "Ave Gengis Khan",
+		en_title = "Hail Gengis Khan",
+		artist = "Os Mutantes (feat. Dr. César Baptista)",
+		arranger = "Rogério Duprat",
+	}, {
 		t.Lyric("00:26", "Hail Gengis Khan", " Ave Gengis Khan"),
 		t.Lyric("00:37", "Hail Gengis Khan", " Ave Gengis Khan"),
-		t.Text("(instrumental)"),
+		t.InlineNote(
+			{ t.Text("(instrumental)") },
+			"Featuring a reversed sample of Dr. César Baptista, father of Arnaldo and Sérgio, singing an opera"
+		),
 		t.Lyric("02:43", "Hail Gengis Khan", " Ave Gengis Khan"),
 		t.Lyric("02:54", "Hail Gengis Khan", " Ave Gengis Khan"),
 	}),

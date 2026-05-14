@@ -71,6 +71,8 @@ return t.Album({
 		en_title = "Indigenous Woman",
 		adapter = "José Fortuna",
 		writer = { "J. A. Flores", "M. O. Guerrero" },
+		arranger = "Rogério Duprat",
+		conductor = "Mario Tavares",
 	}, {
 		t.Note([[
 			Gal Costa never knew her father, but she had a recording of him singing this
@@ -110,6 +112,9 @@ return t.Album({
 		en_title = "Green Corn (Portuguese Folklore)",
 		adapter = "Gilberto Gil",
 		writer = "[Portuguese Folklore]",
+		personnel = {
+			Percussion = "Chacal",
+		},
 	}, {
 		t.Note("A Portuguese folk song insinuating all manner of illicit sexuality."),
 		t.Lyric("00:14", "Green corn, green corn", "Milho verde, milho verde"),
@@ -155,6 +160,11 @@ return t.Album({
 		title = "Presente Cotidiano",
 		en_title = "Everyday Life",
 		writer = "Luiz Melodia",
+		arranger = "Arthur Verocai",
+		conductor = "Arthur Verocai",
+		personnel = {
+			Organ = "Wagner Tiso",
+		},
 	}, {
 		t.Note("Banned from Brazilian radio for poking fun at the dictatorship’s economic boasts."),
 		t.Lyric("00:08", "Everything's loose on the air platform", "Tá tudo solto na plataforma do ar"),
@@ -203,6 +213,9 @@ return t.Album({
 		title = "Volta",
 		en_title = "Come Back",
 		writer = "Lupiscinio Rodrigues",
+		personnel = {
+			Organ = "Tenório Jr.",
+		},
 	}, {
 		t.Lyric("00:03", "How many night I haven't slept", "Quantas noites não durmo"),
 		t.Lyric("00:07", "Tossing and turning in bed", "A rolar-me na cama"),
@@ -461,6 +474,11 @@ return t.Album({
 		title = "Pontos de Luz",
 		en_title = "Motes of Light",
 		writer = { "Jards Macalé", "Waly Sailormoon" },
+		arranger = "Arthur Verocai",
+		conductor = "Arthur Verocai",
+		personnel = {
+			Organ = "Tenório Jr.",
+		},
 	}, {
 		t.Lyric("00:14", "I feel content", "Me sinto contente"),
 		t.Lyric("00:17", "I feel very content", "Me sinto muito contente"),
@@ -493,6 +511,9 @@ return t.Album({
 		title = "Desafinado",
 		en_title = "Out of Tune",
 		writer = { "Antonio Carlos Jobim", "Newton Mendonça" },
+		personnel = {
+			Guitar = "Roberto Menescal",
+		},
 	}, {
 		t.Note(
 			"A Bossa Nova standard, kind of the theme song for the whole genre. But in this context, given Costa’s position as a musical, political, and sexual dissident, ending with this defiant declaration to be one of the “out of tune ones” takes on some added dimensions."

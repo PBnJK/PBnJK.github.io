@@ -87,6 +87,10 @@ q {
   quotes: "\201C" "\201D";
 }
 
+ul {
+  margin: 0;
+}
+
 #wrapper {
   display: flex;
   justify-content: center;
@@ -298,6 +302,24 @@ figcaption {
   color: var(--font-secondary);
   font-size: 1em;
   margin: 0;
+}
+
+.song-meta-personnel {
+  color: var(--font-secondary);
+  margin-top: 16px;
+}
+
+.song-meta-personnel:hover {
+  cursor: pointer;
+}
+
+.song-meta-personnel ul {
+  color: var(--font-primary);
+  margin: 0;
+}
+
+.song-meta-personnel ul:hover {
+  cursor: auto;
 }
 
 .lyric-box {

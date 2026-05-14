@@ -30,6 +30,35 @@ local function build_small_metadata(title, text)
 	return ""
 end
 
+local function build_personnel(personnel)
+	if personnel then
+		local personnel_element = {}
+
+		local a = {}
+		for n in pairs(personnel) do
+			table.insert(a, n)
+		end
+		table.sort(a)
+
+		for _, key in ipairs(a) do
+			local value = personnel[key]
+			if type(value) == "table" then
+				value = table.concat(value, ", ")
+			end
+
+			local role = key:lower():gsub("^%l", string.upper)
+			table.insert(personnel_element, t.li(role .. ": " .. value))
+		end
+
+		return t.details.song_meta_personnel({
+			t.summary("Personnel"),
+			t.ul(personnel_element),
+		})
+	end
+
+	return ""
+end
+
 function t.Song(metadata, def)
 	return t.div({
 		t.hr(),
@@ -46,9 +75,11 @@ function t.Song(metadata, def)
 				build_small_metadata("Written by", metadata.writer),
 				build_small_metadata("Composed by", metadata.composer),
 				build_small_metadata("Arranged by", metadata.arranger),
+				build_small_metadata("Conducted by", metadata.conductor),
 				build_small_metadata("Produced by", metadata.producer),
 				build_small_metadata("Programmed by", metadata.programmer),
 				build_small_metadata("Lyrics by", metadata.lyricist),
+				build_personnel(metadata.personnel),
 			}),
 			t.div.song_contents(def),
 		}),

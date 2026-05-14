@@ -18,7 +18,7 @@ return t.Album({
 			width = 400,
 			alt = "Clube da Esquina album cover, depicting two young boys sitting by the road",
 		}),
-		t.figcaption("As iconic a cover art as it gets"),
+		t.figcaption("As iconic a cover art as they come"),
 	}),
 	t.p([[
 		On a street corner in the Brazilian city of Belo Horizonte, Milton Nascimento,
@@ -47,7 +47,23 @@ return t.Album({
 		also subtly using its lyrics to criticize the regime. The resulting sound is
 		a beautiful, psychedelic, folk-infused pop trip.
 	]]),
-	t.Song({ title = "Tudo que Você Podia Ser", en_title = "Everything that You Could Ever Be" }, {
+	t.Song({
+		title = "Tudo que Você Podia Ser",
+		en_title = "Everything that You Could Ever Be",
+		artist = "Milton Nascimento",
+		writer = { "Lô Borges", "Márcio Borges" },
+		personnel = {
+			["Acoustic guitar"] = "Lô Borges",
+			Bass = "Beto Guedes",
+			Caxixi = "Luiz Alves",
+			Congas = "Rubinho",
+			Drums = "Robertinho Silva",
+			["Electric guitar"] = "Toninho Horta",
+			["Lead vocals"] = "Milton Nascimento",
+			Organ = "Wagner Tiso",
+			["12-string guitar"] = "Tavito",
+		},
+	}, {
 		t.Lyric("00:11", "Through sun and rain, you dreamed", "Com sol e chuva, você sonhava"),
 		t.Lyric("00:21", "That it would get better later", "Que ia ser melhor depois"),
 		t.Lyric(
@@ -79,7 +95,20 @@ return t.Album({
 		t.Lyric("02:11", "You still think and it's better than nothing", "Você ainda pensa e é melhor do que nada"),
 		t.Lyric("02:14", "Everything that you're able to be—or nothing", "Tudo que você consegue ser—ou nada"),
 	}),
-	t.Song({ title = "Cais", en_title = "Pier" }, {
+	t.Song({
+		title = "Cais",
+		en_title = "Pier",
+		artist = "Milton Nascimento",
+		writer = { "Milton Nascimento", "Ronaldo Bastos" },
+		personnel = {
+			["Acoustic bass"] = "Luiz Alves",
+			["Acoustic guitar"] = "Milton Nascimento",
+			["Lead vocals"] = "Milton Nascimento",
+			Organ = "Wagner Tiso",
+			Percussion = { "Robertinho Silva", "Toninho Horta" },
+			Piano = "Milton Nascimento",
+		},
+	}, {
 		t.Lyric("00:01", "To those that want to let go", "Para quem quer se soltar"),
 		t.Lyric("00:03", "I invent the pier", "Invento o cais"),
 		t.Lyric("00:09", "I invent more than what loneliness gives me", "Invento mais que a solidão me dá"),
@@ -98,7 +127,21 @@ return t.Album({
 		t.Lyric("01:25", "I invent the pier", "Invento o cais"),
 		t.Lyric("01:29", "And know the time to launch off", "E sei a vez de me lançar"),
 	}),
-	t.Song({ title = "O Trem Azul", en_title = "The Blue Train" }, {
+	t.Song({
+		title = "O Trem Azul",
+		en_title = "The Blue Train",
+		artist = "Lô Borges",
+		writer = { "Lô Borges", "Ronaldo Bastos" },
+		personnel = {
+			["Backing vocals"] = { "Beto Guedes", "Lô Borges", "Toninho Horta" },
+			Bass = "Beto Guedes",
+			Drums = "Robertinho Silva",
+			["Electric guitar"] = "Toninho Horta",
+			["Lead vocals"] = "Lô Borges",
+			["Rhythm guitar"] = "Lô Borges",
+			Organ = "Wagner Tiso",
+		},
+	}, {
 		t.Lyric("00:30", "Things that we forget to say", "Coisas que a gente se esquece de dizer"),
 		t.Lyric(
 			"00:38",
@@ -133,7 +176,20 @@ return t.Album({
 		t.Lyric("03:37", "The sun catches the blue train, you on its head", "O sol pega o trem azul, você na cabeça"),
 		t.Lyric("03:45", "The sun on your head", "O sol na cabeça"),
 	}),
-	t.Song({ title = "Saídas e Bandeiras №1", en_title = "Exits and Flags №1" }, {
+	t.Song({
+		title = "Saídas e Bandeiras №1",
+		en_title = "Exits and Flags №1",
+		artist = "Milton Nascimento & Beto Guedes",
+		writer = { "Fernando Brant", "Milton Nascimento" },
+		personnel = {
+			["Acoustic guitar"] = "Milton Nascimento",
+			Bass = "Beto Guedes",
+			Drums = "Rubinho",
+			["Electric guitar"] = "Nelson Angelo",
+			["Lead vocals"] = { "Beto Guedes", "Milton Nascimento" },
+			Percussion = { "Lô Borges", "Toninho Horta" },
+		},
+	}, {
 		t.Lyric("00:04", {
 			"What would you say of this thing ",
 			t.InlineNote("you can no longer touch the bottom of?", "As in touching the bottom of a river, pool, etc"),
@@ -147,7 +203,21 @@ return t.Album({
 		t.Lyric("00:30", "At the end of the road and of the dust", "No fim da estrada e da poeira"),
 		t.Lyric("00:34", "The river with its fruit will feed me", "Um rio com seus frutos me alimentar"),
 	}),
-	t.Song({ title = "Nuvem Cigana", en_title = "Gypsy Cloud" }, {
+	t.Song({
+		title = "Nuvem Cigana",
+		en_title = "Gypsy Cloud",
+		artist = "Milton Nascimento",
+		writer = { "Lô Borges", "Ronaldo Bastos" },
+		personnel = {
+			["12-string Guitar"] = "Beto Guedes",
+			["Acoustic bass"] = "Luiz Alves",
+			Bass = "Toninho Horta",
+			Drums = "Rubinho",
+			["Electric guitar"] = "Lô Borges",
+			["Lead bocals"] = "Milton Nascimento",
+			Piano = "Milton Nascimento",
+		},
+	}, {
 		t.Lyric("00:16", "If you want, I'll dance with you", "Se você quiser, eu danço com você"),
 		t.Lyric("00:21", "On the dust of the road", "No pó da estrada"),
 		t.Lyric("00:24", "Powder, dust, wind", "Pó, poeira, ventania"),
@@ -180,7 +250,22 @@ return t.Album({
 		t.Lyric("02:25", "If you let your heart beat without fear", "Se você deixar o coração bater sem medo"),
 		t.Lyric("02:33", "If you let your heart beat without fear...", "Se você deixar o coração bater sem medo..."),
 	}),
-	t.Song({ title = "Cravo e Canela", en_title = "Clove and Cinnamon" }, {
+	t.Song({
+		title = "Cravo e Canela",
+		en_title = "Clove and Cinnamon",
+		artist = "Milton Nascimento & Lô Borges",
+		writer = { "Milton Nascimento", "Ronaldo Bastos" },
+		personnel = {
+			["Acoustic guitar"] = "Toninho Horta",
+			Bass = "Luiz Alves",
+			Drums = "Robertinho Silva",
+			["Electric guitar"] = "Tavito",
+			["Lead vocals"] = { "Lô Borges", "Milton Nascimento" },
+			Percussion = { "Beto Guedes", "Luiz Alves", "Robertinho Silva" },
+			Piano = "Wagner Tiso",
+			Surdo = "Lô Borges",
+		},
+	}, {
 		t.Note(
 			"“Gabriela Cravo e Canela” (Gabriela Clove and Cinnamon) is a famous novel by Brazilian writer Jorge Amado. This song makes reference to the themes and imagery of the book, as well as Jorge Amado's body of work in general and the culture of his home state of Bahia."
 		),
@@ -239,7 +324,24 @@ return t.Album({
 		t.Lyric("01:47", "The color of cinnamon", "A cor de canela"),
 		t.Text("(repeat)"),
 	}),
-	t.Song({ title = "Dos Cruces", en_title = "Two Crosses, in Spanish" }, {
+	t.Song({
+		title = "Dos Cruces",
+		en_title = "Two Crosses, in Spanish",
+		artist = "Milton Nascimento",
+		writer = "Carmelo Larrea",
+		personnel = {
+			["Acoustic bass"] = "Luiz Alves",
+			["Acoustic guitar"] = { "Milton Nascimento", "Tavito" },
+			["Backing vocals"] = "everyone on the studio",
+			Bass = "Toninho Horta",
+			Drums = "Rubinho",
+			["Electric guitar"] = "Beto Guedes",
+			["Lead vocals"] = "Milton Nascimento",
+			Organ = "Wagner Tiso",
+			Piano = "Wagner Tiso",
+			Percussion = { "Beto Guedes", "Luiz Alves", "Nelson Angelo", "Robertinho Silva" },
+		},
+	}, {
 		t.Note({
 			"This song is a cover of a bolero composed by Carmelo Larrea, and is sung in Spanish. See footnote",
 			t.Footnote(1),
@@ -285,7 +387,23 @@ return t.Album({
 		t.Lyric("04:11", "For two loves that have died", "Por dos amores que han muerto"),
 		t.Lyric("04:17", "Mine and yours", "Que son el tuyo y el mío"),
 	}),
-	t.Song({ title = "Um Girassol da Cor de Seu Cabelo", en_title = "A Sunflower the Color of Your Hair" }, {
+	t.Song({
+		title = "Um Girassol da Cor de Seu Cabelo",
+		en_title = "A Sunflower the Color of Your Hair",
+		artist = "Lô Borges",
+		writer = { "Lô Borges", "Márcio Borges" },
+		arranger = "Eumir Deodato",
+		conductor = "Paulo Moura",
+		personnel = {
+			["Backing Vocals"] = { "Beto Guedes", "Lô Borges", "Toninho Horta" },
+			Bass = "Beto Guedes",
+			Drums = "Rubinho",
+			["Electric Guitar"] = { "Nelson Angelo", "Tavito" },
+			["Lead Vocals"] = "Lô Borges",
+			Organ = "Wagner Tiso",
+			Piano = "Lô Borges",
+		},
+	}, {
 		t.Lyric("00:14", "Solar wind and starfish", "Vento solar e estrelas do mar"),
 		t.Lyric("00:20", "The Earth blue as the color of your dress", "A terra azul da cor do seu vestido"),
 		t.Lyric("00:27", "Solar wind and starfish", "Vento solar e estrelas do mar"),
@@ -318,9 +436,25 @@ return t.Album({
 		t.Lyric("03:25", "Or a sunflower the color of your hair?", "Ou um girassol que tem a cor de seu cabelo?"),
 		t.Text("(repeat)"),
 	}),
-	t.Song({ title = "San Vicente", en_title = "San Vicente" }, {
+	t.Song({
+		title = "San Vicente",
+		en_title = "San Vicente",
+		artist = "Milton Nascimento",
+		writer = { "Fernando Brandt", "Milton Nascimento" },
+		personnel = {
+			["Acoustic guitar"] = "Tavito",
+			["Backing vocals"] = "Tavito",
+			Bass = "Beto Guedes",
+			Carillon = "Beto Guedes",
+			["Drums"] = "Rubinho",
+			["Electric guitar"] = "Lô Borges",
+			["Lead vocals"] = "Milton Nascimento",
+			Percussion = { "Luiz Alves", "Nelson Angelo", "Paulinho Braga", "Robertinho Silva" },
+			Piano = "Wagner Tiso",
+		},
+	}, {
 		t.Note(
-			"Written for a theater play, “Os Convalescentes” (The Convalescent, meaning people who are recovering from an illness,) which features a fictional Latin-american country struck by a military coup."
+			"Written for a theater play, “Os Convalescentes” (The Convalescent,) which features a fictional Latin-american country struck by a military coup."
 		),
 		t.Lyric("00:01", "American heart", "Coração americano"),
 		t.Lyric("00:05", "I woke up from a strange dream", "Acordei de um sonho estranho"),
@@ -349,7 +483,26 @@ return t.Album({
 		t.Lyric("02:06", "American heart", "Coração americano"),
 		t.Lyric("02:10", "A flavour of glass and cut", "Um sabor de vidro e corte"),
 	}),
-	t.Song({ title = "Estrelas", en_title = "Stars" }, {
+	t.Song({
+		title = "Estrelas",
+		en_title = "Stars",
+		artist = "Lô Borges",
+		writer = { "Lô Borges", "Márcio Borges" },
+		arranger = "Eumir Deodato",
+		conductor = "Paulo Moura",
+		personnel = {
+			["Acoustic guitar"] = "Lô Borges",
+			["Backing vocals"] = {
+				"Beto Guedes",
+				"Luiz Gonzaga Jr.",
+				"Milton Nascimento",
+				"Robertinho Silva",
+				"Toninho Horta",
+				"Wagner Tiso",
+			},
+			["Lead vocals"] = "Lô Borges",
+		},
+	}, {
 		t.Note("A brief intro to the next track."),
 		t.Lyric("00:00", "Dust on the night", "Poeira na noite"),
 		t.Lyric("00:05", "The celebration of night", "A festa da noite"),
@@ -357,11 +510,39 @@ return t.Album({
 		t.Lyric("00:16", "Dark party, love", "Festa negra, amor"),
 		t.Lyric("00:20", "But it's late", "Mas é tarde"),
 	}),
-	t.Song({ title = "Clube da Esquina №2", en_title = "Corner Club №2" }, {
+	t.Song({
+		title = "Clube da Esquina №2",
+		en_title = "Corner Club №2",
+		artist = "Milton Nascimento",
+		writer = { "Lô Borges", "Márcio Borges", "Milton Nascimento" },
+		arranger = "Eumir Deodato",
+		conductor = "Paulo Moura",
+		personnel = {
+			["Acoustic guitar"] = "Milton Nascimento",
+			Bass = "Luiz Alves",
+			Drums = "Robertinho Silva",
+			["Electric guitar"] = { "Lô Borges", "Nelson Angelo" },
+			["Lead vocals"] = "Milton Nascimento",
+			Organ = "Wagner Tiso",
+		},
+	}, {
 		t.Note("“Corner Club №1” was released on an earlier Milton Nascimento album, “Milton” (1970.)"),
 		t.Text("(instrumental)"),
 	}),
-	t.Song({ title = "Paisagem da Janela", en_title = "Window Landscape" }, {
+	t.Song({
+		title = "Paisagem da Janela",
+		en_title = "Window Landscape",
+		artist = "Lô Borges",
+		writer = { "Fernando Brandt", "Lô Borges" },
+		personnel = {
+			["Backing Vocals"] = { "Beto Guedes", "Milton Nascimento" },
+			Bass = "Beto Guedes",
+			Drums = "Rubinho",
+			["Electric guitar"] = { "Nelson Angelo", "Tavito" },
+			["Lead vocals"] = "Lô Borges",
+			Piano = "Lô Borges",
+		},
+	}, {
 		t.Lyric("00:18", "From the side window of the bedroom", "Da janela lateral do quarto de dormir"),
 		t.Lyric("00:26", "I see a church, a sign of glory", "Vejo uma igreja, um sinal de glória"),
 		t.Lyric("00:31", "I see a white wall and a bird in flight", "Vejo um muro branco e um vôo pássaro"),
@@ -396,7 +577,22 @@ return t.Album({
 		t.Lyric("02:33", "An outcast knight, washed in a stream", "Um cavaleiro marginal, banhado em ribeirão"),
 		t.Lyric("02:42", "You don't want to believe", "Você não quer acreditar"),
 	}),
-	t.Song({ title = "Me Deixa em Paz", en_title = "Leave Me Alone" }, {
+	t.Song({
+		title = "Me Deixa em Paz",
+		en_title = "Leave Me Alone",
+		artist = "Milton Nascimento & Alaide Costa",
+		writer = { "Ayrton Amorim", "Monsueto" },
+		personnel = {
+			["Acoustic guitar"] = "Milton Nascimento",
+			Bass = "Luiz Alves",
+			Drums = "Robertinho Silva",
+			["Lead vocals"] = { "Alaide Costa", "Milton Nascimento" },
+			Organ = "Wagner Tiso",
+			Percussion = { "Beto Guedes", "Lô Borges", "Rubinho" },
+			Piano = "Wagner Tiso",
+			Surdo = "Nelson Angelo",
+		},
+	}, {
 		t.Lyric("00:17", "If you didn't want me", "Se você não me queria"),
 		t.Lyric("00:24", "Then you shouldn't look for me", "Não devia me procurar"),
 		t.Lyric("00:32", "You shouldn't delude me", "Não devia me iludir"),
@@ -419,7 +615,21 @@ return t.Album({
 		t.Lyric("02:25", "You shouldn't delude me", "Não devia me iludir"),
 		t.Lyric("02:33", "Or let me fall in love", "Nem deixar eu me apaixonar"),
 	}),
-	t.Song({ title = "Os Povos", en_title = "The Peoples" }, {
+	t.Song({
+		title = "Os Povos",
+		en_title = "The Peoples",
+		artist = "Milton Nascimento",
+		writer = { "Márcio Borges", "Milton Nascimento" },
+		personnel = {
+			["Acoustic guitar"] = "Milton Nascimento",
+			Bass = "Luiz Alves",
+			Drums = "Robertinho Silva",
+			["Lead vocals"] = "Milton Nascimento",
+			Organ = "Wagner Tiso",
+			Percussion = "Tavito",
+			Piano = "Wagner Tiso",
+		},
+	}, {
 		t.Lyric("00:08", "At the edge of the world", "Na beira do mundo"),
 		t.Lyric("00:13", "Iron gate, dead village, a crowd", "Portão de ferro, aldeia morta, multidão"),
 		t.Lyric("00:27", "My people, my people", "Meu povo, meu povo"),
@@ -457,7 +667,20 @@ return t.Album({
 		t.Lyric("03:49", "My people, my people", "Meu povo, meu povo"),
 		t.Lyric("03:54", "All around the city, living alone", "Pela cidade a viver só"),
 	}),
-	t.Song({ title = "Saídas e Bandeiras №2", en_title = "Exits and Flags №2" }, {
+	t.Song({
+		title = "Saídas e Bandeiras №2",
+		en_title = "Exits and Flags №2",
+		artist = "Milton Nascimento & Beto Guedes",
+		writer = { "Fernando Brant", "Milton Nascimento" },
+		personnel = {
+			["Acoustic guitar"] = "Milton Nascimento",
+			Bass = "Beto Guedes",
+			Drums = "Rubinho",
+			["Electric guitar"] = "Nelson Angelo",
+			["Lead vocals"] = { "Beto Guedes", "Milton Nascimento" },
+			Percussion = { "Lô Borges", "Toninho Horta" },
+		},
+	}, {
 		t.Lyric("00:05", {
 			"What would you say of this thing ",
 			t.InlineNote("you can no longer touch the bottom of?", "As in touching the bottom of a river, pool, etc."),
@@ -479,7 +702,18 @@ return t.Album({
 		t.Lyric("00:30", "What was stone turns to man", "O que era pedra vira homem"),
 		t.Lyric("00:33", "And man is more solid than the tide", "E o homem é mais sólido que a maré"),
 	}),
-	t.Song({ title = "Um Gosto de Sol", en_title = "A Taste of Sun" }, {
+	t.Song({
+		title = "Um Gosto de Sol",
+		en_title = "A Taste of Sun",
+		artist = "Milton Nascimento",
+		writer = { "Milton Nascimento", "Ronaldo Bastos" },
+		arranger = "Eumir Deodato",
+		conductor = "Paulo Moura",
+		personnel = {
+			["Lead vocals"] = "Milton Nascimento",
+			Piano = "Milton Nascimento",
+		},
+	}, {
 		t.Lyric("00:01", "Someone that I saw in passing", "Alguém que vi de passagem"),
 		t.Lyric("00:07", "In a foreign city", "Numa cidade estrangeira"),
 		t.Lyric("00:18", "Reminded me of the dreams that I had", "Lembrou os sonhos que eu tinha"),
@@ -499,7 +733,24 @@ return t.Album({
 		t.Lyric("01:55", "Like a pear forgets", "Como uma pera se esquece"),
 		t.Lyric("02:02", "Dreaming in a fruit basket", "Sonhando numa fruteira"),
 	}),
-	t.Song({ title = "Pelo Amor de Deus", en_title = "For the Love of God" }, {
+	t.Song({
+		title = "Pelo Amor de Deus",
+		en_title = "For the Love of God",
+		artist = "Milton Nascimento",
+		writer = { "Fernando Brandt", "Milton Nascimento" },
+		personnel = {
+			["Acoustic guitar"] = "Milton Nascimento",
+			["Additional vocals"] = "Lô Borges",
+			Bass = "Luiz Alves",
+			Drums = "Rubinho",
+			["Electric guitar"] = "Beto Guedes",
+			["Electric Piano"] = "Wagner Tiso",
+			["Lead vocals"] = "Milton Nascimento",
+			Organ = "Wagner Tiso",
+			Percussion = { "Robertinho Silva", "Toninho Horta" },
+			Piano = "Nelson Angelo",
+		},
+	}, {
 		t.Lyric("00:01", "Photos of an old party", "Fotos de uma velha festa"),
 		t.Lyric("00:04", "Bones so ancient, facts so outdated", "Ossos tão antigos, fatos tão passados"),
 		t.Lyric("00:09", "And in the middle of the photos, a gnawing rat ", "No meio das fotos vai roendo um rato"),
@@ -522,11 +773,39 @@ return t.Album({
 		t.Lyric("01:45", "Body on body, skin on skin", "Corpo contra corpo, pele contra pele"),
 		t.Lyric("01:51", "And her body is beautiful, for the love of God!", "E seu corpo é belo, pelo amor de Deus!"),
 	}),
-	t.Song({ title = "Lilia" }, {
+	t.Song({
+		title = "Lilia",
+		en_title = "Lilia",
+		artist = "Milton Nascimento",
+		writer = "Milton Nascimento",
+		personnel = {
+			["Acoustic guitar"] = "Milton Nascimento",
+			Bass = "Luiz Alves",
+			Drums = "Rubinho",
+			["Electric guitar"] = "Tavito",
+			["Lead vocals"] = "Milton Nascimento",
+			Organ = "Wagner Tiso",
+			Percussion = { "Beto Guedes", "Nelson Angelo", "Robertinho Silva", "Toninho Horta" },
+		},
+	}, {
 		t.Note("“Lilia” is the name of Milton Nascimento's adoptive mother."),
 		t.Text("(instrumental)"),
 	}),
-	t.Song({ title = "Trem de Doido", en_title = "Crazy Train" }, {
+	t.Song({
+		title = "Trem de Doido",
+		en_title = "Crazy Train",
+		artist = "Lô Borges",
+		writer = { "Lô Borges", "Márcio Borges" },
+		personnel = {
+			["Backing vocals"] = "Beto Guedes, Lô Borges, Milton Nascimento",
+			Bass = "Toninho Horta",
+			Drums = "Rubinho",
+			["Electric guitar"] = "Beto Guedes",
+			["Lead vocals"] = "Lô Borges",
+			Organ = "Wagner Tiso",
+			["Rhythm guitar"] = "Lô Borges",
+		},
+	}, {
 		t.Note({
 			[[
 			No relation to the Ozzy Osbourne classic. Perhaps a better translation is
@@ -591,7 +870,21 @@ return t.Album({
 		t.Lyric("03:08", "Of the rats loose at home", "Dos ratos soltos na casa"),
 		t.Lyric("03:16", "Your home", "Sua casa"),
 	}),
-	t.Song({ title = "Nada Será Como Antes", en_title = "Nothing Will Be as It Was" }, {
+	t.Song({
+		title = "Nada Será Como Antes",
+		en_title = "Nothing Will Be as It Was",
+		artist = "Milton Nascimento & Beto Guedes",
+		writer = { "Milton Nascimento", "Ronaldo Bastos" },
+		personnel = {
+			["Acoustic guitar"] = "Milton Nascimento",
+			["Additional vocals"] = "Lô Borges",
+			Bass = "Toninho Horta",
+			Drums = "Robertinho Silva",
+			["Electric guitar"] = { "Beto Guedes", "Tavito" },
+			["Lead vocals"] = { "Beto Guedes", "Milton Nascimento" },
+			Piano = "Wagner Tiso",
+		},
+	}, {
 		t.Lyric("00:03", "I've already got my feet on the road", "Eu já estou com o pé na estrada"),
 		t.Lyric("00:06", "Any of these days we'll be seeing each other", "Qualquer dia a gente se vê"),
 		t.Lyric("00:10", "I know nothing will be as it was, tomorrow", "Sei que nada será como antes, amanhã"),
@@ -634,7 +927,22 @@ return t.Album({
 			"Resistindo na boca da noite um gosto de sol"
 		),
 	}),
-	t.Song({ title = "Ao que Vai Nascer", en_title = "To the One that Will Be Born" }, {
+	t.Song({
+		title = "Ao que Vai Nascer",
+		en_title = "To the One that Will Be Born",
+		artist = "Milton Nascimento",
+		writer = { "Fernando Brandt", "Milton Nascimento" },
+		personnel = {
+			["Acoustic guitar"] = "Milton Nascimento",
+			Bass = { "Beto Guedes", "Luiz Alves" },
+			Drums = "Rubinho",
+			["Electric guitar"] = "Toninho Horta",
+			["Lead vocals"] = "Milton Nascimento",
+			Organ = "Wagner Tiso",
+			Percussion = { "Luiz Alves", "Robertinho Silva" },
+			Piano = "Wagner Tiso",
+		},
+	}, {
 		t.Lyric("00:02", "Memories of so much waiting", "Memória de tanta espera"),
 		t.Lyric("00:07", "Your body, growing, jumps off the ground", "Teu corpo crescendo, salta do chão"),
 		t.Lyric("00:17", "And I can already see my body lowering", "E eu já vejo meu corpo descer"),
