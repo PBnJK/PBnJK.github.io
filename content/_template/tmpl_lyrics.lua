@@ -1,15 +1,25 @@
+local util = require("util")
+
 local t = require("tmpl_blog")
 
+local function treat_multi_names(text)
+	if type(text) == "table" then
+		return util.concat_fancy(text)
+	end
+
+	return text
+end
+
 local function build_heading(title, artist)
-	title = title or "Unknown title"
-	artist = artist or "Unknown artist"
+	title = title and treat_multi_names(title) or "Unknown title"
+	artist = artist and treat_multi_names(artist) or "Unknown artist"
 
 	return t.h1({ title, t.span["#heading-by"](" by "), artist })
 end
 
 local function build_characteristic(title, text)
 	if type(text) == "table" then
-		text = table.concat(text, ", ")
+		text = util.concat_fancy(text, ", ")
 	end
 
 	return t.p.characteristic({
@@ -21,7 +31,7 @@ end
 local function build_small_metadata(title, text)
 	if text then
 		if type(text) == "table" then
-			text = table.concat(text, ", ")
+			text = util.concat_fancy(text, ", ")
 		end
 
 		return t.p.song_meta_small(title .. ": " .. text)
@@ -43,7 +53,7 @@ local function build_personnel(personnel)
 		for _, key in ipairs(a) do
 			local value = personnel[key]
 			if type(value) == "table" then
-				value = table.concat(value, ", ")
+				value = util.concat_fancy(value, ", ")
 			end
 
 			local role = key:lower():gsub("^%l", string.upper)
@@ -90,7 +100,7 @@ function t.Lyric(time, en_lyric, pt_lyric)
 	return t.div.lyric_box({
 		t.p.lyric_time({ t.i(time) }),
 		t.div.lyric_text(en_lyric),
-		t.div.lyric_og(pt_lyric),
+		t.div.lyric_og({ lang = "pt-BR", pt_lyric }),
 	})
 end
 
@@ -103,11 +113,13 @@ end
 function t.Note(text)
 	return t.p.lyric_tl_note({
 		t.br(),
-		t.i(text),
+		text,
 	})
 end
 
 function t.InlineNote(term, explanation)
+	explanation = explanation:gsub("\n", " ")
+
 	return t.span.lyric_inline_note({
 		data_title = explanation,
 		term,

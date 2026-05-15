@@ -22,7 +22,7 @@ return t.Album({
 	}),
 	t.p([[
 		On a street corner in the Brazilian city of Belo Horizonte, Milton Nascimento,
-		the Borges Brothers, and other local artist friends started a sort of informal
+		the Borges Brothers, and others local artist friends started a sort of informal
 		“club,” appropriately nicknamed the “Clube da Esquina” (Corner Club,) where
 		they would talk, create, and play music. This double album is the culmination
 		of their musical efforts, being widely considered one of the greatest Brazilian
@@ -32,10 +32,10 @@ return t.Album({
 		t.img({
 			src = "/assets/blog/clube_da_esquina.jpg",
 			width = 600,
-			alt = "Part of the Clube da Esquina, sitting on a bench: Lô Borges, Fernando Brandt, Márcio Borges, and Milton Nascimento. Ex-president of Brazil Juscelino Kubitscheck is also there, looking very serious in a black suit and tie",
+			alt = "Part of the Clube da Esquina, sitting on a bench: Lô Borges, Fernando Brant, Márcio Borges, and Milton Nascimento. Ex-president of Brazil Juscelino Kubitscheck is also there, looking very serious in a black suit and tie",
 		}),
 		t.figcaption([[
-			Some of the members of the club. From left to right: Lô Borges, Fernando Brandt,
+			Some of the members of the club. From left to right: Lô Borges, Fernando Brant,
 			Ex-president of Brazil Juscelino Kubitscheck (not part of the club,) Márcio
 			Borges, and Milton Nascimento
 		]]),
@@ -190,6 +190,12 @@ return t.Album({
 			Percussion = { "Lô Borges", "Toninho Horta" },
 		},
 	}, {
+		t.Note([[
+			The title is a play on the “Entradas e Bandeiras” (Entries and Flags,) a term
+			referring to the early expeditions into colonial Brazil that sought to explore
+			the uncharted inland for gold and silver, as well as capture and enslave the
+			native populations.
+		]]),
 		t.Lyric("00:04", {
 			"What would you say of this thing ",
 			t.InlineNote("you can no longer touch the bottom of?", "As in touching the bottom of a river, pool, etc"),
@@ -440,7 +446,7 @@ return t.Album({
 		title = "San Vicente",
 		en_title = "San Vicente",
 		artist = "Milton Nascimento",
-		writer = { "Fernando Brandt", "Milton Nascimento" },
+		writer = { "Fernando Brant", "Milton Nascimento" },
 		personnel = {
 			["Acoustic guitar"] = "Tavito",
 			["Backing vocals"] = "Tavito",
@@ -533,7 +539,7 @@ return t.Album({
 		title = "Paisagem da Janela",
 		en_title = "Window Landscape",
 		artist = "Lô Borges",
-		writer = { "Fernando Brandt", "Lô Borges" },
+		writer = { "Fernando Brant", "Lô Borges" },
 		personnel = {
 			["Backing Vocals"] = { "Beto Guedes", "Milton Nascimento" },
 			Bass = "Beto Guedes",
@@ -737,7 +743,7 @@ return t.Album({
 		title = "Pelo Amor de Deus",
 		en_title = "For the Love of God",
 		artist = "Milton Nascimento",
-		writer = { "Fernando Brandt", "Milton Nascimento" },
+		writer = { "Fernando Brant", "Milton Nascimento" },
 		personnel = {
 			["Acoustic guitar"] = "Milton Nascimento",
 			["Additional vocals"] = "Lô Borges",
@@ -931,7 +937,7 @@ return t.Album({
 		title = "Ao que Vai Nascer",
 		en_title = "To the One that Will Be Born",
 		artist = "Milton Nascimento",
-		writer = { "Fernando Brandt", "Milton Nascimento" },
+		writer = { "Fernando Brant", "Milton Nascimento" },
 		personnel = {
 			["Acoustic guitar"] = "Milton Nascimento",
 			Bass = { "Beto Guedes", "Luiz Alves" },

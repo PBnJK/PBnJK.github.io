@@ -54,7 +54,7 @@ h6::before {
 
 main {
   background-color: var(--bg-primary);
-  width: 920px;
+  width: 960px;
 
   margin-bottom: 64px;
 }
@@ -230,6 +230,35 @@ figcaption {
   margin: 0;
 }
 
+.pronounce {
+  display: inline;
+}
+
+.pronounce i {
+  text-decoration: underline dotted;
+}
+
+.pronounce button {
+  display: inline-block;
+  background-color: var(--bg-primary);
+
+  border: none;
+  background: none;
+
+  vertical-align: middle;
+}
+
+.pronounce button:hover {
+  cursor: pointer;
+}
+
+.pronounce img {
+  display: block;
+  margin: 0;
+
+  width: 24px;
+}
+
 .p-with-aside {
   position: relative;
 }
@@ -305,7 +334,6 @@ figcaption {
 }
 
 .song-meta-personnel {
-  color: var(--font-secondary);
   margin-top: 16px;
 }
 
@@ -314,7 +342,6 @@ figcaption {
 }
 
 .song-meta-personnel ul {
-  color: var(--font-primary);
   margin: 0;
 }
 

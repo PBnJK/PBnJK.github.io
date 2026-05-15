@@ -157,6 +157,43 @@ function t.Cite(def, who)
 	return t.blockquote.citation({ def, t.br(), t.Author(who) })
 end
 
+function t.Pronounce(text, folder)
+	folder = "/assets/blog/audio/" .. folder .. "/"
+	return t.span.pronounce({
+		["data-slow"] = 0,
+		t.i({
+			lang = "pt-BR",
+			text,
+		}),
+		t.button({
+			t.img({
+				src = "/assets/blog/svgs/speaker.svg",
+				width = 32,
+			}),
+			t.audio.audio_normal({
+				t.source({
+					src = folder .. "normal.mp3",
+					type = "audio/mpeg",
+				}),
+				t.source({
+					src = folder .. "normal.ogg",
+					type = "audio/ogg",
+				}),
+			}),
+			t.audio.audio_slow({
+				t.source({
+					src = folder .. "slow.mp3",
+					type = "audio/mpeg",
+				}),
+				t.source({
+					src = folder .. "slow.ogg",
+					type = "audio/ogg",
+				}),
+			}),
+		}),
+	})
+end
+
 function t.Blog(metadata, def)
 	if metadata.tags == nil then
 		metadata.tags = {}
