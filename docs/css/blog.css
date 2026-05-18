@@ -83,7 +83,6 @@ blockquote {
 }
 
 q {
-  font-style: italic;
   quotes: "\201C" "\201D";
 }
 
@@ -218,16 +217,24 @@ figcaption {
     opacity var(--spoiler-info-fade-time) linear;
 }
 
-.img-row {
+.img-row div {
   display: flex;
   flex-direction: row;
 
   justify-content: space-evenly;
 }
 
-.img-row img {
+.img-row div img {
   display: inline;
   margin: 0;
+}
+
+.img-row figcaption.big {
+  display: block;
+}
+
+.img-row figcaption.small {
+  display: none;
 }
 
 .pronounce {
@@ -357,11 +364,15 @@ figcaption {
   padding: 4px 16px 4px 8px;
 }
 
-.lyric-box:hover {
+.lyric-box:hover,
+.lyric-box:focus,
+.lyric-box:active {
   background-color: var(--bg-secondary);
 }
 
-.lyric-box:hover .lyric-time {
+.lyric-box:hover .lyric-time,
+.lyric-box:focus .lyric-time,
+.lyric-box:active .lyric-time {
   color: var(--font-primary);
 }
 
@@ -430,21 +441,18 @@ figcaption {
   cursor: pointer;
 }
 
-.lyric-inline-note[data-title]:hover::after,
-.lyric-inline-note[data-title]:focus::after {
-  content: attr(data-title);
-  display: block;
+.lyric-inline-note button {
+  display: none;
+}
 
-  position: absolute;
-  left: 0;
-  top: 32px;
+.lyric-inline-note div {
+  content: attr(data-title);
 
   text-align: center;
 
-  width: 384px;
-  box-sizing: content-box;
+  width: 95%;
+  box-sizing: border-box;
 
-  z-index: 1;
   white-space: pre-line;
   word-wrap: break-word;
 
@@ -453,4 +461,86 @@ figcaption {
 
   border: 4px solid var(--bg-secondary);
   padding: 8px 16px;
+}
+
+/* Phone styles */
+@media screen and (width < 960px) {
+  .img-row div {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .img-row figcaption.big {
+    display: none;
+  }
+
+  .img-row figcaption.small {
+    display: block;
+  }
+}
+
+@media screen and (width < 768px) {
+  .lyric-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    margin-bottom: 8px;
+
+    border-left: 4px solid var(--font-disabled);
+  }
+
+  .lyric-time {
+    border-right: none;
+  }
+
+  .lyric-text {
+    padding: 0;
+  }
+
+  .lyric-og {
+    text-align: left;
+    text-align-last: left;
+  }
+
+  .lyric-inline-note button {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: -0%;
+
+    background: none;
+    border: none;
+  }
+}
+
+@media (hover: hover) {
+  /* it's tough in the webdev mines */
+  .lyric-inline-note:hover::after,
+  .lyric-inline-note:focus::after,
+  .lyric-inline-note:active::after {
+    content: attr(data-title);
+    display: block;
+
+    position: absolute;
+    left: 0;
+    top: 32px;
+
+    text-align: center;
+
+    width: 384px;
+    box-sizing: content-box;
+
+    z-index: 1;
+    white-space: pre-line;
+    word-wrap: break-word;
+
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+
+    border: 4px solid var(--bg-secondary);
+    padding: 8px 16px;
+  }
 }

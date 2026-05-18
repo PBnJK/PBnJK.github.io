@@ -1,5 +1,15 @@
 local t = require("tmpl_lyrics")
 
+local personnel = {
+	["12-string guitar"] = "Gilberto Gil",
+	["Acoustic bass"] = "Luiz Alves",
+	["Acoustic guitar"] = "Gilberto Gil",
+	Accordion = "Dominguinhos",
+	Drums = "Roberto Silva",
+	["Electric guitar"] = "Toninho Horta",
+	Percussion = "Chico Batera",
+}
+
 return t.Album({
 	title = "Índia",
 	year = "1973",
@@ -12,22 +22,29 @@ return t.Album({
 		day = 5,
 	},
 }, {
-	t.div.img_row({
-		t.img({
-			src = "https://m.media-amazon.com/images/I/71mE9ZKaFaL.jpg",
-			width = 400,
-			alt = 'Gal Costa album cover, depicting Gal Costa semi-nude with indigenous vests and, in all-caps blue text, the album title: "ÍNDIA"',
+	t.figure.img_row({
+		t.div({
+			t.img({
+				src = "https://m.media-amazon.com/images/I/71mE9ZKaFaL.jpg",
+				width = 400,
+				alt = 'Gal Costa album cover, depicting Gal Costa semi-nude with indigenous vests and, in all-caps blue text, the album title: "ÍNDIA"',
+			}),
+			t.img({
+				src = "/assets/blog/covers/1973_gal_costa_india_censurada.jpg",
+				width = 400,
+				alt = 'Gal Costa album cover wrap, simple black text over blue blackground: "GAL COSTA ÍNDIA"',
+			}),
 		}),
-		t.img({
-			src = "/assets/blog/covers/1973_gal_costa_india_censurada.jpg",
-			width = 400,
-			alt = 'Gal Costa album cover wrap, simple black text over blue blackground: "GAL COSTA ÍNDIA"',
+		t.figcaption.big({
+			"Left: original cover, featuring Gal Costa semi-nude in indigenous vests",
+			t.br(),
+			"Right: bag some copies came wrapped in, after the original cover photo was censored by the military dictatorship",
 		}),
-	}),
-	t.Subtitle({
-		"Left: original cover, featuring Gal Costa semi-nude in indigenous vests",
-		t.br(),
-		"Right: bag some copies came wrapped in, after the original cover photo was censored by the military dictatorship",
+		t.figcaption.small({
+			"Top: original cover, featuring Gal Costa semi-nude in indigenous vests",
+			t.br(),
+			"Bottom: bag some copies came wrapped in, after the original cover photo was censored by the military dictatorship",
+		}),
 	}),
 	t.Note({
 		"Thank you to ",
@@ -55,7 +72,7 @@ return t.Album({
 	t.img({
 		src = "/assets/blog/gal_costa.jpg",
 		width = 600,
-		alt = "Gal Costa sitting down with",
+		alt = "Gal Costa sitting down, playing guitar and singing",
 	}),
 	t.Subtitle('Gal Costa performing during the "Fa-Tal - Gal a Todo Vapor" show'),
 	t.p([[
@@ -73,6 +90,7 @@ return t.Album({
 		writer = { "J. A. Flores", "M. O. Guerrero" },
 		arranger = "Rogério Duprat",
 		conductor = "Mario Tavares",
+		personnel = personnel,
 	}, {
 		t.Note([[
 			Gal Costa never knew her father, but she had a recording of him singing this
@@ -113,6 +131,12 @@ return t.Album({
 		adapter = "Gilberto Gil",
 		writer = "[Portuguese Folklore]",
 		personnel = {
+			["12-string guitar"] = "Gilberto Gil",
+			["Acoustic bass"] = "Luiz Alves",
+			["Acoustic guitar"] = "Gilberto Gil",
+			Accordion = "Dominguinhos",
+			Drums = "Roberto Silva",
+			["Electric guitar"] = "Toninho Horta",
 			Percussion = "Chacal",
 		},
 	}, {
@@ -163,6 +187,13 @@ return t.Album({
 		arranger = "Arthur Verocai",
 		conductor = "Arthur Verocai",
 		personnel = {
+			["12-string guitar"] = "Gilberto Gil",
+			["Acoustic bass"] = "Luiz Alves",
+			["Acoustic guitar"] = "Gilberto Gil",
+			Accordion = "Dominguinhos",
+			Drums = "Roberto Silva",
+			["Electric guitar"] = "Toninho Horta",
+			Percussion = "Chico Batera",
 			Organ = "Wagner Tiso",
 		},
 	}, {
@@ -214,7 +245,14 @@ return t.Album({
 		en_title = "Come Back",
 		writer = "Lupiscinio Rodrigues",
 		personnel = {
+			["12-string guitar"] = "Gilberto Gil",
+			["Acoustic bass"] = "Luiz Alves",
+			["Acoustic guitar"] = "Gilberto Gil",
+			Accordion = "Dominguinhos",
+			Drums = "Roberto Silva",
+			["Electric guitar"] = "Toninho Horta",
 			Organ = "Tenório Jr.",
+			Percussion = "Chico Batera",
 		},
 	}, {
 		t.Lyric("00:03", "How many night I haven't slept", "Quantas noites não durmo"),
@@ -271,6 +309,7 @@ return t.Album({
 		title = "Relance",
 		en_title = "Glimpse",
 		writer = { "Caetano Veloso", "Pedro Novis" },
+		personnel = personnel,
 	}, {
 		t.Note(
 			"Pay attention to the original lyrics on the right for this one, and you'll notice that there's a pattern to the way that they are constructed, in the manner of concrete poetry."
@@ -314,6 +353,7 @@ return t.Album({
 		title = "Da Maior Importância",
 		en_title = "Of the Greatest Importance",
 		writer = "Caetano Veloso",
+		personnel = personnel,
 	}, {
 		t.Lyric("00:19", "It was a small moment, a quirk of yours", "Foi um pequeno momento, um jeito"),
 		t.Lyric("00:24", "Something like that", "Uma coisa assim"),
@@ -436,6 +476,7 @@ return t.Album({
 		title = "Passarinho",
 		en_title = "Little Bird",
 		writer = "Tuzé de Abreu",
+		personnel = personnel,
 	}, {
 		t.Lyric("00:40", "Sing like a bird", "Cantar como um passarinho"),
 		t.Lyric("00:46", "In the early morning", "De manhã cedinho"),
@@ -477,7 +518,14 @@ return t.Album({
 		arranger = "Arthur Verocai",
 		conductor = "Arthur Verocai",
 		personnel = {
+			["12-string guitar"] = "Gilberto Gil",
+			["Acoustic bass"] = "Luiz Alves",
+			["Acoustic guitar"] = "Gilberto Gil",
+			Accordion = "Dominguinhos",
+			Drums = "Roberto Silva",
+			["Electric guitar"] = "Toninho Horta",
 			Organ = "Tenório Jr.",
+			Percussion = "Chico Batera",
 		},
 	}, {
 		t.Lyric("00:14", "I feel content", "Me sinto contente"),
@@ -512,7 +560,12 @@ return t.Album({
 		en_title = "Out of Tune",
 		writer = { "Antonio Carlos Jobim", "Newton Mendonça" },
 		personnel = {
-			Guitar = "Roberto Menescal",
+			["Acoustic bass"] = "Luiz Alves",
+			["Acoustic guitar"] = "Roberto Menescal",
+			Accordion = "Dominguinhos",
+			Drums = "Roberto Silva",
+			["Electric guitar"] = "Toninho Horta",
+			Percussion = "Chico Batera",
 		},
 	}, {
 		t.Note(

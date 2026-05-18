@@ -117,12 +117,24 @@ function t.Note(text)
 	})
 end
 
+local inline_note_id = 0
 function t.InlineNote(term, explanation)
 	explanation = explanation:gsub("\n", " ")
 
+	local id = "inline-note-" .. tostring(inline_note_id)
+	inline_note_id = inline_note_id + 1
+
 	return t.span.lyric_inline_note({
 		data_title = explanation,
-		term,
+		t.span(term),
+		t.button({
+			popovertarget = id,
+		}),
+		t.div({
+			id = id,
+			popover = "",
+			explanation,
+		}),
 	})
 end
 

@@ -96,7 +96,7 @@ return t.Album({
 		t.br(),
 		t.Lyric("03:14", "Oba, here she comes, eh, hey", "Oba, lá vem ela, eh, hey"),
 		t.Lyric("03:18", "I've got my eyes on her", "Eu estou de olho nela"),
-		t.Lyric("03:22", "Oba, here she comes, oh eh-eh", "Ô, comanche, ô eh-eh"),
+		t.Lyric("03:22", "Oba, comanche, oh eh-eh", "Ô, comanche, ô eh-eh"),
 		t.Lyric("03:27", "I've got my eyes on her", "Estou de olho nela"),
 		t.Text("(scatting commences)"),
 		t.Lyric("03:31", "Hey, comanche, oh", "Ei, comanche, oh"),
@@ -161,7 +161,7 @@ return t.Album({
 		t.br(),
 		t.Lyric("01:07", "I'm sorry, friends, guys", "Me desculpem, meus amigos, gente"),
 		t.Lyric("01:11", "If I'm confused and sad", "Se eu estou confuso e triste"),
-		t.Lyric("01:16", "and even ill-tempered", "E até mal humorado"),
+		t.Lyric("01:16", "And even ill-tempered", "E até mal humorado"),
 		t.br(),
 		t.Lyric("01:21", "But it's just that I'm no longer", "Mas é que eu já não sou"),
 		t.Lyric("01:24", "My love's boyfriend", "O namorado do meu amor"),
@@ -196,8 +196,8 @@ return t.Album({
 		t.br(),
 		t.Lyric("02:34", {
 			t.InlineNote(
-				"(The telephone)",
-				"This is not a T/L note or cultural context, just... man, who uses a telephone as percussion? I love this album"
+				"(The phone)",
+				"This is not a T/L note or cultural context, just... man, who uses a rotary dial as percussion? I love this album"
 			),
 		}, "(O telefone)"),
 		t.br(),
@@ -266,7 +266,7 @@ return t.Album({
 		t.Lyric("01:13", "And my happiness starts with you", "E minha alegria começa em você"),
 		t.Lyric("01:18", "Domenica, blessed woman", "Domenica, bendita mulher"),
 		t.Lyric("01:21", "I love you and I believe in you", "Eu te amo eu te acredito"),
-		t.Lyric("01:23", "I like you a lot", "Eu gosto muito de você"),
+		t.Lyric("01:23", "I like you a lot, Domenica!", "Eu gosto muito de você, Domenica!"),
 		t.br(),
 		t.Lyric("01:25", "Domenica, Domenica, Domenica, Domenica", "Domenica, Domenica, Domenica, Domenica"),
 		t.br(),
@@ -280,7 +280,7 @@ return t.Album({
 		t.Lyric("02:02", "Because I have faith that when God hears", "Pois eu tenho fé que quando Deus ouvir"),
 		t.Lyric("02:06", "My love anthem", "Meu hino de amor"),
 		t.Lyric("02:10", "I'll turn Domenica into", "Eu vou fazer da Domenica"),
-		t.Lyric("02:13", "My guardian angel and my woman", "Meu anjo da guarda e minha mulher"),
+		t.Lyric("02:13", "My guardian angel and my woman, Domenica!", "Meu anjo da guarda e minha mulher, Domenica!"),
 		t.br(),
 		t.Lyric("02:18", "Domenica, Domenica, Domenica, Domenica", "Domenica, Domenica, Domenica, Domenica"),
 		t.Lyric("02:26", "Domenica! Domenica!", "Domenica! Domenica!"),
@@ -289,9 +289,14 @@ return t.Album({
 		t.Lyric("02:35", "And my happiness starts with you", "E minha alegria começa em você"),
 		t.Lyric("02:39", "Domenica, blessed woman", "Domenica bendita mulher"),
 		t.Lyric("02:43", "I love you and I believe in you", "Eu te amo eu te acredito"),
-		t.Lyric("02:45", "I like you a lot", "Eu gosto muito de você"),
+		t.Lyric("02:45", "I like you a lot, Domenica...", "Eu gosto muito de você, Domenica..."),
 		t.br(),
-		t.Lyric("02:48", "Domenica, Domenica, Domenica, Domenica", "Domenica, Domenica, Domenica, Domenica"),
+		t.Lyric("02:51", "Domenica, Domenica, Domenica, Domenica", "Domenica, Domenica, Domenica, Domenica"),
+		t.Lyric("02:59", "Domenica, Domenica, Domenica, Domenica...", "Domenica, Domenica, Domenica, Domenica..."),
+		t.Lyric("03:11", "(I love you Domenica, I love you Domenica)", "(Eu te amo Domenica, eu te amo Domenica)"),
+		t.Lyric("03:22", "(Domenica, sundayed on a Sunday)", "(Domenica, domingava num domingo)"),
+		t.Lyric("03:29", "(Domenica, sundayed on a Sunday)", "(Domenica, domingava num domingo)"),
+		t.Lyric("03:36", "(All in white)", "(Toda de branca)"),
 	}),
 	t.Song({
 		title = "Charles Jr.",
@@ -379,8 +384,8 @@ return t.Album({
 		t.Lyric("03:28", "Will be the weapons of victory (go, go)", "Serão as armas da vitória (vai, vai)"),
 		t.Lyric("03:33", "For universal peace (go, go)", "Para a paz universal (vai, vai)"),
 		t.br(),
-		t.Lyric("03:38", "And all the world will hear (go, go)", "E o mundo todo vai ouvir (vai, vai)"),
-		t.Lyric("03:42", "And all the world will know (go, go)", "E o mundo todo vai saber (vai, vai)"),
+		t.Lyric("03:38", "And the whole world will hear (go, go)", "E o mundo todo vai ouvir (vai, vai)"),
+		t.Lyric("03:42", "And the whole world will know (go, go)", "E o mundo todo vai saber (vai, vai)"),
 		t.br(),
 		t.Lyric("03:47", "That my name's Charles Jr. (go, go)", "Que eu me chamo Charles Junior (vai, vai)"),
 		t.Lyric("03:51", "I'm also an angel (go, go)", "Eu também sou um anjo (vai, vai)"),
@@ -389,9 +394,9 @@ return t.Album({
 		t.Lyric("04:05", "My name's Charles Jr. (go, go)", "Eu me chamo Charles Junior (vai, vai)"),
 		t.Lyric("04:09", "I'm also an angel (go, go)", "Eu também sou um anjo (vai, vai)"),
 		t.Text("(instrumental)"),
-		t.Lyric("04:42", "Comanche", "Comanche"),
-		t.Lyric("04:44", "Comancheiro", "Comancheiro"),
-		t.Lyric("04:48", "My name's Charles Jr.", "Eu me chamo Charles Junior"),
+		t.Lyric("04:42", "— Comanche!", "Comanche!"),
+		t.Lyric("04:44", "— Comancheiro!", "Comancheiro!"),
+		t.Lyric("04:48", "— My name's Charles Jr.!", "Eu me chamo Charles Junior!"),
 		t.br(),
 		t.Lyric("05:10", "— Eh, comanche", "— Ê, comanche"),
 		t.Lyric("05:15", "— Amazing...", "— Sensacional..."),
@@ -458,7 +463,7 @@ return t.Album({
 				"heartsease, that's what she is for me",
 				"Heartsease is the viola tricolor, known as “perfect-love” in Brazil—thus “that's what she is for me”"
 			),
-		}, "Tem amor perfeito, é o que ela é pra mim"),
+		}, "Tem amor-perfeito, é o que ela é pra mim"),
 		t.Text("(repeats)"),
 	}),
 	t.Song({
@@ -482,7 +487,7 @@ return t.Album({
 		t.Lyric("00:37", "I set side my pride", "Deixei de lado o meu orgulho"),
 		t.Lyric(
 			"00:40",
-			"Because I saw how I was ugly, useless, and so unhappy",
+			"Because I saw how it was ugly, useless, and so unhappy",
 			"Pois eu vi como era feio, inútil e tão infeliz"
 		),
 		t.Lyric(
@@ -538,7 +543,7 @@ return t.Album({
 		t.Lyric("02:40", "Ai, ai, ai, the thing I wanted most happened", "Ai, ai, ai aconteceu o que eu mais queria"),
 		t.Lyric(
 			"02:44",
-			"Ai, ai, ai, it happened, the thing I wanted most",
+			"Ai, ai, ai, it happened, the thing I wanted most (eh, partner!)",
 			"Ai, ai, ai o que eu mais queria aconteceu (ê cumpadi!)"
 		),
 		t.Lyric("02:49", "Ai, ai, ai (eh partner!)", "Ai, ai, ai (ê cumpadi!)"),
@@ -551,12 +556,15 @@ return t.Album({
 		),
 		t.Lyric("03:06", "Ai, ai, ai, the thing I wanted most happened", "Ai, ai, ai aconteceu o que eu mais queria"),
 		t.Lyric("03:10", "Ai, ai, ai, it happened, the thing I wanted most", "Ai, ai, ai o que eu mais queria..."),
+		t.Text("(etc.)"),
 	}),
 	t.Song({
 		title = "O Telefone Tocou Novamente",
 		en_title = "The Phone Rang Again",
 	}, {
 		t.Note("The big hit of the album."),
+		t.Lyric("00:15", "(Hello?)", "(Alô?)"),
+		t.br(),
 		t.Lyric("00:16", "The phone rang again", "O telefone tocou novamente"),
 		t.Lyric("00:22", "I went to answer but it wasn't my love calling", "Fui atender e não era o meu amor"),
 		t.Lyric("00:28", "Is she still very mad at me?", "Será que ela ainda está muito zangada comigo?"),
@@ -584,9 +592,8 @@ return t.Album({
 		t.Lyric("01:28", "I am peace", "Eu sou a paz"),
 		t.Lyric("01:30", "I am love", "Eu sou o amor"),
 		t.Lyric("01:32", "And hope", "E a esperança"),
-		t.Lyric("01:34", "The phone...!", "O telefone...!"),
 		t.br(),
-		t.Lyric("01:36", "The phone rang again", "O telefone tocou novamente"),
+		t.Lyric("01:36", "The phone rang again (hello?)", "O telefone tocou novamente (alô?)"),
 		t.Lyric("01:39", "I went to answer but it wasn't my love calling", "Fui atender e não era o meu amor"),
 		t.Lyric("01:44", "Is she still very mad at me?", "Será que ela ainda está muito zangada comigo?"),
 		t.br(),
@@ -613,16 +620,21 @@ return t.Album({
 		t.Lyric("02:44", "I am peace", "Eu sou a paz"),
 		t.Lyric("02:46", "I am love", "Eu sou o amor"),
 		t.Lyric("02:47", "I am hope", "Eu sou a esperança"),
-		t.Lyric("02:50", "The phone, the phone, the phone...!", "O telefone, o telefone, o telefone...!"),
+		t.Lyric("02:50", "The phone, the phone!", "O telefone, o telefone!"),
 		t.br(),
-		t.Lyric("02:54", "The phone rang again (hello?)", "O telefone tocou novamente (alô?)"),
+		t.Lyric("02:54", "The phone rang again", "O telefone tocou novamente"),
 		t.Lyric("02:58", "I went to answer but it wasn't my love calling", "Fui atender e não era o meu amor"),
-		t.Lyric("03:03", "Is she still very mad at me?", "Será que ela ainda está muito zangada comigo?"),
+		t.Lyric(
+			"03:03",
+			"Is she still very mad at me? (hello?)",
+			"Será que ela ainda está muito zangada comigo? (alô?)"
+		),
 		t.br(),
 		t.Lyric("03:09", "What a shame", "Que pena"),
 		t.Lyric("03:12", "What a shame", "Que pena"),
 		t.Lyric("03:14", "What a shame", "Que pena"),
 		t.Lyric("03:17", "What a shame...", "Que pena..."),
+		t.Text("(etc.)"),
 	}),
 	t.Song({
 		title = "Mulher Brasileira",
@@ -670,12 +682,13 @@ return t.Album({
 		t.Lyric("02:35", "Where are you?", "Aonde é que está você?"),
 		t.Lyric("02:40", "Brazilian woman", "Mulher brasileira"),
 		t.Lyric("02:44", "I want you for myself", "Eu quero você pra mim"),
-		t.Lyric("02:49", "(Please crescendo for the Brazilian woman)", "(Por favor cresçam para a mulher brasileira)"),
-		t.Text("(scatting commences)"),
+		t.br(),
+		t.Lyric("02:49", "(Please grow for the Brazilian woman)", "(Por favor cresçam para a mulher brasileira)"),
+		t.br(),
 		t.Lyric("02:54", "Brazilian woman", "Mulher brasileira"),
 		t.Lyric("02:58", "Woman oh oh-oh-oh eh", "Mulher ô ô-o-o ê"),
 		t.Lyric("03:02", "Brazilian woman", "Mulher brasileira"),
-		t.Lyric("03:05", "Woman (come on!)", "Mulher (senta o pau!)"),
+		t.Lyric("03:05", "Woman (hit it!)", "Mulher (senta o pau!)"),
 		t.Lyric("03:08", "Brazilian woman...", "Mulher brasileira..."),
 		t.Text("(etc.)"),
 		t.Lyric("03:55", "Brazilian woman", "Mulher brasileira"),
@@ -687,7 +700,10 @@ return t.Album({
 		title = "Terezinha",
 		en_title = "Terezinha",
 	}, {
-		t.Note("Terezinha is the diminutive form of the given name Tereza."),
+		t.Note({
+			"This song is one of the many written by Jorge Ben for his wife ",
+			t.i("Domingas Terezinha Inalmo de Menezes."),
+		}),
 		t.Lyric("00:20", "Terezinha", "Terezinha"),
 		t.Lyric("00:20", "How are you, Terê?", "Como vai você, Terê?"),
 		t.Lyric("00:20", "What are you doing, Te-te?", "O que faz você, Te-te?"),
@@ -752,7 +768,7 @@ return t.Album({
 		t.Lyric("01:55", "To dream with you even knowing", "Para sonhar com você mesmo sabendo"),
 		t.Lyric("01:59", "That dreams end in the morning", "Que os sonhos acabam de manhã"),
 		t.Lyric("02:02", "And that I have to wake up to go to work", "E que eu tenho que acordar pra trabalhar"),
-		t.Lyric("02:06", "And I won't lose you, my love, no!", "E eu não vou perder você, meu amor"),
+		t.Lyric("02:06", "And I won't lose you, my love, no!", "E eu não vou perder você, meu amor, não!"),
 		t.br(),
 		t.Lyric("02:11", "Don't say", "Não diga mais"),
 		t.Lyric("02:12", "That this love is like a dream", "Que esse amor é como um sonho"),
@@ -774,7 +790,7 @@ return t.Album({
 		t.Lyric("02:53", "And the ugly colors of a past", "E as cores feia do passado"),
 		t.Lyric("02:55", "Without you, my love", "Sem você, meu amor"),
 		t.br(),
-		t.Lyric("02:56", "No, no, no, don't say (brute force!!!)", "Não, não, não diga mais que"),
+		t.Lyric("02:56", "No, no, no, don't say (brute force!!!)", "Não, não, não diga mais que (força bruta!!!)"),
 		t.Lyric("03:01", "That this love is like a dream, don't say", "Esse amor é como um sonho, não diga mais"),
 		t.Lyric("03:03", "Because dreams end in the morning", "Pois os sonhos acabam de manhã"),
 		t.Lyric("03:08", "And I have to wake up (brute force!!!)", "E eu tenho que acordar (força bruta!!!)"),
@@ -786,7 +802,7 @@ return t.Album({
 		t.Lyric("03:42", "And that I have to wake up to go to work", "E que eu tenho que acordar pra trabalhar"),
 		t.Lyric("03:45", "And I won't lose you, my love", "E eu não vou perder você, meu amor"),
 		t.br(),
-		t.Lyric("03:49", "Don't say", "Não diga mais"),
+		t.Lyric("03:49", "Don't say!", "Não diga mais!"),
 		t.Lyric("03:50", "That this love is like a dream (hit it!)", "Que esse amor é como um sonho (senta o pau!)"),
 		t.Lyric("03:56", "Because dreams end in the morning", "Pois os sonhos acabam de manhã"),
 		t.Lyric("03:59", "And I have to wake up (brute force!!!)", "E eu tenho que acordar (força bruta!!!)"),
@@ -794,6 +810,7 @@ return t.Album({
 		t.Lyric("04:10", "(Brute force!!!)", "(Força bruta!!!)"),
 		t.Lyric("04:17", "(Down and up)", "(Desce e sobe)"),
 		t.Text("(instrumental)"),
+		t.Lyric("04:28", "(Brute force, brute force, brute force...)", "Força bruta, força bruta, força bruta...)"),
 		t.Lyric("04:32", "Don't say", "Não diga mais"),
 		t.Lyric("04:34", "That this love", "Que esse amor é como um sonho"),
 		t.Lyric("04:37", "Don't say", "Não diga mais"),
@@ -825,10 +842,10 @@ return t.Album({
 	}, {
 		[[
 		Charles is actually Charles Antônio Sondré, a childhood friend of Jorge who,
-		according to him, was a sort of Robin Hood of the slums. The “Angel 45” moniker
+		according to him, was a sort of “Robin Hood of the slums.” The “Angel 45” moniker
 		came from the .45 pistol he carried. The Charles from this album, Charles Jr.,
 		is his son (supposedly—Jorge Ben has a Bob Dylan-like penchant for just saying
-		stuff and not elaborating on it...)
+		stuff and refusing to elaborate on it...)
 	]],
 		t.a({
 			href = "https://culturablack.com.br/quem-e-o-charles-cantado-por-jorge-ben/",

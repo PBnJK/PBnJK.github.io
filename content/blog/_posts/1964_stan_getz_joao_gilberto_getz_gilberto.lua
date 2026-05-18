@@ -1,7 +1,18 @@
 local t = require("tmpl_lyrics")
 
-local standard_personnel = {
+local personnel = {
 	["Acoustic guitar"] = "João Gilberto",
+	["Bass guitar"] = "Tommy Williams",
+	Drums = "Milton Banana",
+	Piano = "Antônio Carlos Jobim",
+	["Tenor saxophone"] = "Stan Getz",
+	Vocals = "João Gilberto",
+}
+
+local personnel_with_astrud = {
+	["Additional Vocals"] = "Astrud Gilberto",
+	["Acoustic guitar"] = "João Gilberto",
+	["Bass guitar"] = "Tommy Williams",
 	Drums = "Milton Banana",
 	Piano = "Antônio Carlos Jobim",
 	["Tenor saxophone"] = "Stan Getz",
@@ -29,27 +40,105 @@ return t.Album({
 		t.figcaption({
 			"Featured in the cover art: ",
 			t.i("Alla Africa,"),
-			"by Puerto Rican artist Olga Albizu",
+			" by Puerto Rican artist Olga Albizu",
 		}),
 	}),
-	t.p("context context context"),
+	t.p({
+		[[
+		It's 1961, and Jazz is losing the popularity war in America. Rock 'n' Roll
+		has taken Swing's spot at the top of the
+	]],
+		t.i("Billboard"),
+		[[
+		top charts, with only a few hanger-ons managing to get a hit through the
+		barrage of catchy, poppy
+	]],
+		t.i("Rock Around the Clock"),
+		" and ",
+		t.i("Heartbreak Hotel."),
+	}),
+	t.p({
+		[[
+		Meanwhile, saxophonist Stan Getz has just gotten a visit from his friend, bassist
+		Don Payne, who had returned from a trip to Brazil. Getz was of the opinion that a
+		craze for innovation had turned Jazz into pompous, complex, chauvinistic egomania.
+		The genre, he said, needed a breath of fresh air.
+	]],
+	}),
+	t.p({
+		[[
+		So when Payne showed Getz the collection of records he'd brought
+		back with him, all featuring this new, exciting musical style, one that joined
+		the danceability of samba with the subtlety of American cool jazz, Stan Getz was
+		immediately taken by this new groove, the so-called “new wave”—]],
+		t.i("Bossa Nova."),
+	}),
+	t.p({
+		[[
+		Immediately after, in 1962-63, he would record three albums in the style,
+		covering songs from the Brazilian records. The albums were a hit—the first one,
+	]],
+		t.i("Jazz Samba,"),
+		[[
+		was a №1 pop hit, and quickly sold one million copies. They were, however,
+		pale imitation. Though they may have occasionally featured some Brazilian musicians, Stan
+		Getz and, most importantly, Creed Taylor, his producer, wanted an album that
+		was a true “historical documentation” of Bossa Nova, and for that, they'd need
+		the pioneers of the genre, the people behind the songs they'd been covering.
+		Those men were
+	]],
+		t.Pronounce("João Gilberto", "joao_gilberto"),
+		" and ",
+		t.Pronounce("Antônio Carlos Jobim.", "antonio_carlos_jobim"),
+	}),
 	t.figure({
 		t.img({
 			src = "/assets/blog/gilberto_jobim_e_getz.jpg",
 			width = 600,
 			alt = "Recording session photo, with João Gilberto on guitar, Antônio Carlos Jobim on piano, and Stan Getz on tenor saxophone",
 		}),
-		t.figcaption(
-			"From left to right: João Gilberto (guitar,) Antônio Carlos Jobim (piano,) and Stan Getz (tenor saxophone)"
-		),
+		t.figcaption({
+			[[
+			From left to right: João Gilberto (guitar,) Antônio Carlos Jobim (piano,) and
+			Stan Getz (tenor saxophone.) Taken during the
+		]],
+			t.i("Getz/Gilberto"),
+			" sessions.",
+		}),
+	}),
+	t.p({
+		[[
+		The recording was not without its troubles. Certain stylistic differences, such
+		as Gilberto's minimalist playing vs. Getz's penchant for impactful sax solos,
+		led to many disagreements. At one point, Gilberto is said to have said to
+		Jobim, who was working double-time as their interpreter: “Tell this gringo he's
+		an idiot.” Jobim turned to Getz, and dutifully translated: “Stan, João is saying
+		that his dream always was to record with you.”
+	]],
+	}),
+	t.p({
+		[[
+		Still, the record came out, and became so successful as to forever shape the
+		world's understanding of Brazilian music. To put it into perspective, the LP
+		occupied the №1 spot on the
+	]],
+		t.i("Billboard"),
+		" album charts for 96 consecutive weeks, with only the Beatles' ",
+		t.i("A Hard Day's Night"),
+		" being able to knock it off.",
 	}),
 	t.Song({
 		title = "The Girl from Ipanema",
 		artist = "Stan Getz & João Gilberto (feat. Astrud Gilberto)",
 		writer = { "Antônio Carlos Jobim", "Norman Gimbel", "Vinicius de Moraes" },
-		personnel = standard_personnel,
+		personnel = personnel_with_astrud,
 	}, {
-		t.Note("Ipanema is a famous neighbourhood and beach in the city of Rio de Janeiro."),
+		t.Note([[
+			Ipanema is a famous neighbourhood and beach in the city of Rio de Janeiro.
+			Jobim had to fight to keep the reference in, as lyricist Norman Gimbel, who
+			wrote the English portion of the song, thought the word would mean nothing 
+			to American audiences and harm the song's popularity.
+		]]),
 		t.Lyric(
 			"00:07",
 			"Look what a beautiful thing, so full of grace",
@@ -58,7 +147,7 @@ return t.Album({
 		t.Lyric("00:12", "She's the girl that comes and passes by", "É ela a menina que vem e que passa"),
 		t.Lyric("00:16", "With a sweet sway, on her way to the sea", "Num doce balanço a caminho do mar"),
 		t.br(),
-		t.Lyric("00:22", "Girl with her body golden from Ipanema's sun", "Moça do corpo dourado do sol de Ipanema"),
+		t.Lyric("00:22", "Girl with her body golden from the Ipanema sun", "Moça do corpo dourado do sol de Ipanema"),
 		t.Lyric("00:27", "Her sway is more than a poem", "O seu balançado é mais que um poema"),
 		t.Lyric(
 			"00:31",
@@ -73,7 +162,7 @@ return t.Album({
 		t.Lyric("00:59", "Beauty that is not just mine", "A beleza que não é só minha"),
 		t.Lyric("01:03", "That also passes by alone", "Que também passa sozinha"),
 		t.br(),
-		t.Lyric("01:07", "Ah, if she knew", "Ah, se ela soubesse"),
+		t.Lyric("01:07", "Ah, if only she knew", "Ah, se ela soubesse"),
 		t.Lyric("01:09", "That when she passes by", "Que quando ela passa"),
 		t.Lyric("01:12", "The world, smiling, is filled with grace", "O mundo sorrindo se enche de graça"),
 		t.Lyric("01:15", "And becomes more beautiful because of love", "E fica mais lindo por causa do amor"),
@@ -119,8 +208,9 @@ return t.Album({
 		title = "Doralice",
 		artist = "Stan Getz & João Gilberto",
 		writer = { "Antônio Almeida", "Dorival Caymmi" },
-		personnel = standard_personnel,
+		personnel = personnel,
 	}, {
+		t.Note("A slight change of pace"),
 		t.Lyric("00:11", "Doralice, didn't I tell you?", "Doralice eu bem que te disse"),
 		t.Lyric("00:13", "Loving is foolish, it's silly, an illusion ", "Amar é tolice, é bobagem, ilusão"),
 		t.Lyric("00:16", "I prefer to live alone", "Eu prefiro viver tão sozinho"),
@@ -149,7 +239,7 @@ return t.Album({
 		en_title = "To Hurt My Heart",
 		artist = "Stan Getz & João Gilberto",
 		writer = "Ary Barroso",
-		personnel = standard_personnel,
+		personnel = personnel,
 	}, {
 		t.Lyric("00:11", "It's been a year and a half, love", "Tá fazendo um ano e meio, amor"),
 		t.Lyric("00:18", "Since our home fell apart", "Que o nosso lar desmoronou"),
@@ -173,7 +263,7 @@ return t.Album({
 		en_title = "Out of Tune",
 		artist = "Stan Getz & João Gilberto",
 		writer = { "Antônio Carlos Jobim", "Newton Mendonça" },
-		personnel = standard_personnel,
+		personnel = personnel,
 	}, {
 		t.Lyric("00:04", "When you tell me I go out of tune, love", "Se você disser que eu desafino amor"),
 		t.Lyric("00:10", "Know that this causes me immense pain", "Saiba que isto em mim provoca imensa dor"),
@@ -225,14 +315,7 @@ return t.Album({
 		title = "Corcovado (Quiet Nights of Quiet Stars)",
 		artist = "Stan Getz & João Gilberto (feat. Astrud Gilberto)",
 		writer = { "Antônio Carlos Jobim", "Gene Lees" },
-		personnel = {
-			["Acoustic guitar"] = "João Gilberto",
-			Drums = "Milton Banana",
-			Piano = "Antônio Carlos Jobim",
-			["Tenor saxophone"] = "Stan Getz",
-			Vocals = "João Gilberto",
-			["Vocals (intro)"] = "Astrud Gilberto",
-		},
+		personnel = personnel_with_astrud,
 	}, {
 		t.Note([[
 			Intro sung by Astrud Gilberto. The Corcovado is a mountain in the city of Rio
@@ -260,7 +343,7 @@ return t.Album({
 		en_title = "I Only Dance Samba",
 		artist = "Stan Getz & João Gilberto",
 		writer = { "Antônio Carlos Jobim", "Vinicius de Moraes" },
-		personnel = standard_personnel,
+		personnel = personnel,
 	}, {
 		t.Lyric("00:05", "I only dance Samba", "Só danço samba"),
 		t.Lyric("00:07", "I only dance Samba", "Só danço samba"),
@@ -292,7 +375,7 @@ return t.Album({
 		en_title = "The Great Love",
 		artist = "Stan Getz & João Gilberto",
 		writer = { "Antônio Carlos Jobim & Vinicius de Moraes" },
-		personnel = standard_personnel,
+		personnel = personnel,
 	}, {
 		t.Lyric("01:10", "Come what may", "Haja o que houver"),
 		t.Lyric("01:16", "There's always a man for a woman", "Há sempre um homem para uma mulher"),
@@ -308,7 +391,7 @@ return t.Album({
 		en_title = "I'm Always Dreaming",
 		artist = "Stan Getz & João Gilberto",
 		writer = "Antônio Carlos Jobim",
-		personnel = standard_personnel,
+		personnel = personnel,
 	}, {
 		t.Lyric("00:00", "I'm always dreaming, dreaming", "Vivo sonhando, sonhando"),
 		t.Lyric("00:02", "For a thousand hours on end", "Mil horas sem fim"),

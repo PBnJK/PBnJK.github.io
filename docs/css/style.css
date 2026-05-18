@@ -103,7 +103,7 @@ mark {
   margin-bottom: 32px;
   padding: 32px 48px;
 
-  background-color: var(--bg-highlight);
+  background-color: var(--bg-primary);
 
   border: 4px solid var(--font-primary);
   display: flex;

@@ -157,10 +157,9 @@ function t.Cite(def, who)
 	return t.blockquote.citation({ def, t.br(), t.Author(who) })
 end
 
-function t.Pronounce(text, folder)
-	folder = "/assets/blog/audio/" .. folder .. "/"
+function t.Pronounce(text, audio)
+	audio = "/assets/audio/" .. audio
 	return t.span.pronounce({
-		["data-slow"] = 0,
 		t.i({
 			lang = "pt-BR",
 			text,
@@ -172,21 +171,11 @@ function t.Pronounce(text, folder)
 			}),
 			t.audio.audio_normal({
 				t.source({
-					src = folder .. "normal.mp3",
+					src = audio .. ".mp3",
 					type = "audio/mpeg",
 				}),
 				t.source({
-					src = folder .. "normal.ogg",
-					type = "audio/ogg",
-				}),
-			}),
-			t.audio.audio_slow({
-				t.source({
-					src = folder .. "slow.mp3",
-					type = "audio/mpeg",
-				}),
-				t.source({
-					src = folder .. "slow.ogg",
+					src = audio .. ".ogg",
 					type = "audio/ogg",
 				}),
 			}),
