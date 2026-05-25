@@ -64,7 +64,7 @@ return t.Album({
 			["12-string guitar"] = "Tavito",
 		},
 	}, {
-		t.Lyric("00:11", "Through sun and rain, you dreamed", "Com sol e chuva, você sonhava"),
+		t.Lyric("00:11", "With sun and rain, you dreamed", "Com sol e chuva, você sonhava"),
 		t.Lyric("00:21", "That it would get better later", "Que ia ser melhor depois"),
 		t.Lyric(
 			"00:24",

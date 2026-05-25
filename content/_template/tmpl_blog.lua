@@ -103,7 +103,7 @@ end
 function t.Footnote(num)
 	return t.a.footnote({
 		href = "#foot-" .. num,
-		t.b({ t.sup("[" .. num .. "]") }),
+		t.b({ t.sup(tostring(num)) }),
 	})
 end
 
@@ -165,9 +165,11 @@ function t.Pronounce(text, audio)
 			text,
 		}),
 		t.button({
+			aria_label = "Pronounce",
 			t.img({
 				src = "/assets/blog/svgs/speaker.svg",
 				width = 32,
+				alt = "Speaker icon",
 			}),
 			t.audio.audio_normal({
 				t.source({

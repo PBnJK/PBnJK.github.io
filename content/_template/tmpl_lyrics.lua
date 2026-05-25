@@ -2,14 +2,24 @@ local util = require("util")
 
 local t = require("tmpl_blog")
 
+--- Treat possible tables of strings (multi-names) by concatenating them
+--- Other types are stringified normally
+---
+--- @param text any
+--- @return string
 local function treat_multi_names(text)
 	if type(text) == "table" then
 		return util.concat_fancy(text)
 	end
 
-	return text
+	return tostring(text)
 end
 
+--- Builds the page heading
+---
+--- @param title any
+--- @param artist any
+--- @return table
 local function build_heading(title, artist)
 	title = title and treat_multi_names(title) or "Unknown title"
 	artist = artist and treat_multi_names(artist) or "Unknown artist"
@@ -19,22 +29,22 @@ end
 
 local function build_characteristic(title, text)
 	if type(text) == "table" then
-		text = util.concat_fancy(text, ", ")
+		text = util.concat_fancy(text)
 	end
 
-	return t.p.characteristic({
-		t.span({ t.i(title) }),
-		tostring(text),
+	return t.div.characteristic({
+		t.dt({ t.b(title) }),
+		t.dd(tostring(text)),
 	})
 end
 
 local function build_small_metadata(title, text)
 	if text then
-		if type(text) == "table" then
-			text = util.concat_fancy(text, ", ")
-		end
-
-		return t.p.song_meta_small(title .. ": " .. text)
+		text = treat_multi_names(text)
+		return t.div.song_meta_small({
+			t.dt({ t.b(title) }),
+			t.dd(text),
+		})
 	end
 
 	return ""
@@ -57,12 +67,12 @@ local function build_personnel(personnel)
 			end
 
 			local role = key:lower():gsub("^%l", string.upper)
-			table.insert(personnel_element, t.li(role .. ": " .. value))
+			table.insert(personnel_element, t.div({ t.dt({ t.b(role) }), t.dd(value) }))
 		end
 
 		return t.details.song_meta_personnel({
 			t.summary("Personnel"),
-			t.ul(personnel_element),
+			t.dl(personnel_element),
 		})
 	end
 
@@ -81,14 +91,16 @@ function t.Song(metadata, def)
 					")",
 				}),
 				t.If(metadata.artist, t.p.song_meta_artist(metadata.artist), ""),
-				build_small_metadata("Adapted by", metadata.adapter),
-				build_small_metadata("Written by", metadata.writer),
-				build_small_metadata("Composed by", metadata.composer),
-				build_small_metadata("Arranged by", metadata.arranger),
-				build_small_metadata("Conducted by", metadata.conductor),
-				build_small_metadata("Produced by", metadata.producer),
-				build_small_metadata("Programmed by", metadata.programmer),
-				build_small_metadata("Lyrics by", metadata.lyricist),
+				t.dl({
+					build_small_metadata("Adapted by", metadata.adapter),
+					build_small_metadata("Written by", metadata.writer),
+					build_small_metadata("Composed by", metadata.composer),
+					build_small_metadata("Arranged by", metadata.arranger),
+					build_small_metadata("Conducted by", metadata.conductor),
+					build_small_metadata("Produced by", metadata.producer),
+					build_small_metadata("Programmed by", metadata.programmer),
+					build_small_metadata("Lyrics by", metadata.lyricist),
+				}),
 				build_personnel(metadata.personnel),
 			}),
 			t.div.song_contents(def),
@@ -161,8 +173,10 @@ function t.Album(metadata, def)
 						t.header["#article-header"]({
 							build_heading(metadata.title, metadata.artist),
 							t.hr(),
-							build_characteristic("Released in: ", metadata.year or "Unknown year"),
-							build_characteristic("Genre: ", metadata.genre or "Unknown genre"),
+							t.dl({
+								build_characteristic("Released in", metadata.year or "Unknown year"),
+								build_characteristic("Genre", metadata.genre or "Unknown genre"),
+							}),
 						}),
 					}),
 					t.ColorSchemeToggle(),

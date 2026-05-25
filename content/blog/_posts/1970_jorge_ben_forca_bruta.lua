@@ -19,7 +19,18 @@ return t.Album({
 	}),
 	t.p({
 		t.Pronounce("Força Bruta", "forca_bruta_title"),
-		"(Brute Force)",
+		" (Brute Force) is ",
+		t.Pronounce("Jorge Ben", "jorge_ben"),
+		[['s seventh studio album, released in 1970. Following the major success of
+		his psychedelic 1969 self-titled,
+	]],
+		t.i("Força Bruta"),
+		[[
+		sees Jorge Ben settle into a more relaxed “samba soul” groove, and also marks
+		his second studio collaboration with backing band
+	]],
+		t.i("Trio Mocotó,"),
+		" pictured below:",
 	}),
 	t.figure({
 		t.img({
@@ -27,10 +38,14 @@ return t.Album({
 			width = 400,
 			alt = "Jorge Ben playing with Trio Mocotó",
 		}),
-		t.figcaption("Jorge Ben and Trio Mocotó in 1971"),
+		t.figcaption([[
+			Jorge Ben (middle) posing with Trio Mocotó. Clockwise from the top: Fritz Escovão,
+			Nereu Gargalo, and João Parahyba. Photo from 1971.
+		]]),
 	}),
 	t.p([[
-		context context context.
+		The album was recorded in one single night, mostly unrehearsed and semi-improvised,
+		with occasional string and brass arrangements being added later.
 	]]),
 	t.Song({
 		title = "Oba, Here She Comes",

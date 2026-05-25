@@ -90,6 +90,10 @@ ul {
   margin: 0;
 }
 
+dt::after {
+  content: ": ";
+}
+
 #wrapper {
   display: flex;
   justify-content: center;
@@ -100,6 +104,10 @@ ul {
 
   padding: 16px 32px;
   margin-bottom: 16px;
+}
+
+#article-header dl {
+  margin-bottom: 0;
 }
 
 #heading-by {
@@ -344,8 +352,12 @@ figcaption {
   margin-top: 16px;
 }
 
-.song-meta-personnel:hover {
+.song-meta-personnel summary:hover {
   cursor: pointer;
+}
+
+.song-meta-personnel dl {
+  margin: 8px 0 8px 16px;
 }
 
 .song-meta-personnel ul {

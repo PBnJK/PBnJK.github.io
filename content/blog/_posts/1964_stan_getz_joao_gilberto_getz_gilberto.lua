@@ -2,7 +2,7 @@ local t = require("tmpl_lyrics")
 
 local personnel = {
 	["Acoustic guitar"] = "João Gilberto",
-	["Bass guitar"] = "Tommy Williams",
+	["Bass guitar"] = "Sebastião Neto",
 	Drums = "Milton Banana",
 	Piano = "Antônio Carlos Jobim",
 	["Tenor saxophone"] = "Stan Getz",
@@ -12,7 +12,7 @@ local personnel = {
 local personnel_with_astrud = {
 	["Additional Vocals"] = "Astrud Gilberto",
 	["Acoustic guitar"] = "João Gilberto",
-	["Bass guitar"] = "Tommy Williams",
+	["Bass guitar"] = "Sebastião Neto",
 	Drums = "Milton Banana",
 	Piano = "Antônio Carlos Jobim",
 	["Tenor saxophone"] = "Stan Getz",
@@ -210,7 +210,10 @@ return t.Album({
 		writer = { "Antônio Almeida", "Dorival Caymmi" },
 		personnel = personnel,
 	}, {
-		t.Note("A slight change of pace"),
+		t.Note([[
+			Now, for something slightly different: this song is a rendition of an older
+			Samba tune in the Bossa Nova style.
+		]]),
 		t.Lyric("00:11", "Doralice, didn't I tell you?", "Doralice eu bem que te disse"),
 		t.Lyric("00:13", "Loving is foolish, it's silly, an illusion ", "Amar é tolice, é bobagem, ilusão"),
 		t.Lyric("00:16", "I prefer to live alone", "Eu prefiro viver tão sozinho"),
