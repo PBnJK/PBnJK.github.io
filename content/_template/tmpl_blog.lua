@@ -102,6 +102,7 @@ end
 
 function t.Footnote(num)
 	return t.a.footnote({
+		id = "rev-foot-" .. num,
 		href = "#foot-" .. num,
 		t.b({ t.sup(tostring(num)) }),
 	})
@@ -114,6 +115,10 @@ function t.FootnoteSection(...)
 			items,
 			t.li["#foot-" .. idx]({
 				footnote,
+				t.a.rev_footnote({
+					href = "#rev-foot-" .. idx,
+					t.b("↩"),
+				}),
 			})
 		)
 	end

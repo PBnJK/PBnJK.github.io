@@ -1,7 +1,7 @@
 local t = require("tmpl_lyrics")
 
 return t.Album({
-	title = '"Os Mutantes"',
+	title = "“Os Mutantes”",
 	year = "1968",
 	artist = "Os Mutantes",
 	genre = "Tropicália, Psychedelic Rock, Experimental Rock",
@@ -15,6 +15,7 @@ return t.Album({
 	t.img({
 		src = "/assets/blog/covers/1968_os_mutantes_os_mutantes.jpg",
 		width = "400",
+		alt = "Cover art for “Os Mutantes,” featuring the posing in a living room",
 	}),
 	t.Subtitle("Arnaldo Baptista, Rita Lee, and Sérgio Dias"),
 	t.p({
@@ -33,6 +34,14 @@ return t.Album({
 	t.img({
 		src = "/assets/blog/os_mutantes_performing.jpg",
 		width = "400",
+		alt = [[
+			Photo from a Mutantes performance. The band is wearing frankly ridiculous clothes.
+			Arnaldo Baptista plays the bass, wearing a suit dotted with shiny jewels, bow tie,
+			top hat and what looks like canvas pants. Rita Lee holds cymbals and wears a long
+			puff-sleeved wedding dress and tiara. Sérgio Dias plays his golden guitar and,
+			quite appropriately, is dressed in a shiny patterned coat and zebra stripe pants,
+			to match his striped sweatband.
+		]],
 	}),
 	t.Subtitle("Fabulous!"),
 	t.p([[

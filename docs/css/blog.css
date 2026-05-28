@@ -59,6 +59,10 @@ main {
   margin-bottom: 64px;
 }
 
+a {
+  color: var(--bg-secondary-blue);
+}
+
 p {
   text-align: justify;
 }
@@ -176,6 +180,10 @@ figcaption {
 
 .footnote:visited {
   color: var(--bg-secondary-blue);
+}
+
+.rev-footnote {
+  margin-left: 8px;
 }
 
 .spoiler-img {

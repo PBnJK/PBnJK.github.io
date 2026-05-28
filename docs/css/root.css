@@ -9,7 +9,7 @@
 
   --bg-secondary-red: #f82020;
   --bg-secondary-yellow: light-dark(#f8f040, #ffca29);
-  --bg-secondary-blue: light-dark(#1010e0, #8080f8);
+  --bg-secondary-blue: light-dark(#2020e0, #20aaff);
 
   --font-primary: light-dark(black, #f0f4f8);
   --font-secondary: light-dark(#484848, #b8b8b8);
@@ -32,7 +32,6 @@ body {
 
 body {
   margin: 16px 32px;
-  font-size: 1.2em;
 }
 
 html {
@@ -41,11 +40,6 @@ html {
 
 h1 {
   margin-block: 0.67em;
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.6em;
 }
 
 #color-switcher {
