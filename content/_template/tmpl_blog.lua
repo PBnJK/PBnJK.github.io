@@ -165,17 +165,13 @@ end
 function t.Pronounce(text, audio)
 	audio = "/assets/audio/" .. audio
 	return t.span.pronounce({
+		title = "Click the speaker to hear the pronounciation",
 		t.i({
 			lang = "pt-BR",
 			text,
 		}),
 		t.button({
 			aria_label = "Pronounce",
-			t.img({
-				src = "/assets/blog/svgs/speaker.svg",
-				width = 32,
-				alt = "Speaker icon",
-			}),
 			t.audio.audio_normal({
 				t.source({
 					src = audio .. ".mp3",

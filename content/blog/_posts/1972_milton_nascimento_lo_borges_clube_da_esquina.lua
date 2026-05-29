@@ -192,9 +192,9 @@ return t.Album({
 	}, {
 		t.Note([[
 			The title is a play on the “Entradas e Bandeiras” (Entries and Flags,) a term
-			referring to the early expeditions into colonial Brazil that sought to explore
-			the uncharted inland for gold and silver, as well as capture and enslave the
-			native populations.
+			referring to the early expeditions into colonial Brazil that explored the
+			uncharted inland in search for gold and silver. They also played a large part
+			in the capturing and enslaving of the native populations.
 		]]),
 		t.Lyric("00:04", {
 			"What would you say of this thing ",
@@ -207,7 +207,7 @@ return t.Album({
 		t.Lyric("00:23", "Leave this city, have life where it is", "Sair dessa cidade, ter a vida onde ela é"),
 		t.Lyric("00:26", "Climb new mountains, search for diamonds", "Subir novas montanhas, diamantes procurar"),
 		t.Lyric("00:30", "At the end of the road and of the dust", "No fim da estrada e da poeira"),
-		t.Lyric("00:34", "The river with its fruit will feed me", "Um rio com seus frutos me alimentar"),
+		t.Lyric("00:34", "The river will feed me with its food", "Um rio com seus frutos me alimentar"),
 	}),
 	t.Song({
 		title = "Nuvem Cigana",
@@ -532,7 +532,17 @@ return t.Album({
 			Organ = "Wagner Tiso",
 		},
 	}, {
-		t.Note("“Corner Club №1” was released on an earlier Milton Nascimento album, “Milton” (1970.)"),
+		t.Note({
+			[[
+			“Corner Club №1” was released on an earlier Milton Nascimento album, “Milton”
+			(1970.)
+		]],
+			t.br(),
+			[[
+			Lyrics would eventually be written for this track, and most future performances
+			and re-recordings would no longer be instrumental.
+		]],
+		}),
 		t.Text("(instrumental)"),
 	}),
 	t.Song({

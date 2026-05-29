@@ -44,88 +44,71 @@ return t.Album({
 		}),
 	}),
 	t.p({
+		t.i("Getz/Gilberto"),
 		[[
-		It's 1961, and Jazz is losing the popularity war in America. Rock 'n' Roll
-		has taken Swing's spot at the top of the
+		(1964) is a collaboration between American saxophonist Stan Getz
+		and Brazilian guitarist
 	]],
-		t.i("Billboard"),
+		t.Pronounce("João Gilberto.", "joao_gilberto"),
 		[[
-		top charts, with only a few hanger-ons managing to get a hit through the
-		barrage of catchy, poppy
-	]],
-		t.i("Rock Around the Clock"),
-		" and ",
-		t.i("Heartbreak Hotel."),
-	}),
-	t.p({
-		[[
-		Meanwhile, saxophonist Stan Getz has just gotten a visit from his friend, bassist
-		Don Payne, who had returned from a trip to Brazil. Getz was of the opinion that a
-		craze for innovation had turned Jazz into pompous, complex, chauvinistic egomania.
-		The genre, he said, needed a breath of fresh air.
+		Though it wasn't the first bossa nova album released outside of Brazil, it was
+		the one responsible for turning the genre into a worldwide phenomenon.
 	]],
 	}),
 	t.p({
 		[[
-		So when Payne showed Getz the collection of records he'd brought
-		back with him, all featuring this new, exciting musical style, one that joined
-		the danceability of samba with the subtlety of American cool jazz, Stan Getz was
-		immediately taken by this new groove, the so-called “new wave”—]],
-		t.i("Bossa Nova."),
+		Bossa nova—roughly “new wave,” or “new trend”—appeared in late 50s Brazil,
+		blending samba with outside influences like American cool jazz to create a
+		genre that was as subtle as it was danceable. In a time where rock 'n' roll
+		had long since taken jazz's place at the top of the album charts, American jazz
+		musicians saw in this new style an opportunity to breathe fresh air into
+		jazz, with a surge of albums mimicking the style popping up in the early 60s.
+	]],
 	}),
 	t.p({
-		[[
-		Immediately after, in 1962-63, he would record three albums in the style,
-		covering songs from the Brazilian records. The albums were a hit—the first one,
-	]],
-		t.i("Jazz Samba,"),
-		[[
-		was a №1 pop hit, and quickly sold one million copies. They were, however,
-		pale imitation. Though they may have occasionally featured some Brazilian musicians, Stan
-		Getz and, most importantly, Creed Taylor, his producer, wanted an album that
-		was a true “historical documentation” of Bossa Nova, and for that, they'd need
-		the pioneers of the genre, the people behind the songs they'd been covering.
-		Those men were
-	]],
-		t.Pronounce("João Gilberto", "joao_gilberto"),
-		" and ",
-		t.Pronounce("Antônio Carlos Jobim.", "antonio_carlos_jobim"),
+		"Of these efforts, ",
+		t.i("Getz/Gilberto"),
+		" was by far the most successful.",
 	}),
-	t.figure({
-		t.img({
-			src = "/assets/blog/gilberto_jobim_e_getz.jpg",
-			width = 600,
-			alt = "Recording session photo, with João Gilberto on guitar, Antônio Carlos Jobim on piano, and Stan Getz on tenor saxophone",
+	t.figure.img_row({
+		t.div({
+			t.img({
+				src = "/assets/blog/gilberto_jobim_e_getz.jpg",
+				width = 560,
+				alt = "Recording session photo, with João Gilberto on guitar, Antônio Carlos Jobim on piano, and Stan Getz on tenor saxophone",
+			}),
+			t.img({
+				src = "/assets/blog/astrud_gilberto_1966.jpg",
+				width = 250,
+				alt = "Astrud Gilberto performing in 1966",
+			}),
 		}),
-		t.figcaption({
+		t.figcaption.big({
 			[[
-			From left to right: João Gilberto (guitar,) Antônio Carlos Jobim (piano,) and
-			Stan Getz (tenor saxophone.) Taken during the
+			Left: Pictured are (from left to right) João Gilberto (guitar,) Antônio Carlos
+			Jobim (piano,) and Stan Getz (saxophone.)
 		]],
-			t.i("Getz/Gilberto"),
-			" sessions.",
+			t.br(),
+			"Right: Astrud Gilberto performing in Amsterdam in 1966, two years after the release of the record.",
+		}),
+		t.figcaption.small({
+			[[
+			Top: Recording session. Pictured are, from left to right: João Gilberto (guitar,)
+			Antônio Carlos Jobim (piano,) and Stan Getz (tenor saxophone.)
+		]],
+			t.br(),
+			"Bottom: Astrud Gilberto performing in Amsterdam in 1966, two years after the release of the record.",
 		}),
 	}),
 	t.p({
+		"Also featured in the recording are ",
+		t.Pronounce("Antônio Carlos Jobim", "antonio_carlos_jobim"),
+		" on piano—who, alongside Gilberto, composed many of the songs on the album—and ",
+		t.Pronounce("Astrud Gilberto,", "astrud_gilberto"),
 		[[
-		The recording was not without its troubles. Certain stylistic differences, such
-		as Gilberto's minimalist playing vs. Getz's penchant for impactful sax solos,
-		led to many disagreements. At one point, Gilberto is said to have said to
-		Jobim, who was working double-time as their interpreter: “Tell this gringo he's
-		an idiot.” Jobim turned to Getz, and dutifully translated: “Stan, João is saying
-		that his dream always was to record with you.”
+		João Gilberto's wife, whose enchanting performances in “The Girl from Ipanema”
+		and “Corcovado” would turn her into a household name.
 	]],
-	}),
-	t.p({
-		[[
-		Still, the record came out, and became so successful as to forever shape the
-		world's understanding of Brazilian music. To put it into perspective, the LP
-		occupied the №1 spot on the
-	]],
-		t.i("Billboard"),
-		" album charts for 96 consecutive weeks, with only the Beatles' ",
-		t.i("A Hard Day's Night"),
-		" being able to knock it off.",
 	}),
 	t.Song({
 		title = "The Girl from Ipanema",
@@ -135,9 +118,9 @@ return t.Album({
 	}, {
 		t.Note([[
 			Ipanema is a famous neighbourhood and beach in the city of Rio de Janeiro.
-			Jobim had to fight to keep the reference in, as lyricist Norman Gimbel, who
-			wrote the English portion of the song, thought the word would mean nothing 
-			to American audiences and harm the song's popularity.
+			Jobim had to fight to keep the reference in, as Norman Gimbel, the lyricist
+			responsible for the English portion of the song, thought the foreign word
+			might hamper the song's popularity.
 		]]),
 		t.Lyric(
 			"00:07",

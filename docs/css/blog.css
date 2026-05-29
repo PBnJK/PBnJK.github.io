@@ -22,36 +22,6 @@ h6 {
   margin: 0;
 }
 
-h1::before {
-  content: "# ";
-  color: var(--bg-secondary-red);
-}
-
-h2::before {
-  content: "## ";
-  color: var(--bg-secondary-red);
-}
-
-h3::before {
-  content: "### ";
-  color: var(--bg-secondary-red);
-}
-
-h4::before {
-  content: "#### ";
-  color: var(--bg-secondary-red);
-}
-
-h5::before {
-  content: "##### ";
-  color: var(--bg-secondary-red);
-}
-
-h6::before {
-  content: "###### ";
-  color: var(--bg-secondary-red);
-}
-
 main {
   background-color: var(--bg-primary);
   width: 960px;
@@ -263,12 +233,15 @@ figcaption {
 
 .pronounce button {
   display: inline-block;
-  background-color: var(--bg-primary);
+  background: no-repeat center url("/assets/blog/svgs/speaker.svg");
+  background-size: 100%;
 
   border: none;
-  background: none;
 
-  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+
+  vertical-align: bottom;
 }
 
 .pronounce button:hover {

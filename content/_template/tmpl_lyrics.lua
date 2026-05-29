@@ -150,6 +150,11 @@ function t.InlineNote(term, explanation)
 	})
 end
 
+-- TODO: what is this bro
+function t.Credits(links)
+	return t.li(treat_multi_names(links))
+end
+
 function t.Album(metadata, def)
 	if metadata.tags == nil then
 		metadata.tags = {}
