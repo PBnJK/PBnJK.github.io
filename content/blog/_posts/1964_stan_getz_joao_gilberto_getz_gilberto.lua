@@ -23,7 +23,7 @@ return t.Album({
 	title = "Getz/Gilberto",
 	artist = { "Stan Getz", "João Gilberto" },
 	year = 1964,
-	genre = { "Bossa Nova", "Jazz" },
+	genre = { "Bossa Nova", "Samba", "Jazz" },
 
 	date = {
 		day = 15,
@@ -35,7 +35,7 @@ return t.Album({
 		t.img({
 			src = "/assets/blog/covers/1964_stan_getz_joao_gilberto_getz_gilberto.jpg",
 			width = 400,
-			alt = "Cover for Getz/Gilberto, featuring an abstract painting, mostly in oranges, with yellow and black highlights",
+			alt = "Cover for Getz/Gilberto, featuring an abstract painting, mostly in oranges with yellow and black highlights",
 		}),
 		t.figcaption({
 			"Featured in the cover art: ",
@@ -57,18 +57,26 @@ return t.Album({
 	}),
 	t.p({
 		[[
-		Bossa nova—roughly “new wave,” or “new trend”—appeared in late 50s Brazil,
-		blending samba with outside influences like American cool jazz to create a
-		genre that was as subtle as it was danceable. In a time where rock 'n' roll
-		had long since taken jazz's place at the top of the album charts, American jazz
-		musicians saw in this new style an opportunity to breathe fresh air into
-		jazz, with a surge of albums mimicking the style popping up in the early 60s.
+		Bossa nova—roughly “new wave” or “new trend”—appeared in late 50s Brazil,
+		blending the local samba with outside influences like American cool jazz to
+		create a genre that was as subtle as it was danceable. At a time when jazz
+		was losing its place at the top of the charts, American jazz musicians saw
+		in this new style an opportunity to breathe fresh air into the genre, with
+		a surge of albums mimicking the style popping up in the early 60s.
 	]],
 	}),
 	t.p({
 		"Of these efforts, ",
 		t.i("Getz/Gilberto"),
-		" was by far the most successful.",
+		[[
+		was by far the most successful, selling two million copies in 1964 and
+		taking up the №2 spot in the
+	]],
+		t.i("Billboard"),
+		" charts for ",
+		t.i("96 weeks straight"),
+		" (losing only to the Beatles' ",
+		t.i("A Hard Days' Night.)"),
 	}),
 	t.figure.img_row({
 		t.div({
@@ -360,7 +368,7 @@ return t.Album({
 		title = "O Grande Amor",
 		en_title = "The Great Love",
 		artist = "Stan Getz & João Gilberto",
-		writer = { "Antônio Carlos Jobim & Vinicius de Moraes" },
+		writer = { "Antônio Carlos Jobim", "Vinicius de Moraes" },
 		personnel = personnel,
 	}, {
 		t.Lyric("01:10", "Come what may", "Haja o que houver"),
