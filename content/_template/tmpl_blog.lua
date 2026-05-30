@@ -193,6 +193,7 @@ function t.ZoomableImage(src, width, alt)
 				src = src,
 				width = width,
 				alt = alt,
+				loading = "lazy",
 			}),
 		}),
 	})

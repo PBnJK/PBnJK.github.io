@@ -38,8 +38,13 @@ html {
   font-family: sans-serif;
 }
 
-h1 {
+/* See:
+ *   https://mdn.io/Heading_Elements
+ *     # Specifying a uniform font size for <h1>
+ */
+:where(h1) {
   margin-block: 0.67em;
+  font-size: 2em;
 }
 
 #color-switcher {
