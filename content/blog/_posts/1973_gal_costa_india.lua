@@ -594,7 +594,7 @@ return t.Album({
 		),
 		t.Lyric("01:35", {
 			"And your great ingratitude was ",
-			t.InlineNote("revealed", 'To "develop" a photo in Portuguese is to "reveal" it—a pun'),
+			t.InlineNote("revealed", "To “develop” a photo in Portuguese is to “reveal” it. It's a pun."),
 		}, "Revelou-se a sua enorme ingratidão"),
 		t.br(),
 		t.Lyric(
