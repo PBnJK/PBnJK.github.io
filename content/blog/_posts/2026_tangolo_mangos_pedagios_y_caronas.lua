@@ -13,11 +13,11 @@ return t.Album({
 	},
 }, {
 	t.figure({
-		t.img({
-			src = "/assets/blog/covers/2026_tangolo_mangos_pedagios_y_caronas.jpg",
-			width = 400,
-			alt = "Cover for PEDAGIOS Y CARONAS, depicting a monochrome image of a man running after a street dog",
-		}),
+		t.ZoomableImage(
+			"/assets/blog/covers/2026_tangolo_mangos_pedagios_y_caronas.jpg",
+			400,
+			"Cover for PEDAGIOS Y CARONAS, depicting a monochrome image of a man running after a street dog"
+		),
 		t.figcaption({
 			"The ",
 			t.i("carrocinhas"),

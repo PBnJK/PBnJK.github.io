@@ -12,11 +12,11 @@ return t.Album({
 		day = 8,
 	},
 }, {
-	t.img({
-		src = "/assets/blog/covers/1968_os_mutantes_os_mutantes.jpg",
-		width = "400",
-		alt = "Cover art for “Os Mutantes,” featuring the posing in a living room",
-	}),
+	t.ZoomableImage(
+		"/assets/blog/covers/1968_os_mutantes_os_mutantes.jpg",
+		400,
+		"Cover art for “Os Mutantes,” featuring the posing in a living room"
+	),
 	t.Subtitle("Arnaldo Baptista, Rita Lee, and Sérgio Dias"),
 	t.p({
 		"Os Mutantes (The Mutants) is",
@@ -31,18 +31,18 @@ return t.Album({
 		lyricism, jumping between songs of love and critiques of the military dictatorship.
 	]],
 	}),
-	t.img({
-		src = "/assets/blog/os_mutantes_performing.jpg",
-		width = "400",
-		alt = [[
-			Photo from a Mutantes performance. The band is wearing frankly ridiculous clothes.
-			Arnaldo Baptista plays the bass, wearing a suit dotted with shiny jewels, bow tie,
-			top hat and what looks like canvas pants. Rita Lee holds cymbals and wears a long
-			puff-sleeved wedding dress and tiara. Sérgio Dias plays his golden guitar and,
-			quite appropriately, is dressed in a shiny patterned coat and zebra stripe pants,
-			to match his striped sweatband.
-		]],
-	}),
+	t.ZoomableImage(
+		"/assets/blog/os_mutantes_performing.jpg",
+		400,
+		[[
+		Photo from a Mutantes performance. The band is wearing frankly ridiculous clothes.
+		Arnaldo Baptista plays the bass, wearing a suit dotted with shiny jewels, bow tie,
+		top hat and what looks like canvas pants. Rita Lee holds cymbals and wears a long
+		puff-sleeved wedding dress and tiara. Sérgio Dias plays his golden guitar and,
+		quite appropriately, is dressed in a shiny patterned coat and zebra stripe pants,
+		to match his striped sweatband.
+	]]
+	),
 	t.Subtitle("Fabulous!"),
 	t.p([[
 		Os Mutantes are also notable for their innovation, at a time where electric

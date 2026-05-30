@@ -13,11 +13,11 @@ return t.Album({
 	},
 }, {
 	t.figure({
-		t.img({
-			src = "/assets/blog/covers/1972_milton_nascimento_lo_borges_clube_da_esquina.jpg",
-			width = 400,
-			alt = "Clube da Esquina album cover, depicting two young boys sitting by the road",
-		}),
+		t.ZoomableImage(
+			"/assets/blog/covers/1972_milton_nascimento_lo_borges_clube_da_esquina.jpg",
+			400,
+			"Clube da Esquina album cover, depicting two young boys sitting by the road"
+		),
 		t.figcaption("As iconic a cover art as they come"),
 	}),
 	t.p([[
@@ -29,11 +29,11 @@ return t.Album({
 		albums of all time.
 	]]),
 	t.figure({
-		t.img({
-			src = "/assets/blog/clube_da_esquina.jpg",
-			width = 600,
-			alt = "Part of the Clube da Esquina, sitting on a bench: Lô Borges, Fernando Brant, Márcio Borges, and Milton Nascimento. Ex-president of Brazil Juscelino Kubitscheck is also there, looking very serious in a black suit and tie",
-		}),
+		t.ZoomableImage(
+			"/assets/blog/clube_da_esquina.jpg",
+			600,
+			"Part of the Clube da Esquina, sitting on a bench: Lô Borges, Fernando Brant, Márcio Borges, and Milton Nascimento. Ex-president of Brazil Juscelino Kubitscheck is also there, looking very serious in a black suit and tie"
+		),
 		t.figcaption([[
 			Some of the members of the club. From left to right: Lô Borges, Fernando Brant,
 			Ex-president of Brazil Juscelino Kubitscheck (not part of the club,) Márcio

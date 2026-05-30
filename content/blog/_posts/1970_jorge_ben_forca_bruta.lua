@@ -12,11 +12,11 @@ return t.Album({
 		day = 13,
 	},
 }, {
-	t.img({
-		src = "/assets/blog/covers/1970_jorge_ben_forca_bruta.jpg",
-		width = 400,
-		alt = "Força Bruta album cover, depicting Jorge Ben singing into a microphone with his hands cupped over his mouth",
-	}),
+	t.ZoomableImage(
+		"/assets/blog/covers/1970_jorge_ben_forca_bruta.jpg",
+		400,
+		"Força Bruta album cover, depicting Jorge Ben singing into a microphone with his hands cupped over his mouth"
+	),
 	t.p({
 		t.Pronounce("Força Bruta", "forca_bruta_title"),
 		" (Brute Force) is ",
@@ -33,11 +33,7 @@ return t.Album({
 		" pictured below:",
 	}),
 	t.figure({
-		t.img({
-			src = "/assets/blog/jorge_ben_e_trio_mocoto.jpg",
-			width = 400,
-			alt = "Jorge Ben playing with Trio Mocotó",
-		}),
+		t.ZoomableImage("/assets/blog/jorge_ben_e_trio_mocoto.jpg", 400, "Jorge Ben playing with Trio Mocotó"),
 		t.figcaption([[
 			Jorge Ben (middle) posing with Trio Mocotó. Clockwise from the top: Fritz Escovão,
 			Nereu Gargalo, and João Parahyba. Photo from 1971.

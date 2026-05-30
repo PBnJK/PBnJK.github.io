@@ -32,11 +32,11 @@ return t.Album({
 	},
 }, {
 	t.figure({
-		t.img({
-			src = "/assets/blog/covers/1964_stan_getz_joao_gilberto_getz_gilberto.jpg",
-			width = 400,
-			alt = "Cover for Getz/Gilberto, featuring an abstract painting, mostly in oranges with yellow and black highlights",
-		}),
+		t.ZoomableImage(
+			"/assets/blog/covers/1964_stan_getz_joao_gilberto_getz_gilberto.jpg",
+			400,
+			"Cover for Getz/Gilberto, featuring an abstract painting, mostly in oranges with yellow and black highlights"
+		),
 		t.figcaption({
 			"Featured in the cover art: ",
 			t.i("Alla Africa,"),
@@ -80,16 +80,12 @@ return t.Album({
 	}),
 	t.figure.img_row({
 		t.div({
-			t.img({
-				src = "/assets/blog/gilberto_jobim_e_getz.jpg",
-				width = 560,
-				alt = "Recording session photo, with João Gilberto on guitar, Antônio Carlos Jobim on piano, and Stan Getz on tenor saxophone",
-			}),
-			t.img({
-				src = "/assets/blog/astrud_gilberto_1966.jpg",
-				width = 250,
-				alt = "Astrud Gilberto performing in 1966",
-			}),
+			t.ZoomableImage(
+				"/assets/blog/gilberto_jobim_e_getz.jpg",
+				560,
+				"Recording session photo, with João Gilberto on guitar, Antônio Carlos Jobim on piano, and Stan Getz on tenor saxophone"
+			),
+			t.ZoomableImage("/assets/blog/astrud_gilberto_1966.jpg", 250, "Astrud Gilberto performing in 1966"),
 		}),
 		t.figcaption.big({
 			[[

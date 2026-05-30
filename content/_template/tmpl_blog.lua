@@ -132,11 +132,7 @@ end
 
 function t.SpoilerImage(src, width, alt)
 	return t.div.spoiler_img({
-		t.img({
-			src = src,
-			width = width,
-			alt = alt,
-		}),
+		t.ZoomableImage(src, width, alt),
 		t.p.spoiler_img_info("(hover to reveal)"),
 	})
 end
@@ -181,6 +177,22 @@ function t.Pronounce(text, audio)
 					src = audio .. ".ogg",
 					type = "audio/ogg",
 				}),
+			}),
+		}),
+	})
+end
+
+function t.ZoomableImage(src, width, alt)
+	return t.div.zoomable_img({
+		t.label({
+			t.input({
+				aria_label = "Zoom-in",
+				type = "checkbox",
+			}),
+			t.img({
+				src = src,
+				width = width,
+				alt = alt,
 			}),
 		}),
 	})

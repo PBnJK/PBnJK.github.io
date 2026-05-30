@@ -40,12 +40,11 @@ return t.Document({
 				t.div["#container"]({
 					infobox("#infobox-pii", {
 						t.figure["#selfie"]({
-							t.img({
-								src = "assets/placeholder_selfie.jpg",
-								alt = "Monochrome, stylised portrait of a young man with glasses and scraggly hair. He has a big smile on his face, and appears to be wearing a dress shirt",
-								width = 600,
-								height = 800,
-							}),
+							t.ZoomableImage(
+								"assets/placeholder_selfie.jpg",
+								600,
+								"Monochrome, stylised portrait of a young man with glasses and scraggly hair. He has a big smile on his face, and appears to be wearing a dress shirt"
+							),
 							t.figcaption("(there will be a picture of me here in the future!)"),
 						}),
 						t.div({

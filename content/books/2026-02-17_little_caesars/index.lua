@@ -15,6 +15,7 @@ return t.Document({
 			t.div.center({
 				t.img({
 					src = "/assets/img_little_caesars.webp",
+					width = 256,
 					alt = "drawing of a woman in a bathtub",
 				}),
 			}),
