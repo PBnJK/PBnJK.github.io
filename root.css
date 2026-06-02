@@ -18,6 +18,7 @@
 
 @font-face {
   font-family: "Goudy Bookletter 1911";
+  font-display: swap;
   src: url("/assets/fonts/GoudyBookletter1911-Regular.ttf");
 }
 

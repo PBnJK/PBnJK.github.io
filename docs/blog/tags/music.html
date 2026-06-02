@@ -1,1 +1,82 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1" name="viewport"><title>pedrob&#39;s blog</title><link href="/css/root.css" rel="stylesheet"><link href="/css/blog.css" rel="stylesheet"></head><body><div id="wrapper"><main><article><header id="article-header"><h1>Music</h1></header></article><ul><li><a href="/blog/posts/radio_batuta_geraes.html">‘Geraes’: Minas, world, Milton (in English)</a></li></ul></main></div></body></html>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1" name="viewport"><title>pedrob&#39;s blog</title><style>/* Root styles for the website (I think this is bad practice!!!) */
+
+:root {
+  color-scheme: light dark;
+
+  --bg-primary: light-dark(white, #181818);
+  --bg-secondary: light-dark(#e8e8e8, #383838);
+  --bg-highlight: light-dark(white, black);
+
+  --bg-secondary-red: #f82020;
+  --bg-secondary-yellow: light-dark(#f8f040, #ffca29);
+  --bg-secondary-blue: light-dark(#2020e0, #20aaff);
+
+  --font-primary: light-dark(black, #f0f4f8);
+  --font-secondary: light-dark(#484848, #b8b8b8);
+  --font-disabled: #848484;
+}
+
+@font-face {
+  font-family: "Goudy Bookletter 1911";
+  font-display: swap;
+  src: url("/assets/fonts/GoudyBookletter1911-Regular.ttf");
+}
+
+html,
+body {
+  background-color: var(--bg-primary);
+  color: var(--font-primary);
+
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 16px 32px;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+/* See:
+ *   https://mdn.io/Heading_Elements
+ *     # Specifying a uniform font size for <h1>
+ */
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
+#color-switcher {
+  margin-bottom: 16px;
+
+  width: 100%;
+
+  font-size: 1.2em;
+  text-align: end;
+
+  background: none;
+  border: none;
+}
+
+#color-switcher:hover {
+  cursor: pointer;
+}
+
+#color-sun::after {
+  content: "light";
+  padding-left: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+
+#color-moon::before {
+  content: "dark";
+  padding-right: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+</style><link href="/css/blog.css" rel="stylesheet"></head><body><div id="wrapper"><main><article><header id="article-header"><h1>Music</h1></header></article><ul><li><a href="/blog/posts/radio_batuta_geraes.html">‘Geraes’: Minas, world, Milton (in English)</a></li></ul></main></div></body></html>

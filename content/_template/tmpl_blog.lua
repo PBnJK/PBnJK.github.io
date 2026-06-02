@@ -210,7 +210,7 @@ function t.Blog(metadata, def)
 			t.meta({ charset = "UTF-8" }),
 			t.meta({ name = "viewport", content = "width=device-width, initial-scale=1" }),
 			t.title("pedrob's blog"),
-			t.link({ href = "/css/root.css", rel = "stylesheet" }),
+			t.EmbedRootCSS(),
 			t.link({ href = "/css/blog.css", rel = "stylesheet" }),
 			t.script({ src = "/js/script.js" }),
 			t.script({ src = "/js/blog.js" }),

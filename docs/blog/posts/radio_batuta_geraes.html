@@ -1,4 +1,85 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1" name="viewport"><title>pedrob&#39;s blog</title><link href="/css/root.css" rel="stylesheet"><link href="/css/blog.css" rel="stylesheet"><script src="/js/script.js"></script><script src="/js/blog.js"></script></head><body><div id="wrapper"><main><article><header id="article-header"><h1>‘Geraes’: Minas, world, Milton (in English)</h1><hr><div id="metadata"><time datetime="2026-05-03">May 03, 2026</time><p id="reading-time">11 minute read</p><ul class="tags"><li><a href="/blog/tags/music.html">#music</a></li><li><a href="/blog/tags/translation.html">#translation</a></li></ul></div></header></article><button id="color-switcher"><span id="color-sun">☀️</span><span id="color-moon">🌙</span></button><h2>Preamble</h2><p>This is an English translation of a podcast special done by <i>Rádio Batuta, </i>an online radio station managed by the <i>Insituto Moreira Salles</i>—a Brazilian cultural institute.</p><p>		The special consists of a track-by-track analysis of Milton Nascimento&#39;s
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1" name="viewport"><title>pedrob&#39;s blog</title><style>/* Root styles for the website (I think this is bad practice!!!) */
+
+:root {
+  color-scheme: light dark;
+
+  --bg-primary: light-dark(white, #181818);
+  --bg-secondary: light-dark(#e8e8e8, #383838);
+  --bg-highlight: light-dark(white, black);
+
+  --bg-secondary-red: #f82020;
+  --bg-secondary-yellow: light-dark(#f8f040, #ffca29);
+  --bg-secondary-blue: light-dark(#2020e0, #20aaff);
+
+  --font-primary: light-dark(black, #f0f4f8);
+  --font-secondary: light-dark(#484848, #b8b8b8);
+  --font-disabled: #848484;
+}
+
+@font-face {
+  font-family: "Goudy Bookletter 1911";
+  font-display: swap;
+  src: url("/assets/fonts/GoudyBookletter1911-Regular.ttf");
+}
+
+html,
+body {
+  background-color: var(--bg-primary);
+  color: var(--font-primary);
+
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 16px 32px;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+/* See:
+ *   https://mdn.io/Heading_Elements
+ *     # Specifying a uniform font size for <h1>
+ */
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
+#color-switcher {
+  margin-bottom: 16px;
+
+  width: 100%;
+
+  font-size: 1.2em;
+  text-align: end;
+
+  background: none;
+  border: none;
+}
+
+#color-switcher:hover {
+  cursor: pointer;
+}
+
+#color-sun::after {
+  content: "light";
+  padding-left: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+
+#color-moon::before {
+  content: "dark";
+  padding-right: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+</style><link href="/css/blog.css" rel="stylesheet"><script src="/js/script.js"></script><script src="/js/blog.js"></script></head><body><div id="wrapper"><main><article><header id="article-header"><h1>‘Geraes’: Minas, world, Milton (in English)</h1><hr><div id="metadata"><time datetime="2026-05-03">May 03, 2026</time><p id="reading-time">11 minute read</p><ul class="tags"><li><a href="/blog/tags/music.html">#music</a></li><li><a href="/blog/tags/translation.html">#translation</a></li></ul></div></header></article><button id="color-switcher"><span id="color-sun">☀️</span><span id="color-moon">🌙</span></button><h2>Preamble</h2><p>This is an English translation of a podcast special done by <i>Rádio Batuta, </i>an online radio station managed by the <i>Insituto Moreira Salles</i>—a Brazilian cultural institute.</p><p>		The special consists of a track-by-track analysis of Milton Nascimento&#39;s
 		1976 album “Geraes”, detailing its history, meaning, and cultural context
 		behind the album and the artists responsible for it.
 	</p><p>From this paragraph on, all content is translated directly from the original. Enjoy!</p><h2>‘Geraes’: Minas, mundo, Milton</h2><p>		After “Minas” (1975), “Geraes” (1976). Milton Nascimento&#39;s record that forms a
@@ -61,7 +142,7 @@
 		Jesus.
 	</p><p>		These appearances, so diverse and stellar, reflected the aesthetic disquietude
 		of Milton—the new airs of his music. But also his prestige and central importance.
-	</p><div class="p-with-aside"><p><blockquote class="citation">You already have the name of a doctor, brother<br>And you&#39;re the one that will command now, it is your mission<br>Singing together with the crowd<br><br><p class="quote-author"><i>— “Nosso Homem em Três Pontas”, by Dori Caymmi</i></p></blockquote></p><aside><p>        Important or well-educated people were often referred to as “doctors” by the
+	</p><div class="p-with-aside"><p><blockquote class="citation">You already have the name of a doctor, brother<br>And you're the one that will command now, it is your mission<br>Singing together with the crowd<br><br><p class="quote-author"><i>— “Nosso Homem em Três Pontas”, by Dori Caymmi</i></p></blockquote></p><aside><p>        Important or well-educated people were often referred to as “doctors” by the
   		folks from poorer or simpler backgrounds as a way of recognising their
   		authority, regardless of their actual academic formation. Paulo César Pinheiro
   		is using the term to highlight Milton Nascimento&#39;s cultural importance.
@@ -78,7 +159,7 @@
 		magnetism of his overwhelming presence. In the words of his collaborator Ronaldo
 		Bastos:
 	</p><blockquote class="citation">		Milton arrived ready, took the leap and fronted the most transcendental fusion
-		of continents and musical eras of the world that I&#39;ve ever witnessed. Nothing
+		of continents and musical eras of the world that I've ever witnessed. Nothing
 		was as it was. Sophisticated, Milton changed Brazilian music practically at the
 		same time as he became an inspiration and a new parameter for jazz. Crowds
 		sensitive to him started following him and filling up stadiums. His Latin song
@@ -103,7 +184,7 @@
 		heart—remains there.
 	</p><p>		This engine drives home the distance of the place, but not of the memory, that will
 		now be manifested via the revisited and adapted oral culture of Minas Gerais.
-	</p><div class="p-with-aside"><p>We are speaking of “Calix Bento”, a <i>Congada </i>		that&#39;s part of the celebrations for Our Lady of the Rosary that take up the streets
+	</p><div class="p-with-aside"><p>We are speaking of “Calix Bento”, a <i>Congada </i>		that's part of the celebrations for Our Lady of the Rosary that take up the streets
 		of the districts of Jatobá and Montes Claros.
 	</p><aside><p>		A “Congada” is a style of afro-Brazilian procession syncretising Catholic and
 		African beliefs. The name is derived from one of the meanings of the event,

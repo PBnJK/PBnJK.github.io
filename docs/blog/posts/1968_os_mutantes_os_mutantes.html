@@ -1,4 +1,85 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1" name="viewport"><title>pedrob&#39;s blog</title><link href="/css/root.css" rel="stylesheet"><link href="/css/blog.css" rel="stylesheet"><script src="/js/script.js"></script><script src="/js/blog.js"></script></head><body><div id="wrapper"><main><article><header id="article-header"><h1>“Os Mutantes”<span id="heading-by"> by </span>Os Mutantes</h1><hr><dl><div class="characteristic"><dt><b>Released in</b></dt><dd>1968</dd></div><div class="characteristic"><dt><b>Genre</b></dt><dd>Tropicália, Psychedelic Rock, Experimental Rock</dd></div></dl></header></article><button id="color-switcher"><span id="color-sun">☀️</span><span id="color-moon">🌙</span></button><div class="zoomable-img"><label><input aria-label="Zoom-in" type="checkbox"><img alt="Cover art for “Os Mutantes,” featuring the posing in a living room" loading="lazy" src="/assets/blog/covers/1968_os_mutantes_os_mutantes.jpg" width="400"></label></div><p class="subtitle"><i>Arnaldo Baptista, Rita Lee, and Sérgio Dias</i></p><p>Os Mutantes (The Mutants) is<a class="footnote" href="#foot-1" id="rev-foot-1"><b><sup>1</sup></b></a>		a band started in 1966 by brothers Arnaldo
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1" name="viewport"><title>pedrob&#39;s blog</title><style>/* Root styles for the website (I think this is bad practice!!!) */
+
+:root {
+  color-scheme: light dark;
+
+  --bg-primary: light-dark(white, #181818);
+  --bg-secondary: light-dark(#e8e8e8, #383838);
+  --bg-highlight: light-dark(white, black);
+
+  --bg-secondary-red: #f82020;
+  --bg-secondary-yellow: light-dark(#f8f040, #ffca29);
+  --bg-secondary-blue: light-dark(#2020e0, #20aaff);
+
+  --font-primary: light-dark(black, #f0f4f8);
+  --font-secondary: light-dark(#484848, #b8b8b8);
+  --font-disabled: #848484;
+}
+
+@font-face {
+  font-family: "Goudy Bookletter 1911";
+  font-display: swap;
+  src: url("/assets/fonts/GoudyBookletter1911-Regular.ttf");
+}
+
+html,
+body {
+  background-color: var(--bg-primary);
+  color: var(--font-primary);
+
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  margin: 16px 32px;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+/* See:
+ *   https://mdn.io/Heading_Elements
+ *     # Specifying a uniform font size for <h1>
+ */
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
+#color-switcher {
+  margin-bottom: 16px;
+
+  width: 100%;
+
+  font-size: 1.2em;
+  text-align: end;
+
+  background: none;
+  border: none;
+}
+
+#color-switcher:hover {
+  cursor: pointer;
+}
+
+#color-sun::after {
+  content: "light";
+  padding-left: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+
+#color-moon::before {
+  content: "dark";
+  padding-right: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+</style><link href="/css/blog.css" rel="stylesheet"><script src="/js/script.js"></script><script src="/js/blog.js"></script></head><body><div id="wrapper"><main><article><header id="article-header"><h1>“Os Mutantes”<span id="heading-by"> by </span>Os Mutantes</h1><hr><dl><div class="characteristic"><dt><b>Released in</b></dt><dd>1968</dd></div><div class="characteristic"><dt><b>Genre</b></dt><dd>Tropicália, Psychedelic Rock, Experimental Rock</dd></div></dl></header></article><button id="color-switcher"><span id="color-sun">☀️</span><span id="color-moon">🌙</span></button><div class="zoomable-img"><label><input aria-label="Zoom-in" type="checkbox"><img alt="Cover art for “Os Mutantes,” featuring the posing in a living room" loading="lazy" src="/assets/blog/covers/1968_os_mutantes_os_mutantes.jpg" width="400"></label></div><p class="subtitle"><i>Arnaldo Baptista, Rita Lee, and Sérgio Dias</i></p><p>Os Mutantes (The Mutants) is<a class="footnote" href="#foot-1" id="rev-foot-1"><b><sup>1</sup></b></a>		a band started in 1966 by brothers Arnaldo
 		Baptista and Sérgio Dias along with singer Rita Lee, during the height of the
 		Tropicália movement in Brazil, which sought to mix popular Brazilian musical
 		tradition with foreign styles. In this line, their 1968 self-titled debut album

@@ -6,8 +6,8 @@ return t.Document({
 		t.meta({ charset = "UTF-8" }),
 		t.meta({ name = "viewport", content = "width=device-width, initial-scale=1" }),
 		t.title("The Sweltering Disk — Short Story"),
+		t.EmbedRootCSS(),
 		t.link({ href = "/css/book.css", rel = "stylesheet" }),
-		t.link({ href = "/css/root.css", rel = "stylesheet" }),
 	}),
 	t.body.stripe_bg({
 		t.article({

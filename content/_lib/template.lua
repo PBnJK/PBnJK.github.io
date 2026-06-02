@@ -66,10 +66,15 @@ end
 --- Writes an element's children to a table
 --- @param el table
 --- @param def table
-local function write_children(el, def)
+local function write_children(el, def, escape)
 	for _, child in ipairs(def) do
 		if type(child) == "string" then
-			table.insert(el, util.escape_html(child))
+			local content = child
+			if escape then
+				content = util.escape_html(content)
+			end
+
+			table.insert(el, content)
 		elseif type(child) == "table" and getmetatable(child) == Html then
 			table.insert(el, child.text)
 		elseif type(child) == "table" then
@@ -114,12 +119,25 @@ function template.Element(kind, def)
 	end
 
 	-- Children
-	write_children(el, def)
+	write_children(el, def, kind ~= "style")
 
 	-- Close tag
 	write(el, "</", kind, ">")
 
 	return template.Html(table.concat(el))
+end
+
+function template.EmbedRootCSS()
+	-- Read root.css file
+	local f = assert(io.open("root.css", "r"))
+	assert(f, "Could not open input file 'root.css'")
+
+	local root_css = f:read("*a")
+	f:close()
+
+	return template.style({
+		root_css,
+	})
 end
 
 function template.Document(def)
