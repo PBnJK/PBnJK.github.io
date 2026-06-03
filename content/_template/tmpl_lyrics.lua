@@ -140,6 +140,7 @@ function t.InlineNote(term, explanation)
 		data_title = explanation,
 		t.span(term),
 		t.button({
+			aria_label = "View inline note",
 			popovertarget = id,
 		}),
 		t.div({
