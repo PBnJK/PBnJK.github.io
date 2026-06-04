@@ -173,7 +173,7 @@ function t.Album(metadata, def)
 			t.script({ src = "/js/blog.js" }),
 			t.link({
 				rel = "icon",
-				href = "/favicon.ico",
+				href = "/assets/favicon.ico",
 				type = "image/x-icon",
 			}),
 		}),

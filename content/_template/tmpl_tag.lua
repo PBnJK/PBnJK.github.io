@@ -26,7 +26,7 @@ function t.Tag(title, metadata, def)
 			t.link({ href = "/css/blog.css", rel = "stylesheet" }),
 			t.link({
 				rel = "icon",
-				href = "/favicon.ico",
+				href = "/assets/favicon.ico",
 				type = "image/x-icon",
 			}),
 		}),
