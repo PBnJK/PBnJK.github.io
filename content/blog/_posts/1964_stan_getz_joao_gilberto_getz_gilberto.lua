@@ -34,8 +34,9 @@ return t.Album({
 	t.figure({
 		t.ZoomableImage(
 			"/assets/blog/covers/1964_stan_getz_joao_gilberto_getz_gilberto.jpg",
+			"Cover for Getz/Gilberto, featuring an abstract painting, mostly in oranges with yellow and black highlights",
 			400,
-			"Cover for Getz/Gilberto, featuring an abstract painting, mostly in oranges with yellow and black highlights"
+			400
 		),
 		t.figcaption({
 			"Featured in the cover art: ",
@@ -82,10 +83,11 @@ return t.Album({
 		t.div({
 			t.ZoomableImage(
 				"/assets/blog/gilberto_jobim_e_getz.jpg",
+				"Recording session photo, with João Gilberto on guitar, Antônio Carlos Jobim on piano, and Stan Getz on tenor saxophone",
 				560,
-				"Recording session photo, with João Gilberto on guitar, Antônio Carlos Jobim on piano, and Stan Getz on tenor saxophone"
+				375
 			),
-			t.ZoomableImage("/assets/blog/astrud_gilberto_1966.jpg", 250, "Astrud Gilberto performing in 1966"),
+			t.ZoomableImage("/assets/blog/astrud_gilberto_1966.jpg", "Astrud Gilberto performing in 1966", 250, 375),
 		}),
 		t.figcaption.big({
 			[[

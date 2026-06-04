@@ -14,8 +14,9 @@ return t.Album({
 }, {
 	t.ZoomableImage(
 		"/assets/blog/covers/1968_os_mutantes_os_mutantes.jpg",
+		"Cover art for “Os Mutantes,” featuring the posing in a living room",
 		400,
-		"Cover art for “Os Mutantes,” featuring the posing in a living room"
+		400
 	),
 	t.Subtitle("Arnaldo Baptista, Rita Lee, and Sérgio Dias"),
 	t.p({
@@ -33,7 +34,6 @@ return t.Album({
 	}),
 	t.ZoomableImage(
 		"/assets/blog/os_mutantes_performing.jpg",
-		400,
 		[[
 		Photo from a Mutantes performance. The band is wearing frankly ridiculous clothes.
 		Arnaldo Baptista plays the bass, wearing a suit dotted with shiny jewels, bow tie,
@@ -41,7 +41,9 @@ return t.Album({
 		puff-sleeved wedding dress and tiara. Sérgio Dias plays his golden guitar and,
 		quite appropriately, is dressed in a shiny patterned coat and zebra stripe pants,
 		to match his striped sweatband.
-	]]
+	]],
+		400,
+		400
 	),
 	t.Subtitle("Fabulous!"),
 	t.p([[

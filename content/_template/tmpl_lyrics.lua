@@ -171,6 +171,11 @@ function t.Album(metadata, def)
 			t.link({ href = "/css/blog.css", rel = "stylesheet" }),
 			t.script({ src = "/js/script.js" }),
 			t.script({ src = "/js/blog.js" }),
+			t.link({
+				rel = "icon",
+				href = "/favicon.ico",
+				type = "image/x-icon",
+			}),
 		}),
 		t.body({
 			t.div["#wrapper"]({

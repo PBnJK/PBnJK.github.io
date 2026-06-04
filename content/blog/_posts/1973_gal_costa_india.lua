@@ -26,13 +26,15 @@ return t.Album({
 		t.div({
 			t.ZoomableImage(
 				"/assets/blog/covers/1973_gal_costa_india.jpg",
+				'Gal Costa album cover, depicting Gal Costa semi-nude with indigenous vests and, in all-caps blue text, the album title: "ÍNDIA"',
 				400,
-				'Gal Costa album cover, depicting Gal Costa semi-nude with indigenous vests and, in all-caps blue text, the album title: "ÍNDIA"'
+				400
 			),
 			t.ZoomableImage(
 				"/assets/blog/covers/1973_gal_costa_india_censurada.jpg",
+				'Gal Costa album cover wrap, simple black text over blue blackground: "GAL COSTA ÍNDIA"',
 				400,
-				'Gal Costa album cover wrap, simple black text over blue blackground: "GAL COSTA ÍNDIA"'
+				400
 			),
 		}),
 		t.figcaption.big({
@@ -69,7 +71,7 @@ return t.Album({
 		together again for the 1973 Índia stage show and album. Gil served as guitarist
 		and musical director, while Veloso contributed as a songwriter.
 	]]),
-	t.ZoomableImage("/assets/blog/gal_costa.jpg", 600, "Gal Costa sitting down, playing guitar and singing"),
+	t.ZoomableImage("/assets/blog/gal_costa.jpg", "Gal Costa sitting down, playing guitar and singing", 600, 564),
 	t.Subtitle('Gal Costa performing during the "Fa-Tal - Gal a Todo Vapor" show'),
 	t.p([[
 		In spite of the dangerous political environment, Costa continued to court

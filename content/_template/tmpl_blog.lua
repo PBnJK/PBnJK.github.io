@@ -130,9 +130,9 @@ function t.FootnoteSection(...)
 	})
 end
 
-function t.SpoilerImage(src, width, alt)
+function t.SpoilerImage(src, alt, width, height)
 	return t.div.spoiler_img({
-		t.ZoomableImage(src, width, alt),
+		t.ZoomableImage(src, alt, width, height),
 		t.p.spoiler_img_info("(hover to reveal)"),
 	})
 end
@@ -182,7 +182,7 @@ function t.Pronounce(text, audio)
 	})
 end
 
-function t.ZoomableImage(src, width, alt)
+function t.ZoomableImage(src, alt, width, height)
 	return t.div.zoomable_img({
 		t.label({
 			t.input({
@@ -191,8 +191,9 @@ function t.ZoomableImage(src, width, alt)
 			}),
 			t.img({
 				src = src,
-				width = width,
 				alt = alt,
+				width = width,
+				height = height,
 				loading = "lazy",
 			}),
 		}),
@@ -214,6 +215,11 @@ function t.Blog(metadata, def)
 			t.link({ href = "/css/blog.css", rel = "stylesheet" }),
 			t.script({ src = "/js/script.js" }),
 			t.script({ src = "/js/blog.js" }),
+			t.link({
+				rel = "icon",
+				href = "/favicon.ico",
+				type = "image/x-icon",
+			}),
 		}),
 		t.body({
 			t.div["#wrapper"]({
