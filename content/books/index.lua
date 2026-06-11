@@ -10,21 +10,6 @@ return t.Document({
 	}),
 	t.body({
 		t.h1("Book"),
-		t.ul({
-			t.li({
-				"2026-02-17:",
-				t.a({
-					href = "2026-02-17_little_caesars/",
-					"little caesars",
-				}),
-			}),
-			t.li({
-				"2026-02-18:",
-				t.a({
-					href = "2026-02-18_sweltering_disk/",
-					"the sweltering disk",
-				}),
-			}),
-		}),
+		t.p"there were stories here, but I'm embarassed of them..."
 	}),
 })

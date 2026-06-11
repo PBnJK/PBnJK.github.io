@@ -17,34 +17,28 @@ h6 {
   margin: 0;
 }
 
+h3,
+h4,
+h5,
+h6 {
+  text-decoration: underline dotted;
+}
+
+h1 {
+  text-align: center;
+}
+
 h1::before {
-  content: "# ";
-  color: var(--bg-secondary-red);
+  content: "– ";
+}
+
+h1::after {
+  content: " –";
 }
 
 h2::before {
-  content: "## ";
-  color: var(--bg-secondary-red);
-}
-
-h3::before {
-  content: "### ";
-  color: var(--bg-secondary-red);
-}
-
-h4::before {
-  content: "#### ";
-  color: var(--bg-secondary-red);
-}
-
-h5::before {
-  content: "##### ";
-  color: var(--bg-secondary-red);
-}
-
-h6::before {
-  content: "###### ";
-  color: var(--bg-secondary-red);
+  content: "§ ";
+  color: var(--font-secondary);
 }
 
 main {
@@ -56,6 +50,15 @@ main {
 
 mark {
   background-color: var(--bg-secondary-yellow);
+}
+
+p {
+  text-align: justify;
+  float: none;
+}
+
+a {
+  color: var(--font-secondary);
 }
 
 .mark-red {
@@ -71,72 +74,38 @@ mark {
   justify-content: center;
 }
 
-#selfie {
-  margin: 0;
-
-  display: flex;
-  flex-direction: column;
-
-  border-radius: 4px;
-  border: 4px solid var(--font-primary);
-
-  max-width: 225px;
-}
-
-#selfie img {
-  max-width: 225px;
-  max-height: 300px;
-}
-
-#selfie figcaption {
-  background-color: var(--bg-secondary-yellow);
-  color: black;
-
-  font: italic 12pt serif;
+figure {
   text-align: center;
-
-  padding: 8px;
 }
 
-.infobox {
-  position: relative;
-  margin-bottom: 32px;
-  padding: 32px 48px;
-
-  background-color: var(--bg-primary);
-
-  border: 4px solid var(--font-primary);
-  display: flex;
-  flex-direction: row;
-
-  gap: 24px;
+figure figcaption {
+  padding: 0 8px;
+  color: var(--font-secondary);
 }
 
-#infobox-pii {
-  display: flex;
-  align-items: center;
+figure.left {
+  margin: 0 32px 16px 0;
+  float: left;
 }
 
-.infobox-screw-tl {
-  position: absolute;
-  top: 8px;
-  left: 8px;
+figure.right {
+  margin: 0 0 16px 32px;
+  float: right;
 }
 
-.infobox-screw-tr {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+dt {
+  display: inline-block;
 }
 
-.infobox-screw-bl {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
+dd {
+  display: inline;
+  margin-left: 0;
 }
 
-.infobox-screw-br {
-  position: absolute;
-  bottom: 8px;
-  right: 8px;
+dt::after {
+  content: ": ";
+}
+
+.star-sticker {
+  color: var(--font-secondary);
 }

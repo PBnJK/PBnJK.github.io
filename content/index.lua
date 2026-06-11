@@ -1,23 +1,24 @@
 local t = require("template")
 
--- Creates an "infobox"
--- This is a box with a drop-shadow and screws on its four corners
-local function infobox(id, def)
-	local function screw(class)
-		return t.img({
-			src = "/assets/svgs/screw.svg",
-			width = 24,
-			height = 24,
-			class = "infobox-screw " .. class,
-		})
-	end
+local function starSticker(name)
+	return t.dt({
+		t.svg({
+			xmlns = "http://www.w3.org/2000/svg",
+			width = 16,
+			height = 16,
+			alt = "Star icon",
+			aria_label = "Star icon",
 
-	return t.div.infobox[id]({
-		screw("infobox-screw-tl"),
-		screw("infobox-screw-tr"),
-		screw("infobox-screw-bl"),
-		screw("infobox-screw-br"),
-		def,
+			t.g({
+				transform = "matrix(1.2560052,-0.01957609,0.01864766,1.3185391,-37.670964,-10.463164)",
+				t.path.star_sticker({
+					d = "M 34.196021,17.2592 24.645062,12.656539 16.799254,19.435395 18.225237,8.9295928 9.3536736,3.5625676 19.785938,1.6722863 22.148818,-8.4235735 27.17033,0.91397027 37.502233,0.04141094 30.173434,7.7026117 Z",
+					transform = "matrix(0.444352,0.06452325,-0.06452325,0.444352,25.8736,10.78767)",
+					fill = "currentColor",
+				}),
+			}),
+		}),
+		t.b(" " .. name),
 	})
 end
 
@@ -30,6 +31,11 @@ return t.Document({
 		t.EmbedRootCSS(),
 		t.link({ href = "/css/style.css", rel = "stylesheet" }),
 		t.script({ src = "/js/script.js" }),
+		t.link({
+			rel = "icon",
+			href = "/assets/favicon.ico",
+			type = "image/x-icon",
+		}),
 	}),
 	t.body({
 		t.div["#wrapper"]({
@@ -37,49 +43,139 @@ return t.Document({
 				t.h1("Hello & Welcome!"),
 				t.hr(),
 				t.ColorSchemeToggle(),
-				t.div["#container"]({
-					infobox("#infobox-pii", {
-						t.figure["#selfie"]({
-							t.ZoomableImage(
-								"assets/placeholder_selfie.jpg",
-								600,
-								"Monochrome, stylised portrait of a young man with glasses and scraggly hair. He has a big smile on his face, and appears to be wearing a dress shirt"
-							),
-							t.figcaption("(there will be a picture of me here in the future!)"),
-						}),
-						t.div({
-							t.h2("About me"),
-							t.ul({
-								t.li("Living in Minas Gerais, Brazil"),
-								t.li("Knowledgeable in C, Python, Go, Lua, and general webdev"),
-								t.li(
-									"Native Brazilian Portugues speaker and fluent in English, with some experience translating software"
-								),
-								t.li("Working towards a Bachelors in Computer Science, currently on my Sophomore year"),
-								t.li("Working on some personal projects"),
-								t.li(
-									"I also have an interest in drawing and music, having composed soundtracks for a few games!"
-								),
-							}),
+
+				t.h2("About me"),
+				t.figure.right({
+					t.img({
+						src = "assets/placeholder_selfie.jpg",
+						alt = "Monochrome, stylised portrait of a young man with glasses and scraggly hair. He has a big smile on his face, and appears to be wearing a dress shirt",
+						width = 225,
+						height = 300,
+					}),
+					t.figcaption({ t.i("Author's depiction of the author") }),
+				}),
+				t.p({
+					"I'm Pedro. I'm a 19 year old ",
+					t.i("Computer Science"),
+					[[
+					student. I enjoy learning about computers, programming them, and sometimes
+					building them. I have dipped my toes into a variety of languages and projects,
+					and consider myself quick to learn, but I have an affinity with C, Go, Python,
+					and general webdev—be it React or plain HTML/CSS/JS.
+				]],
+				}),
+				t.h3("Goals"),
+				t.p({
+					[[
+					I'm looking to study up on backend design this year, mostly with Go—In fact,
+					I've started working on a very simple
+				]],
+					t.a({
+						href = "https://github.com/pbnjk/chat",
+						"messenging app",
+					}),
+					" in Go! There's not much there yet, but maybe something will come out of it.",
+				}),
+				t.p([[
+					I would also like to get a job. With the state of the job market nowadays,
+					it's seeming a little tough for little junior me, but I have faith...
+					At the very least, I'd like to get a job as a TA at my college.
+				]]),
+
+				t.h2("Personal life"),
+				t.p([[
+					Outside of tech, I also enjoy literature, drawing, and have an ardent passion
+					for music. I really want to get more into film, but haven't yet.
+				]]),
+				t.figure.left({
+					t.img({
+						src = "assets/business_pleasure.jpg",
+						alt = "Two books, the Brazilian Portuguese edition of “Design Patterns,” and “Gravity's Rainbow”",
+						width = 368,
+					}),
+					t.figcaption({ t.i("Pictured: business and pleasure") }),
+				}),
+				t.h3("Faves"),
+				t.dl.faves({
+					starSticker("Books"),
+					t.dd({
+						" My favourite author is, by far, Thomas Pynchon. I read ",
+						t.i("“Vineland”"),
+						" and ",
+						t.i("“The Crying of Lot 49”"),
+						" love them dearly. Very excited to dive into ",
+						t.i("“Gravity's Rainbow”"),
+						" this year! ",
+					}),
+					t.br({}),
+					starSticker("Music"),
+					t.dd({
+						[[
+						My favourite musicians are too numerous to count... but, right now, I'm
+					really into
+					]],
+						t.i("Geese"),
+						" and ",
+						t.i("Milton Nascimento "),
+					}),
+					t.br({}),
+					starSticker("Art"),
+					t.dd({
+						[[
+						I would like to have a favourite painter at some point. Please check back
+					in a year!
+					]],
+					}),
+					t.br({}),
+					starSticker("Film"),
+					t.dd({
+						[[
+						Well, again, I am not an avid movie watcher. Maybe Wes Anderson? Please
+					check back in a year.
+					]],
+					}),
+				}),
+
+				t.h2("About this website"),
+				t.p({
+					[[
+					This website uses a “fork” of
+				]],
+					t.span({
+						lang = "ja",
+						title = "riki moe",
+						style = "text-decoration: underline dotted;",
+						"りき萌",
+					}),
+					"'s ",
+					t.a({
+						href = "https://riki.house/lua-html",
+						"HTML templating engine,",
+					}),
+					" which uses Lua to build static pages. It's sort of like an ad-hoc, Brazil-washed ",
+					t.a({
+						href = "gohugo.io",
+						"Hugo.",
+					}),
+				}),
+				t.p([[
+					To be honest, this website is very hacked
+				together... the little toy engine struggles to become a framework, and I'm
+				looking forward to refactoring this later down the line (right now, I just
+				need something I can jot down on—I can deal with the cruft...)
+				]]),
+				t.h2("My works"),
+				t.ul({
+					t.li({
+						t.a({
+							href = "books/",
+							"books",
 						}),
 					}),
-					infobox("#infobox-interests", {
-						t.div({
-							t.h2("My works"),
-							t.ul({
-								t.li({
-									t.a({
-										href = "books/",
-										"books",
-									}),
-								}),
-								t.li({
-									t.a({
-										href = "blog/",
-										"blog",
-									}),
-								}),
-							}),
+					t.li({
+						t.a({
+							href = "blog/",
+							"blog",
 						}),
 					}),
 				}),
