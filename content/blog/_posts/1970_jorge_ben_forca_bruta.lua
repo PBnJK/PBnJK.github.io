@@ -19,9 +19,11 @@ return t.Album({
 		400
 	),
 	t.p({
-		t.Pronounce("Força Bruta", "forca_bruta_title"),
+		--t.Pronounce("Força Bruta", "forca_bruta_title"),
+		"Força Bruta",
 		" (Brute Force) is ",
-		t.Pronounce("Jorge Ben", "jorge_ben"),
+		--t.Pronounce("Jorge Ben", "jorge_ben"),
+		"Jorge Ben",
 		[['s seventh studio album, released in 1970. Following the major success of
 		his psychedelic 1969 self-titled,
 	]],

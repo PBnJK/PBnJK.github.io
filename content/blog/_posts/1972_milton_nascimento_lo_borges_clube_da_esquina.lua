@@ -283,7 +283,7 @@ return t.Album({
 				"morena,",
 				"May refer to a brunette, a black-skinned woman, or both. Also a term of endearment."
 			),
-			"who seasoned it?",
+			" who seasoned it?",
 		}, "Ê, morena, quem temperou?"),
 		t.Lyric("00:33", "Gypsy, who seasoned it?", "Cigana, quem temperou?"),
 		t.Lyric("00:35", "The smell of clove", "O cheiro do cravo"),
@@ -353,7 +353,7 @@ return t.Album({
 		t.Note({
 			"This song is a cover of a bolero composed by Carmelo Larrea, and is sung in Spanish. See footnote",
 			t.Footnote(1),
-			"for the source of this translation.",
+			" for the source of this translation.",
 		}),
 		t.Lyric("00:01", "Sevilla had to be", "Sevilla tuvo que ser"),
 		t.Lyric("00:11", "With its little silver moon", "Con su lunita plateada"),
@@ -513,7 +513,7 @@ return t.Album({
 	}, {
 		t.Note("A brief intro to the next track."),
 		t.Lyric("00:00", "Dust on the night", "Poeira na noite"),
-		t.Lyric("00:05", "The celebration of night", "A festa da noite"),
+		t.Lyric("00:05", "The party of night", "A festa da noite"),
 		t.Lyric("00:09", "Warrior, death star", "Guerreira, estrela da morte"),
 		t.Lyric("00:16", "Dark party, love", "Festa negra, amor"),
 		t.Lyric("00:20", "But it's late", "Mas é tarde"),
@@ -535,14 +535,13 @@ return t.Album({
 		},
 	}, {
 		t.Note({
-			[[
-			“Corner Club №1” was released on an earlier Milton Nascimento album, “Milton”
-			(1970.)
-		]],
-			t.br(),
-			[[
-			Lyrics would eventually be written for this track, and most future performances
-			and re-recordings would no longer be instrumental.
+			"There ",
+			t.i("is"),
+			" a “Corner Club ",
+			t.b("№1"),
+			[[,” released on the 1970 Milton Nascimento album “Milton.” This version, №2,
+			is completely different from that earlier track, and is an instrumental (though
+			lyrics would eventually be written for it.)
 		]],
 		}),
 		t.Text("(instrumental)"),

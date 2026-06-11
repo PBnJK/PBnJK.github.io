@@ -50,7 +50,8 @@ return t.Album({
 		(1964) is a collaboration between American saxophonist Stan Getz
 		and Brazilian guitarist
 	]],
-		t.Pronounce("João Gilberto.", "joao_gilberto"),
+		--t.Pronounce("João Gilberto.", "joao_gilberto"),
+		"João Gilberto",
 		[[
 		Though it wasn't the first bossa nova album released outside of Brazil, it was
 		the one responsible for turning the genre into a worldwide phenomenon.
@@ -108,9 +109,11 @@ return t.Album({
 	}),
 	t.p({
 		"Also featured in the recording are ",
-		t.Pronounce("Antônio Carlos Jobim", "antonio_carlos_jobim"),
+		--t.Pronounce("Antônio Carlos Jobim", "antonio_carlos_jobim"),
+		"Antônio Carlos Jobim",
 		" on piano—who, alongside Gilberto, composed many of the songs on the album—and ",
-		t.Pronounce("Astrud Gilberto,", "astrud_gilberto"),
+		--t.Pronounce("Astrud Gilberto,", "astrud_gilberto"),
+		"Astrud Gilberto,",
 		[[
 		João Gilberto's wife, whose enchanting performances in “The Girl from Ipanema”
 		and “Corcovado” would turn her into a household name.

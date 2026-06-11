@@ -15,8 +15,9 @@ return t.Album({
 	t.figure({
 		t.ZoomableImage(
 			"/assets/blog/covers/2026_tangolo_mangos_pedagios_y_caronas.jpg",
+			"Cover for PEDAGIOS Y CARONAS, depicting a monochrome image of a man running after a street dog",
 			400,
-			"Cover for PEDAGIOS Y CARONAS, depicting a monochrome image of a man running after a street dog"
+			400
 		),
 		t.figcaption({
 			"The ",
