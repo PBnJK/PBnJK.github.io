@@ -72,7 +72,7 @@ return t.Album({
 		t.i("Getz/Gilberto"),
 		[[
 		was by far the most successful, selling two million copies in 1964 and
-		taking up the №2 spot in the
+		taking up the #2 spot in the
 	]],
 		t.i("Billboard"),
 		" charts for ",

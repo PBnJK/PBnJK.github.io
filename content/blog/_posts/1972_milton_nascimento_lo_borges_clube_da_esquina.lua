@@ -180,7 +180,7 @@ return t.Album({
 	}),
 	t.Song({
 		title = "Saídas e Bandeiras №1",
-		en_title = "Exits and Flags №1",
+		en_title = "Exits and Flags #1",
 		artist = "Milton Nascimento & Beto Guedes",
 		writer = { "Fernando Brant", "Milton Nascimento" },
 		personnel = {
@@ -520,7 +520,7 @@ return t.Album({
 	}),
 	t.Song({
 		title = "Clube da Esquina №2",
-		en_title = "Corner Club №2",
+		en_title = "Corner Club #2",
 		artist = "Milton Nascimento",
 		writer = { "Lô Borges", "Márcio Borges", "Milton Nascimento" },
 		arranger = "Eumir Deodato",
@@ -538,8 +538,8 @@ return t.Album({
 			"There ",
 			t.i("is"),
 			" a “Corner Club ",
-			t.b("№1"),
-			[[,” released on the 1970 Milton Nascimento album “Milton.” This version, №2,
+			t.b("#1"),
+			[[,” released on the 1970 Milton Nascimento album “Milton.” This version, #2,
 			is completely different from that earlier track, and is an instrumental (though
 			lyrics would eventually be written for it.)
 		]],
@@ -686,7 +686,7 @@ return t.Album({
 	}),
 	t.Song({
 		title = "Saídas e Bandeiras №2",
-		en_title = "Exits and Flags №2",
+		en_title = "Exits and Flags #2",
 		artist = "Milton Nascimento & Beto Guedes",
 		writer = { "Fernando Brant", "Milton Nascimento" },
 		personnel = {
