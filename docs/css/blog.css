@@ -263,7 +263,7 @@ figcaption {
   top: 0;
   left: 952px;
 
-  border-left: 8px solid var(--font-disabled);
+  border-left: 8px solid var(--font-secondary);
   padding: 4px 16px;
 
   background: var(--bg-secondary);
@@ -271,7 +271,7 @@ figcaption {
 }
 
 .citation {
-  border-left: 8px solid var(--font-disabled);
+  border-left: 8px solid var(--font-secondary);
   padding: 0.5em 10px;
   quotes: "\201C" "\201D";
 }
@@ -290,7 +290,7 @@ figcaption {
   text-align: right;
 
   margin: 16px 0 0 0;
-  color: var(--font-disabled);
+  color: var(--font-secondary);
 }
 
 .song-meta {
@@ -370,13 +370,13 @@ figcaption {
 }
 
 .lyric-time {
-  color: var(--font-disabled);
+  color: var(--font-secondary);
 
   margin: 0;
   grid-column: 1;
 
   padding-right: 8px;
-  border-right: 4px solid var(--font-disabled);
+  border-right: 4px solid var(--font-secondary);
 }
 
 .lyric-text {
@@ -508,7 +508,7 @@ figcaption {
 
     margin-bottom: 8px;
 
-    border-left: 4px solid var(--font-disabled);
+    border-left: 4px solid var(--font-secondary);
   }
 
   .lyric-time {
