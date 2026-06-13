@@ -12,15 +12,12 @@ return t.Album({
 		day = 29,
 	},
 }, {
-	t.figure({
-		t.ZoomableImage(
-			"/assets/blog/covers/1972_milton_nascimento_lo_borges_clube_da_esquina.jpg",
-			"Clube da Esquina album cover, depicting two young boys sitting by the road",
-			400,
-			400
-		),
-		t.figcaption("As iconic a cover art as they come"),
-	}),
+	t.ZoomableImage(
+		"/assets/blog/covers/1972_milton_nascimento_lo_borges_clube_da_esquina.jpg",
+		"Clube da Esquina album cover, depicting two young boys sitting by the road",
+		400,
+		400
+	),
 	t.p([[
 		On a street corner in the Brazilian city of Belo Horizonte, Milton Nascimento,
 		the Borges Brothers, and others local artist friends started a sort of informal
