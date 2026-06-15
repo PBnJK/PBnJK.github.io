@@ -55,10 +55,6 @@ p {
   float: none;
 }
 
-a {
-  color: var(--font-secondary);
-}
-
 .mark-red {
   background-color: var(--bg-secondary-red);
 }

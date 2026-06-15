@@ -64,6 +64,7 @@ html {
   display: block;
 
   background-color: var(--bg-secondary);
+  color: var(--font-secondary);
 
   text-decoration: none;
   padding: 4px 8px;
