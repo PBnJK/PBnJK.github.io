@@ -31,11 +31,49 @@ body {
 }
 
 body {
-  margin: 16px 32px;
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
 }
 
 html {
   font-family: sans-serif;
+}
+
+.header-nav-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+  padding-bottom: 32px;
+}
+
+.header-nav-list li {
+  display: inline-block;
+  text-align: center;
+
+  border-right: 2px solid var(--bg-primary);
+}
+
+.header-nav-list a {
+  display: block;
+
+  background-color: var(--bg-secondary);
+
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.header-nav-list a:hover {
+  background-color: var(--bg-highlight);
+  color: var(--font-primary);
+
+  text-decoration: none;
 }
 
 footer {
@@ -84,7 +122,7 @@ footer {
   color: var(--font-secondary);
   font-size: 0.8em;
 }
-</style><link href="/css/style.css" rel="stylesheet"><script src="/js/script.js"></script><link href="/assets/favicon.ico" rel="icon" type="image/x-icon"></head><body><div id="wrapper"><article><header><h1>Hello &amp; Welcome!</h1></header><hr><main><button id="color-switcher"><span id="color-sun">☀️</span><span id="color-moon">🌙</span></button><h2>About me</h2><figure class="right"><img alt="Monochrome, stylised portrait of a young man with glasses and scraggly hair. He has a big smile on his face, and appears to be wearing a dress shirt" height="300" src="assets/placeholder_selfie.jpg" width="225"><figcaption><i>Author&#39;s depiction of the author</i></figcaption></figure><p>I&#39;m Pedro. I&#39;m a 19 year old <i>Computer Science</i>					student. I enjoy learning about computers, programming them, and sometimes
+</style><link href="/css/style.css" rel="stylesheet"><script src="/js/script.js"></script><link href="/assets/favicon.ico" rel="icon" type="image/x-icon"></head><body><div id="wrapper"><header><nav><ul class="header-nav-list"><li><a href="/blog/">blog</a></li><li><a href="/books/">books</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li></ul></nav></header><article><header><h1>Hello &amp; Welcome!</h1></header><hr><main><button id="color-switcher"><span id="color-sun">☀️</span><span id="color-moon">🌙</span></button><h2>About me</h2><figure class="right"><img alt="Monochrome, stylised portrait of a young man with glasses and scraggly hair. He has a big smile on his face, and appears to be wearing a dress shirt" height="300" src="assets/placeholder_selfie.jpg" width="225"><figcaption><i>Author&#39;s depiction of the author</i></figcaption></figure><p>I&#39;m Pedro. I&#39;m a 19 year old <i>Computer Science</i>					student. I enjoy learning about computers, programming them, and sometimes
 					building them. I have dipped my toes into a variety of languages and projects,
 					and consider myself quick to learn, but I have an affinity with C, Go, Python,
 					and general webdev—be it React or plain HTML/CSS/JS.
@@ -110,17 +148,20 @@ footer {
 					you can&#39;t do a good samba without learning how to make your thumb, index,
 					middle, and ring fingers dance on the strings.
 					</p><p>So I&#39;m working on that.</p><p>						I also like doing something resembling electronic music, and for a good	
-						while, younger me entertained himself by writing little video-game-y instrumental
-						pieces on
+					while, younger me entertained himself by writing little video-game-y instrumental
+					pieces on
 					<abbr title="Linux Multi Media Studio">LMMS</abbr> using free soundfonts I found online.</p><p>						By younger me I of course mean current me. I still do that. It&#39;s a blast!
 						You should try.
-					</p><h3>...and talents literary</h3><p>						This webpage is literature!
-					</p><p>						...well, I also wrote a four-part piece of fanfiction once. It was not
-					any good at all—Heavens no!—but it was like fifteen thousand (15,000) words
-					that made a cohesive, somewhat interesting story.
-					</p><p>I am happy about that one.</p><h2>About this website</h2><p>					This website uses a “fork” of
-				<span lang="ja" style="text-decoration: underline dotted;" title="riki moe">りき萌</span>&#39;s <a href="https://riki.house/lua-html">HTML templating engine,</a> which uses Lua to build static pages. It&#39;s sort of like an ad-hoc, Brazil-washed <a href="gohugo.io">Hugo.</a></p><p>					To be honest, this website is very hacked
+					</p><h3>...and talents literary</h3><p>						This website is literature! In more ways than one, as, besides the normal
+					blog posts, I also host a lithany of album translations here. I also plan
+					on trying my hand at writing poetry—maybe even a webnovel? Or... multiple
+					webnovels?!
+					</p><p>...only time will tell.</p><p>						Well, besides website-related ventures, I also once wrote a four-part piece
+					of fanfiction once. It was not any good at all—Heavens no!—but it was, like,
+					a good fifteen thousand (15,000) words that made up a cohesive, even somewhat
+					interesting story.
+					</p><p>I am happy about that one.</p><h2>About this website</h2><p>This website uses a “fork” of <span lang="ja" style="text-decoration: underline dotted;" title="Riki Moe">りき萌</span>&#39;s <a href="https://riki.house/lua-html">HTML templating engine,</a> which uses Lua to build static pages. It&#39;s sort of like an ad-hoc, Brazil-washed <a href="gohugo.io">Hugo.</a></p><p>					To be honest, this website is very hacked
 				together... the little toy engine struggles to become a framework, and I&#39;m
 				looking forward to refactoring this later down the line (right now, I just
 				need something I can jot down on—I can deal with the cruft...)
-				</p><h2>My works</h2><ul><li><a href="books/">books</a></li><li><a href="blog/">blog</a></li></ul></main><div><hr><footer><p class="build-date">built from source at 22:22, June 14, 2026</p><p class="copyright">© pbnjk 2026</p></footer></div></article></div></body></html>
+				</p></main></article><div><hr><footer><p class="build-date">built from source at 15:50, June 15, 2026</p><p class="copyright">© pbnjk 2026</p></footer></div></div></body></html>

@@ -39,6 +39,7 @@ return t.Document({
 	}),
 	t.body({
 		t.div["#wrapper"]({
+			t.Header(),
 			t.article({
 				t.header({
 					t.h1("Hello & Welcome!"),
@@ -155,8 +156,8 @@ return t.Document({
 					t.p({
 						[[
 						I also like doing something resembling electronic music, and for a good	
-						while, younger me entertained himself by writing little video-game-y instrumental
-						pieces on
+					while, younger me entertained himself by writing little video-game-y instrumental
+					pieces on
 					]],
 						t.abbr({
 							title = "Linux Multi Media Studio",
@@ -170,22 +171,25 @@ return t.Document({
 					]]),
 					t.h3("...and talents literary"),
 					t.p([[
-						This webpage is literature!
+						This website is literature! In more ways than one, as, besides the normal
+					blog posts, I also host a lithany of album translations here. I also plan
+					on trying my hand at writing poetry—maybe even a webnovel? Or... multiple
+					webnovels?!
 					]]),
+					t.p("...only time will tell."),
 					t.p([[
-						...well, I also wrote a four-part piece of fanfiction once. It was not
-					any good at all—Heavens no!—but it was like fifteen thousand (15,000) words
-					that made a cohesive, somewhat interesting story.
+						Well, besides website-related ventures, I also once wrote a four-part piece
+					of fanfiction once. It was not any good at all—Heavens no!—but it was, like,
+					a good fifteen thousand (15,000) words that made up a cohesive, even somewhat
+					interesting story.
 					]]),
 					t.p("I am happy about that one."),
 					t.h2("About this website"),
 					t.p({
-						[[
-					This website uses a “fork” of
-				]],
+						"This website uses a “fork” of ",
 						t.span({
 							lang = "ja",
-							title = "riki moe",
+							title = "Riki Moe",
 							style = "text-decoration: underline dotted;",
 							"りき萌",
 						}),
@@ -206,24 +210,9 @@ return t.Document({
 				looking forward to refactoring this later down the line (right now, I just
 				need something I can jot down on—I can deal with the cruft...)
 				]]),
-					t.h2("My works"),
-					t.ul({
-						t.li({
-							t.a({
-								href = "books/",
-								"books",
-							}),
-						}),
-						t.li({
-							t.a({
-								href = "blog/",
-								"blog",
-							}),
-						}),
-					}),
 				}),
-				t.Footer(),
 			}),
+			t.Footer(),
 		}),
 	}),
 })

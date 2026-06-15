@@ -179,6 +179,7 @@ function t.Album(metadata, def)
 		}),
 		t.body({
 			t.div["#wrapper"]({
+				t.Header(),
 				t.article({
 					t.header["#article-header"]({
 						build_heading(metadata.title, metadata.artist),
@@ -192,8 +193,8 @@ function t.Album(metadata, def)
 						t.ColorSchemeToggle(),
 						def,
 					}),
-					t.Footer(),
 				}),
+				t.Footer(),
 			}),
 		}),
 	})

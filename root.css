@@ -31,11 +31,49 @@ body {
 }
 
 body {
-  margin: 16px 32px;
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
 }
 
 html {
   font-family: sans-serif;
+}
+
+.header-nav-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+  padding-bottom: 32px;
+}
+
+.header-nav-list li {
+  display: inline-block;
+  text-align: center;
+
+  border-right: 2px solid var(--bg-primary);
+}
+
+.header-nav-list a {
+  display: block;
+
+  background-color: var(--bg-secondary);
+
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.header-nav-list a:hover {
+  background-color: var(--bg-highlight);
+  color: var(--font-primary);
+
+  text-decoration: none;
 }
 
 footer {

@@ -223,6 +223,7 @@ function t.Blog(metadata, def)
 		}),
 		t.body({
 			t.div["#wrapper"]({
+				t.Header(),
 				t.article({
 					t.header["#article-header"]({
 						t.h1(metadata.title or "Untitled"),
@@ -237,8 +238,8 @@ function t.Blog(metadata, def)
 						t.ColorSchemeToggle(),
 						def,
 					}),
-					t.Footer(),
 				}),
+				t.Footer(),
 			}),
 		}),
 	})

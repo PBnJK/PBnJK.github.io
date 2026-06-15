@@ -31,11 +31,49 @@ body {
 }
 
 body {
-  margin: 16px 32px;
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
 }
 
 html {
   font-family: sans-serif;
+}
+
+.header-nav-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+  padding-bottom: 32px;
+}
+
+.header-nav-list li {
+  display: inline-block;
+  text-align: center;
+
+  border-right: 2px solid var(--bg-primary);
+}
+
+.header-nav-list a {
+  display: block;
+
+  background-color: var(--bg-secondary);
+
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.header-nav-list a:hover {
+  background-color: var(--bg-highlight);
+  color: var(--font-primary);
+
+  text-decoration: none;
 }
 
 footer {
@@ -84,4 +122,4 @@ footer {
   color: var(--font-secondary);
   font-size: 0.8em;
 }
-</style><link href="/css/blog.css" rel="stylesheet"><link href="/assets/favicon.ico" rel="icon" type="image/x-icon"></head><body><div id="wrapper"><main><article><header id="article-header"><h1>Music</h1></header></article><ul><li><a href="/blog/posts/radio_batuta_geraes.html">‘Geraes’: Minas, world, Milton (in English)</a></li></ul></main></div><div><hr><footer><p class="build-date">built from source at 22:22, June 14, 2026</p><p class="copyright">© pbnjk 2026</p></footer></div></body></html>
+</style><link href="/css/blog.css" rel="stylesheet"><link href="/assets/favicon.ico" rel="icon" type="image/x-icon"></head><body><div id="wrapper"><header><nav><ul class="header-nav-list"><li><a href="/blog/">blog</a></li><li><a href="/books/">books</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li></ul></nav></header><main><article><header id="article-header"><h1>Music</h1></header></article><ul><li><a href="/blog/posts/radio_batuta_geraes.html">‘Geraes’: Minas, world, Milton (in English)</a></li></ul></main><div><hr><footer><p class="build-date">built from source at 15:50, June 15, 2026</p><p class="copyright">© pbnjk 2026</p></footer></div></div></body></html>

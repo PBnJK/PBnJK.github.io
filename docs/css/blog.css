@@ -71,8 +71,6 @@ dt::after {
 }
 
 #wrapper {
-  display: flex;
-  justify-content: center;
 }
 
 #article-header {

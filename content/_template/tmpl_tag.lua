@@ -32,6 +32,7 @@ function t.Tag(title, metadata, def)
 		}),
 		t.body({
 			t.div["#wrapper"]({
+				t.Header(),
 				t.main({
 					t.article({
 						t.header["#article-header"]({
@@ -41,8 +42,8 @@ function t.Tag(title, metadata, def)
 					def,
 					t.ul(file_elements),
 				}),
+				t.Footer(),
 			}),
-			t.Footer(),
 		}),
 	})
 end

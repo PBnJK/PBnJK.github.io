@@ -140,6 +140,32 @@ function template.EmbedRootCSS()
 	})
 end
 
+function template.Header()
+	local function nav_link(href, name)
+		return template.li({
+			template.a({
+				href = href,
+				name,
+			}),
+		})
+	end
+
+	return template.header({
+		template.nav({
+			template.ul.header_nav_list({
+				nav_link("/blog/", "blog"),
+				nav_link("/books/", "books"),
+				nav_link("#", "---"),
+				nav_link("#", "---"),
+				nav_link("#", "---"),
+				nav_link("#", "---"),
+				nav_link("#", "---"),
+				nav_link("#", "---"),
+			}),
+		}),
+	})
+end
+
 function template.ColorSchemeToggle()
 	return template.button["#color-switcher"]({
 		template.span["#color-sun"]("☀️"),

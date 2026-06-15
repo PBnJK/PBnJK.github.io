@@ -197,7 +197,13 @@ return t.Album({
 		]]),
 		t.Lyric("00:04", {
 			"What would you say of this thing ",
-			t.InlineNote("you can no longer touch the bottom of?", "As in touching the bottom of a river, pool, etc"),
+			t.InlineNote(
+				"you can't reach the bottom of?",
+				[[
+				As in touching the bottom of a river, pool, etc. Perhaps a more natural
+				translation might be “this thing that's over our heads.”
+			]]
+			),
 		}, "O que vocês diriam dessa coisa que não dá mais pé?"),
 		t.Lyric("00:09", "What would you do to escape the tide?", "O que vocês fariam pra sair dessa maré?"),
 		t.Lyric("00:12", "What was dream turns to dirt", "O que era sonho vira terra"),
@@ -697,7 +703,13 @@ return t.Album({
 	}, {
 		t.Lyric("00:05", {
 			"What would you say of this thing ",
-			t.InlineNote("you can no longer touch the bottom of?", "As in touching the bottom of a river, pool, etc."),
+			t.InlineNote(
+				"you can't reach the bottom of?",
+				[[
+				As in touching the bottom of a river, pool, etc. Perhaps a more natural
+				translation might be “this thing that's over our heads.”
+			]]
+			),
 		}, "O que vocês diriam dessa coisa que não dá mais pé?"),
 		t.Lyric("00:10", "What would you do to escape the tide?", "O que vocês fariam pra sair dessa maré?"),
 		t.Lyric("00:13", "What was stone turns to body", "O que era pedra vira corpo"),
@@ -705,12 +717,12 @@ return t.Album({
 		t.br(),
 		t.Lyric(
 			"00:20",
-			"Walk down avenues fighting what I can no longer touch the bottom of",
+			"Walk down avenues facing up to what I can't reach the bottom of",
 			"Andar por avenidas enfrentando o que não dá mais pé"
 		),
 		t.Lyric(
 			"00:27",
-			"Gather all my strength to win against the tide",
+			"Gather all my strength to overcome the tide",
 			"Juntar todas as forças pra vencer essa maré"
 		),
 		t.Lyric("00:30", "What was stone turns to man", "O que era pedra vira homem"),

@@ -67,11 +67,6 @@ a {
   background-color: var(--bg-secondary-blue);
 }
 
-#wrapper {
-  display: flex;
-  justify-content: center;
-}
-
 figure {
   text-align: center;
 }
