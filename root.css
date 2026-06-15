@@ -38,6 +38,12 @@ html {
   font-family: sans-serif;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* See:
  *   https://mdn.io/Heading_Elements
  *     # Specifying a uniform font size for <h1>

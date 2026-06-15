@@ -140,15 +140,28 @@ function template.EmbedRootCSS()
 	})
 end
 
-function template.Document(def)
-	return template.Html("<!doctype html>" .. tostring(template.Element("html", def)))
-end
-
 function template.ColorSchemeToggle()
 	return template.button["#color-switcher"]({
 		template.span["#color-sun"]("☀️"),
 		template.span["#color-moon"]("🌙"),
 	})
+end
+
+function template.Footer()
+	local text_build_date = os.date("built from source at %H:%M, %B %d, %Y")
+	local text_copyright = os.date("© pbnjk %Y")
+
+	return template.div({
+		template.hr(),
+		template.footer({
+			template.p.build_date(text_build_date),
+			template.p.copyright(text_copyright),
+		}),
+	})
+end
+
+function template.Document(def)
+	return template.Html("<!doctype html>" .. tostring(template.Element("html", def)))
 end
 
 function template.If(condition, t, f)

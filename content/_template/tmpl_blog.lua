@@ -223,20 +223,21 @@ function t.Blog(metadata, def)
 		}),
 		t.body({
 			t.div["#wrapper"]({
-				t.main({
-					t.article({
-						t.header["#article-header"]({
-							t.h1(metadata.title or "Untitled"),
-							t.hr(),
-							t.div["#metadata"]({
-								build_time_element(metadata.date),
-								build_reading_time_element(def),
-								build_tags_element(metadata.tags),
-							}),
+				t.article({
+					t.header["#article-header"]({
+						t.h1(metadata.title or "Untitled"),
+						t.hr(),
+						t.div["#metadata"]({
+							build_time_element(metadata.date),
+							build_reading_time_element(def),
+							build_tags_element(metadata.tags),
 						}),
 					}),
-					t.ColorSchemeToggle(),
-					def,
+					t.main({
+						t.ColorSchemeToggle(),
+						def,
+					}),
+					t.Footer(),
 				}),
 			}),
 		}),

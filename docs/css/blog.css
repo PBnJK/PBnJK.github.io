@@ -22,10 +22,12 @@ h6 {
   margin: 0;
 }
 
+article {
+  width: 960px;
+}
+
 main {
   background-color: var(--bg-primary);
-  width: 960px;
-
   margin-bottom: 64px;
 }
 
@@ -467,6 +469,9 @@ figcaption {
 .zoomable-img label {
   display: block;
   line-height: 0;
+
+  max-width: 100%;
+  height: auto;
 }
 
 .zoomable-img label img {

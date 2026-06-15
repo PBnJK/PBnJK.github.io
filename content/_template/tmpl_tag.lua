@@ -42,6 +42,7 @@ function t.Tag(title, metadata, def)
 					t.ul(file_elements),
 				}),
 			}),
+			t.Footer(),
 		}),
 	})
 end

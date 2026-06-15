@@ -179,19 +179,20 @@ function t.Album(metadata, def)
 		}),
 		t.body({
 			t.div["#wrapper"]({
-				t.main({
-					t.article({
-						t.header["#article-header"]({
-							build_heading(metadata.title, metadata.artist),
-							t.hr(),
-							t.dl({
-								build_characteristic("Released in", metadata.year or "Unknown year"),
-								build_characteristic("Genre", metadata.genre or "Unknown genre"),
-							}),
+				t.article({
+					t.header["#article-header"]({
+						build_heading(metadata.title, metadata.artist),
+						t.hr(),
+						t.dl({
+							build_characteristic("Released in", metadata.year or "Unknown year"),
+							build_characteristic("Genre", metadata.genre or "Unknown genre"),
 						}),
 					}),
-					t.ColorSchemeToggle(),
-					def,
+					t.main({
+						t.ColorSchemeToggle(),
+						def,
+					}),
+					t.Footer(),
 				}),
 			}),
 		}),

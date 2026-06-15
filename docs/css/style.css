@@ -43,8 +43,6 @@ h2::before {
 
 main {
   background-color: var(--bg-primary);
-  height: 100vh;
-
   width: 800px;
 }
 
