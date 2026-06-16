@@ -41,6 +41,20 @@ html {
   font-family: sans-serif;
 }
 
+a {
+  color: var(--font-secondary);
+}
+
+a:hover {
+  color: var(--font-primary);
+}
+
+a::before {
+  display: inline-block;
+  content: "🔗";
+  text-decoration: none;
+}
+
 .header-nav-list {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -64,7 +78,6 @@ html {
   display: block;
 
   background-color: var(--bg-secondary);
-  color: var(--font-secondary);
 
   text-decoration: none;
   padding: 4px 8px;
@@ -72,9 +85,11 @@ html {
 
 .header-nav-list a:hover {
   background-color: var(--bg-highlight);
-  color: var(--font-primary);
-
   text-decoration: none;
+}
+
+.header-nav-list a::before {
+  content: "";
 }
 
 footer {
@@ -154,4 +169,4 @@ footer {
 		came from the .45 pistol he carried. The Charles from this album, Charles Jr.,
 		is his son (supposedly—Jorge Ben has a Bob Dylan-like penchant for just saying
 		stuff and refusing to elaborate on it...)
-	<a href="https://culturablack.com.br/quem-e-o-charles-cantado-por-jorge-ben/" style="display: inline;">(source)</a><a class="rev-footnote" href="#rev-foot-2"><b>↩</b></a></li></ol></div></main></article><div><hr><footer><p class="build-date">built from source at 15:57, June 15, 2026</p><p class="copyright">© pbnjk 2026</p></footer></div></div></body></html>
+	<a href="https://culturablack.com.br/quem-e-o-charles-cantado-por-jorge-ben/" style="display: inline;">(source)</a><a class="rev-footnote" href="#rev-foot-2"><b>↩</b></a></li></ol></div></main></article><div><hr><footer><p class="build-date">built from source at 21:16, June 15, 2026</p><p class="copyright">© pbnjk 2026</p></footer></div></div></body></html>

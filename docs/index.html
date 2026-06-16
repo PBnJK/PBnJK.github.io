@@ -41,6 +41,20 @@ html {
   font-family: sans-serif;
 }
 
+a {
+  color: var(--font-secondary);
+}
+
+a:hover {
+  color: var(--font-primary);
+}
+
+a::before {
+  display: inline-block;
+  content: "🔗";
+  text-decoration: none;
+}
+
 .header-nav-list {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -64,7 +78,6 @@ html {
   display: block;
 
   background-color: var(--bg-secondary);
-  color: var(--font-secondary);
 
   text-decoration: none;
   padding: 4px 8px;
@@ -72,9 +85,11 @@ html {
 
 .header-nav-list a:hover {
   background-color: var(--bg-highlight);
-  color: var(--font-primary);
-
   text-decoration: none;
+}
+
+.header-nav-list a::before {
+  content: "";
 }
 
 footer {
@@ -130,8 +145,8 @@ footer {
 				</p><h3>Goals</h3><p>					I&#39;m looking to study up on backend design this year, mostly with Go—In fact,
 					I&#39;ve started working on a very simple
 				<a href="https://github.com/pbnjk/chat">messenging app</a> in Go! There&#39;s not much there yet, but maybe something will come out of it.</p><p>					I would also like to get a job. With the state of the job market nowadays,
-					it&#39;s seeming a little tough for little junior me, but I have faith...
-					At the very least, I&#39;d like to get a job as a TA at my college.
+					it&#39;s seeming a bit tough for little junior me, but I have faith... At the
+					very least, I&#39;d like to get a job as a TA at my college.
 				</p><h2>Personal life</h2><p>					Outside of tech, I also enjoy literature, drawing, and have an ardent passion
 					for music. I really want to get more into film, but haven&#39;t yet.
 				</p><figure class="left"><img alt="Two books, the Brazilian Portuguese edition of “Design Patterns,” and “Gravity&#39;s Rainbow”" src="assets/business_pleasure.jpg" width="368"><figcaption><i>Pictured: business and pleasure</i></figcaption></figure><h3>Faves</h3><dl class="faves"><dt><svg alt="Star icon" aria-label="Star icon" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1.2560052,-0.01957609,0.01864766,1.3185391,-37.670964,-10.463164)"><path class="star-sticker" d="M 34.196021,17.2592 24.645062,12.656539 16.799254,19.435395 18.225237,8.9295928 9.3536736,3.5625676 19.785938,1.6722863 22.148818,-8.4235735 27.17033,0.91397027 37.502233,0.04141094 30.173434,7.7026117 Z" fill="currentColor" transform="matrix(0.444352,0.06452325,-0.06452325,0.444352,25.8736,10.78767)"></path></g></svg><b> Books</b></dt><dd> My favourite author is, by far, Thomas Pynchon. I read <i>“Vineland”</i> and <i>“The Crying of Lot 49”</i> love them dearly. Very excited to dive into <i>“Gravity&#39;s Rainbow”</i> this year! </dd><br><dt><svg alt="Star icon" aria-label="Star icon" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1.2560052,-0.01957609,0.01864766,1.3185391,-37.670964,-10.463164)"><path class="star-sticker" d="M 34.196021,17.2592 24.645062,12.656539 16.799254,19.435395 18.225237,8.9295928 9.3536736,3.5625676 19.785938,1.6722863 22.148818,-8.4235735 27.17033,0.91397027 37.502233,0.04141094 30.173434,7.7026117 Z" fill="currentColor" transform="matrix(0.444352,0.06452325,-0.06452325,0.444352,25.8736,10.78767)"></path></g></svg><b> Music</b></dt><dd>						My favourite musicians are too numerous to count... but, right now, I&#39;m
@@ -153,16 +168,16 @@ footer {
 					pieces on
 					<abbr title="Linux Multi Media Studio">LMMS</abbr> using free soundfonts I found online.</p><p>						By younger me I of course mean current me. I still do that. It&#39;s a blast!
 						You should try.
-					</p><h3>...and talents literary</h3><p>						This website is literature! In more ways than one, as, besides the normal
+					</p><h3>...and talents literary</h3><p>						This website is literature! And in more ways than one as, besides the normal
 					blog posts, I also host a lithany of album translations here. I also plan
-					on trying my hand at writing poetry—maybe even a webnovel? Or... multiple
-					webnovels?!
-					</p><p>...only time will tell.</p><p>						Well, besides website-related ventures, I also once wrote a four-part piece
-					of fanfiction once. It was not any good at all—Heavens no!—but it was, like,
+					on trying my hand at writing poetry in the future—maybe even writing a
+					webnovel? Or... multiple webnovels?!
+					</p><p>...only time will tell.</p><p>						Well, besides website-related ventures, I wrote a four-part piece of
+					fanfiction once. It was not any good at all—Heavens no!—but it was, like,
 					a good fifteen thousand (15,000) words that made up a cohesive, even somewhat
 					interesting story.
 					</p><p>I am happy about that one.</p><h2>About this website</h2><p>This website uses a “fork” of <span lang="ja" style="text-decoration: underline dotted;" title="Riki Moe">りき萌</span>&#39;s <a href="https://riki.house/lua-html">HTML templating engine,</a> which uses Lua to build static pages. It&#39;s sort of like an ad-hoc, Brazil-washed <a href="gohugo.io">Hugo.</a></p><p>					To be honest, this website is very hacked
 				together... the little toy engine struggles to become a framework, and I&#39;m
 				looking forward to refactoring this later down the line (right now, I just
 				need something I can jot down on—I can deal with the cruft...)
-				</p></main></article><div><hr><footer><p class="build-date">built from source at 15:57, June 15, 2026</p><p class="copyright">© pbnjk 2026</p></footer></div></div></body></html>
+				</p></main></article><div><hr><footer><p class="build-date">built from source at 21:16, June 15, 2026</p><p class="copyright">© pbnjk 2026</p></footer></div></div></body></html>

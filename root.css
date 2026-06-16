@@ -41,6 +41,20 @@ html {
   font-family: sans-serif;
 }
 
+a {
+  color: var(--font-secondary);
+}
+
+a:hover {
+  color: var(--font-primary);
+}
+
+a::before {
+  display: inline-block;
+  content: "🔗";
+  text-decoration: none;
+}
+
 .header-nav-list {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -64,7 +78,6 @@ html {
   display: block;
 
   background-color: var(--bg-secondary);
-  color: var(--font-secondary);
 
   text-decoration: none;
   padding: 4px 8px;
@@ -72,9 +85,11 @@ html {
 
 .header-nav-list a:hover {
   background-color: var(--bg-highlight);
-  color: var(--font-primary);
-
   text-decoration: none;
+}
+
+.header-nav-list a::before {
+  content: "";
 }
 
 footer {

@@ -82,8 +82,8 @@ return t.Document({
 					}),
 					t.p([[
 					I would also like to get a job. With the state of the job market nowadays,
-					it's seeming a little tough for little junior me, but I have faith...
-					At the very least, I'd like to get a job as a TA at my college.
+					it's seeming a bit tough for little junior me, but I have faith... At the
+					very least, I'd like to get a job as a TA at my college.
 				]]),
 
 					t.h2("Personal life"),
@@ -171,15 +171,15 @@ return t.Document({
 					]]),
 					t.h3("...and talents literary"),
 					t.p([[
-						This website is literature! In more ways than one, as, besides the normal
+						This website is literature! And in more ways than one as, besides the normal
 					blog posts, I also host a lithany of album translations here. I also plan
-					on trying my hand at writing poetry—maybe even a webnovel? Or... multiple
-					webnovels?!
+					on trying my hand at writing poetry in the future—maybe even writing a
+					webnovel? Or... multiple webnovels?!
 					]]),
 					t.p("...only time will tell."),
 					t.p([[
-						Well, besides website-related ventures, I also once wrote a four-part piece
-					of fanfiction once. It was not any good at all—Heavens no!—but it was, like,
+						Well, besides website-related ventures, I wrote a four-part piece of
+					fanfiction once. It was not any good at all—Heavens no!—but it was, like,
 					a good fifteen thousand (15,000) words that made up a cohesive, even somewhat
 					interesting story.
 					]]),
