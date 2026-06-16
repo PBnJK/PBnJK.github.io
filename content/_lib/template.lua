@@ -153,9 +153,9 @@ function template.Header()
 	return template.header({
 		template.nav({
 			template.ul.header_nav_list({
+				nav_link("/", "homepage"),
 				nav_link("/blog/", "blog"),
 				nav_link("/books/", "writing"),
-				nav_link("#", "---"),
 				nav_link("#", "---"),
 				nav_link("#", "---"),
 				nav_link("#", "---"),

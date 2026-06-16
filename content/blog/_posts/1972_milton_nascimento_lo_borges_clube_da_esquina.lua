@@ -23,9 +23,14 @@ return t.Album({
 		the Borges Brothers, and others local artist friends started a sort of informal
 		“club,” appropriately nicknamed the “Clube da Esquina” (Corner Club,) where
 		they would talk, create, and play music. This double album is the culmination
-		of their musical efforts, being widely considered one of the greatest Brazilian
-		albums of all time.
+		of their musical efforts, recorded on a house they rented by the beach on a
+		humble two-track studio.
 	]]),
+	t.p({
+		"The album is widely considered one of the greatest, if not ",
+		t.i("the"),
+		" greatest Brazilian album of all time.",
+	}),
 	t.figure({
 		t.ZoomableImage(
 			"/assets/blog/clube_da_esquina.jpg",
@@ -40,11 +45,15 @@ return t.Album({
 		]]),
 	}),
 	t.p([[
-		Being released while Brazil was ruled by a military dictatorship and during
-		the resulting westernization, the record borrows from a wide range of influences,
-		from Chopin and the Beatles to samba and other Brazilian popular music, while
-		also subtly using its lyrics to criticize the regime. The resulting sound is
-		a beautiful, psychedelic, folk-infused pop trip.
+		Due to its nature as a record created by friends, the album borrows from a wide
+		range of influences, blending each of the members' unique taste—from 20-year-old Lô Borges'
+		Beatlemania to the Samba and Jazz of Milton Nascimento, and even Beto Guedes'
+		love for progressive rock—into a beautiful, psychedelic, folk-infused pop trip.
+	]]),
+	t.p([[
+		Like many of its contemporaries, this album is also notable for using its lyrics
+		to subtly criticize the regime, giving an air of revolution to this already
+		progressive work.
 	]]),
 	t.Song({
 		title = "Tudo que Você Podia Ser",
@@ -538,14 +547,20 @@ return t.Album({
 		},
 	}, {
 		t.Note({
-			"There ",
+			[[
+			Although the version on this album is an instrumental, lyrics would eventually
+			be written for this track, with most future performances and re-recordings
+			opting to use the version with lyrics instead. Refer to footnote]],
+			t.Footnote(2),
+			" for a translation of those future lyrics, if you're curious!",
+			t.br(),
+			"It is also worth nothing that there ",
 			t.i("is"),
 			" a “Corner Club ",
 			t.b("#1"),
-			[[,” released on the 1970 Milton Nascimento album “Milton.” This version, #2,
-			is completely different from that earlier track, and is an instrumental (though
-			lyrics would eventually be written for it.)
-		]],
+			",” released on the 1970 Milton Nascimento album “Milton.” The version on this album, ",
+			t.b("#2,"),
+			" is completely different from that earlier track.",
 		}),
 		t.Text("(instrumental)"),
 	}),
@@ -1028,9 +1043,22 @@ return t.Album({
 		t.Lyric("03:07", "I run to meet with you...", "Corro a te encontrar..."),
 	}),
 	t.FootnoteSection({
-		t.a({
-			href = "https://www.lyricslayers.com/el-consorcio/1558603/english.html",
-			'"Dos Cruces"translation by LyricsLayers',
+		t.p({
+			"The translation used to be here ",
+			t.a({
+				href = "https://www.lyricslayers.com/el-consorcio/1558603/english.html",
+				"here,",
+			}),
+			" but it appears to be gone, and was not saved on the Internet Archive. Sorry!",
+		}),
+	}, {
+		t.p({
+			"The amazing Dr. Steven	K. Smith has a great translation on his ",
+			t.a({
+				href = "https://translationsmith.com/translations/clube-da-esquina-no-2-l-borges-1972?rq=borges",
+				"website,",
+			}),
+			" which I encourage you to check out!",
 		}),
 	}),
 })

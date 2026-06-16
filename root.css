@@ -107,6 +107,11 @@ footer {
   font-size: 2em;
 }
 
+#wrapper {
+  width: 960px;
+  margin: 0 16px;
+}
+
 #color-switcher {
   margin-bottom: 16px;
 

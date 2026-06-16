@@ -43,7 +43,6 @@ h2::before {
 
 main {
   background-color: var(--bg-primary);
-  width: 800px;
 }
 
 mark {
