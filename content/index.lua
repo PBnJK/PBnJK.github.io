@@ -85,12 +85,6 @@ return t.Document({
 					it's seeming a bit tough for little junior me, but I have faith... At the
 					very least, I'd like to get a job as a TA at my college.
 				]]),
-
-					t.h2("Personal life"),
-					t.p([[
-					Outside of tech, I also enjoy literature, drawing, and have an ardent passion
-					for music. I really want to get more into film, but haven't yet.
-				]]),
 					t.figure.left({
 						t.img({
 							src = "assets/business_pleasure.jpg",
@@ -99,17 +93,21 @@ return t.Document({
 						}),
 						t.figcaption({ t.i("Pictured: business and pleasure") }),
 					}),
+					t.h2("Personal life"),
+					t.p([[
+					Outside of tech, I also enjoy literature, drawing, and have an ardent passion
+					for music. I really want to get more into film, but haven't yet.
+				]]),
 					t.h3("Faves"),
 					t.dl.faves({
 						starSticker("Books"),
 						t.dd({
-							" My favourite author is, by far, Thomas Pynchon. I read ",
+							" My favourite author is, by far, Thomas Pynchon. Love ",
 							t.i("“Vineland”"),
 							" and ",
-							t.i("“The Crying of Lot 49”"),
-							" love them dearly. Very excited to dive into ",
-							t.i("“Gravity's Rainbow”"),
-							" this year! ",
+							t.i("“The Crying of Lot 49,”"),
+							" very excited to dive into ",
+							t.i("“Gravity's Rainbow!”"),
 						}),
 						t.br({}),
 						starSticker("Music"),
@@ -132,12 +130,7 @@ return t.Document({
 						}),
 						t.br({}),
 						starSticker("Film"),
-						t.dd({
-							[[
-						Well, again, I am not an avid movie watcher. Maybe Wes Anderson? Please
-					check back in a year.
-					]],
-						}),
+						t.dd(" ...please check back in a year."),
 					}),
 					t.h2("Personal talents"),
 					t.p("I sometimes create things unrelated to the bossing-around of computers."),
@@ -169,7 +162,7 @@ return t.Document({
 						By younger me I of course mean current me. I still do that. It's a blast!
 						You should try.
 					]]),
-					t.h3("...and talents literary"),
+					t.h3("Talents literary"),
 					t.p([[
 						This website is literature! And in more ways than one as, besides the normal
 					blog posts, I also host a lithany of album translations here. I also plan
