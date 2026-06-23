@@ -156,7 +156,7 @@ function template.Header()
 				nav_link("/", "homepage"),
 				nav_link("/blog/", "blog"),
 				nav_link("/books/", "writing"),
-				nav_link("#", "---"),
+				nav_link("/poetry/", "poetry"),
 				nav_link("#", "---"),
 				nav_link("#", "---"),
 				nav_link("#", "---"),

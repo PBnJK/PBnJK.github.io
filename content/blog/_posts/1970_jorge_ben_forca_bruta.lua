@@ -47,8 +47,8 @@ return t.Album({
 		with occasional string and brass arrangements being added later.
 	]]),
 	t.Song({
-		title = "Oba, Here She Comes",
-		en_title = "Oba, Lá Vem Ela",
+		title = "Oba, Lá Vem Ela",
+		en_title = "Oba, Here She Comes",
 	}, {
 		t.Lyric(
 			"00:17",

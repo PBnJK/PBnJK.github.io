@@ -1,0 +1,153 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1" name="viewport"><title>pedrob&#39;s blog</title><style>/* Root styles for the website (I think this is bad practice!!!) */
+
+:root {
+  color-scheme: light dark;
+
+  --bg-primary: light-dark(#fffff0, #2a282a);
+  --bg-secondary: light-dark(#e8e8d8, #3a383a);
+  --bg-highlight: light-dark(#b8b8a8, #5a585a);
+
+  --bg-secondary-red: light-dark(#f82020, #e01040);
+  --bg-secondary-yellow: light-dark(#f8f040, #ffca29);
+  --bg-secondary-blue: light-dark(#2020e0, #20aaff);
+
+  --font-primary: light-dark(black, #f0f4f8);
+  --font-secondary: light-dark(#484848, #b0b4b8);
+}
+
+@font-face {
+  font-family: "Goudy Bookletter 1911";
+  font-display: swap;
+  src: url("/assets/fonts/GoudyBookletter1911-Regular.ttf");
+}
+
+html,
+body {
+  background-color: var(--bg-primary);
+  color: var(--font-primary);
+
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+a {
+  color: var(--font-secondary);
+}
+
+a:hover {
+  color: var(--font-primary);
+}
+
+a::before {
+  display: inline-block;
+  content: "🔗";
+  text-decoration: none;
+}
+
+.header-nav-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+  padding-bottom: 32px;
+}
+
+.header-nav-list li {
+  display: inline-block;
+  text-align: center;
+
+  border-right: 2px solid var(--bg-primary);
+}
+
+.header-nav-list a {
+  display: block;
+
+  background-color: var(--bg-secondary);
+
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.header-nav-list a:hover {
+  background-color: var(--bg-highlight);
+  text-decoration: none;
+}
+
+.header-nav-list a::before {
+  content: "";
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* See:
+ *   https://mdn.io/Heading_Elements
+ *     # Specifying a uniform font size for <h1>
+ */
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0 16px;
+}
+
+#color-switcher {
+  margin-bottom: 16px;
+
+  width: 100%;
+
+  font-size: 1.2em;
+  text-align: end;
+
+  background: none;
+  border: none;
+}
+
+#color-switcher:hover {
+  cursor: pointer;
+}
+
+#color-sun::after {
+  content: "light";
+  padding-left: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+
+#color-moon::before {
+  content: "dark";
+  padding-right: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+</style><link href="/css/blog.css" rel="stylesheet"><script src="/js/script.js"></script><script src="/js/blog.js"></script><link href="/assets/favicon.ico" rel="icon" type="image/x-icon"></head><body><div id="wrapper"><header><nav><ul class="header-nav-list"><li><a href="/">homepage</a></li><li><a href="/blog/">blog</a></li><li><a href="/books/">writing</a></li><li><a href="/poetry/">poetry</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li></ul></nav></header><article><header id="article-header"><h1>África Brasil<span id="heading-by"> by </span>Jorge Ben</h1><hr><dl><div class="characteristic"><dt><b>Released in</b></dt><dd>1976</dd></div><div class="characteristic"><dt><b>Genre</b></dt><dd>Samba, MPB, Funk &amp; Rock</dd></div></dl></header><main><button id="color-switcher"><span id="color-sun">☀️</span><span id="color-moon">🌙</span></button><div class="zoomable-img"><label><input aria-label="Zoom-in" type="checkbox"><img alt="400" loading="lazy" src="/assets/blog/covers/1976_jorge_ben_africa_brasil.jpg" width="400"></label></div><p>África Brasil is an album.</p><figure><div class="zoomable-img"><label><input aria-label="Zoom-in" type="checkbox"><img alt="Jorge Ben playing an electric guitar on stage" height="556" loading="lazy" src="/assets/blog/jorge_ben_das_guitarras.webp" width="400"></label></div><figcaption>			Jorge Ben playing on stage in 1976. Photo by: Giorgio Piredda
+		</figcaption></figure><p>		Features the Guitar(tm)
+	</p><div><hr><div><div class="song-meta"><p class="song-meta-title">Ponta de Lança Africano (Umbabarauma)</p><p class="song-meta-en-title">(African Second Striker (Umbabarauma))</p><dl></dl></div><div class="song-contents"><p class="lyric-tl-note"><br>			This song was inspired by a very skilled African striker named “Babaraum,”
+		who Jorge saw play while visiting Paris. In this song, Babaraum becomes “Umbabarauma,”
+		and is assigned the position of second striker, which, in Brazil, is known as
+		the “ponta de lança,” meaning “spear tip”—possibly harkening to the weapons of
+		traditional African warriors.
+		</p><div class="lyric-box"><p class="lyric-time"><i>00:16</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>00:21</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>00:26</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>00:31</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><br><div class="lyric-box"><p class="lyric-time"><i>00:36</i></p><div class="lyric-text">Play ball, play ball</div><div class="lyric-og" lang="pt-BR">Joga bola, joga bola</div></div><div class="lyric-box"><p class="lyric-time"><i>00:40</i></p><div class="lyric-text">Corocondô</div><div class="lyric-og" lang="pt-BR">Corocondô</div></div><div class="lyric-box"><p class="lyric-time"><i>00:47</i></p><div class="lyric-text">Play ball, play ball</div><div class="lyric-og" lang="pt-BR">Joga bola, joga bola</div></div><div class="lyric-box"><p class="lyric-time"><i>00:50</i></p><div class="lyric-text">Player</div><div class="lyric-og" lang="pt-BR">Jogador</div></div><br><div class="lyric-box"><p class="lyric-time"><i>00:56</i></p><div class="lyric-text">Jump, jump, fall, get up</div><div class="lyric-og" lang="pt-BR">Pula, pula, cai, levanta</div></div><div class="lyric-box"><p class="lyric-time"><i>00:57</i></p><div class="lyric-text">Up and down and run</div><div class="lyric-og" lang="pt-BR">Sobe e desce e corre</div></div><div class="lyric-box"><p class="lyric-time"><i>00:59</i></p><div class="lyric-text">Kick, clear up space</div><div class="lyric-og" lang="pt-BR">Chuta, abre espaço</div></div><div class="lyric-box"><p class="lyric-time"><i>01:00</i></p><div class="lyric-text">Celebrate and give thanks</div><div class="lyric-og" lang="pt-BR">Vibra e agradece</div></div><br><div class="lyric-box"><p class="lyric-time"><i>01:06</i></p><div class="lyric-text">Even the whole city</div><div class="lyric-og" lang="pt-BR">Olha que a cidade</div></div><div class="lyric-box"><p class="lyric-time"><i>01:07</i></p><div class="lyric-text">Emptied out</div><div class="lyric-og" lang="pt-BR">Toda ficou vazia</div></div><div class="lyric-box"><p class="lyric-time"><i>01:08</i></p><div class="lyric-text">On this beautiful evening</div><div class="lyric-og" lang="pt-BR">Nessa tarde bonita</div></div><div class="lyric-box"><p class="lyric-time"><i>01:10</i></p><div class="lyric-text">Just to see you play</div><div class="lyric-og" lang="pt-BR">Só pra te ver jogar</div></div><br><div class="lyric-box"><p class="lyric-time"><i>01:16</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>01:21</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>01:26</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><br><div class="lyric-box"><p class="lyric-time"><i>01:34</i></p><div class="lyric-text">Play ball, player</div><div class="lyric-og" lang="pt-BR">Joga bola, jogador</div></div><div class="lyric-box"><p class="lyric-time"><i>01:37</i></p><div class="lyric-text">Play ball, corocondô</div><div class="lyric-og" lang="pt-BR">Joga bola, corocondô</div></div><div class="lyric-box"><p class="lyric-time"><i>01:39</i></p><div class="lyric-text">(Play ball, player)</div><div class="lyric-og" lang="pt-BR">(Joga bola, jogador)</div></div><div class="lyric-box"><p class="lyric-time"><i>01:42</i></p><div class="lyric-text">(Play ball, corocondô)</div><div class="lyric-og" lang="pt-BR">(Joga bola, corocondô)</div></div><br><div class="lyric-box"><p class="lyric-time"><i>01:44</i></p><div class="lyric-text">Rere, rere, rere</div><div class="lyric-og" lang="pt-BR">Rere, rere, rere</div></div><div class="lyric-box"><p class="lyric-time"><i>01:45</i></p><div class="lyric-text">Player</div><div class="lyric-og" lang="pt-BR">Jogador</div></div><div class="lyric-box"><p class="lyric-time"><i>01:47</i></p><div class="lyric-text">Rere, rere, rere</div><div class="lyric-og" lang="pt-BR">Rere, rere, rere</div></div><div class="lyric-box"><p class="lyric-time"><i>01:48</i></p><div class="lyric-text">Corocondô</div><div class="lyric-og" lang="pt-BR">Corocondô</div></div><div class="lyric-box"><p class="lyric-time"><i>01:49</i></p><div class="lyric-text">(Rere, rere, rere)</div><div class="lyric-og" lang="pt-BR">(Rere, rere, rere)</div></div><div class="lyric-box"><p class="lyric-time"><i>01:50</i></p><div class="lyric-text">(Player)</div><div class="lyric-og" lang="pt-BR">(Jogador)</div></div><div class="lyric-box"><p class="lyric-time"><i>01:52</i></p><div class="lyric-text">(Rere, rere, rere)</div><div class="lyric-og" lang="pt-BR">(Rere, rere, rere)</div></div><div class="lyric-box"><p class="lyric-time"><i>01:53</i></p><div class="lyric-text">(Corocondô)</div><div class="lyric-og" lang="pt-BR">(Corocondô)</div></div><br><div class="lyric-box"><p class="lyric-time"><i>01:54</i></p><div class="lyric-text">Tchererê, tchererê</div><div class="lyric-og" lang="pt-BR">Tchererê, tchererê</div></div><div class="lyric-box"><p class="lyric-time"><i>01:56</i></p><div class="lyric-text">Tchererê, tchererê</div><div class="lyric-og" lang="pt-BR">Tchererê, tchererê</div></div><div class="lyric-box"><p class="lyric-time"><i>01:57</i></p><div class="lyric-text">Tchererê, goal man</div><div class="lyric-og" lang="pt-BR">Tchererê, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>01:59</i></p><div class="lyric-text">(Tchererê, tchererê)</div><div class="lyric-og" lang="pt-BR">(Tchererê, tchererê)</div></div><div class="lyric-box"><p class="lyric-time"><i>02:01</i></p><div class="lyric-text">(Tchererê, tchererê)</div><div class="lyric-og" lang="pt-BR">(Tchererê, tchererê)</div></div><div class="lyric-box"><p class="lyric-time"><i>02:02</i></p><div class="lyric-text">(Tchererê, goal man)</div><div class="lyric-og" lang="pt-BR">(Tchererê, homem gol)</div></div><br><div class="lyric-box"><p class="lyric-time"><i>02:08</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>02:13</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>02:18</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>02:23</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>02:28</i></p><div class="lyric-text">Umbabarauma, goal man</div><div class="lyric-og" lang="pt-BR">Umbabarauma, homem gol</div></div><br><div class="lyric-box"><p class="lyric-time"><i>02:36</i></p><div class="lyric-text">Play ball, player</div><div class="lyric-og" lang="pt-BR">Joga bola, jogador</div></div><div class="lyric-box"><p class="lyric-time"><i>02:39</i></p><div class="lyric-text">Play ball, corocondô</div><div class="lyric-og" lang="pt-BR">Joga bola, corocondô</div></div><div class="lyric-box"><p class="lyric-time"><i>02:41</i></p><div class="lyric-text">(Play ball, player)</div><div class="lyric-og" lang="pt-BR">(Joga bola, jogador)</div></div><div class="lyric-box"><p class="lyric-time"><i>02:44</i></p><div class="lyric-text">(Play ball, corocondô)</div><div class="lyric-og" lang="pt-BR">(Joga bola, corocondô)</div></div><br><div class="lyric-box"><p class="lyric-time"><i>02:46</i></p><div class="lyric-text">Rere, rere, rere</div><div class="lyric-og" lang="pt-BR">Rere, rere, rere</div></div><div class="lyric-box"><p class="lyric-time"><i>02:47</i></p><div class="lyric-text">Player</div><div class="lyric-og" lang="pt-BR">Jogador</div></div><div class="lyric-box"><p class="lyric-time"><i>02:49</i></p><div class="lyric-text">Rere, rere, rere</div><div class="lyric-og" lang="pt-BR">Rere, rere, rere</div></div><div class="lyric-box"><p class="lyric-time"><i>02:50</i></p><div class="lyric-text">Corocondô</div><div class="lyric-og" lang="pt-BR">Corocondô</div></div><div class="lyric-box"><p class="lyric-time"><i>02:51</i></p><div class="lyric-text">(Rere, rere, rere)</div><div class="lyric-og" lang="pt-BR">(Rere, rere, rere)</div></div><div class="lyric-box"><p class="lyric-time"><i>02:52</i></p><div class="lyric-text">(Player)</div><div class="lyric-og" lang="pt-BR">(Jogador)</div></div><div class="lyric-box"><p class="lyric-time"><i>02:54</i></p><div class="lyric-text">(Rere, rere, rere)</div><div class="lyric-og" lang="pt-BR">(Rere, rere, rere)</div></div><div class="lyric-box"><p class="lyric-time"><i>02:55</i></p><div class="lyric-text">(Corocondô)</div><div class="lyric-og" lang="pt-BR">(Corocondô)</div></div><br><div class="lyric-box"><p class="lyric-time"><i>02:56</i></p><div class="lyric-text">Tchererê, tchererê</div><div class="lyric-og" lang="pt-BR">Tchererê, tchererê</div></div><div class="lyric-box"><p class="lyric-time"><i>02:58</i></p><div class="lyric-text">Tchererê, tchererê</div><div class="lyric-og" lang="pt-BR">Tchererê, tchererê</div></div><div class="lyric-box"><p class="lyric-time"><i>02:59</i></p><div class="lyric-text">Tchererê, goal man</div><div class="lyric-og" lang="pt-BR">Tchererê, homem gol</div></div><div class="lyric-box"><p class="lyric-time"><i>03:01</i></p><div class="lyric-text">(Tchererê, tchererê)</div><div class="lyric-og" lang="pt-BR">(Tchererê, tchererê)</div></div><div class="lyric-box"><p class="lyric-time"><i>03:03</i></p><div class="lyric-text">(Tchererê, tchererê)</div><div class="lyric-og" lang="pt-BR">(Tchererê, tchererê)</div></div><div class="lyric-box"><p class="lyric-time"><i>03:04</i></p><div class="lyric-text">(Tchererê, goal man)</div><div class="lyric-og" lang="pt-BR">(Tchererê, homem gol)</div></div><br><div class="lyric-box"><p class="lyric-time"><i>03:08</i></p><div class="lyric-text">Umbabarauma</div><div class="lyric-og" lang="pt-BR">Umbabarauma</div></div><div class="lyric-box"><p class="lyric-time"><i>03:09</i></p><div class="lyric-text">— That&#39;s the story of Umbabarauma</div><div class="lyric-og" lang="pt-BR">— Essa é a história de Umbabarauma</div></div><div class="lyric-box"><p class="lyric-time"><i>03:12</i></p><div class="lyric-text">— An African second striker</div><div class="lyric-og" lang="pt-BR">— Um ponta de lança africano</div></div><div class="lyric-box"><p class="lyric-time"><i>03:14</i></p><div class="lyric-text">— A resolute second striker</div><div class="lyric-og" lang="pt-BR">— Um ponta de lança decidido</div></div><div class="lyric-box"><p class="lyric-time"><i>03:17</i></p><div class="lyric-text">Umbabarauma</div><div class="lyric-og" lang="pt-BR">Umbabarauma</div></div></div></div></div></main></article><div><hr><footer><p class="build-date">built from source at 10:29, June 23, 2026</p><p class="copyright">© pbnjk 2026</p></footer></div></div></body></html>

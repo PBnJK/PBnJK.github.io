@@ -1,0 +1,27 @@
+/* Poetry subpage */
+
+#envelope-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#envelope-wrapper.left {
+  justify-content: start;
+}
+
+#envelope-wrapper.center {
+  justify-content: center;
+}
+
+#envelope-wrapper.right {
+  justify-content: end;
+}
+
+.envelope-line {
+  display: block;
+  font-family: monospace;
+
+  border: 8px solid var(--bg-secondary);
+  border-radius: 16px;
+  background-color: var(--bg-secondary);
+}

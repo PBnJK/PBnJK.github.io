@@ -51,7 +51,7 @@ return t.Album({
 		and Brazilian guitarist
 	]],
 		--t.Pronounce("João Gilberto.", "joao_gilberto"),
-		"João Gilberto",
+		"João Gilberto.",
 		[[
 		Though it wasn't the first bossa nova album released outside of Brazil, it was
 		the one responsible for turning the genre into a worldwide phenomenon.
