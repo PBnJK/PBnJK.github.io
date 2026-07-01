@@ -58,7 +58,7 @@ return t.Album({
 		" for the opening context and notes on the songs!",
 	}),
 	t.p([[
-		Costa was part of the Tropicalismo movement of the late 1960s, which embraced
+		Gal Costa was part of the Tropicalismo movement of the late 1960s, which embraced
 		an anarchic, postmodern, global art-pop—merging rock, jazz, soul, funk, psychedelic
 		and avant-garde music along with a variety of Brazilian styles. This made them
 		enemies among both Brazil’s ruling dictatorship, which only wanted patriotic,
@@ -66,7 +66,7 @@ return t.Album({
 		music pure and untainted by Western imperialism.
 	]]),
 	t.p([[
-		Costa’s longtime friends and collaborators, Gilberto Gil and Caetano Veloso,
+		Gal’s longtime friends and collaborators, Gilberto Gil and Caetano Veloso,
 		spent two years in arrest and then exile. When they returned, the trio came
 		together again for the 1973 Índia stage show and album. Gil served as guitarist
 		and musical director, while Veloso contributed as a songwriter.
@@ -74,7 +74,7 @@ return t.Album({
 	t.ZoomableImage("/assets/blog/gal_costa.jpg", "Gal Costa sitting down, playing guitar and singing", 600, 564),
 	t.Subtitle('Gal Costa performing during the "Fa-Tal - Gal a Todo Vapor" show'),
 	t.p([[
-		In spite of the dangerous political environment, Costa continued to court
+		In spite of the dangerous political environment, Gal continued to court
 		controversy. She was photographed locking lips with Veloso’s sister, fellow
 		singer Maria Bethania—and chose songs that hinted at her bisexuality. The
 		regime banned one song from the radio for being too subversive, and ordered
@@ -93,7 +93,7 @@ return t.Album({
 		t.Note([[
 			Gal Costa never knew her father, but she had a recording of him singing this
 			old sentimental song. It’s also the first of several tracks in which the bisexual
-			Costa conspicuously does not change the gender of the (female) object of the
+			Gal conspicuously does not change the gender of the (female) object of the
 			song’s desire.
 		]]),
 		t.Lyric("00:23", "Índia, your hair on your low shoulders", "Índia, teus cabelos nos ombros caídos"),

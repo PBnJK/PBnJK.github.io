@@ -119,6 +119,26 @@ return t.Album({
 		and “Corcovado” would turn her into a household name.
 	]],
 	}),
+	t.p({
+		[[
+		It is also worth noting that, although the end result was amazingly successful,
+	the recording process was not without its hurdles. João Gilberto and Stan Getz
+	did not speak a common language, and often struggled to communicate their creative
+	visions, with Jobim often having to work double-time as their translator.
+	]],
+	}),
+	t.p({
+		[[
+		It did not help that João Gilberto strongly disagreed with many of Getz's
+	decisions—from the volume of his saxophone on the mix to his unsubtle playing
+	style—to the point where, at one moment, he said to Jobim, very upset: “Tell this
+	]],
+		t.i("gringo"),
+		[[
+		he's an idiot!” which Jobim, turning to Getz, dutifully translated: “Stan, João
+		is saying that his dream always was to record with you.”
+	]],
+	}),
 	t.Song({
 		title = "The Girl from Ipanema",
 		artist = "Stan Getz & João Gilberto (feat. Astrud Gilberto)",
@@ -213,7 +233,7 @@ return t.Album({
 		t.br(),
 		t.Lyric("00:24", "Doralice, didn't I tell you?", "Doralice eu bem que te disse"),
 		t.Lyric("00:25", "Look at the mess I'll get myself into", "Olha essa embrulhada em que vou me meter"),
-		t.Lyric("00:29", "Now, my love, Doralice, my dear", "Agora amor, Doralice meu bem"),
+		t.Lyric("00:29", "Now love, Doralice my dear", "Agora amor, Doralice meu bem"),
 		t.Lyric("00:32", "What are we going to do?", "Como é que nós vamos fazer?"),
 		t.br(),
 		t.Lyric("00:35", "One beautiful day you appeared to me", "Um belo dia você me surgiu"),
@@ -226,7 +246,7 @@ return t.Album({
 			"I didn't want to face this danger, Doralice",
 			"Bem que não queria enfrentar esse perigo Doralice"
 		),
-		t.Lyric("01:01", "Now you got to tell me", "Agora você tem que me dizer"),
+		t.Lyric("01:01", "Now you've got to tell me", "Agora você tem que me dizer"),
 		t.Lyric("01:09", "What are we going to do?", "Como é que nós vamos fazer?"),
 	}),
 	t.Song({
@@ -239,15 +259,9 @@ return t.Album({
 		t.Lyric("00:11", "It's been a year and a half, love", "Tá fazendo um ano e meio, amor"),
 		t.Lyric("00:18", "Since our home fell apart", "Que o nosso lar desmoronou"),
 		t.Lyric("00:26", "My bird, my guitar", "Meu sabiá, meu violão"),
-		t.Lyric("00:33", "And a cruel delusion were all that remained", "E uma cruel desilusão foi tudo que ficou"),
-		t.Lyric("00:43", "Remained to hurt my heart", "Ficou pra machucar meu coração"),
-		t.br(),
-		t.Lyric("00:55", "It's been a year and a half, love", "Tá fazendo um ano e meio, amor"),
-		t.Lyric("01:01", "Since our home fell apart", "Que o nosso lar desmoronou"),
-		t.Lyric("01:09", "My bird, my guitar", "Meu sabiá, meu violão"),
-		t.Lyric("01:17", "And a cruel delusion were all that remained", "E uma cruel desilusão foi tudo que ficou"),
-		t.Lyric("01:27", "Remained to hurt my heart", "Ficou pra machucar meu coração"),
-		t.br(),
+		t.Lyric("00:33", "And a cruel disillusion are all that remains", "E uma cruel desilusão foi tudo que ficou"),
+		t.Lyric("00:43", "Remains to hurt my heart", "Ficou pra machucar meu coração"),
+		t.Text("(repeat)"),
 		t.Lyric("01:39", "Who knows, maybe it was better this way", "Quem sabe, não foi bem melhor assim"),
 		t.Lyric("01:46", "Better for you and better for me", "Melhor pra você e melhor pra mim"),
 		t.Lyric("01:52", "Life is a school where we must learn", "A vida é uma escola que a gente precisa aprender"),
