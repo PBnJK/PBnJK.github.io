@@ -354,6 +354,18 @@ return t.Album({
 		t.Lyric("00:22", "And a window that looks out on Corcovado "),
 		t.Lyric("00:28", "Oh, how lovely"),
 		t.Text("(instrumental)"),
+		t.Lyric("00:50", "A little corner, a guitar", "Um cantinho, um violão"),
+		t.Lyric("00:53", "This love, a song", "Esse amor, uma canção"),
+		t.Lyric("00:57", "To make those you love happy", "Pra fazer feliz a quem se ama"),
+		t.Lyric("01:04", "A lot of quiet to think", "Muita calma pra pensar"),
+		t.Lyric("01:07", "And having time to dream", "E ter tempo pra sonhar"),
+		t.Lyric(
+			"01:11",
+			"From the window the Corcovado and the Redeemer are seen",
+			"Da janela vê-se o Corcovado, o Redentor"
+		),
+		t.Lyric("01:17", "How beautiful", "Que lindo"),
+		t.br(),
 		t.Lyric("01:33", "I want life to always be like this", "Quero a vida sempre assim"),
 		t.Lyric("01:37", "With you close to me", "Com você perto de mim"),
 		t.Lyric("01:41", "Until the snuffing of the old flame", "Até o apagar da velha chama"),
@@ -361,7 +373,7 @@ return t.Album({
 		t.Lyric("01:47", "And I, that used to be sad", "E eu que era triste"),
 		t.Lyric("01:52", "And did not believe in the world", "Descrente desse mundo"),
 		t.Lyric("01:55", "After meeting you I understood", "Ao encontrar você eu conheci"),
-		t.Lyric("02:02", "What happiness was, my love", "O que é felicidade, meu amor"),
+		t.Lyric("02:02", "What happiness is, my love", "O que é felicidade, meu amor"),
 	}),
 	t.Song({
 		title = "Só Danço Samba",
