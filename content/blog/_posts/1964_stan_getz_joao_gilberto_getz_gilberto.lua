@@ -108,7 +108,7 @@ return t.Album({
 		}),
 	}),
 	t.p({
-		"Also featured in the recording are ",
+		"Featured in the recording are ",
 		--t.Pronounce("Antônio Carlos Jobim", "antonio_carlos_jobim"),
 		"Antônio Carlos Jobim",
 		" on piano—who, alongside Gilberto, composed many of the songs on the album—and ",
@@ -121,21 +121,22 @@ return t.Album({
 	}),
 	t.p({
 		[[
-		It is also worth noting that, although the end result was amazingly successful,
-	the recording process was not without its hurdles. João Gilberto and Stan Getz
-	did not speak a common language, and often struggled to communicate their creative
-	visions, with Jobim often having to work double-time as their translator.
+		An aside: the recording process for this record was quite troubled. João Gilberto
+	and Stan Getz did not speak a common language, and often struggled to communicate their
+	creative visions to each other, with Jobim often having to work double-time as their
+	translator.
 	]],
 	}),
 	t.p({
 		[[
 		It did not help that João Gilberto strongly disagreed with many of Getz's
 	decisions—from the volume of his saxophone on the mix to his unsubtle playing
-	style—to the point where, at one moment, he said to Jobim, very upset: “Tell this
+	style—to the point where, at one moment, he's said to have told Jobim, very upset,
+	to “tell this
 	]],
 		t.i("gringo"),
 		[[
-		he's an idiot!” which Jobim, turning to Getz, dutifully translated: “Stan, João
+		he's an idiot!” To which Jobim, turning to Getz, dutifully translated: “Stan, João
 		is saying that his dream always was to record with you.”
 	]],
 	}),
