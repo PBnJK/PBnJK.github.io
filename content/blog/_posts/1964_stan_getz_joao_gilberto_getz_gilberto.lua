@@ -281,12 +281,10 @@ return t.Album({
 		t.Note({
 			[[
 			Though “The Girl from Ipanema” is the definitive hit of this album, “Desafinado”
-			earns the distinction of being one of, if not
-		]],
-			t.i("the"),
-			[[
-			first Bossa Nova tune to enter the “jazz canon,” with many, many musicians of the
-		time covering it, such as Quincy Jones and Ella Fitzgerald.
+		earns the distinction of being one of the first Bossa Nova tunes to achieve success
+		outside of Brazil, with an earlier recording by Stan Getz and Charlie Byrd becoming
+		a 1962 hit. It would be covered by many, many musicians of the time, such
+		as Quincy Jones and Ella Fitzgerald, and, to date, remains a popular jazz standard.
 		]],
 		}),
 		t.Lyric("00:04", "When you tell me I go out of tune, love", "Se você disser que eu desafino amor"),
