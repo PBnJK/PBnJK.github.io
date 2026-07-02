@@ -257,6 +257,9 @@ return t.Album({
 		writer = "Ary Barroso",
 		personnel = personnel,
 	}, {
+		t.Note([[
+			This track is also a reimagining of a vintage Samba hit.
+		]]),
 		t.Lyric("00:11", "It's been a year and a half, love", "Tá fazendo um ano e meio, amor"),
 		t.Lyric("00:18", "Since our home fell apart", "Que o nosso lar desmoronou"),
 		t.Lyric("00:26", "My bird, my guitar", "Meu sabiá, meu violão"),
@@ -275,6 +278,17 @@ return t.Album({
 		writer = { "Antônio Carlos Jobim", "Newton Mendonça" },
 		personnel = personnel,
 	}, {
+		t.Note({
+			[[
+			Though “The Girl from Ipanema” is the definitive hit of this album, “Desafinado”
+			earns the distinction of being one of, if not
+		]],
+			t.i("the"),
+			[[
+			first Bossa Nova tune to enter the “jazz canon,” with many, many musicians of the
+		time covering it, such as Quincy Jones and Ella Fitzgerald.
+		]],
+		}),
 		t.Lyric("00:04", "When you tell me I go out of tune, love", "Se você disser que eu desafino amor"),
 		t.Lyric("00:10", "Know that this causes me immense pain", "Saiba que isto em mim provoca imensa dor"),
 		t.Lyric("00:16", "Only the privileged have ears like yours", "Só privilegiados tem o ouvido igual ao seu"),
