@@ -131,12 +131,12 @@ return t.Album({
 		[[
 		It did not help that João Gilberto strongly disagreed with many of Getz's
 	decisions—from the volume of his saxophone on the mix to his unsubtle playing
-	style—to the point where, at one moment, he's said to have told Jobim, very upset,
+	style—to the point where, at one moment, he's said to have asked Jobim, in Portuguese,
 	to “tell this
 	]],
 		t.i("gringo"),
 		[[
-		he's an idiot!” To which Jobim, turning to Getz, dutifully translated: “Stan, João
+		he's an idiot!” Which Jobim, turning to Getz, dutifully translated: “Stan, João
 		is saying that his dream always was to record with you.”
 	]],
 	}),
