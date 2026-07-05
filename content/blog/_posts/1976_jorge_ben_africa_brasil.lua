@@ -404,8 +404,8 @@ return t.Album({
 			da Silva de Oliveira (1732-1796,) nicknamed “Chica”/“Xica,” was a slave who,
 			after becoming her master's lover, was granted freedom, going on to live an
 			extragavagant lifestyle as the lover of a nobleman. Her story is very famous
-			in Brazil, and has been much mythologised, with everything from soap operas,
-			to books and (as you'll hear) songs being made in honor of her confrontation
+			in Brazil, and has been much mythologised, with everything from soap operas
+			to books (and, as you'll hear, songs) being made in honor of her confrontation
 			of the gender and racial norms of the time.
 		]]),
 		t.Lyric("00:26", "Xica da, Xica da", "Xica da, Xica da"),
