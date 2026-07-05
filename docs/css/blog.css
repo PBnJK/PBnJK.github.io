@@ -423,7 +423,7 @@ li * {
   padding: 0;
 
   background-color: var(--bg-secondary);
-  text-decoration: underline dotted;
+  text-decoration: underline;
 }
 
 .lyric-inline-note:hover {

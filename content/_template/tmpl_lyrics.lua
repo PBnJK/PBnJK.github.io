@@ -112,7 +112,7 @@ function t.Lyric(time, en_lyric, pt_lyric)
 	return t.div.lyric_box({
 		t.p.lyric_time({ t.i(time) }),
 		t.div.lyric_text(en_lyric),
-		t.div.lyric_og({ lang = "pt-BR", pt_lyric }),
+		t.div.lyric_og({ lang = "pt-BR", pt_lyric or en_lyric }),
 	})
 end
 
