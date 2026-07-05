@@ -616,10 +616,12 @@ return t.Album({
 			t.InlineNote(
 				"amazing goal",
 				[[
-					In 1961, Pelé scored a goal so incredible that a plaque was built to commemorate.
-					It then became common to refer to beautiful goals as “plaque goals,” as if
-					to say that they too deserve to be put on a plaque, and that's the term that
-					Jorge Ben is using here.
+					I translated it as “amazing” but the real expression used is a fun bit of
+				trivia: In 1961, Pelé scored a goal so incredible that a plaque was built
+				on the stadium to commemorate it. After that, it became common to refer to
+				beautiful or impressive goals as “plaque goals”—as if to say that they too
+				deserve to be put on a plaque. That's the term that Jorge Ben is using in
+				the original Portuguese.
 				]]
 			),
 		}, "Num possível gol de placa"),
