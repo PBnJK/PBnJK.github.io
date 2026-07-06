@@ -10,6 +10,6 @@ return t.Document({
 	}),
 	t.body({
 		t.h1("Book"),
-		t.p("there were stories here, but I'm embarassed about them..."),
+		t.p("there were stories here, but I'm embarassed of them..."),
 	}),
 })
