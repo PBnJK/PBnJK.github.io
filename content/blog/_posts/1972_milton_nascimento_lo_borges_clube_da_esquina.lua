@@ -18,19 +18,24 @@ return t.Album({
 		400,
 		400
 	),
-	t.p([[
-		On a street corner in the Brazilian city of Belo Horizonte, Milton Nascimento,
-		the Borges Brothers, and others local artist friends started a sort of informal
-		“club,” appropriately nicknamed the “Clube da Esquina” (Corner Club,) where
-		they would talk, create, and play music. This double album is the culmination
-		of their musical efforts, recorded on a house they rented by the beach on a
-		humble two-track studio.
+	t.Note([[
+		The context for this album could fill a book—and indeed plenty have been written
+	about it. Any brief introductory context I could ever write would be insufficient,
+	so, please, forgive my omissions!
 	]]),
-	t.p({
-		"The album is widely considered one of the greatest, if not ",
-		t.i("the"),
-		" greatest Brazilian album of all time.",
-	}),
+	t.p([[
+		By 1972, eight years after the coup, the Years of Lead of the military dictatorship
+	in Brazil were in full swing. Already, artists like Gilberto Gil and Caetano Veloso
+	had been exiled—journalists, politicians, students, and all others opposed to the
+	regime were being arrested, tortured, and killed in droves.
+	]]),
+	t.p([[
+		It was in this environment of repression that a group of musician friends, led
+	by 30-year-old Milton Nascimento and 20-year-old Beatlemaniac Lô Borges, decide
+	to record a very unique album—one that was as much a document of their nights spent
+	chatting and jamming on a street corner (the titular “Clube da Esquina”—the “Corner
+	Club”) as it was a response to the times they were living in.
+	]]),
 	t.figure({
 		t.ZoomableImage(
 			"/assets/blog/clube_da_esquina.jpg",
@@ -45,16 +50,24 @@ return t.Album({
 		]]),
 	}),
 	t.p([[
-		Due to its nature as a record created by friends, the album borrows from a wide
-		range of influences, blending each of the members' unique taste—from 20-year-old Lô Borges'
-		Beatlemania to the Samba and Jazz of Milton Nascimento, and even Beto Guedes'
-		love for progressive rock—into a beautiful, psychedelic, folk-infused pop trip.
+		The creative process of the album was quite unique: the members of the “club”
+	all worked on every part of the recording, composing, writing, and playing multiple
+	parts, each bringing their own musical tastes and influences to the table, resulting
+	in a beautiful, psychedelic, folk-infused pop trip.
 	]]),
 	t.p([[
-		Like many of its contemporaries, this album is also notable for using its lyrics
-		to subtly criticize the regime, giving an air of revolution to this already
-		progressive work.
+		Addendum: Lô Borges unfortunately passed away in November of 2025, at 73 years
+	of age. He was still recording and touring albums, and, in fact, has left us with
+	about four albums' worth of music, now planned to be released posthumously. RIP
+	Lô!!!
 	]]),
+	t.p({
+		"(Additionally... for contextual notes on certain words and concepts, you can hover/tap on ",
+		t.InlineNote(
+			"any text that's higlighted like this)",
+			"This is what's known as a “tutorial” in video entertainment circles."
+		),
+	}),
 	t.Song({
 		title = "Tudo que Você Podia Ser",
 		en_title = "Everything that You Could Ever Be",
@@ -82,16 +95,20 @@ return t.Album({
 		t.Lyric("00:26", "Everything that you wanted to be", "Tudo que você queria ser"),
 		t.br(),
 		t.Lyric("00:40", "I know a secret: you're afraid", "Sei um segredo: você tem medo"),
-		t.Lyric("00:50", "Now you wish you could go back", "Só pensa agora em voltar"),
+		t.Lyric("00:50", "Now you just think about going back", "Só pensa agora em voltar"),
 		t.Lyric("00:53", {
 			"You don't talk about ",
-			t.InlineNote("Zapata", "A leading figure in the Mexican Revolution"),
+			t.InlineNote("Zapata", "Emiliano Zapata, a leading figure in the Mexican Revolution"),
 			"'s boot and ring anymore",
 		}, "Não fala mais da bota e do anel de Zapata"),
-		t.Lyric("00:56", "Everything that you should ever be—without fear", "Tudo que você devia ser—sem medo"),
+		t.Lyric("00:56", "Everything that you should be—without fear", "Tudo que você devia ser—sem medo"),
 		t.br(),
 		t.Lyric("01:14", "You don't remember me anymore", "Não se lembra mais de mim"),
-		t.Lyric("01:16", "You didn't want me speaking of everything", "Você não quis deixar que eu falasse de tudo"),
+		t.Lyric(
+			"01:16",
+			"You didn't want me to talk about everything",
+			"Você não quis deixar que eu falasse de tudo"
+		),
 		t.Lyric("01:19", "Everything that you could ever be—on the road", "Tudo que você podia ser—na estrada"),
 		t.br(),
 		t.Lyric("01:37", "Ah! Sun and rain on your road", "Ah! Sol e chuva na sua estrada"),
@@ -126,12 +143,13 @@ return t.Album({
 		t.br(),
 		t.Lyric("00:39", "I wanted to be happy", "Eu queria ser feliz"),
 		t.Lyric("00:45", "I invent the sea", "Invento o mar"),
-		t.Lyric("00:48", "I invent in me the dreamer", "Invento em mim o sonhador"),
+		t.Lyric("00:48", "I invent in myself the dreamer", "Invento em mim o sonhador"),
 		t.br(),
 		t.Lyric("00:56", "To those that want to follow me", "Para quem quer me seguir"),
 		t.Lyric("01:07", "I want more", "Eu quero mais"),
 		t.Lyric("01:11", "I have the path to what I've always wanted ", "Tenho o caminho do que sempre quis"),
 		t.Lyric("01:17", "And a boat ready to set sail", "E um saveiro pronto pra partir"),
+		t.br(),
 		t.Lyric("01:25", "I invent the pier", "Invento o cais"),
 		t.Lyric("01:29", "And know the time to launch off", "E sei a vez de me lançar"),
 	}),
@@ -286,9 +304,12 @@ return t.Album({
 			Surdo = "Lô Borges",
 		},
 	}, {
-		t.Note(
-			"“Gabriela Cravo e Canela” (Gabriela Clove and Cinnamon) is a famous novel by Brazilian writer Jorge Amado. This song makes reference to the themes and imagery of the book, as well as Jorge Amado's body of work in general and the culture of his home state of Bahia."
-		),
+		t.Note([[
+			According to Milton Nascimento, this song is an homage to her and co-writer
+		Ronaldo Bastos' mutual friend Dina Sfat, a Brazilian actress, while also drawing
+		from the imagery of the novel “Gabriela, Cravo e Canela” (Gabriela, Clove and Cinnamon.)
+		Additionally, it is interesting for being a samba in 3/4—quite unusual!
+		]]),
 		t.Lyric("00:31", {
 			"Hey, ",
 			t.InlineNote(
@@ -365,7 +386,11 @@ return t.Album({
 		t.Note({
 			"This song is a cover of a bolero composed by Carmelo Larrea, and is sung in Spanish. See footnote",
 			t.Footnote(1),
-			" for the source of this translation.",
+			[[
+			for the source of this translation. Milton Nascimento discovered the song while
+		visiting Venezuela in 1971, where a local who he'd become friends with played a
+		rendition of the tune for him.
+		]],
 		}),
 		t.Lyric("00:01", "Sevilla had to be", "Sevilla tuvo que ser"),
 		t.Lyric("00:11", "With its little silver moon", "Con su lunita plateada"),
@@ -424,6 +449,9 @@ return t.Album({
 			Piano = "Lô Borges",
 		},
 	}, {
+		t.Note([[
+			This song is inspired by Márcio Borges' (brother of Lô Borges) wife Duca Leal.
+		]]),
 		t.Lyric("00:14", "Solar wind and starfish", "Vento solar e estrelas do mar"),
 		t.Lyric("00:20", "The Earth blue as the color of your dress", "A terra azul da cor do seu vestido"),
 		t.Lyric("00:27", "Solar wind and starfish", "Vento solar e estrelas do mar"),
@@ -473,9 +501,10 @@ return t.Album({
 			Piano = "Wagner Tiso",
 		},
 	}, {
-		t.Note(
-			"Written for a theater play, “Os Convalescentes” (The Convalescent,) which features a fictional Latin-american country struck by a military coup."
-		),
+		t.Note([[
+			Written for a theater play, “Os Convalescentes” (The Convalescent,) which
+		features a “fictional” Latin-american country struck by a military coup.
+		]]),
 		t.Lyric("00:01", "American heart", "Coração americano"),
 		t.Lyric("00:05", "I woke up from a strange dream", "Acordei de um sonho estranho"),
 		t.Lyric("00:11", "A taste of glass and cut", "Um gosto de vidro e corte"),
@@ -665,6 +694,11 @@ return t.Album({
 			Piano = "Wagner Tiso",
 		},
 	}, {
+		t.Note([[
+			Remember the trip to Venezuela I mentioned on “Dos Cruces?” This song, alongside
+		“Um Gosto de Sol,” coming up soon, were both composed during that trip, as homages
+		to the Venezuelan friends he made there.
+		]]),
 		t.Lyric("00:08", "At the edge of the world", "Na beira do mundo"),
 		t.Lyric("00:13", "Iron gate, dead village, a crowd", "Portão de ferro, aldeia morta, multidão"),
 		t.Lyric("00:27", "My people, my people", "Meu povo, meu povo"),
@@ -829,7 +863,11 @@ return t.Album({
 			Percussion = { "Beto Guedes", "Nelson Angelo", "Robertinho Silva", "Toninho Horta" },
 		},
 	}, {
-		t.Note("“Lilia” is the name of Milton Nascimento's adoptive mother."),
+		t.Note([[
+			“Lilia” is the name of Milton Nascimento's adoptive mother. It is an
+		instrumental because, as Milton said, “there are no words that could describe
+		that woman.”
+		]]),
 		t.Text("(instrumental)"),
 	}),
 	t.Song({
@@ -848,12 +886,6 @@ return t.Album({
 		},
 	}, {
 		t.Note({
-			[[
-			No relation to the Ozzy Osbourne classic. Perhaps a better translation is
-			“Crazy People Train.”
-		]],
-			t.br(),
-			t.br(),
 			[[
 			The title of this song refers to the train that used to ferry people to the
 			Barbacena Colonial Hospital, a psychiatric institution that became infamous
