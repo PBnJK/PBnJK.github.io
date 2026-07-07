@@ -306,9 +306,8 @@ return t.Album({
 	}, {
 		t.Note([[
 			According to Milton Nascimento, this song is an homage to her and co-writer
-		Ronaldo Bastos' mutual friend Dina Sfat, a Brazilian actress, while also drawing
-		from the imagery of the novel “Gabriela, Cravo e Canela” (Gabriela, Clove and Cinnamon.)
-		Additionally, it is interesting for being a samba in 3/4—quite unusual!
+		Ronaldo Bastos' mutual friend, famous actress Dina Sfat. It is also interesting
+		for being a samba in 3/4—quite unusual!
 		]]),
 		t.Lyric("00:31", {
 			"Hey, ",
@@ -331,13 +330,7 @@ return t.Album({
 		t.br(),
 		t.Lyric("00:50", "The gypsy rain", "A chuva cigana"),
 		t.Lyric("00:51", "The dance of the rivers", "A dança dos rios"),
-		t.Lyric("00:52", {
-			"The ",
-			t.InlineNote(
-				"cocoa honey",
-				"Byproduct of chocolate production. Jorge Amado has a whole novel set in a cocoa farm where he references it"
-			),
-		}, "O mel do cacau"),
+		t.Lyric("00:52", "The cocoa honey", "O mel do cacau"),
 		t.Lyric("00:53", "The morning sun", "O sol da manhã"),
 		t.br(),
 		t.Lyric("00:56", "Hey, morena, who seasoned it? ", "Ê, morena, quem temperou?"),
