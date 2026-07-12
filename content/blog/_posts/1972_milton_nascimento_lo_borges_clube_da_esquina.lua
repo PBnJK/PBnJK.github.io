@@ -1,5 +1,12 @@
 local t = require("tmpl_lyrics")
 
+local function additional(summary, body)
+	return t.details.additional({
+		t.summary({ t.i(summary) }),
+		body,
+	})
+end
+
 return t.Album({
 	title = "Clube da Esquina",
 	artist = "Milton Nascimento & Lô Borges",
@@ -19,16 +26,71 @@ return t.Album({
 		400
 	),
 	t.Note([[
-		The context for this album could fill a book—and indeed plenty have been written
-	about it. Any brief introductory context I could ever write would be insufficient,
-	so, please, forgive my omissions!
+		Big thank you to Eduardo from the Walterooski discord, who helped immensely
+	with the context! To be completely honest, a proper introduction would fill up
+	a whole book. So, to those that, like us, love this album and its history:
+	please forgive any omissions!
 	]]),
 	t.p([[
 		By 1972, eight years after the coup, the Years of Lead of the military dictatorship
 	in Brazil were in full swing. Already, artists like Gilberto Gil and Caetano Veloso
 	had been exiled—journalists, politicians, students, and all others opposed to the
-	regime were being arrested, tortured, and killed in droves.
+	regime were being arrested, tortured, and killed.
 	]]),
+	additional("About the military dictatorship", {
+		t.p([[
+			The year was 1964 and president João Goulart was doing rallies defending
+		the agrarian reform. Just a few years earlier in 1961, at the height of the
+		Cold War, he went on a trade mission to China (also visiting the Soviet Union)
+		and gave Che Guevara the Order of the Southern Cross—a sort of Brazilian Medal
+		of Honor. He fancied himself a progressive;e should have known better. next
+		there were marches with “Family, God and Freedom” banners, a US Navy ship stationed
+		just off the Guanabara bay and tanks parading the streets. He was swiftly
+		overthrown by the military.
+		]]),
+		t.p([[
+			Their rule would later be called a “soft dictatorship.” And, matter of fact,
+		things didn't change much for the general populace. It's not like Brazil was
+		used to democracy anyways—it was kind of there from 1945 when Vargas (the last
+		dictator) was deposed until 1964. So it was business as usual for the majority
+		of the country. Except, of course, if you were a student, or an artist or a
+		journalist or... Well, mostly if you weren't willing to stay in line. Then it
+		wasn't soft at all.
+		]]),
+		t.figure({
+			t.ZoomableImage(
+				"/assets/blog/clube_da_esquina/jovem_ferido.jpg",
+				"A wounded man being carried by four others.",
+				564,
+				418
+			),
+			t.figcaption([[
+				A wounded man being carried during a student protest that became known
+			as the Bloody Friday. 28 people died.
+		]]),
+		}),
+		t.figure({
+			t.ZoomableImage(
+				"/assets/blog/clube_da_esquina/artistas_protestam.jpg",
+				"Prominent Brazilian artists protesting during the “March of the 100.000.”",
+				564,
+				418
+			),
+			t.figcaption([[
+				Prominent Brazilian artists protesting during the “March of the 100.000.” Left
+			to right: Tônia Carrero, Eva Wilma, Odete Lara, Norma Bengell and Cacilda Becker,
+			all actresses.
+		]]),
+		}),
+		t.p([[
+			The National Truth Comission, an organization established in 2011 to investigate
+		the human rights violations that occurred from 1946-1988, officially stated that
+		a grand total of 434 people were killed and/or “disappeared” by the government
+		during that period. Compared to other dictatorships such as Argentina's, where
+		that tally reached upwards of 30.000 people, it was indeed one of the laxer regimes.
+		But just one is enough to say “never again.”
+		]]),
+	}),
 	t.p([[
 		It was in this environment of repression that a group of musician friends, led
 	by 30-year-old Milton Nascimento and 20-year-old Beatlemaniac Lô Borges, decide
@@ -36,9 +98,46 @@ return t.Album({
 	chatting and jamming on a street corner (the titular “Clube da Esquina”—the “Corner
 	Club”) as it was a response to the times they were living in.
 	]]),
+	additional("About Milton and Lô", {
+		t.figure({
+			t.ZoomableImage(
+				"/assets/blog/clube_da_esquina/milton_nascimento.jpg",
+				"Milton Nascimento performing in 1969",
+				640,
+				396
+			),
+			t.figcaption("Milton Nascimento performing in 1969"),
+		}),
+		t.p([[
+			In 1942 Maria do Carmo Nascimento was in a pickle. She was let down, left dry with
+		a kid in her belly, another single mother, a heritage of former slaves that were
+		freed in 1888 with neither donkey nor land. Housemaid she was, as was her own mother.
+		At that time, if the girl got pregnant she was let go. Those worker rights were
+		not yet, after all. However, her bosses didn't let her go. Still, she got depressed
+		and, later on, tuberculosis.
+		]]),
+		t.p([[
+			Milton Nascimento was born but his mom didn't make past his two years old. It
+		happened that Lília, the bosses' daughter was recently married and couldn't get
+		pregnant. She asked his grandmother if she could adopt him and granny acquiesced.
+		See, Lília was a music teacher. Her husband had a radio station.
+		]]),
+		t.figure({
+			t.ZoomableImage("/assets/blog/clube_da_esquina/lo_borges.jpg", "Lô Borges on studio", 640, 389),
+			t.figcaption("Lô Borges in studio. Unsure of date. Source: https://www.cafidigital.com.br"),
+		}),
+		t.p([[
+			In 1962, 10 years old Lô Borges was sent to buy bread and milk for the afternoon
+		snacks. He lived on the 17th floor. From up there he came down the stairs listening
+		to a perfect voice and an acoustic guitar; a voice of which, in later years,
+		Elis Regina—singer deity in the Brazilian pantheon—would say “if God were to sing,
+		He'd sound like Milton Nascimento”. Lô Borges' mom was left waiting for the bread
+		and milk, because he didn't make it past the 10th floor.
+		]]),
+	}),
 	t.figure({
 		t.ZoomableImage(
-			"/assets/blog/clube_da_esquina.jpg",
+			"/assets/blog/clube_da_esquina/clube_da_esquina.jpg",
 			"Part of the Clube da Esquina, sitting on a bench: Lô Borges, Fernando Brant, Márcio Borges, and Milton Nascimento. Ex-president of Brazil Juscelino Kubitscheck is also there, looking very serious in a black suit and tie",
 			600,
 			408
