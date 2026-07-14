@@ -132,8 +132,7 @@ details.additional summary {
 
 .subtitle,
 figcaption {
-  margin-top: 0;
-  margin-bottom: 32px;
+  margin: 0 15% 32px 15%;
   text-align: center;
 
   color: var(--font-secondary);

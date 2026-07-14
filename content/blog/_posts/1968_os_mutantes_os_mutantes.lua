@@ -42,8 +42,8 @@ return t.Album({
 		quite appropriately, is dressed in a shiny patterned coat and zebra stripe pants,
 		to match his striped sweatband.
 	]],
-		400,
-		400
+		414,
+		382
 	),
 	t.Subtitle("Fabulous!"),
 	t.p([[

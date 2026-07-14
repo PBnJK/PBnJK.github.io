@@ -1,5 +1,12 @@
 local t = require("tmpl_lyrics")
 
+local function song(title, en_title, body)
+	return t.Song({
+		title = title,
+		en_title = en_title,
+	}, body)
+end
+
 return t.Blog({
 	title = "‘Geraes’: Minas, world, Milton (in English)",
 	date = {
@@ -78,7 +85,7 @@ return t.Blog({
 	]],
 		},
 		[[
-		Serra de Trẽs Pontas translates roughly to “Three Peaks Mountains”, owing to
+		Serra de Três Pontas translates roughly to “Three Peaks Mountains”, owing to
 		the mountain range's peculiar, self-explanatory shape
 	]]
 	),
@@ -197,13 +204,13 @@ return t.Blog({
 		destruction.
 	]]),
 	t.p("Like in “Simples”, by Nelson Angelo, the closing song of “Minas”:"),
-	t.Song("Simples", "Simple", {
+	song("Simples", "Simple", {
 		t.Text("(excerpt)"),
-		t.br(),
 		t.Lyric("06:28", "Look: the gold of the mine turned to poison", "Olha: o ouro da mina virou veneno"),
 		t.Lyric("06:41", "The blood on the earth turned into a toy", "O sangue na terra virou brinquedo"),
 		t.Lyric("06:47", "And that child sitting there...!", "E aquela criança ali sentada...!"),
 	}),
+	t.hr(),
 	t.p([[
 		To arrive at “Geraes”, it was first needed to stop by “Minas”, said Milton Nascimento
 		when he presented his LP. It was needed to stop by the child frightened by the wounded
@@ -214,7 +221,7 @@ return t.Blog({
     	“Fazenda”.
 	]]),
 	t.p("Let us catch that little train drawn so sweetly by Milton on the cover of his record:"),
-	t.Song("Fazenda", "Farm", {
+	song("Fazenda", "Farm", {
 		t.Lyric("00:00", "Water to drink", "Água de beber"),
 		t.Lyric("00:00", "Spigot on the backyard", "Bica no quintal"),
 		t.Lyric("00:00", "A thirst for living it all", "Uma sede de viver tudo"),
@@ -263,6 +270,7 @@ return t.Blog({
 		t.Lyric("00:00", "Jeep on the road", "Jipe na estrada"),
 		t.Lyric("00:00", "And my heart stayed there", "E o coração lá"),
 	}),
+	t.hr(),
 	t.p([[
 		And so we enter the world of “Geraes”: with a farm asleep in memories and awakened
 		in the memory that lasts for the duration of the song.
@@ -376,7 +384,7 @@ return t.Blog({
 		"Isaiah 11 (KJV, paraphrased)"
 	),
 
-	t.Song("Calix Bento", "Blessed Chalice, in latin", {
+	song("Calix Bento", "Blessed Chalice, in latin", {
 		t.Lyric("00:00", "O God, save the oratory", "Ó Deus salve o oratório"),
 		t.Lyric("00:00", "O God, save the oratory", "Ó Deus salve o oratório"),
 		t.Lyric("00:00", "Where God made His dwelling, oiá, my God", "Onde Deus fez a morada, oiá, meu Deus"),
@@ -417,6 +425,7 @@ return t.Blog({
 		t.Lyric("00:00", "From Mary, our Saviour, oiá, my God", "De Maria, o Salvador, oiá, meu Deus"),
 		t.Lyric("00:00", "From Mary, our Saviour, oiá", "De Maria, o Salvador, oiá"),
 	}),
+	t.hr(),
 	t.p("It's beautiful."),
 })
 

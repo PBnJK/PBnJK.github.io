@@ -19,12 +19,18 @@ return t.Album({
 		day = 29,
 	},
 }, {
-	t.ZoomableImage(
-		"/assets/blog/covers/1972_milton_nascimento_lo_borges_clube_da_esquina.jpg",
-		"Clube da Esquina album cover, depicting two young boys sitting by the road",
-		400,
-		400
-	),
+	t.figure({
+		t.ZoomableImage(
+			"/assets/blog/covers/1972_milton_nascimento_lo_borges_clube_da_esquina.jpg",
+			"Clube da Esquina album cover, depicting two young boys sitting by the road",
+			400,
+			400
+		),
+		t.figcaption([[
+			Green, yellow, and barbed wire. Two friends unwittingly photographed on the
+		side of the road became the face of this legendary album.
+		]]),
+	}),
 	t.Note([[
 		Big thank you to Eduardo from the Walterooski discord, who helped immensely
 	with the context! To be completely honest, a proper introduction would fill up
@@ -122,17 +128,64 @@ return t.Album({
 		pregnant. She asked his grandmother if she could adopt him and granny acquiesced.
 		See, Lília was a music teacher. Her husband had a radio station.
 		]]),
+		t.p([[
+			Milton went to Rio, got invited to attend a house party. There he met singer
+		Elis Regina, singer deity in the Brazilian pantheon. Milton went to her house—the
+		concierge made him take the service elevator. Elis brought the house down, called
+		a moving company and went to live in another building. Sometime later Milton would
+		get invited to the TV show 'O Fino da Bossa' (The Bossa Class Acts) and then be
+		promptly uninvited—apparently, nobody had told the producers he was black. Elis
+		stormed out and said she wouldn't do the show without him. They brought Milton
+		back. I should say her nickname was “little chilly pepper” (5'1" of sheer fierceness!)
+		]]),
+		t.hr(),
 		t.figure({
 			t.ZoomableImage("/assets/blog/clube_da_esquina/lo_borges.jpg", "Lô Borges on studio", 640, 389),
 			t.figcaption("Lô Borges in studio. Unsure of date. Source: https://www.cafidigital.com.br"),
 		}),
 		t.p([[
 			In 1962, 10 years old Lô Borges was sent to buy bread and milk for the afternoon
-		snacks. He lived on the 17th floor. From up there he came down the stairs listening
-		to a perfect voice and an acoustic guitar; a voice of which, in later years,
-		Elis Regina—singer deity in the Brazilian pantheon—would say “if God were to sing,
-		He'd sound like Milton Nascimento”. Lô Borges' mom was left waiting for the bread
-		and milk, because he didn't make it past the 10th floor.
+		snacks. He lived on the 17th floor. Reaching the street, he ended up stumbling
+		upon a 20-something Milton Nascimento playing and singing on the street. Hearing
+		his voice—one of which, in later years, Elis Regina would say: “if God were to sing,
+		He'd sound like Milton Nascimento,”—Lô was enchanted. It was the beginning of their
+		friendship.
+		]]),
+		t.p([[
+			In 1967 there was a festival, it was the second edition of the International Song
+		Festival in Rio. Milton Nascimento won as best interpreter, placed both second
+		and seventh place with the songs “Travessia” (Crossing) and “Morro Velho” (Old
+		Hill). Milton celebrated with Fernando Brant, co-author of “Travessia”, journalist
+		and honorary member of the Corner Club. 15 year-old Lô Borges went to the store
+		and bought himself a copy of Sgt Pepper's Lonely Hearts Club Band.
+		]]),
+		t.p([[
+			The festival in the following year was iconic, especially for the songs “É Proibido
+		Proibir” (To Forbid is Forbidden) by Caetano Veloso and “Caminhando e Cantando”
+		(Singing While Walking) by Geraldo Vandré—both songs with heavy overtones of protest.
+		]]),
+		t.hr(),
+		t.figure({
+			t.ZoomableImage(
+				"/assets/blog/clube_da_esquina/nadando.jpg",
+				"Beto Guedes, Milton Nascimento, and Lô Borges swimming",
+				640,
+				360
+			),
+			t.figcaption("Beto Guedes, Milton Nascimento, and Lô Borges swimming"),
+		}),
+		t.p([[
+			In December of 1968 came AI-5, ”Institutional Act Number 5”—a coup within a
+		coup. Congress was closed down, civil rights like the habeas corpus were suspended,
+		and extreme censorship were implemented, alongside institutionalized arbitrary
+		detentions and torture.
+		]]),
+		t.p([[
+			Geraldo Vandré was kindly invited to partake in an electric shock treatment
+		and never recovered. Caetano Veloso, Gilberto Gil and Chico Buarque fled the country.
+		Milton Nascimento went on tour throughout the United States and released the album
+		“Coragem” (Courage). The Borges brothers, Márcio and Lô, were left behind, constantly
+		moving houses, afraid to be taken in the middle of the night.
 		]]),
 	}),
 	t.figure({
@@ -150,10 +203,24 @@ return t.Album({
 	}),
 	t.p([[
 		The creative process of the album was quite unique: the members of the “club”
-	all worked on every part of the recording, composing, writing, and playing multiple
-	parts, each bringing their own musical tastes and influences to the table, resulting
-	in a beautiful, psychedelic, folk-infused pop trip.
+	all worked on every part of the recording, composing, writing, playing, and improvising
+	multiple parts, each bringing their own musical tastes and influences to the table,
+	resulting in a beautiful, psychedelic, folk-infused pop trip.
 	]]),
+	additional("About the recording process", {
+		t.p([[
+			The recording of the album was, as to be expected from such a writing process,
+		hectic and, even for the time, tremendously spartan—the majority of the sessions
+		were conducted on a beach house in Rio de Janeiro, with the final recordings being
+		done on antiquated two-channel equipment. This meant that most tracks were recorded
+		basically live, with few overdubs, as any mistakes would ruin the whole track,
+		and mixdowns would degrade the quality of the recording.
+		]]),
+		t.p([[
+			The record was also unique for being a double album, one of the first in
+		Brazilian history.
+		]]),
+	}),
 	t.p([[
 		Addendum: Lô Borges unfortunately passed away in November of 2025, at 73 years
 	of age. He was still recording and touring albums, and, in fact, has left us with
@@ -321,16 +388,11 @@ return t.Album({
 			uncharted inland in search for gold and silver. They also played a large part
 			in the capturing and enslaving of the native populations.
 		]]),
-		t.Lyric("00:04", {
-			"What would you say of this thing ",
-			t.InlineNote(
-				"you can't reach the bottom of?",
-				[[
-				As in touching the bottom of a river, pool, etc. Perhaps a more natural
-				translation might be “this thing that's over our heads.”
-			]]
-			),
-		}, "O que vocês diriam dessa coisa que não dá mais pé?"),
+		t.Lyric(
+			"00:04",
+			"What would you say of this thing that is bottomless?",
+			"O que vocês diriam dessa coisa que não dá mais pé?"
+		),
 		t.Lyric("00:09", "What would you do to escape the tide?", "O que vocês fariam pra sair dessa maré?"),
 		t.Lyric("00:12", "What was dream turns to dirt", "O que era sonho vira terra"),
 		t.Lyric("00:17", "Who will be the first to answer me?", "Quem vai ser o primeiro a me responder?"),
@@ -842,16 +904,11 @@ return t.Album({
 			Percussion = { "Lô Borges", "Toninho Horta" },
 		},
 	}, {
-		t.Lyric("00:05", {
-			"What would you say of this thing ",
-			t.InlineNote(
-				"you can't reach the bottom of?",
-				[[
-				As in touching the bottom of a river, pool, etc. Perhaps a more natural
-				translation might be “this thing that's over our heads.”
-			]]
-			),
-		}, "O que vocês diriam dessa coisa que não dá mais pé?"),
+		t.Lyric(
+			"00:05",
+			"What would you say of this thing that is bottomless?",
+			"O que vocês diriam dessa coisa que não dá mais pé?"
+		),
 		t.Lyric("00:10", "What would you do to escape the tide?", "O que vocês fariam pra sair dessa maré?"),
 		t.Lyric("00:13", "What was stone turns to body", "O que era pedra vira corpo"),
 		t.Lyric("00:17", "Who will be the second to answer me?", "Quem vai ser o segundo a me responder?"),
