@@ -466,9 +466,8 @@ return t.Album({
 		},
 	}, {
 		t.Note([[
-			According to Milton Nascimento, this song is an homage to her and co-writer
-		Ronaldo Bastos' mutual friend, famous actress Dina Sfat. It is also interesting
-		for being a samba in 3/4—quite unusual!
+			According to Milton Nascimento, this song is an homage to actress Dina Sfat,
+		a mutual friend of him and co-writer Ronaldo Bastos.
 		]]),
 		t.Lyric("00:31", {
 			"Hey, ",
