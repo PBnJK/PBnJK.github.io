@@ -123,11 +123,11 @@ return t.Album({
 		t.Lyric("00:50", "Player", "Jogador"),
 		t.br(),
 		t.Lyric("00:56", "Jump, jump, fall, get up", "Pula, pula, cai, levanta"),
-		t.Lyric("00:57", "Up and down and run", "Sobe e desce e corre"),
+		t.Lyric("00:57", "Get up, get down, run", "Sobe e desce e corre"),
 		t.Lyric("00:59", "Kick, clear up space", "Chuta, abre espaço"),
 		t.Lyric("01:00", "Celebrate and give thanks", "Vibra e agradece"),
 		t.br(),
-		t.Lyric("01:06", "Even the whole city", "Olha que a cidade"),
+		t.Lyric("01:06", "The whole city", "Olha que a cidade"),
 		t.Lyric("01:07", "Emptied out", "Toda ficou vazia"),
 		t.Lyric("01:08", "On this beautiful evening", "Nessa tarde bonita"),
 		t.Lyric("01:10", "Just to see you play", "Só pra te ver jogar"),
@@ -326,7 +326,7 @@ return t.Album({
 		t.Lyric("02:15", "My treasure, my future", "Meu tesouro, meu futuro"),
 		t.Text("(repeat)"),
 	}),
-	song("O Plebeu", "The Peasant", {
+	song("O Plebeu", "The Plebeian", {
 		t.Lyric("00:09", "Lalalala-la", "Lálalala-la"),
 		t.Lyric("00:11", "Lala-la, lala", "Lála-lá, lála"),
 		t.br(),
@@ -342,12 +342,12 @@ return t.Album({
 		t.Lyric("00:45", "Were it not for my poverty", "Se não fosse a minha pobreza"),
 		t.br(),
 		t.Lyric("00:48", "I know and you know", "Eu sei e você sabe"),
-		t.Lyric("00:51", "That it doesn't matter", "Que isso não importa"),
+		t.Lyric("00:51", "That that doesn't matter", "Que isso não importa"),
 		t.Lyric("00:54", "But there's someone", "Mas existe alguém"),
-		t.Lyric("00:56", "That doesn't like our love", "Que do nosso amor não gosta"),
+		t.Lyric("00:56", "That doesn't approve of our love", "Que do nosso amor não gosta"),
 		t.br(),
 		t.Lyric("01:01", "You are a princess", "Você é uma princesa"),
-		t.Lyric("01:04", "And I am a peasant", "E eu sou um plebeu"),
+		t.Lyric("01:04", "And I am a plebeian", "E eu sou um plebeu"),
 		t.Lyric("01:07", "Lalalala-la", "Lálalala-lá"),
 		t.Lyric("01:08", "Lala-la, lala", "Lála-lá, lála"),
 		t.br(),
@@ -357,12 +357,12 @@ return t.Album({
 		t.Lyric("01:19", "Lala-la, lala", "Lála-lá, lála"),
 		t.br(),
 		t.Lyric("01:29", "I know and you know", "Eu sei e você sabe"),
-		t.Lyric("01:33", "That it doesn't matter", "Que isso não importa"),
+		t.Lyric("01:33", "That that doesn't matter", "Que isso não importa"),
 		t.Lyric("01:39", "But there's someone", "Mas existe alguém"),
-		t.Lyric("01:44", "That doesn't like our love", "Que do nosso amor não gosta"),
+		t.Lyric("01:44", "That doesn't approve of our love", "Que do nosso amor não gosta"),
 		t.br(),
 		t.Lyric("01:51", "You are a princess", "Você é uma princesa"),
-		t.Lyric("01:53", "And I am a peasant", "E eu sou um plebeu"),
+		t.Lyric("01:53", "And I am a plebeian", "E eu sou um plebeu"),
 		t.Lyric("01:56", "Lalalala-la", "Lálalala-la"),
 		t.Lyric("01:58", "Lala-la, lala", "Lála-lá, lála"),
 		t.br(),
@@ -375,8 +375,8 @@ return t.Album({
 	song("Taj Mahal", "Taj Mahal", {
 		t.Note([[
 			One of Jorge Ben's greatest hits, and arguably his most popular song ever.
-			This version is a re-recording—the original track was first released on
-			his 1972 record “Ben.”
+			This version is a re-recording, with the original track having been first
+			released on his 1972 record “Ben.”
 		]]),
 		t.Lyric("00:03", "— Taj Mahal...", "— Taj Mahal..."),
 		t.br(),
@@ -519,8 +519,8 @@ return t.Album({
 		t.Lyric("02:29", "From the Indies, Lisbon, and Paris", "Das Índias, Lisboa e Paris"),
 		t.Lyric("02:33", "The black woman had to be treated", "A negra era obrigada a ser recebida"),
 		t.Lyric("02:38", "Like a great lady", "Como uma grande senhora"),
-		t.Lyric("02:40", "Of the court of King Louis", "Da corte do Reis Luís"),
-		t.Lyric("02:48", "Of the court of King Louis", "Da corte do rei Luís"),
+		t.Lyric("02:40", "Of the court of King Louis", "Da corte do Rei Luís"),
+		t.Lyric("02:48", "Of the court of King Louis", "Da corte do Rei Luís"),
 		t.br(),
 		t.Lyric("02:54", "Xica da, Xica da", "Xica da, Xica da"),
 		t.Lyric("02:56", "Xica da, Xica da", "Xica da, Xica da Silva"),
@@ -542,7 +542,7 @@ return t.Album({
 		t.Lyric("00:04", "— Hey, xará!", "— Ei, xará!"),
 		t.Lyric("00:06", "— Hey, xará!", "— Ei, xará!"),
 		t.br(),
-		t.Lyric("00:09", "— Looks, this is the story of a boy", "— Olha, essa é a história de um menino"),
+		t.Lyric("00:09", "— Look, this is the story of a boy", "— Olha, essa é a história de um menino"),
 		t.Lyric(
 			"00:11",
 			"— That had a friend named Jorge that could fly",
@@ -561,7 +561,7 @@ return t.Album({
 			"— One day, Jorge learned about this and flew for all to see",
 			"— Um dia, Jorge soube de tudo e voou para toda gente ver"
 		),
-		t.Lyric("00:29", "— Everyone was in awe", "— O espanto foi geral"),
+		t.Lyric("00:29", "— They were all awestruck", "— O espanto foi geral"),
 		t.Lyric(
 			"00:30",
 			"— And the boy that couldn't fly, happy as can be, yelled:",
@@ -627,7 +627,7 @@ return t.Album({
 		t.Note([[
 			This song is an ode to Zico, largely considered the greatest player in the
 			history of Flamengo—Jorge Ben's favourite football team. Like many great
-			footballers, Zico wore the No. 10 jersey.
+			footballers, Zico wore the #10 jersey.
 		]]),
 		t.Lyric("00:31", "A foul near the penalty box", "É falta na entrada da área"),
 		t.Lyric("00:31", "Guess who's going to kick?", "Adivinha quem vai bater?"),
@@ -641,10 +641,10 @@ return t.Album({
 		t.Lyric("00:50", "That is physical, rich and rhythmic", "Física, rica e rítmica"),
 		t.Lyric("00:55", "His lucid reflexes", "Seus reflexos lúcidos"),
 		t.Lyric("01:00", "Plays, bewildering dribbles", "Lançamentos, dribles desconcertantes"),
-		t.Lyric("01:02", "Malicious kicks", "Chutes maliciosos"),
+		t.Lyric("01:02", "Cunning kicks", "Chutes maliciosos"),
 		t.Lyric("01:08", "Are like electrifying flashes", "São como flashes eletrizantes"),
 		t.br(),
-		t.Lyric("01:11", "Hitting the net", "Estufando a rede"),
+		t.Lyric("01:11", "Blowing out the net", "Estufando a rede"),
 		t.Lyric("01:13", {
 			"In a possibly ",
 			t.InlineNote(
@@ -659,7 +659,7 @@ return t.Album({
 				]]
 			),
 		}, "Num possível gol de placa"),
-		t.Lyric("01:16", "Hitting the net", "Estufando a rede"),
+		t.Lyric("01:16", "Blowing out the net", "Estufando a rede"),
 		t.Lyric("01:18", "In a possibly amazing goal", "Num possível gol de placa"),
 		t.Lyric("01:20", "Goal, goal!", "É gol, é gol!"),
 		t.br(),
@@ -741,7 +741,7 @@ return t.Album({
 		t.Text("(repeat)"),
 	}),
 	song("África Brasil (Zumbi)", "Africa Brazil (Zumbi)", {
-		t.Note(
+		t.Note({
 			[[
 			In the same vein as “Taj Mahal,” this is a new version of the track “Zumbi”
 		from his album “A Tábua de Esmeralda.” Please refer to that album's
@@ -750,8 +750,8 @@ return t.Album({
 				href = "https://pbnjk.github.io/lyrics/1974_jorge_ben_jor_a_tabua_de_esmeralda.html",
 				"translation page",
 			}),
-			"for context on the historical figure of Zumbi."
-		),
+			" for context on the historical figure of Zumbi.",
+		}),
 		t.Lyric("00:18", "— I want to see what will happen", "— Eu quero ver o que vai acontecer"),
 		t.Lyric("00:21", "— I want to see what will happen", "— Eu quero ver o que vai acontecer"),
 		t.Lyric("00:24", "— I want to see what will happen", "— Eu quero ver o que vai acontecer"),
@@ -761,7 +761,7 @@ return t.Album({
 		t.Lyric("00:33", "— When Zumbi arrives", "— Quando Zumbi chega"),
 		t.Lyric("00:34", "— Zumbi takes charge ", "— É Zumbi é que manda"),
 		t.Lyric("00:36", "— I want to see, I want to see", "— Eu quero ver, eu quero ver"),
-		t.Lyric("00:38", "— Save my people", "— Salve meu povo"),
+		t.Lyric("00:38", "— Greetings, my people", "— Salve, meu povo"),
 		t.Lyric(
 			"00:40",
 			"— I want to see what will happen when Zumbi arrives",
