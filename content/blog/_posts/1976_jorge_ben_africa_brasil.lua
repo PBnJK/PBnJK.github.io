@@ -50,24 +50,58 @@ return t.Album({
 		day = 22,
 	},
 }, {
-	t.ZoomableImage("/assets/blog/covers/1976_jorge_ben_africa_brasil.jpg", 400, 400),
+	t.figure.img_row({
+		t.div({
+			t.ZoomableImage(
+				"/assets/blog/covers/1976_jorge_ben_africa_brasil.jpg",
+				"Cover art for Jorge Ben's África Brasil, depicting Jorge Ben singing",
+				400,
+				400
+			),
+			t.ZoomableImage(
+				"/assets/blog/covers/1976_jorge_ben_africa_brasil_back.jpg",
+				"Back cover art for Jorge Ben's África Brasil, depicting Jorge Ben's backing band",
+				400,
+				400
+			),
+		}),
+		t.figcaption({
+			[[
+			Front and back covers, with the back cover depicting Jorge Ben's backing band
+		for this album, “Admiral Jorge V,” formed for his previous album, “Solta o Pavão”
+		(1975)
+		]],
+		}),
+	}),
 	t.p({
-		"África Brasil is an album.",
+		[[
+		África Brasil (1976) is Jorge Ben's 14th studio album. By this point, Jorge had
+	been releasing albuns for 13 years, steadily honing his distinct “samba-rock” style
+	into a dangerously groovy blade through a variety of backing band changes and genre
+	experimentation. This album, however, sees him take his most daring risk yet: Jorge
+	Ben goes electric.
+	]],
 	}),
 	t.figure({
 		t.ZoomableImage(
-			"/assets/blog/jorge_ben_das_guitarras.webp",
+			"/assets/blog/jorge_ben_das_guitarras.jpg",
 			"Jorge Ben playing an electric guitar on stage",
 			400,
 			556
 		),
 		t.figcaption([[
-			Jorge Ben playing on stage in 1976. Photo by: Giorgio Piredda
+			Jorge Ben playing on stage in 1976. Photo by: Giorgio Piredda (sorry for the watermark but the photo was just too good...)
 		]]),
 	}),
-	t.p([[
-		Features the Guitar(tm)
-	]]),
+	t.p({
+		"Despite (or perhaps even ",
+		t.i("due to"),
+		[[) this dramatic shift in direction, the album was a great success, being
+	met with great reviews and sales. The use of electric guitar brought the already-present
+	Funk and Soul of Jorge's sound to the forefront, while still incorporating elements of
+	the samba-rock style.
+	]],
+	}),
 	song("Ponta de Lança Africano (Umbabarauma)", "African Second Striker (Umbabarauma)", {
 		t.Note({
 			[[
