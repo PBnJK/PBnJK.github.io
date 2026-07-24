@@ -77,7 +77,7 @@ return t.Album({
 		[[
 		África Brasil (1976) is Jorge Ben's 14th studio album. By this point, Jorge had
 	been releasing albums for 13 years, steadily honing his distinct “samba-rock” style
-	to perfection, going trough a variety of backing band changes and experimenting with
+	to perfection, going through a variety of backing band changes and experimenting with
 	different moods and styles but always retaining one central aspect: the acoustic guitar.
 	Following “A Tábua de Esmeralda,” however, Jorge Ben was looking for a new challenge,
 	and, after jamming with Gilberto Gil on “Ogum Xangô” and amplifying his guitar on
