@@ -76,32 +76,21 @@ return t.Album({
 	t.p({
 		[[
 		África Brasil (1976) is Jorge Ben's 14th studio album. By this point, Jorge had
-	been releasing albuns for 13 years, steadily honing his distinct “samba-rock” style
-	into a dangerously groovy blade through a variety of backing band changes and genre
-	experimentation. This album, however, sees him take his most daring risk yet: Jorge
-	Ben goes electric.
+	been releasing albums for 13 years, steadily honing his distinct “samba-rock” style
+	to perfection, going trough a variety of backing band changes and experimenting with
+	different moods and styles, always retaining one central aspect: the acoustic guitar.
+	Following “A Tábua de Esmeralda,” however, Jorge Ben was looking for a new challenge,
+	and, after jamming with Gilberto Gil on “Ogum Xangô” and amplifying his guitar on
+	“Solta o Pavão,” he took his most daring leap yet: he went
 	]],
+		t.i("electric."),
 	}),
-	t.figure({
-		t.ZoomableImage(
-			"/assets/blog/jorge_ben_das_guitarras.jpg",
-			"Jorge Ben playing an electric guitar on stage",
-			400,
-			556
-		),
-		t.figcaption([[
-			Jorge Ben playing on stage in 1976. Photo by: Giorgio Piredda (sorry for the watermark but the photo was just too good...)
-		]]),
-	}),
-	t.p({
-		"Despite (or perhaps even ",
-		t.i("due to"),
-		[[) this dramatic shift in direction, the album was a great success, being
-	met with great reviews and sales. The use of electric guitar brought the already-present
-	Funk and Soul of Jorge's sound to the forefront, while still incorporating elements of
-	the samba-rock style.
-	]],
-	}),
+	t.p([[
+		This album sees Jorge Ben totally abandon the acoustic guitar, choosing to
+	instead bring the American funk and soul elements of his sound to the forefront,
+	deftly fusing them with his characteristic samba-rock. Despite this dramatic shift
+	in direction, the album was a great success.
+	]]),
 	song("Ponta de Lança Africano (Umbabarauma)", "African Second Striker (Umbabarauma)", {
 		t.Note({
 			[[
@@ -122,14 +111,14 @@ return t.Album({
 		t.Lyric("00:47", "Play ball, play ball", "Joga bola, joga bola"),
 		t.Lyric("00:50", "Player", "Jogador"),
 		t.br(),
-		t.Lyric("00:56", "Jump, jump, fall, get up", "Pula, pula, cai, levanta"),
-		t.Lyric("00:57", "Get up, get down, run", "Sobe e desce e corre"),
+		t.Lyric("00:56", "Jump, jump, fall down, get up", "Pula, pula, cai, levanta"),
+		t.Lyric("00:57", "Go up, go down, run", "Sobe e desce e corre"),
 		t.Lyric("00:59", "Kick, clear up space", "Chuta, abre espaço"),
 		t.Lyric("01:00", "Celebrate and give thanks", "Vibra e agradece"),
 		t.br(),
 		t.Lyric("01:06", "The whole city", "Olha que a cidade"),
 		t.Lyric("01:07", "Emptied out", "Toda ficou vazia"),
-		t.Lyric("01:08", "On this beautiful evening", "Nessa tarde bonita"),
+		t.Lyric("01:08", "On this beautiful afternoon", "Nessa tarde bonita"),
 		t.Lyric("01:10", "Just to see you play", "Só pra te ver jogar"),
 		t.br(),
 		t.Lyric("01:16", "Umbabarauma, goal man", "Umbabarauma, homem gol"),
@@ -374,7 +363,7 @@ return t.Album({
 	}),
 	song("Taj Mahal", "Taj Mahal", {
 		t.Note([[
-			One of Jorge Ben's greatest hits, and arguably his most popular song ever.
+			One of Jorge Ben's greatest hits—arguably his most popular song ever.
 			This version is a re-recording, with the original track having been first
 			released on his 1972 record “Ben.”
 		]]),
@@ -507,6 +496,7 @@ return t.Album({
 		t.Lyric("01:55", "Xica da, Xica da", "Xica da, Xica da"),
 		t.Lyric("01:57", "Xica da, Xica da Silva", "Xica da, Xica da Silva"),
 		t.Lyric("02:00", "The black woman", "A negra"),
+		t.br(),
 		t.Lyric("02:02", "Xica da, Xica da", "Xica da, Xica da"),
 		t.Lyric("02:04", "Xica da, Xica da Silva", "Xica da, Xica da Silva"),
 		t.Lyric("02:07", "The black woman", "A negra"),
@@ -523,7 +513,7 @@ return t.Album({
 		t.Lyric("02:48", "Of the court of King Louis", "Da corte do Rei Luís"),
 		t.br(),
 		t.Lyric("02:54", "Xica da, Xica da", "Xica da, Xica da"),
-		t.Lyric("02:56", "Xica da, Xica da", "Xica da, Xica da Silva"),
+		t.Lyric("02:56", "Xica da, Xica da Silva", "Xica da, Xica da Silva"),
 		t.Lyric("02:59", "The black woman", "A negra"),
 		t.Text("(repeat)"),
 	}),
@@ -545,7 +535,7 @@ return t.Album({
 		t.Lyric("00:09", "— Look, this is the story of a boy", "— Olha, essa é a história de um menino"),
 		t.Lyric(
 			"00:11",
-			"— That had a friend named Jorge that could fly",
+			"— That had a friend that could fly named Jorge ",
 			"— Que tinha um amigo que voava e Jorge se chamava"
 		),
 		t.Lyric(
@@ -558,10 +548,10 @@ return t.Album({
 		t.Lyric("00:23", "— Everyone made fun of him", "— Todo mundo dele caçoava"),
 		t.Lyric(
 			"00:24",
-			"— One day, Jorge learned about this and flew for all to see",
+			"— One day, Jorge got word of this and flew for all to see",
 			"— Um dia, Jorge soube de tudo e voou para toda gente ver"
 		),
-		t.Lyric("00:29", "— They were all awestruck", "— O espanto foi geral"),
+		t.Lyric("00:29", "— They were awestruck", "— O espanto foi geral"),
 		t.Lyric(
 			"00:30",
 			"— And the boy that couldn't fly, happy as can be, yelled:",
@@ -626,7 +616,7 @@ return t.Album({
 	song("Camisa 10 da Gávea", "#10 from the Gávea", {
 		t.Note([[
 			This song is an ode to Zico, largely considered the greatest player in the
-			history of Flamengo—Jorge Ben's favourite football team. Like many great
+			history of Flamengo, Jorge Ben's favourite football team. Like many great
 			footballers, Zico wore the #10 jersey.
 		]]),
 		t.Lyric("00:31", "A foul near the penalty box", "É falta na entrada da área"),
@@ -650,13 +640,13 @@ return t.Album({
 			t.InlineNote(
 				"amazing goal",
 				[[
-					I translated it as “amazing” but the real expression used is a fun bit of
-				trivia: In 1961, Pelé scored a goal so incredible that a plaque was built
-				on the stadium to commemorate it. After that, it became common to refer to
-				beautiful or impressive goals as “plaque goals”—as if to say that they too
-				deserve to be put on a plaque. That's the term that Jorge Ben is using in
-				the original Portuguese.
-				]]
+				I translated it as “amazing” but the real expression used is a fun bit of
+			trivia: In 1961, Pelé scored a goal so incredible that a plaque was built
+			on the stadium to commemorate it. After that, it became common to refer to
+			beautiful or impressive goals as “plaque goals”—as if to say that they too
+			deserve to be put on a plaque. That's the term that Jorge Ben is using in
+			the original Portuguese.
+			]]
 			),
 		}, "Num possível gol de placa"),
 		t.Lyric("01:16", "Blowing out the net", "Estufando a rede"),
@@ -787,7 +777,7 @@ return t.Album({
 		t.Lyric("01:36", "There's a great auction", "Há um grande leilão"),
 		t.Lyric("01:40", "They say there is a princess for sale in it", "Dizem que nele há uma princesa à venda"),
 		t.Lyric("01:45", "Brought here with her subjects", "Que veio junto com seus súditos"),
-		t.Lyric("01:49", "Chained to ox-carts", "Acorrentados, acorrentados em carros de boi"),
+		t.Lyric("01:49", "Chained, chained to ox-carts", "Acorrentados, acorrentados em carros de boi"),
 		t.br(),
 		t.Lyric("01:54", "When Zumbi arrives, I want to see", "Eu quero ver quando Zumbi chegar"),
 		t.Lyric(
