@@ -68,8 +68,8 @@ return t.Album({
 		t.figcaption({
 			[[
 			Front and back covers, with the back cover depicting Jorge Ben's backing band
-		for this album, “Admiral Jorge V,” formed for his previous album, “Solta o Pavão”
-		(1975)
+		for this album, “Admiral Jorge V,” formed for his previous record, “Solta o Pavão”
+		(1975) (+ additional musicians)
 		]],
 		}),
 	}),
@@ -78,7 +78,7 @@ return t.Album({
 		África Brasil (1976) is Jorge Ben's 14th studio album. By this point, Jorge had
 	been releasing albums for 13 years, steadily honing his distinct “samba-rock” style
 	to perfection, going trough a variety of backing band changes and experimenting with
-	different moods and styles, always retaining one central aspect: the acoustic guitar.
+	different moods and styles but always retaining one central aspect: the acoustic guitar.
 	Following “A Tábua de Esmeralda,” however, Jorge Ben was looking for a new challenge,
 	and, after jamming with Gilberto Gil on “Ogum Xangô” and amplifying his guitar on
 	“Solta o Pavão,” he took his most daring leap yet: he went
@@ -86,10 +86,11 @@ return t.Album({
 		t.i("electric."),
 	}),
 	t.p([[
-		This album sees Jorge Ben totally abandon the acoustic guitar, choosing to
-	instead bring the American funk and soul elements of his sound to the forefront,
-	deftly fusing them with his characteristic samba-rock. Despite this dramatic shift
-	in direction, the album was a great success.
+		This album sees Jorge Ben totally abandon the acoustic guitar for the electric,
+	bringing the American funk and soul elements of his sound to the forefront while at
+	the same time deftly fusing them with samba-rock and Afro-Brazilian percussion.
+	Despite this dramatic shift in direction, the album was a great success at the
+	time.
 	]]),
 	song("Ponta de Lança Africano (Umbabarauma)", "African Second Striker (Umbabarauma)", {
 		t.Note({
