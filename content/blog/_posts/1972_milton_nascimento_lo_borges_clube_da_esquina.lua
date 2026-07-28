@@ -201,12 +201,19 @@ return t.Album({
 			Borges, and Milton Nascimento
 		]]),
 	}),
-	t.p([[
+	t.p({
+		[[
 		The creative process of the album was quite unique: the members of the “club”
 	all worked on every part of the recording, composing, writing, playing, and improvising
 	multiple parts, each bringing their own musical tastes and influences to the table,
-	resulting in a beautiful, psychedelic, folk-infused pop trip.
-	]]),
+	resulting in a beautiful, psychedelic, folk-infused pop trip that is often considered
+	to be
+	]],
+		t.i("the"),
+		[[
+		greatest Brazilian album of all time.
+	]],
+	}),
 	additional("About the recording process", {
 		t.p([[
 			The recording of the album was, as to be expected from such a writing process,
@@ -667,7 +674,7 @@ return t.Album({
 		t.Lyric("00:30", "American heart", "Coração americano"),
 		t.Lyric("00:34", "A flavour of glass and cut", "Um sabor de vidro e corte"),
 		t.br(),
-		t.Lyric("00:49", "Waiting on a great queue", "A espera na fila imensa"),
+		t.Lyric("00:49", "Waiting in an immense queue", "A espera na fila imensa"),
 		t.Lyric("00:53", "And the black body forgot", "E o corpo negro se esqueceu"),
 		t.Lyric("00:58", "It was in San Vicente", "Estava em San Vicente"),
 		t.Lyric("01:02", "The city and its lights", "A cidade e suas luzes"),
@@ -774,7 +781,7 @@ return t.Album({
 		t.Lyric("01:08", "You don't want to believe", "Você não quer acreditar"),
 		t.Lyric("01:14", "But that's only natural", "Mas isso é tão normal"),
 		t.Lyric("01:17", "You don't want to believe", "Você não quer acreditar"),
-		t.Lyric("01:23", "And I was just an", "E eu apenas era"),
+		t.Lyric("01:23", "And I was just an...", "E eu apenas era..."),
 		t.br(),
 		t.Lyric("01:25", "Outcast knight, washed in a stream", "Cavaleiro marginal, lavado em ribeirão"),
 		t.Lyric("01:34", "Black knight that lived through mysteries", "Cavaleiro negro que viveu mistérios"),
@@ -867,7 +874,7 @@ return t.Album({
 		t.Lyric("01:33", "And I, reconquered", "E eu reconquistado"),
 		t.Lyric("01:37", "Go on strolling, strolling and to die", "Vou passeando, passeando e morrer"),
 		t.br(),
-		t.Lyric("01:49", "Close to your eyes", "Perto de seus olhos"),
+		t.Lyric("01:49", "Near your eyes", "Perto de seus olhos"),
 		t.Lyric("01:53", "Gold ring, birthday, my love", "Anel de ouro, aniversário, meu amor"),
 		t.Lyric("02:04", "In my city", "Em minha cidade"),
 		t.Lyric("02:08", "We learn to live alone", "A gente aprende a viver só"),
@@ -914,7 +921,7 @@ return t.Album({
 		t.br(),
 		t.Lyric(
 			"00:20",
-			"Walk down avenues facing up to what I can't reach the bottom of",
+			"Walk down avenues facing up to what is bottomless",
 			"Andar por avenidas enfrentando o que não dá mais pé"
 		),
 		t.Lyric(
@@ -980,7 +987,7 @@ return t.Album({
 		t.Lyric("00:18", "Run, a rat, catch it! For the love of God!", "Corre um rato, pega, pelo amor de Deus!"),
 		t.br(),
 		t.Lyric("00:23", "Yesterday I read in an almanac", "Ontem li num almanaque"),
-		t.Lyric("00:28", "The adventures of shepherds and lambs", "Aventuras de pastores e cordeiros"),
+		t.Lyric("00:28", "About the adventures of shepherds and lambs", "Aventuras de pastores e cordeiros"),
 		t.Lyric("00:31", "As I finished, a voice from the street", "Quando eu terminava, uma voz de rua"),
 		t.Lyric("00:38", "Said true things, for the love of God!", "Disse coisas certas, pelo amor de Deus!"),
 		t.Text("(instrumental)"),
