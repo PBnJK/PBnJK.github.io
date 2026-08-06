@@ -382,22 +382,26 @@ li * {
 
   margin: 0;
   grid-column: 1;
+  width: 40px;
 
-  padding-right: 8px;
+  padding-right: 16px;
   border-right: 4px solid var(--font-secondary);
 }
 
 .lyric-text {
+  text-align: right;
+  text-align-last: right;
+
   margin: 0;
   grid-column: 2;
 
-  padding-right: 16px;
+  padding-right: 8px;
 }
 
 .lyric-og {
   color: var(--font-secondary);
-  text-align: right;
-  text-align-last: right;
+  text-align: left;
+  text-align-last: left;
 
   margin: 0;
   grid-column: 3;
@@ -406,6 +410,8 @@ li * {
 .lyric-note {
   color: var(--font-secondary);
   text-align: center;
+
+  margin-left: 40px;
 }
 
 .lyric-tl-note {
