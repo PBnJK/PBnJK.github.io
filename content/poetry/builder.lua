@@ -31,7 +31,8 @@ return t.Document({
 					t.h2("Write an Envelope poem"),
 					t.p([[
 						The Emily Dickinson classic—fragile, intimate, radical poems scrawled on
-						the corners of torn pieces of envelope paper—now in all new electronic form!
+						the corners of torn pieces of envelope paper—now in an all new electronic
+						format!
 					]]),
 
 					t.h3["#envelope-title"](""),

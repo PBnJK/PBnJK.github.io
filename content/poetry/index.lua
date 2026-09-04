@@ -16,6 +16,10 @@ return t.Document({
 		}),
 	}),
 	t.body({
-		t.div["#wrapper"]({}),
+		t.div["#wrapper"]({
+			t.main({
+				t.ColorSchemeToggle(),
+			}),
+		}),
 	}),
 })
