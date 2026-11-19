@@ -53,7 +53,7 @@ return t.Album({
 		t.a({
 			target = "_blank",
 			href = "https://wandscum.com/",
-			"Sylvan",
+			"syvyly",
 		}),
 		" for the opening context and notes on the songs!",
 	}),
@@ -76,7 +76,7 @@ return t.Album({
 	t.p([[
 		In spite of the dangerous political environment, Gal continued to court
 		controversy. She was photographed locking lips with Veloso’s sister, fellow
-		singer Maria Bethania—and chose songs that hinted at her bisexuality. The
+		singer Maria Bethânia—and chose songs that hinted at her bisexuality. The
 		regime banned one song from the radio for being too subversive, and ordered
 		the scandalous semi-nude album cover be hidden under an opaque wrapper for
 		distribution.
@@ -85,7 +85,7 @@ return t.Album({
 		title = "Índia",
 		en_title = "Indigenous Woman",
 		adapter = "José Fortuna",
-		writer = { "J. A. Flores", "M. O. Guerrero" },
+		writer = { "José Asunción Flores", "Manuel Ortiz Guerrero" },
 		arranger = "Rogério Duprat",
 		conductor = "Mario Tavares",
 		personnel = personnel,
@@ -97,8 +97,8 @@ return t.Album({
 			song’s desire.
 		]]),
 		t.Lyric("00:23", "Índia, your hair on your low shoulders", "Índia, teus cabelos nos ombros caídos"),
-		t.Lyric("00:31", "Dark as the nights without moonlight", "Negros como as noites que não tem luar"),
-		t.Lyric("00:40", "Your rose lips, smiling for me", "Teus lábios de rosa, para mim, sorrindo"),
+		t.Lyric("00:31", "Dark as the moonless nights", "Negros como as noites que não tem luar"),
+		t.Lyric("00:40", "Your rosy lips, smiling for me", "Teus lábios de rosa, para mim, sorrindo"),
 		t.Lyric("00:49", "And the sweet tenderness of your gaze", "E a doce meiguice desse teu olhar"),
 		t.Lyric("00:56", "Índia with the dark skin", "Índia da pele morena"),
 		t.Lyric("00:59", "I wish to kiss your tiny mouth", "Tua boca pequena eu quero beijar"),
@@ -112,7 +112,7 @@ return t.Album({
 		t.Lyric("01:41", "All of my great love", "Todo o meu grande amor"),
 		t.br(),
 		t.Lyric("01:56", "When I leave to far away from here", "Quando eu for embora para bem distante"),
-		t.Lyric("02:04", "And the time comes to say goodbye", "E chegar a hora de dizer-te adeus"),
+		t.Lyric("02:04", "And the time comes for me to say goodbye", "E chegar a hora de dizer-te adeus"),
 		t.Lyric("02:12", "Stay in my arms for a moment longer", "Fique nos meus braços só mais um instante"),
 		t.Lyric("02:21", "Let my lips lock with yours", "Deixa os meus lábios se unirem aos teus"),
 		t.Lyric("02:28", "Índia, I'll carry with me a longing", "Índia, levarei saudade"),
@@ -120,7 +120,13 @@ return t.Album({
 		t.br(),
 		t.Lyric("02:43", "Índia, your image always goes with me", "Índia, tua imagem sempre comigo vai"),
 		t.Lyric("03:03", "Inside my heart", "Dentro do meu coração"),
-		t.Lyric("03:13", "All of my Paraguay", "Todo meu Paraguai"),
+		t.Lyric("03:13", {
+			"All of my ",
+			t.InlineNote(
+				"Paraguay",
+				"The writers of this song, José Asunción Flores and Manuel Ortiz Guerrero, are from Paraguay. Really, this whole song is a big ode to the country, with the original Spanish lyrics featuring a lot more verses that could be interpreted as personifying Paraguay in the titular Índia."
+			),
+		}, "Todo meu Paraguai"),
 		t.Text("(repeats)"),
 	}),
 	t.Song({
@@ -145,7 +151,7 @@ return t.Album({
 		t.br(),
 		t.Lyric("00:29", "Under the shadow of the green corn", "À sombra do milho verde"),
 		t.Lyric("00:31", "Ah, under the shadow of the green corn", "Ah, à sombra do milho verde"),
-		t.Lyric("00:34", "Ah, I dated a young girl", "Ah, namorei uma cachopa"),
+		t.Lyric("00:34", "Ah, I courted a young girl", "Ah, namorei uma cachopa"),
 		t.br(),
 		t.Lyric("00:44", "Green corn, green corn", "Milho verde, milho verde"),
 		t.Lyric("00:46", "Ah, green corn, green corn", "Ah, milho verde, milho verde"),
@@ -153,7 +159,7 @@ return t.Album({
 		t.br(),
 		t.Lyric("00:57", "Under the shadow of the green corn", "À sombra do milho verde"),
 		t.Lyric("01:01", "Ah, under the shadow of the green corn", "Ah, à sombra do milho verde"),
-		t.Lyric("01:04", "Ah, I dated a young boy", "Ah, namorei um rapazinho"),
+		t.Lyric("01:04", "Ah, I courted a young boy", "Ah, namorei um rapazinho"),
 		t.br(),
 		t.Lyric("01:13", "Green corn, green corn", "Milho verde, milho verde"),
 		t.Lyric("01:16", "Ah, green corn, green corn", "Ah, milho verde, milho verde"),
@@ -161,7 +167,7 @@ return t.Album({
 		t.br(),
 		t.Lyric("01:27", "Under the shadow of the green corn", "À sombra do milho verde"),
 		t.Lyric("01:30", "Ah, under the shadow of the green corn", "Ah, à sombra do milho verde"),
-		t.Lyric("01:34", "Ah, I dated a married woman", "Ah, namorei uma casada"),
+		t.Lyric("01:34", "Ah, I courted a married woman", "Ah, namorei uma casada"),
 		t.br(),
 		t.Lyric("01:43", "Women that weed my corn", "Mondadeiras do meu milho"),
 		t.Lyric("01:45", "Ah, women that weed my corn", "Ah, mondadeiras do meu milho"),
@@ -169,11 +175,11 @@ return t.Album({
 		t.br(),
 		t.Lyric("01:56", "Don't look at the path", "Não olha para o caminho"),
 		t.Lyric("02:05", "Ah, don't look at the path", "Ah, não olha para o caminho"),
-		t.Lyric("02:08", "Ah, for the snacks are coming soon", "Ah, que a merenda já lá vem"),
+		t.Lyric("02:08", "Ah, for brunch is coming soon", "Ah, que a merenda já lá vem"),
 		t.br(),
 		t.Lyric("02:18", "Green corn, green corn", "Milho verde, milho verde"),
 		t.Lyric("02:22", "Green corn, green corn...", "Milho verde, milho verde..."),
-		t.Text("(instrumental)"),
+		t.Text("(jam session! listen to that rhythm section go...)"),
 		t.Lyric("03:48", "Green corn, green corn", "Milho verde, milho verde"),
 		t.Lyric("03:51", "Ah, green corn, green corn", "Ah, milho verde, milho verde"),
 		t.Lyric("03:54", "Ah, tiny green corn", "Ah, milho verde miudinho"),
@@ -210,7 +216,7 @@ return t.Album({
 		t.Lyric("00:57", "I'll walk a little further behind the moon", "Vou caminhar um pouco mais atrás da lua"),
 		t.Lyric("01:03", "I'll walk a little further behind the street", "Vou caminhar um pouco mais atrás da rua"),
 		t.br(),
-		t.Lyric("01:12", "But everything flies around everywhere", "Mas tudo voa por aí"),
+		t.Lyric("01:12", "But everything's flying", "Mas tudo voa por aí"),
 		t.Lyric("01:17", "On the wing of the plane", "Na asa do avião"),
 		t.Lyric("01:19", "On the beak of a bird from here", "No bico de um pássaro daqui"),
 		t.Lyric("01:25", "But everything spins, woe is me", "Mas tudo gira, ai de mim"),
@@ -253,15 +259,15 @@ return t.Album({
 			Percussion = "Chico Batera",
 		},
 	}, {
-		t.Lyric("00:03", "How many night I haven't slept", "Quantas noites não durmo"),
+		t.Lyric("00:03", "How many nights I haven't slept", "Quantas noites não durmo"),
 		t.Lyric("00:07", "Tossing and turning in bed", "A rolar-me na cama"),
 		t.Lyric("00:11", "Feeling so many things", "A sentir tantas coisas"),
 		t.Lyric("00:14", "That we can't explain when we're in love", "Que a gente não pode explicar quando ama"),
 		t.br(),
 		t.Lyric("00:21", "The warmth of the sheets", "O calor das cobertas"),
-		t.Lyric("00:25", "Doesn't warm me right", "Não me aquece direito"),
+		t.Lyric("00:25", "Doesn't warm me up right", "Não me aquece direito"),
 		t.Lyric("00:30", "There's nothing in the world", "Não há nada no mundo"),
-		t.Lyric("00:32", "That can remove this cold from my chest ", "Que possa afastar esse frio do meu peito"),
+		t.Lyric("00:32", "That can drive away this cold from my chest ", "Que possa afastar esse frio do meu peito"),
 		t.br(),
 		t.Lyric("00:41", "Come back", "Volta"),
 		t.Lyric("00:44", "Come live by my side once again", "Vem viver outra vez ao meu lado"),
@@ -272,36 +278,7 @@ return t.Album({
 		t.Lyric("01:02", "Come live by my side once again", "Vem viver outra vez ao meu lado"),
 		t.Lyric("01:07", "I can't sleep without your arm", "Não consigo dormir sem teu braço"),
 		t.Lyric("01:11", "Because my body got used to it", "Pois meu corpo está acostumado"),
-		t.br(),
-		t.Lyric("01:17", "How many night I haven't slept", "Quantas noites não durmo"),
-		t.Lyric("01:22", "Tossing and turning in bed", "A rolar-me na cama"),
-		t.Lyric("01:27", "Feeling so many things", "A sentir tantas coisas"),
-		t.Lyric("01:30", "That we can't explain when we're in love", "Que a gente não pode explicar quando ama"),
-		t.br(),
-		t.Lyric("01:37", "The warmth of the sheets", "O calor das cobertas"),
-		t.Lyric("01:41", "Doesn't warm me right", "Não me aquece direito"),
-		t.Lyric("01:46", "There's nothing in the world", "Não há nada no mundo"),
-		t.Lyric("01:49", "That can remove this cold from my chest ", "Que possa afastar esse frio do meu peito"),
-		t.br(),
-		t.Lyric("01:57", "Come back", "Volta"),
-		t.Lyric("01:59", "Come live by my side once again", "Vem viver outra vez ao meu lado"),
-		t.Lyric("02:04", "I can't sleep without your arm", "Não consigo dormir sem teu braço"),
-		t.Lyric("02:08", "Because my body got used to it", "Pois meu corpo está acostumado"),
-		t.br(),
-		t.Lyric("02:14", "Come back", "Volta"),
-		t.Lyric("02:17", "Come live by my side once again", "Vem viver outra vez ao meu lado"),
-		t.Lyric("02:22", "I can't sleep without your arm", "Não consigo dormir sem teu braço"),
-		t.Lyric("02:26", "Because my body got used to it", "Pois meu corpo está acostumado"),
-		t.br(),
-		t.Lyric("02:32", "Come back", "Volta"),
-		t.Lyric("02:35", "Come live by my side once again", "Vem viver outra vez ao meu lado"),
-		t.Lyric("02:39", "I can't sleep without your arm", "Não consigo dormir sem teu braço"),
-		t.Lyric("02:43", "Because my body got used to it", "Pois meu corpo está acostumado"),
-		t.br(),
-		t.Lyric("02:50", "Come back", "Volta"),
-		t.Lyric("02:53", "Come live by my side once again", "Vem viver outra vez ao meu lado"),
-		t.Lyric("02:57", "I can't sleep without your arm", "Não consigo dormir sem teu braço"),
-		t.Lyric("03:02", "Because my body got used to it", "Pois meu corpo está acostumado"),
+		t.Text("(repeats)"),
 	}),
 	t.Song({
 		title = "Relance",
@@ -355,7 +332,7 @@ return t.Album({
 	}, {
 		t.Lyric("00:19", "It was a small moment, a quirk of yours", "Foi um pequeno momento, um jeito"),
 		t.Lyric("00:24", "Something like that", "Uma coisa assim"),
-		t.Lyric("00:28", "A movement and then you couldn't anymore", "Era um movimento que aí você não pode mais"),
+		t.Lyric("00:28", "A movement such that you couldn't anymore", "Era um movimento que aí você não pode mais"),
 		t.Lyric("00:35", "Couldn't like me right", "Gostar de mim direito"),
 		t.br(),
 		t.Lyric("00:42", "It would have been on the beach, fear", "Teria sido na praia, medo"),
@@ -376,17 +353,16 @@ return t.Album({
 		),
 		t.br(),
 		t.Lyric("01:23", {
-			t.InlineNote("Because I'm shy and there was a thing", "This line makes it clear that it's a man speaking"),
+			t.InlineNote(
+				"Because I'm shy and there was this thing",
+				"This line makes it clear that the speaker is male (probably meant to be Caetano Veloso himself)"
+			),
 		}, "Porque eu sou tímido e teve um negócio"),
-		t.Lyric("01:28", "Where you asked my sign", "De você perguntar o meu signo"),
-		t.Lyric("01:31", "When there wasn't any sign at all", "Quando não havia, signo nenhum"),
+		t.Lyric("01:28", "Where you asked what my sign was", "De você perguntar o meu signo"),
+		t.Lyric("01:31", "When there wasn't any sign at all", "Quando não havia signo nenhum"),
 		t.Lyric("01:40", "Scorpio, Sagittarius, or whatever", "Escorpião, sagitário, não sei que lá"),
 		t.br(),
-		t.Lyric(
-			"01:51",
-			"We just started talking about stupid things, idle chit-chat",
-			"Ficou um papo de otário, um papo"
-		),
+		t.Lyric("01:51", "It turned into a stupid conversation, idle chit-chat", "Ficou um papo de otário, um papo"),
 		t.Lyric("01:56", "It was going well", "Ia sendo bom"),
 		t.Lyric(
 			"02:00",
@@ -396,11 +372,14 @@ return t.Album({
 		t.Lyric("02:05", "All of a sudden being such a huge thing", "De repente ser uma coisa tão grande"),
 		t.br(),
 		t.Lyric("02:13", "Of the greatest importance", "Da maior importância"),
-		t.Lyric(
-			"02:18",
-			"There must be some kind of thing for you and me",
-			"Deve haver uma transa qualquer pra você e pra mim"
-		),
+		t.Lyric("02:18", {
+			"There must be some kind of ",
+			t.InlineNote(
+				"thing",
+				"Maybe she means it in the (nowadays more common) sexual way; or maybe it's in the 70s slang-y meaning of a thing, a business, an exchange of sorts. I don't know!"
+			),
+			"for you and me",
+		}, "Deve haver uma transa qualquer pra você e pra mim"),
 		t.Lyric("02:26", "Between us", "Entre nós"),
 		t.Lyric(
 			"02:32",
@@ -431,11 +410,16 @@ return t.Album({
 		t.br(),
 		t.Lyric(
 			"03:12",
-			"Just like how there exist flying saucers and the darkness of the future",
+			"Just like how there exist flying saucers, and the darkness of the future",
 			"Assim como existe disco voador e o escuro do futuro"
 		),
 		t.Lyric("03:19", "May exist in what depends", "Pode haver no que está dependendo"),
-		t.Lyric("03:25", "On a pure little moment of love", "De um pequeno momento puro de amor"),
+		t.Lyric("03:25", {
+			t.InlineNote(
+				"On a pure little moment of love",
+				"Wow, so this stanza is confusing. An interpration: Just like there are these things we aren't certain about (UFOs and the nebulous future ahead) it is also uncertain whether you loving me would mean anything at all."
+			),
+		}, "De um pequeno momento puro de amor"),
 		t.br(),
 		t.Lyric(
 			"03:34",
@@ -458,17 +442,7 @@ return t.Album({
 		t.Lyric("04:22", "It's not me that's going to", "Não sou eu quem vai"),
 		t.Lyric("04:26", "Tell you to stay", "Lhe dizer que fique"),
 		t.Lyric("04:31", "It's not me that's going to", "Não sou eu quem vai"),
-		t.Lyric(
-			"04:35",
-			"It's not me that's going to tell you that you weren't up for it",
-			"Não sou eu quem vai lhe dizer que você não teve pique"
-		),
-		t.Lyric("04:42", "It's not me", "Não sou eu"),
-		t.br(),
-		t.Lyric("04:55", "To stay", "Que fique"),
-		t.Lyric("04:57", "It's not me that's going to", "Não sou eu quem vai"),
-		t.Lyric("05:01", "But you weren't up for it", "Mas você não teve pique"),
-		t.Lyric("05:05", "It's not me that's going to", "Não sou eu quem vai"),
+		t.Text("(etc.)"),
 	}),
 	t.Song({
 		title = "Passarinho",
@@ -476,7 +450,7 @@ return t.Album({
 		writer = "Tuzé de Abreu",
 		personnel = personnel,
 	}, {
-		t.Lyric("00:40", "Sing like a bird", "Cantar como um passarinho"),
+		t.Lyric("00:40", "To sing like a little bird", "Cantar como um passarinho"),
 		t.Lyric("00:46", "In the early morning", "De manhã cedinho"),
 		t.Lyric("00:52", "On a branch in the grove", "Lá na galha do arvoredo"),
 		t.Lyric("00:58", "By the river shore", "Na beira do rio"),
@@ -493,21 +467,21 @@ return t.Album({
 		t.Lyric("02:43", "Take me to the girl's window", "Me leva na janela da menina"),
 		t.Lyric("02:49", "Because I want to sing", "Que eu quero cantar"),
 		t.br(),
-		t.Lyric("02:55", "Sing like a bird", "Cantar como um passarinho"),
+		t.Lyric("02:55", "To sing like a little bird", "Cantar como um passarinho"),
 		t.Lyric("03:01", "In the early morning", "De manhã cedinho"),
 		t.Lyric("03:07", "On a branch in the grove", "Lá na galha do arvoredo"),
 		t.Lyric("03:13", "By the river shore", "Na beira do rio"),
 		t.br(),
-		t.Lyric("03:53", "Sing like a bird", "Cantar como um passarinho"),
+		t.Lyric("03:53", "To sing like a little bird", "Cantar como um passarinho"),
 		t.Lyric("03:59", "In the early morning", "De manhã cedinho"),
 		t.Lyric("04:05", "On a branch in the grove", "Lá na galha do arvoredo"),
 		t.Lyric("04:10", "By the river shore", "Na beira do rio"),
 		t.br(),
-		t.Lyric("04:17", "Sing like a bird", "Cantar como um passarinho"),
-		t.Lyric("04:23", "Like a bird", "Como um passarinho"),
-		t.Lyric("04:37", "Sing like a bird", "Cantar como um passarinho"),
-		t.Lyric("04:42", "Like a bird", "Como um passarinho"),
-		t.Lyric("04:48", "Like a bird", "Como um passarinho"),
+		t.Lyric("04:17", "To sing like a little bird", "Cantar como um passarinho"),
+		t.Lyric("04:23", "Like a little bird", "Como um passarinho"),
+		t.Lyric("04:37", "To sing like a little bird", "Cantar como um passarinho"),
+		t.Lyric("04:42", "Like a little bird", "Como um passarinho"),
+		t.Lyric("04:48", "Like a little bird", "Como um passarinho"),
 	}),
 	t.Song({
 		title = "Pontos de Luz",
