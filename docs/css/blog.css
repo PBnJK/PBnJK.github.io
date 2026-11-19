@@ -566,6 +566,7 @@ li * {
     top: 32px;
 
     text-align: center;
+    text-align-last: center;
 
     width: 384px;
     box-sizing: content-box;

@@ -1,0 +1,146 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1" name="viewport"><title>pedrob&#39;s poetry</title><style>/* Root styles for the website (I think this is bad practice!!!) */
+
+:root {
+  color-scheme: light dark;
+
+  --bg-primary: light-dark(#fffff0, #2a282a);
+  --bg-secondary: light-dark(#e8e8d8, #3a383a);
+  --bg-highlight: light-dark(#b8b8a8, #5a585a);
+
+  --bg-secondary-red: light-dark(#f82020, #e01040);
+  --bg-secondary-yellow: light-dark(#f8f040, #ffca29);
+  --bg-secondary-blue: light-dark(#2020e0, #20aaff);
+
+  --font-primary: light-dark(black, #f0f4f8);
+  --font-secondary: light-dark(#484848, #b0b4b8);
+}
+
+@font-face {
+  font-family: "Goudy Bookletter 1911";
+  font-display: swap;
+  src: url("/assets/fonts/GoudyBookletter1911-Regular.ttf");
+}
+
+html,
+body {
+  background-color: var(--bg-primary);
+  color: var(--font-primary);
+
+  max-width: 100%;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+a {
+  color: var(--font-secondary);
+}
+
+a:hover {
+  color: var(--font-primary);
+}
+
+a::before {
+  display: inline-block;
+  content: "🔗";
+  text-decoration: none;
+}
+
+.header-nav-list {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  width: 100%;
+
+  margin: 0;
+
+  padding: 0;
+  padding-bottom: 32px;
+}
+
+.header-nav-list li {
+  display: inline-block;
+  text-align: center;
+
+  border-right: 2px solid var(--bg-primary);
+}
+
+.header-nav-list a {
+  display: block;
+
+  background-color: var(--bg-secondary);
+
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.header-nav-list a:hover {
+  background-color: var(--bg-highlight);
+  text-decoration: none;
+}
+
+.header-nav-list a::before {
+  content: "";
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* See:
+ *   https://mdn.io/Heading_Elements
+ *     # Specifying a uniform font size for <h1>
+ */
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0 16px;
+}
+
+#color-switcher {
+  margin-bottom: 16px;
+
+  width: 100%;
+
+  font-size: 1.2em;
+  text-align: end;
+
+  background: none;
+  border: none;
+}
+
+#color-switcher:hover {
+  cursor: pointer;
+}
+
+#color-sun::after {
+  content: "light";
+  padding-left: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+
+#color-moon::before {
+  content: "dark";
+  padding-right: 4px;
+
+  color: var(--font-secondary);
+  font-size: 0.8em;
+}
+</style><link href="/css/style.css" rel="stylesheet"><link href="/css/infinite.css" rel="stylesheet"><script src="/js/script.js"></script><script src="/js/infinite.js"></script><link href="/assets/favicon.ico" rel="icon" type="image/x-icon"></head><body><div id="wrapper"><header><nav><ul class="header-nav-list"><li><a href="/">homepage</a></li><li><a href="/blog/">blog</a></li><li><a href="/books/">writing</a></li><li><a href="/poetry/">poetry</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li><li><a href="#">---</a></li></ul></nav></header><main><button id="color-switcher"><span id="color-sun">☀️</span><span id="color-moon">🌙</span></button><div id="infinicanvas"><div id="ic-stuff"></div></div><div id="toolkit"><button id="tk-move"></button></div></main></div></body></html>

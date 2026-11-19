@@ -17,8 +17,14 @@ return t.Document({
 	}),
 	t.body({
 		t.div["#wrapper"]({
+			t.Header(),
 			t.main({
 				t.ColorSchemeToggle(),
+
+				t.a({
+					href = "infinite.html",
+					"Infinite",
+				}),
 			}),
 		}),
 	}),
