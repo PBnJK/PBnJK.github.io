@@ -378,7 +378,7 @@ return t.Album({
 				"thing",
 				"Maybe she means it in the (nowadays more common) sexual way; or maybe it's in the 70s slang-y meaning of a thing, a business, an exchange of sorts. I don't know!"
 			),
-			"for you and me",
+			" for you and me",
 		}, "Deve haver uma transa qualquer pra você e pra mim"),
 		t.Lyric("02:26", "Between us", "Entre nós"),
 		t.Lyric(
@@ -417,7 +417,7 @@ return t.Album({
 		t.Lyric("03:25", {
 			t.InlineNote(
 				"On a pure little moment of love",
-				"Wow, so this stanza is confusing. An interpration: Just like there are these things we aren't certain about (UFOs and the nebulous future ahead) it is also uncertain whether you loving me would mean anything at all."
+				"Wow, so this stanza is confusing. An interpretation: Just like there are these things we aren't certain about (UFOs and the nebulous future ahead) it is also uncertain whether you loving me would mean anything at all."
 			),
 		}, "De um pequeno momento puro de amor"),
 		t.br(),
